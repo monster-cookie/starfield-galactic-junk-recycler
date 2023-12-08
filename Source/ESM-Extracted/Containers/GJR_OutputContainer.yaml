@@ -1,0 +1,20 @@
+FormKey: 000804:GalacticJunkRecycler.esm
+EditorID: GJR_OutputContainer
+ObjectBounds:
+  First: -0.77442867, -0.3959961, 0.00022286415
+  Second: 0.7734229, 0.3959961, 1.0375667
+ODTY: 0
+Name:
+  TargetLanguage: English
+  Value: Recycled Output
+Model:
+  File: SetDressing\AmmoBox02.nif
+  FLLD: 0x01000000
+Keywords:
+- 2A14CA:Starfield.esm
+NativeTerminal: 38D14B:Starfield.esm
+Properties:
+- ActorValue: 00F65A:Starfield.esm
+  Value: 1
+- ActorValue: 2192D5:Starfield.esm
+  Value: 1

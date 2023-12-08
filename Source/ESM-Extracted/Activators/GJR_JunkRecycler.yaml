@@ -1,0 +1,33 @@
+FormKey: 000800:GalacticJunkRecycler.esm
+EditorID: GJR_JunkRecycler
+VirtualMachineAdapter:
+  Scripts:
+  - Name: GJR_JunkRecyclerActivatorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_KW_TransferContainer
+      Object: 000807:GalacticJunkRecycler.esm
+ObjectBounds:
+  First: -0.820801, -1.039063, -0.002563
+  Second: 0.74707, 0.402588, 2.501953
+ODTY: 0
+Name:
+  TargetLanguage: English
+  Value: Galactic Junk Recycler
+Model:
+  File: SetDressing\VendingMachine01Static.nif
+  MaterialSwaps:
+  - 0FBD1F:Starfield.esm
+  FLLD: 0x01000000
+  XFLG: 0x02
+Keywords:
+- 0A5484:Starfield.esm
+- 127DD3:Starfield.esm
+MarkerColor: '#00CC4C33'
+ActivateTextOverride:
+  TargetLanguage: English
+  Value: Deposit
+ActivationAngle: 360

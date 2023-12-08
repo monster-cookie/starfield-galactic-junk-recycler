@@ -1,0 +1,19 @@
+FormKey: 000803:GalacticJunkRecycler.esm
+EditorID: DisplayFilter_GJR_CanRecycle
+Name:
+  TargetLanguage: English
+  Value: The items that Galactic Junk Recyclers can recycle into usable components
+Items:
+- 244895:Starfield.esm
+- 0FAEBF:Starfield.esm
+- 0FAEC0:Starfield.esm
+- 103805:Starfield.esm
+- 23C7C1:Starfield.esm
+- 23C7BF:Starfield.esm
+- 23C7C0:Starfield.esm
+- 0E048B:Starfield.esm
+- 0E048C:Starfield.esm
+- 33B2DD:Starfield.esm
+- 0065BC:Starfield.esm
+- 11A47A:Starfield.esm
+- 11A479:Starfield.esm
