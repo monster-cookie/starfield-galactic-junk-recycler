@@ -3,7 +3,7 @@ EditorID: GJR_GroupRule_Electronics_Resources
 ChanceNone: 25
 MaxCount: 2
 Flags:
-- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
 Entries:
 - Level: 1
   Reference: 005576:Starfield.esm
@@ -22,4 +22,5 @@ Entries:
   ChanceNone: 0.09803921568627451
 - Level: 1
   Reference: 246B77:Starfield.esm
-  Count: 25
+  Count: 1
+  ChanceNone: 0.09803921568627451

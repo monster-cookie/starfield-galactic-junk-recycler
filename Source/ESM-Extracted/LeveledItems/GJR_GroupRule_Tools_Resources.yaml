@@ -3,7 +3,7 @@ EditorID: GJR_GroupRule_Tools_Resources
 ChanceNone: 25
 MaxCount: 2
 Flags:
-- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
 Entries:
 - Level: 1
   Reference: 005568:Starfield.esm
