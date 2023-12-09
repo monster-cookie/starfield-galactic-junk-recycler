@@ -58,7 +58,7 @@ Maximum of 2 items from the list below
 - 1 Cosmetic (Chance None 10%)
 - 1 Ornamental Material (Chance None 25%)
 - 1 Pigment (Chance None 25%)
-- 1 LuxuryTextile (Chance None 60%)
+- 1 Luxury Textile (Chance None 60%)
 
 ### Food
 This group uses the form ID list GJR_GroupRule_Food_List [FLST:##00082D] and the leveled item list GJR_GroupRule_Food_Resources [LVLI:##000831].
@@ -66,8 +66,8 @@ This group uses the form ID list GJR_GroupRule_Food_List [FLST:##00082D] and the
 #### Default Rewards
 Maximum of 2 items from the list below
 
-- 1 Ingredient from LL_VPI_Ingredients
-- 1 Ingredient from LL_VPI_Ingredients (Chance None 50%)
+- 1 Ingredient from leveled item list LL_VPI_Ingredients
+- 1 Ingredient from leveled item list  LL_VPI_Ingredients (Chance None 50%)
 
 ### Alien Food
 This group uses the form ID list GJR_GroupRule_AlienFood_List [FLST:##000835] and the leveled item list GJR_GroupRule_AlienFood_Resources [LVLI:##000836].
@@ -75,8 +75,8 @@ This group uses the form ID list GJR_GroupRule_AlienFood_List [FLST:##000835] an
 #### Default Rewards
 Maximum of 2 items from the list below
 
-- 1 Ingredient from LL_VPI_Ingredients
-- 1 Ingredient from LL_VPI_Ingredients (Chance None 50%)
+- 1 Ingredient from leveled item list LL_VPI_Ingredients
+- 1 Ingredient from leveled item list  LL_VPI_Ingredients (Chance None 50%)
 - 1 Quark-Degenerate Tissues (Chance None 50%)
 - 1 Alien Genetic Material (Chance None 75%)
 
