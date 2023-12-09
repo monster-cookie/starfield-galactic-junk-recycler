@@ -34,6 +34,7 @@ Event OnInit()
   ElseIf (GJR_KW_OutputContainer == None)
     Debug.MessageBox("Failed to wire up GJR_KW_OutputContainer.")
   EndIf
+  Self.OnLoad() ;; Needed for static world cells aka lodge
 EndEvent
 
 Event OnItemAdded(Form akBaseItem, Int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer, Int aiTransferReason)
