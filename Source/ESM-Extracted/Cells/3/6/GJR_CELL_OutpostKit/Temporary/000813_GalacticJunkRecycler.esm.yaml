@@ -4,6 +4,7 @@ Base: 000800:GalacticJunkRecycler.esm
 LinkedReferences:
 - KeywordOrReference: 000807:GalacticJunkRecycler.esm
   Reference: 000814:GalacticJunkRecycler.esm
+IsLinkedRefTransient: True
 Scale: 0.5
 Position: 0, -0.45, 0
 Rotation: 0, 0, 3.1415925

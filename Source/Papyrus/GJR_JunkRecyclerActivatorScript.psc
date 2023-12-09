@@ -23,19 +23,22 @@ ObjectReference myTransferContainer
 ;;; Events
 ;;;
 Event OnInit()
+  VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "OnInit", "OnInit triggered.", 0, Venpi_DebugEnabled.GetValueInt())
   Utility.Wait(1)
-  If (Venpi_DebugEnabled == None)
+  If (Venpi_DebugEnabled == None || !Venpi_DebugEnabled)
     Debug.MessageBox("Failed to wire up Venpi_DebugEnabled.")
-  ElseIf (GJR_KW_TransferContainer == None)
+  ElseIf (GJR_KW_TransferContainer == None || !GJR_KW_TransferContainer)
     Debug.MessageBox("Failed to wire up GJR_KW_TransferContainer.")
   EndIf
 EndEvent
 
 Event OnLoad()
+  VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "OnLoad", "OnLoad triggered.", 0, Venpi_DebugEnabled.GetValueInt())
   Setup()
 EndEvent
 
 Event OnActivate(ObjectReference akActionRef)
+  VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "OnActivate", "OnActivate triggered.", 0, Venpi_DebugEnabled.GetValueInt())
   Setup()
   If (akActionRef == Game.GetPlayer() as ObjectReference)
     Self.OpenTransfer()
@@ -47,11 +50,18 @@ EndEvent
 ;;; Functions
 ;;;
 Function Setup()
-  If (myTransferContainer == None)
+  VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "Setup", "Activator Setup Called.", 0, Venpi_DebugEnabled.GetValueInt())
+  If (myTransferContainer == None || !myTransferContainer)
     myTransferContainer = Self.GetLinkedRef(GJR_KW_TransferContainer)
+    If (myTransferContainer == None || !myTransferContainer)
+      VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "Setup", "ERROR: Failed to find my transfer container.", 0, Venpi_DebugEnabled.GetValueInt())
+    Else
+      VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "Setup", "Found and mapped my transfer container.", 0, Venpi_DebugEnabled.GetValueInt())
+    EndIf
   EndIf
 EndFunction
 
 Function OpenTransfer()
-  myTransferContainer.OpenOneWayTransferMenu(True, None) ; #DEBUG_LINE_NO:54
+  VPI_Debug.DebugMessage("GJR_JunkRecyclerActivatorScript", "OpenTransfer", "Activator opening player one way transfer menu.", 0, Venpi_DebugEnabled.GetValueInt())
+  myTransferContainer.OpenOneWayTransferMenu(True, None)
 EndFunction

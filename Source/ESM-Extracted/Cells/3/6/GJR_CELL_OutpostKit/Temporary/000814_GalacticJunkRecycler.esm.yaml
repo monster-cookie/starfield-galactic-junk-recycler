@@ -4,3 +4,4 @@ Base: 000802:GalacticJunkRecycler.esm
 LinkedReferences:
 - KeywordOrReference: 000808:GalacticJunkRecycler.esm
   Reference: 000815:GalacticJunkRecycler.esm
+IsLinkedRefTransient: True

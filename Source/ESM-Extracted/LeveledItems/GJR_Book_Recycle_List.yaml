@@ -1,5 +1,6 @@
 FormKey: 00080D:GalacticJunkRecycler.esm
 EditorID: GJR_Book_Recycle_List
+ChanceNone: 25
 MaxCount: 1
 Flags:
 - CalculateForEachItemInCount

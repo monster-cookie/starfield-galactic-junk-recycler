@@ -5,9 +5,6 @@ VirtualMachineAdapter:
   - Name: GJR_ControlScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Venpi_DebugEnabled
-      Object: 000800:VenpiCore.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: GJR_Ammo_Recycle_List
       Object: 00080C:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
@@ -22,6 +19,21 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_Weapon_Recycle_List
       Object: 00080A:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Electronics_List
+      Object: 00081C:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Electronics_Resources
+      Object: 00081D:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Tools_List
+      Object: 00081A:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Tools_Resources
+      Object: 00081B:GalacticJunkRecycler.esm
   Script:
     Name: ''
 Data:
@@ -30,10 +42,3 @@ Data:
   - StartsEnabled
   Unused: 0x000000
 UnusedConditions: []
-Aliases:
-- MutagenObjectType: QuestReferenceAlias
-  ID: 2
-  Name: Player
-  Flags: []
-  ALFG: 0
-  UniqueActor: 000007:Starfield.esm
