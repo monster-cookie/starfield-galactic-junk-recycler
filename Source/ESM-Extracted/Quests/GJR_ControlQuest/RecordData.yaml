@@ -34,6 +34,21 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Tools_Resources
       Object: 00081B:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_Injestible_Recycle_List
+      Object: 00082C:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_BarStuff_List
+      Object: 000825:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_BarStuff_Resources
+      Object: 000826:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_DecorativeStuff_List
+      Object: 000827:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_DecorativeStuff_Resources
+      Object: 000828:GalacticJunkRecycler.esm
   Script:
     Name: ''
 Data:

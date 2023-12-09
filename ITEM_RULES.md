@@ -84,9 +84,56 @@ The Tools group uses the form ID list GJR_GroupRule_Tools_List [FLST:##00081A] a
 - 1 Platinum (Chance None 75%)
 - 1 Polymer (Chance None 50%)
 
+### Bar Stuff
+The Tools group uses the form ID list GJR_GroupRule_BarStuff_List [FLST:74000825] and the leveled item list GJR_GroupRule_BarStuff_Resources [LVLI:74000826].
+
+#### Default Items
+- Cocktail Mixer (Several Varieties)
+- Cocktail Strainer
+- Decanter (Several Varieties)
+- Glasses (Several Varieties)
+- Tumbler (Several Varieties)
+
+#### Default Rewards
+- 1 Pigment
+- 1 Beryllium (Chance None 10%)
+- 1 Caelumite (Chance None 50%)
+- 1 Caesium (Chance None 75%)
+- 1 Ytterbium (Chance None 75%)
+
+### Decorative Stuff
+The Tools group uses the form ID list GJR_GroupRule_DecorativeStuff_List [FLST:74000827] and the leveled item list GJR_GroupRule_DecorativeStuff_Resources [LVLI:74000828].
+
+#### Default Items
+- Antique Toy Motorcycle (Several Varieties)
+- Desktop Fish Bowl
+- Desktop Sundial
+- Exotic Wood Decoration
+- Globes (Several Varieties)
+- Hourglass
+- Levitating Desk Planet
+- Musical Instruments (Several Varieties)
+- Masks (Several Varieties)
+- Old Earth Baseball
+- Old Earth Flip Lighter
+- Pendulum (Several Varieties)
+- Scroll Holder
+- Sculptures (Several Varieties)
+- Spyglass and Case
+- Terrarium (Several Varieties)
+
+#### Default Rewards
+- 1 Structural Material
+- 1 Cosmetic (Chance None 10%)
+- 1 Ornamental Material (Chance None 25%)
+- 1 Pigment (Chance None 25%)
+- 1 LuxuryTextile (Chance None 60%)
+
 ## Fallback Rules
 Fall back rules are a catch all in-case you use an item that is not mapped yet. 
 
 - Weapon's fallback is 0-4 random inorganic resources.
 - Armor's fallback is 0-4 random organic resources.
-- Misc items fallback is 0-2 random manufactured goods.
+- Ammo's fallback is 1 random organic or inorganic resource with a global chance none of 50%
+- Book's fallback is 1 random fiber, adhesive, or polytexile with a global chance none of 25%
+- Misc items fallback is 0-2 random manufactured goods with a 40% chance none.

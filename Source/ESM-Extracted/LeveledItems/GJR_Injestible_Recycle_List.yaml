@@ -1,0 +1,59 @@
+FormKey: 00082C:GalacticJunkRecycler.esm
+EditorID: GJR_Injestible_Recycle_List
+ChanceNone: 25
+MaxCount: 2
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Level: 1
+  Reference: 0055A9:Starfield.esm
+  Count: 1
+  ChanceNone: 0.09803921568627451
+- Level: 1
+  Reference: 0055AB:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055AC:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055AD:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055AE:Starfield.esm
+  Count: 1
+  ChanceNone: 0.09803921568627451
+- Level: 1
+  Reference: 0055B8:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055CB:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055CD:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0777FD:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 29F3FC:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 000823:VenpiCore.esm
+  Count: 1
+- Level: 25
+  Reference: 0055B3:Starfield.esm
+  Count: 1
+  ChanceNone: 0.09803921568627451
+- Level: 50
+  Reference: 0055B2:Starfield.esm
+  Count: 1
+  ChanceNone: 0.19607843137254902
+- Level: 75
+  Reference: 29F405:Starfield.esm
+  Count: 1
+  ChanceNone: 0.29411764705882354
+- Level: 75
+  Reference: 29F40D:Starfield.esm
+  Count: 1
+  ChanceNone: 0.29411764705882354

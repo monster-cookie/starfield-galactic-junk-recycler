@@ -5,12 +5,13 @@ ScriptName GJR_ControlScript Extends Quest
 ;;;
 ;;; Constants
 ;;;
-Int Property ITEM_TYPE_UNKNOWN=0 Auto Const Mandatory
-Int Property   ITEM_TYPE_ARMOR=1 Auto Const Mandatory
-Int Property  ITEM_TYPE_WEAPON=2 Auto Const Mandatory
-Int Property    ITEM_TYPE_AMMO=3 Auto Const Mandatory
-Int Property    ITEM_TYPE_BOOK=4 Auto Const Mandatory
-Int Property    ITEM_TYPE_MISC=5 Auto Const Mandatory
+Int Property       ITEM_TYPE_UNKNOWN=0 Auto Const Mandatory
+Int Property         ITEM_TYPE_ARMOR=1 Auto Const Mandatory
+Int Property        ITEM_TYPE_WEAPON=2 Auto Const Mandatory
+Int Property          ITEM_TYPE_AMMO=3 Auto Const Mandatory
+Int Property          ITEM_TYPE_BOOK=4 Auto Const Mandatory
+Int Property          ITEM_TYPE_MISC=5 Auto Const Mandatory
+Int Property    ITEM_TYPE_INJESTIBLE=6 Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -27,12 +28,25 @@ LeveledItem Property GJR_Armor_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Book_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Misc_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Weapon_Recycle_List Auto Const Mandatory
+LeveledItem Property GJR_Injestible_Recycle_List Auto Const Mandatory
 
 ;; Group Rule Lists
 FormList Property GJR_GroupRule_Electronics_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Electronics_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Tools_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Tools_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_BarStuff_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_BarStuff_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_DecorativeStuff_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_DecorativeStuff_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Food_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Food_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_AlienFood_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_AlienFood_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Aid_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Aid_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Chems_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Chems_Resources Auto Const Mandatory
 
 ;; Resources - Inorganic
 MiscObject Property InorgCommonCopper Auto
@@ -119,6 +133,30 @@ Function ProcessItem(ObjectReference akItemReference, ObjectReference akOutputCo
     VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing tools group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Tools_Resources as Form, 1, True)
     useFallback = False
+  ElseIf (GJR_GroupRule_BarStuff_List.HasForm(baseObject))
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing bar stuff group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_BarStuff_Resources as Form, 1, True)
+    useFallback = False
+  ElseIf (GJR_GroupRule_DecorativeStuff_List.HasForm(baseObject))
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing decorative stuff group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_DecorativeStuff_Resources as Form, 1, True)
+    useFallback = False
+  ElseIf (GJR_GroupRule_Food_List.HasForm(baseObject))
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing food group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Food_Resources as Form, 1, True)
+    useFallback = False
+  ElseIf (GJR_GroupRule_Aid_List.HasForm(baseObject))
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing aid group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Aid_Resources as Form, 1, True)
+    useFallback = False
+  ElseIf (GJR_GroupRule_Chems_List.HasForm(baseObject))
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing chems group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Chems_Resources as Form, 1, True)
+    useFallback = False
+  ElseIf (GJR_GroupRule_AlienFood_List.HasForm(baseObject))
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing alien food group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_AlienFood_Resources as Form, 1, True)
+    useFallback = False
   EndIf
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -141,6 +179,9 @@ Function ProcessItem(ObjectReference akItemReference, ObjectReference akOutputCo
   ElseIf  (useFallback && itemType == ITEM_TYPE_WEAPON)
     VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing weapon item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Weapon_Recycle_List as Form, 1, True)
+  ElseIf  (useFallback && itemType == ITEM_TYPE_INJESTIBLE)
+    VPI_Debug.DebugMessage("GJR_ControlScript", "ProcessItem", "Processing injestible item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_Injestible_Recycle_List as Form, 1, True)
   EndIf
 
    ;; This is so the calling function can actually delete it. 
@@ -158,6 +199,8 @@ Int Function GetItemType(Form baseObject)
     Return ITEM_TYPE_BOOK
   ElseIf baseObject is MiscObject
     Return ITEM_TYPE_MISC
+  ElseIf baseObject is Potion
+    Return ITEM_TYPE_INJESTIBLE
   Else
     VPI_Debug.DebugMessage("GJR_ControlScript", "GetItemType", "Encountered Unknown Item Type " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
     Return ITEM_TYPE_UNKNOWN

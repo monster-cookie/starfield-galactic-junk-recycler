@@ -1,0 +1,43 @@
+FormKey: 000833:GalacticJunkRecycler.esm
+EditorID: GJR_GroupRule_Aid_Resources
+ChanceNone: 25
+MaxCount: 2
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Level: 1
+  Reference: 0055AB:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055AD:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055AF:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055B0:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055CC:Starfield.esm
+  Count: 1
+- Level: 10
+  Reference: 0055AE:Starfield.esm
+  Count: 1
+  ChanceNone: 0.0392156862745098
+- Level: 10
+  Reference: 29F3FC:Starfield.esm
+  Count: 1
+  ChanceNone: 0.0392156862745098
+- Level: 25
+  Reference: 0055A9:Starfield.esm
+  Count: 1
+  ChanceNone: 0.09803921568627451
+- Level: 25
+  Reference: 0055B3:Starfield.esm
+  Count: 1
+  ChanceNone: 0.09803921568627451
+- Level: 50
+  Reference: 0055B2:Starfield.esm
+  Count: 1
+  ChanceNone: 0.19607843137254902
