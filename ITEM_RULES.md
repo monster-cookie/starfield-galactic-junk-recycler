@@ -15,25 +15,9 @@ The form ID list can only contain actual item entries aka Armor, Weapons, Mis Ob
 ### Electronics
 The Electronics group uses the form ID list GJR_GroupRule_Electronics_List [FLST:##00081C] and the leveled item list GJR_GroupRule_Electronics_Resources [LVLI:##00081D].
 
-#### Default Items
-- Antique Computer
-- Circuit Board (Several Varieties)
-- Desk Assistant "Eggmund"
-- Desk Phone
-- Desktop Digiframe
-- Desktop Speakers
-- Display Projector
-- Emergency Power Cell
-- Empty Desktop Display
-- High-Speed Data Cable (Several Varieties)
-- Mercury Camera
-- Personal Digiframe
-- Portable CD Player
-- Prototype Equipment (Several Varieties)
-- Robotics Part
-- Tablet
-
 #### Default Rewards
+Maximum of 2 items from the list below
+
 - 1 Copper
 - 1 Gold (Chance None 25%)
 - 1 Lithium (Chance None 75%)
@@ -43,41 +27,9 @@ The Electronics group uses the form ID list GJR_GroupRule_Electronics_List [FLST
 ### Tools
 The Tools group uses the form ID list GJR_GroupRule_Tools_List [FLST:##00081A] and the leveled item list GJR_GroupRule_Tools_Resources [LVLI:##00081B].
 
-#### Default Items
-- Bolt Cutter
-- Bottle Opener
-- Bubble Level
-- Caliper
-- Chisel (Several Varieties)
-- Clamp
-- Crimping Tool
-- Cutting Pliers
-- Fork (Several Varieties)
-- Hammer (Several Varieties)
-- Hose Clamp Pliers
-- Hydraulic Clamp (Several Varieties)
-- Impact Driver (Several Varieties)
-- Knife (Several Varieties)
-- Ladle
-- Pan
-- Pan Lid
-- Pipe Wrench
-- Pliers (Several Varieties)
-- Pot (Several Varieties)
-- Pot Lid (Several Varieties)
-- Ratchet
-- Scissors (Several Varieties)
-- Screwdriver (Several Varieties)
-- Sextant
-- Spoon (Several Varieties)
-- Staple Gun
-- Steel Bottle
-- Steel Cup (Several Varieties)
-- Trowel (Several Varieties)
-- Tweezers (Several Varieties)
-- Wrench (Several Varieties)
-
 #### Default Rewards
+Maximum of 2 items from the list below
+
 - 1 Iron
 - 1 Lead
 - 1 Titanium (Chance None 50%)
@@ -85,16 +37,11 @@ The Tools group uses the form ID list GJR_GroupRule_Tools_List [FLST:##00081A] a
 - 1 Polymer (Chance None 50%)
 
 ### Bar Stuff
-The Tools group uses the form ID list GJR_GroupRule_BarStuff_List [FLST:74000825] and the leveled item list GJR_GroupRule_BarStuff_Resources [LVLI:74000826].
-
-#### Default Items
-- Cocktail Mixer (Several Varieties)
-- Cocktail Strainer
-- Decanter (Several Varieties)
-- Glasses (Several Varieties)
-- Tumbler (Several Varieties)
+This group uses the form ID list GJR_GroupRule_BarStuff_List [FLST:##000825] and the leveled item list GJR_GroupRule_BarStuff_Resources [LVLI:##000826].
 
 #### Default Rewards
+Maximum of 2 items from the list below
+
 - 1 Pigment
 - 1 Beryllium (Chance None 10%)
 - 1 Caelumite (Chance None 50%)
@@ -102,32 +49,80 @@ The Tools group uses the form ID list GJR_GroupRule_BarStuff_List [FLST:74000825
 - 1 Ytterbium (Chance None 75%)
 
 ### Decorative Stuff
-The Tools group uses the form ID list GJR_GroupRule_DecorativeStuff_List [FLST:74000827] and the leveled item list GJR_GroupRule_DecorativeStuff_Resources [LVLI:74000828].
-
-#### Default Items
-- Antique Toy Motorcycle (Several Varieties)
-- Desktop Fish Bowl
-- Desktop Sundial
-- Exotic Wood Decoration
-- Globes (Several Varieties)
-- Hourglass
-- Levitating Desk Planet
-- Musical Instruments (Several Varieties)
-- Masks (Several Varieties)
-- Old Earth Baseball
-- Old Earth Flip Lighter
-- Pendulum (Several Varieties)
-- Scroll Holder
-- Sculptures (Several Varieties)
-- Spyglass and Case
-- Terrarium (Several Varieties)
+This group uses the form ID list GJR_GroupRule_DecorativeStuff_List [FLST:##000827] and the leveled item list GJR_GroupRule_DecorativeStuff_Resources [LVLI:##000828].
 
 #### Default Rewards
+Maximum of 2 items from the list below
+
 - 1 Structural Material
 - 1 Cosmetic (Chance None 10%)
 - 1 Ornamental Material (Chance None 25%)
 - 1 Pigment (Chance None 25%)
 - 1 LuxuryTextile (Chance None 60%)
+
+### Food
+This group uses the form ID list GJR_GroupRule_Food_List [FLST:##00082D] and the leveled item list GJR_GroupRule_Food_Resources [LVLI:##000831].
+
+#### Default Rewards
+Maximum of 2 items from the list below
+
+- 1 Ingredient from LL_VPI_Ingredients
+- 1 Ingredient from LL_VPI_Ingredients (Chance None 50%)
+
+### Alien Food
+This group uses the form ID list GJR_GroupRule_AlienFood_List [FLST:##000835] and the leveled item list GJR_GroupRule_AlienFood_Resources [LVLI:##000836].
+
+#### Default Rewards
+Maximum of 2 items from the list below
+
+- 1 Ingredient from LL_VPI_Ingredients
+- 1 Ingredient from LL_VPI_Ingredients (Chance None 50%)
+- 1 Quark-Degenerate Tissues (Chance None 50%)
+- 1 Alien Genetic Material (Chance None 75%)
+
+### Aid
+This group uses the form ID list GJR_GroupRule_Aid_List [FLST:##00082F] and the leveled item list GJR_GroupRule_Aid_Resources [LVLI:##000833].
+
+#### Default Rewards
+Maximum of 2 items from the list below
+
+- 1 Antimicrobial
+- 1 Sedative
+- 1 Fiber
+- 1 Membrane
+- 1 Sealant
+- 1 Stimulant (Chance None 10%)
+- 1 Metabolic Agent (Chance None 25%)
+- 1 Analgesic (Chance None 25%)
+- 1 Immunostimulant (Chance None 25%)
+- 1 Biosuppressant (Chance None 50%)
+
+### Enhancers
+This group uses the form ID list GJR_GroupRule_Chems_List [FLST:##000830] and the leveled item list GJR_GroupRule_Chems_Resources [LVLI:##000834].
+
+#### Default Rewards
+Maximum of 2 items from the list below
+
+- 1 Uranium
+- 1 Antimicrobial
+- 1 Spice
+- 1 Sedative
+- 1 Membrane
+- 1 Aromatic
+- 1 Amino Acids
+- 1 Nutrient
+- 1 Metabolic Agent
+- 1 Lithium (Chance None 10%)
+- 1 Benzene (Chance None 10%)
+- 1 Stimulant (Chance None 10%)
+- 1 Toxin (Chance None 10%)
+- 1 Analgesic (Chance None 25%)
+- 1 Immunostimulant (Chance None 25%)
+- 1 Mercury (Chance None 25%)
+- 1 Biosuppressant (Chance None 50%)
+- 1 Aqueous Hematite (Chance None 50%)
+- 1 Hallucinogen (Chance None 75%)
+- 1 Hypercatalyst (Chance None 75%)
 
 ## Fallback Rules
 Fall back rules are a catch all in-case you use an item that is not mapped yet. 
@@ -136,4 +131,5 @@ Fall back rules are a catch all in-case you use an item that is not mapped yet.
 - Armor's fallback is 0-4 random organic resources.
 - Ammo's fallback is 1 random organic or inorganic resource with a global chance none of 50%
 - Book's fallback is 1 random fiber, adhesive, or polytexile with a global chance none of 25%
-- Misc items fallback is 0-2 random manufactured goods with a 40% chance none.
+- Misc items fallback is 0-2 random manufactured goods with a global chance none of 40%.
+- Food/Drink/Alcohol/Aid/Chem items fallback is 0-2 random organic and ingredients with a global change none of 25%.
