@@ -49,6 +49,30 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_DecorativeStuff_Resources
       Object: 000828:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Food_List
+      Object: 00082D:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Food_Resources
+      Object: 000831:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_AlienFood_List
+      Object: 000835:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_AlienFood_Resources
+      Object: 000836:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Aid_List
+      Object: 00082F:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Aid_Resources
+      Object: 000833:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Chems_List
+      Object: 000830:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Chems_Resources
+      Object: 000834:GalacticJunkRecycler.esm
   Script:
     Name: ''
 Data:
