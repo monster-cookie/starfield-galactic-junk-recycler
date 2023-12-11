@@ -1,5 +1,9 @@
 # V1.0 Permutations
 
+## V1.0.4
+* Now using user debug logs via Venpi Core v1.0.10
+* Also now has a true fallback for any object type that is 1 random resource from all available resources.
+
 ## V1.0.3
 * Added to the lodge basement
 * Ammo fallback is now 1 inorganic or organic resource but has a 50% change none

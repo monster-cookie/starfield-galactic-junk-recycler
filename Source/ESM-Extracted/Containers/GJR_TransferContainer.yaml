@@ -13,6 +13,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_KW_OutputContainer
       Object: 000808:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: GalacticJunkRecycler
 ObjectBounds:
   First: -0.351564, -0.222362, -0.002491
   Second: 0.353999, 0.252492, 0.212581

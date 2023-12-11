@@ -73,6 +73,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Chems_Resources
       Object: 000834:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: GalacticJunkRecycler
   Script:
     Name: ''
 Data:
