@@ -1,0 +1,9 @@
+MutagenObjectType: PlacedObject
+FormKey: 00083E:GalacticJunkRecycler.esm
+Base: 000800:GalacticJunkRecycler.esm
+LinkedReferences:
+- KeywordOrReference: 000807:GalacticJunkRecycler.esm
+  Reference: 00083F:GalacticJunkRecycler.esm
+Scale: 0.5
+Position: 2, 2.75, -1.2499999
+Rotation: 0, 0, 4.712389

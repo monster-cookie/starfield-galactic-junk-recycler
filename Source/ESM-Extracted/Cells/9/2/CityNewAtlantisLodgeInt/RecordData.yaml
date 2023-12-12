@@ -1,5 +1,8 @@
 FormKey: 06BB29:Starfield.esm
 EditorID: CityNewAtlantisLodgeInt
+Name:
+  TargetLanguage: English
+  Value: The Lodge
 Flags:
 - IsInteriorCell
 - CantTravelFromHere

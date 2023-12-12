@@ -1,5 +1,10 @@
 # V1.0 Permutations
 
+## V1.0.5
+* Fixed armor and clothing not showing up turns out ObjectTypeArmor is not used by any armor /facepalm. Went back to using the ArmorType* keywords for the display filter. BE warned this may grab some quest items.
+* Added built in recycler to Nova Galactic Workshop, Stroud, Deimos, and Hope Workshop Habs.
+* Not doing Taiyo that is way too many to build a ship for, place, and edit the cells lol. 
+
 ## V1.0.4
 * Now using user debug logs via Venpi Core v1.0.10
 * Also now has a true fallback for any object type that is 1 random resource from all available resources.

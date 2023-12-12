@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 2D4E60:Starfield.esm
+Base: 253F96:Starfield.esm
+LayeredMaterialSwaps:
+- 14B9CB:Starfield.esm
+Layer: 04B4EF:Starfield.esm
+LinkedReferences:
+- KeywordOrReference: 0360F0:Starfield.esm
+  Reference: 141B83:Starfield.esm
+Position: -2.1078103, 2.027706, -1.2344894
+Rotation: 0, 0, 3.1415925
