@@ -26,11 +26,7 @@ ObjectReference myTransferContainer
 Event OnInit()
   VPI_Debug.DebugMessage(Venpi_ModName, "GJR_JunkRecyclerActivatorScript", "OnInit", "OnInit triggered.", 0, Venpi_DebugEnabled.GetValueInt())
   Utility.Wait(1)
-  If (Venpi_DebugEnabled == None || !Venpi_DebugEnabled)
-    Debug.MessageBox("Failed to wire up Venpi_DebugEnabled.")
-  ElseIf (GJR_KW_TransferContainer == None || !GJR_KW_TransferContainer)
-    Debug.MessageBox("Failed to wire up GJR_KW_TransferContainer.")
-  EndIf
+  Self.OnLoad() ;; Needed for static world cells aka lodge
 EndEvent
 
 Event OnLoad()

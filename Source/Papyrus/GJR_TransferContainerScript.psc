@@ -26,15 +26,7 @@ ObjectReference myOutputContainer
 ;;;
 Event OnInit()
   VPI_Debug.DebugMessage(Venpi_ModName, "GJR_TransferContainerScript", "OnInit", "On OnInit triggered.", 0, Venpi_DebugEnabled.GetValueInt())
-
   Utility.Wait(1)
-  If (Venpi_DebugEnabled == None)
-    Debug.MessageBox("Failed to wire up Venpi_DebugEnabled.")
-  ElseIf (GJR_ControlQuest == None)
-    Debug.MessageBox("Failed to wire up GJR_ControlQuest.")
-  ElseIf (GJR_KW_OutputContainer == None)
-    Debug.MessageBox("Failed to wire up GJR_KW_OutputContainer.")
-  EndIf
   Self.OnLoad() ;; Needed for static world cells aka lodge
 EndEvent
 
@@ -55,7 +47,7 @@ Event OnItemAdded(Form akBaseItem, Int aiItemCount, ObjectReference akItemRefere
 
     ;; This is stupid but this is the only way I can find script side to get a object ref
     ObjectReference itemRef = Self.DropObject(akBaseItem, 1)
-
+    
     (GJR_ControlQuest as GJR_ControlScript).ProcessItem(itemRef, myOutputContainer)
     myOutputContainer.RemoveItem(itemRef, 1, False, None)
     

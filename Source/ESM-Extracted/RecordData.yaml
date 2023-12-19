@@ -7,7 +7,7 @@ ModHeader:
   Flags:
   - Master
   Stats:
-    NumRecords: 93
+    NumRecords: 97
     NextFormID: 2116
   Author: ''
   MasterReferences:
@@ -15,5 +15,9 @@ ModHeader:
   - Master: BlueprintShips-Starfield.esm
   - Master: VenpiCore.esm
   OverriddenForms:
+  - 2BA045:Starfield.esm
+  - 2BA04B:Starfield.esm
+  - 2BA057:Starfield.esm
+  - 2BA088:Starfield.esm
   - 2D4E1B:Starfield.esm
   - 2D4E60:Starfield.esm

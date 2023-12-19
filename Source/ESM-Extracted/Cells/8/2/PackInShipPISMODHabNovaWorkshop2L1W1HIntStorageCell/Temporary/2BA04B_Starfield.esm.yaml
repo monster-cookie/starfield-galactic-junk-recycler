@@ -1,0 +1,15 @@
+MutagenObjectType: PlacedObject
+FormKey: 2BA04B:Starfield.esm
+Base: 011D4A:Starfield.esm
+LayeredMaterialSwaps:
+- 2C7F13:Starfield.esm
+Layer: 3D7DA0:Starfield.esm
+LinkedReferences:
+- KeywordOrReference: 1DB85F:Starfield.esm
+  Reference: 1C30FC:Starfield.esm
+EnableParent:
+  Reference: 000014:Starfield.esm
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Position: 1.731141, -3.0701666, -1.237021

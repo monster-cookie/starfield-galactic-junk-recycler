@@ -1,5 +1,9 @@
 # V1.0 Permutations
 
+## V1.0.6
+* In the nova galactic workstation hab stopped clutter engine placing a generator thing on it. 
+* Probably fixed the cell reset bug. Missed another on load call and needed to be triggered manually from on init in ship habs.
+
 ## V1.0.5
 * Fixed armor and clothing not showing up turns out ObjectTypeArmor is not used by any armor /facepalm. Went back to using the ArmorType* keywords for the display filter. BE warned this may grab some quest items.
 * Added built in recycler to Nova Galactic Workshop, Stroud, Deimos, and Hope Workshop Habs.
