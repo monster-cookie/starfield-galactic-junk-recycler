@@ -2,22 +2,10 @@ ScriptName GJR_ControlScript Extends Quest
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Constants
-;;;
-Int Property       ITEM_TYPE_UNKNOWN=0 Auto Const Mandatory
-Int Property         ITEM_TYPE_ARMOR=1 Auto Const Mandatory
-Int Property        ITEM_TYPE_WEAPON=2 Auto Const Mandatory
-Int Property          ITEM_TYPE_AMMO=3 Auto Const Mandatory
-Int Property          ITEM_TYPE_BOOK=4 Auto Const Mandatory
-Int Property          ITEM_TYPE_MISC=5 Auto Const Mandatory
-Int Property    ITEM_TYPE_INJESTIBLE=6 Auto Const Mandatory
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
 ;;; Global Variables
 ;;;
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
-String Property Venpi_ModName Auto Const Mandatory
+String Property Venpi_ModName="GalacticJunkRecycler" Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -142,23 +130,30 @@ Function ProcessItem(ObjectReference akItemReference, ObjectReference akOutputCo
   ;;
   ;; Fallback Rules
   ;;
-  Int itemType = Self.GetItemType(baseObject)
-  If (useFallback && itemType == ITEM_TYPE_AMMO)
+  Int itemType = VPI_Inventory.GetItemType(baseObject)
+  VPI_SharedObjectManager:InventoryItemTypes enumItemType = VPI_SharedObjectManager.GetEnumInventoryItemType()
+  If (enumItemType == none || !enumItemType)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Failed to find the InventoryItemTypes enum.", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_Ammo_Recycle_List as Form, 1, True)
+    useFallback = False
+  EndIf
+
+  If (useFallback && itemType == enumItemType.Ammo)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing ammo item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Ammo_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == ITEM_TYPE_ARMOR)
+  ElseIf  (useFallback && itemType == enumItemType.Armor)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing armor item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Armor_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == ITEM_TYPE_BOOK)
+  ElseIf  (useFallback && itemType == enumItemType.Book)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing book item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Book_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == ITEM_TYPE_MISC)
+  ElseIf  (useFallback && itemType == enumItemType.Misc)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing misc item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Misc_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == ITEM_TYPE_WEAPON)
+  ElseIf  (useFallback && itemType == enumItemType.Weapon)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing weapon item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Weapon_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == ITEM_TYPE_INJESTIBLE)
+  ElseIf  (useFallback && itemType == enumItemType.Injestible)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing injestible item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Injestible_Recycle_List as Form, 1, True)
   Else
@@ -168,25 +163,6 @@ Function ProcessItem(ObjectReference akItemReference, ObjectReference akOutputCo
 
    ;; This is so the calling function can actually delete it. 
    akOutputContainer.AddItem(akItemReference as Form, 1, True)
-EndFunction
-
-Int Function GetItemType(Form baseObject)
-  If (baseObject is Weapon)
-    Return ITEM_TYPE_WEAPON
-  ElseIf baseObject is Armor
-    Return ITEM_TYPE_ARMOR
-  ElseIf baseObject is Ammo
-    Return ITEM_TYPE_AMMO
-  ElseIf baseObject is Book
-    Return ITEM_TYPE_BOOK
-  ElseIf baseObject is MiscObject
-    Return ITEM_TYPE_MISC
-  ElseIf baseObject is Potion
-    Return ITEM_TYPE_INJESTIBLE
-  Else
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "GetItemType", "Encountered Unknown Item Type " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    Return ITEM_TYPE_UNKNOWN
-  EndIf
 EndFunction
 
 Function PopulateInorganicResourceVariables()

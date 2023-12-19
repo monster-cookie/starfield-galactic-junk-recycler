@@ -1,5 +1,9 @@
 # V1.0 Permutations
 
+## V1.0.7
+* Attempting to fix the item drop issues
+* Now uses the new shared object manager from Venpi Core 1.0.11.
+
 ## V1.0.6
 * In the nova galactic workstation hab stopped clutter engine placing a generator thing on it. 
 * Probably fixed the cell reset bug. Missed another on load call and needed to be triggered manually from on init in ship habs.

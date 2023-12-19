@@ -5,7 +5,7 @@ ScriptName GJR_JunkRecyclerActivatorScript Extends ObjectReference
 ;;; Global Variables
 ;;;
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
-String Property Venpi_ModName Auto Const Mandatory
+String Property Venpi_ModName="GalacticJunkRecycler" Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
