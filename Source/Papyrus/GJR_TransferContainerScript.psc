@@ -45,12 +45,9 @@ Event OnItemAdded(Form akBaseItem, Int aiItemCount, ObjectReference akItemRefere
   While (i < aiItemCount)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_TransferContainerScript", "OnItemAdded", "Processing item " + i+1 + " of " + aiItemCount + " which is " + akBaseItem +  ".", 0, Venpi_DebugEnabled.GetValueInt())
 
-    ;; This is stupid but this is the only way I can find script side to get a object ref
-    ObjectReference itemRef = Self.DropObject(akBaseItem, 1)
-    
-    (GJR_ControlQuest as GJR_ControlScript).ProcessItem(itemRef, myOutputContainer)
-    myOutputContainer.RemoveItem(itemRef, 1, False, None)
-    
+    (GJR_ControlQuest as GJR_ControlScript).ProcessItem(akBaseItem, myOutputContainer)
+    self.RemoveItem(akBaseItem, 1, False, None)
+
     i += 1
   EndWhile
 EndEvent

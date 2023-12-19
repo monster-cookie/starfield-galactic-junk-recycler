@@ -68,101 +68,101 @@ EndEvent
 ;;;
 ;;; Functions
 ;;;
-Function ProcessItem(ObjectReference akItemReference, ObjectReference akOutputContainer)
-  VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing item ref " + akItemReference + " against rule tree.", 0, Venpi_DebugEnabled.GetValueInt())
+Function ProcessItem(Form akBaseItem, ObjectReference akOutputContainer)
+  VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing item ref " + akBaseItem + " against rule tree.", 0, Venpi_DebugEnabled.GetValueInt())
 
   Setup()
-  Form baseObject = akItemReference.GetBaseObject()
-  Bool useFallback = True
-
-  VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing base item " + baseObject + " against rule tree.", 0, Venpi_DebugEnabled.GetValueInt())
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;;
   ;; Specifically Mapped Item Rules
   ;;
-  If (baseObject.GetFormID() ==  Tool_DuctTape01.GetFormID())
+  If (akBaseItem.GetFormID() ==  Tool_DuctTape01.GetFormID())
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing vacuum tape item and returning Adhesive and Fiber.", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(OrgRareAdhesive as Form, Utility.RandomInt(0,4), True)
     akOutputContainer.AddItem(OrgCommonFiber as Form, Utility.RandomInt(0,4), True)
-    useFallback = False
+    Return
   EndIf
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;;
   ;; Group Mapped Item Rules
   ;;
-  If (GJR_GroupRule_Electronics_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing electronics group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+  If (GJR_GroupRule_Electronics_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing electronics group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Electronics_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_Tools_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing tools group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_Tools_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing tools group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Tools_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_BarStuff_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing bar stuff group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_BarStuff_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing bar stuff group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_BarStuff_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_DecorativeStuff_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing decorative stuff group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_DecorativeStuff_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing decorative stuff group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_DecorativeStuff_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_Food_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing food group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_Food_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Food_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_Aid_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing aid group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_Aid_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing aid group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Aid_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_Chems_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing chems group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_Chems_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing chems group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Chems_Resources as Form, 1, True)
-    useFallback = False
-  ElseIf (GJR_GroupRule_AlienFood_List.HasForm(baseObject))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing alien food group item " + baseObject + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf (GJR_GroupRule_AlienFood_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing alien food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_AlienFood_Resources as Form, 1, True)
-    useFallback = False
+    Return
   EndIf
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;;
   ;; Fallback Rules
   ;;
-  Int itemType = VPI_Inventory.GetItemType(baseObject)
+  Int itemType = VPI_Inventory.GetItemType(akBaseItem)
   VPI_SharedObjectManager:InventoryItemTypes enumItemType = VPI_SharedObjectManager.GetEnumInventoryItemType()
   If (enumItemType == none || !enumItemType)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Failed to find the InventoryItemTypes enum.", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Ammo_Recycle_List as Form, 1, True)
-    useFallback = False
+    Return
   EndIf
 
-  If (useFallback && itemType == enumItemType.Ammo)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing ammo item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+  If (itemType == enumItemType.Ammo)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing ammo item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Ammo_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == enumItemType.Armor)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing armor item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf  (itemType == enumItemType.Armor)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing armor item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Armor_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == enumItemType.Book)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing book item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf  (itemType == enumItemType.Book)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing book item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Book_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == enumItemType.Misc)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing misc item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf  (itemType == enumItemType.Misc)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing misc item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Misc_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == enumItemType.Weapon)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing weapon item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf  (itemType == enumItemType.Weapon)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing weapon item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Weapon_Recycle_List as Form, 1, True)
-  ElseIf  (useFallback && itemType == enumItemType.Injestible)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing injestible item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  ElseIf  (itemType == enumItemType.Injestible)
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing injestible item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Injestible_Recycle_List as Form, 1, True)
+    Return
   Else
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing unknown item " + akItemReference + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing unknown item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_Ammo_Recycle_List as Form, 1, True)
+    Return
   EndIf
-
-   ;; This is so the calling function can actually delete it. 
-   akOutputContainer.AddItem(akItemReference as Form, 1, True)
 EndFunction
 
 Function PopulateInorganicResourceVariables()
