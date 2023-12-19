@@ -1,7 +1,7 @@
 # V1.0 Permutations
 
 ## V1.0.7
-* Attempting to fix the item drop issues
+* No longer need to drop items to get an object reference.
 * Now uses the new shared object manager from Venpi Core 1.0.11.
 
 ## V1.0.6
