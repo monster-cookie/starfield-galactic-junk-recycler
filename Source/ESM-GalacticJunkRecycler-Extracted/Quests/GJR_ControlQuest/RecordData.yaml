@@ -76,6 +76,24 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptStringProperty
       Name: Venpi_ModName
       Data: GalacticJunkRecycler
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Paper_List
+      Object: 000844:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Paper_Resources
+      Object: 000845:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Pens_List
+      Object: 000847:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Pens_Resources
+      Object: 000849:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Plastic_List
+      Object: 000846:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Plastic_Resources
+      Object: 000848:GalacticJunkRecycler.esm
   Script:
     Name: ''
 Data:

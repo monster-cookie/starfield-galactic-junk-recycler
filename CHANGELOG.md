@@ -1,5 +1,12 @@
 # V1.0 Permutations
 
+## V1.0.8
+* New group rule for paper products, they break down into fiber, adhesive, polymer, polytextile, structural.
+* New group rule for pens/markers, they break down into lead, cosmetic, toxin, solvent, zero wire, and pigment.
+* New group rule for plastics/styrofoam, they break down into luxury, polymer, hallucinogen, and polytextile.
+* Dumbbells now are considered a tool and break down as such
+* We will no longer accept books but we hear Cora Coe, the Kid and Cora Coe, The Multiversal Book Hunter love them.
+
 ## V1.0.7
 * No longer need to drop items to get an object reference.
 * Now uses the new shared object manager from Venpi Core 1.0.11.

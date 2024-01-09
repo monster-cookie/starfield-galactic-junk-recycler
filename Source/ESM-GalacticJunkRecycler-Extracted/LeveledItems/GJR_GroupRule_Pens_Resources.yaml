@@ -1,0 +1,28 @@
+FormKey: 000849:GalacticJunkRecycler.esm
+EditorID: GJR_GroupRule_Pens_Resources
+ChanceNone: 25
+MaxCount: 2
+Flags:
+- CalculateForEachItemInCount
+Entries:
+- Level: 1
+  Reference: 005568:Starfield.esm
+  Count: 1
+  ChanceNone: 0.09803921568627451
+- Level: 1
+  Reference: 0055A8:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055CB:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055CE:Starfield.esm
+  Count: 1
+  ChanceNone: 0.0392156862745098
+- Level: 1
+  Reference: 246B65:Starfield.esm
+  Count: 1
+  ChanceNone: 0.19607843137254902
+- Level: 1
+  Reference: 29F400:Starfield.esm
+  Count: 1

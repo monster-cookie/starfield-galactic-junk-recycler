@@ -1,7 +1,7 @@
-FormKey: 00080D:GalacticJunkRecycler.esm
-EditorID: GJR_Book_Recycle_List
+FormKey: 000845:GalacticJunkRecycler.esm
+EditorID: GJR_GroupRule_Paper_Resources
 ChanceNone: 25
-MaxCount: 1
+MaxCount: 2
 Flags:
 - CalculateForEachItemInCount
 Entries:
@@ -10,6 +10,9 @@ Entries:
   Count: 1
 - Level: 1
   Reference: 0055B1:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 0055B9:Starfield.esm
   Count: 1
 - Level: 1
   Reference: 246B72:Starfield.esm

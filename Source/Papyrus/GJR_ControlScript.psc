@@ -35,6 +35,12 @@ FormList Property GJR_GroupRule_Aid_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Aid_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Chems_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Chems_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Paper_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Paper_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Pens_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Pens_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Plastic_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Plastic_Resources Auto Const Mandatory
 
 ;; Resources - Inorganic
 MiscObject Property InorgCommonCopper Auto
@@ -96,6 +102,18 @@ Function ProcessItem(Form akBaseItem, ObjectReference akOutputContainer)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing tools group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Tools_Resources as Form, 1, True)
     Return
+  ElseIf (GJR_GroupRule_Paper_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing paper group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Paper_Resources as Form, 1, True)
+    Return
+  ElseIf (GJR_GroupRule_Pens_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing pens group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Pens_Resources as Form, 1, True)
+    Return
+  ElseIf (GJR_GroupRule_Plastic_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing plastic group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Plastic_Resources as Form, 1, True)
+    Return
   ElseIf (GJR_GroupRule_BarStuff_List.HasForm(akBaseItem))
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing bar stuff group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_BarStuff_Resources as Form, 1, True)
@@ -143,8 +161,9 @@ Function ProcessItem(Form akBaseItem, ObjectReference akOutputContainer)
     akOutputContainer.AddItem(GJR_Armor_Recycle_List as Form, 1, True)
     Return
   ElseIf  (itemType == enumItemType.Book)
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing book item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    akOutputContainer.AddItem(GJR_Book_Recycle_List as Form, 1, True)
+    ;; No longer taking books these should goto cora
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Returning book item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    ;; akOutputContainer.AddItem(GJR_Book_Recycle_List as Form, 1, True)
     Return
   ElseIf  (itemType == enumItemType.Misc)
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing misc item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
