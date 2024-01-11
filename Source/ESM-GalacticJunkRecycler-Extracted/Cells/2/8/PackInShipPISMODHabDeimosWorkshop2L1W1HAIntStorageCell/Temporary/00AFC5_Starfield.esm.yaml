@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 00AFC5:Starfield.esm
+Base: 253F9B:Starfield.esm
+LayeredMaterialSwaps:
+- 101D7D:Starfield.esm
+Layer: 31210E:Starfield.esm
+Position: -2.1423373, 5.017287, -0.7226075
+Rotation: 0.014478093, -0.026861247, 1.4813055

@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedObject
+FormKey: 00AFE1:Starfield.esm
+Base: 253F99:Starfield.esm
+LayeredMaterialSwaps:
+- 101D85:Starfield.esm
+- 14B9CC:Starfield.esm
+Layer: 31210E:Starfield.esm
+LinkedReferences:
+- KeywordOrReference: 2BBDC2:Starfield.esm
+  Reference: 08317C:Starfield.esm
+EnableParent:
+  Reference: 00083B:GalacticJunkRecycler.esm
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Position: 1.8686938, 5.6742887, -0.78918296
+Rotation: 0, -0, 0.55

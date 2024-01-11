@@ -1,5 +1,8 @@
 # Galactic Junk Recycler
 
+## Version 1.0.9
+* Reported bug for placement in deimos hab
+
 ## Version 1.0.8
 * New group rule for paper products, they break down into fiber, adhesive, polymer, polytextile, structural.
 * New group rule for pens/markers, they break down into lead, cosmetic, toxin, solvent, zero wire, and pigment.
