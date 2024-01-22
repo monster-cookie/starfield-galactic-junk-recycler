@@ -1,7 +1,7 @@
 # Galactic Junk Recycler
 
 ## Version 1.0.10
-* Nikki added new group recipes for Soft Drinks, Alcohol, and Ceramic's and going forward will be helping me with this project. 
+* Jane1986 added new group recipes for Soft Drinks, Alcohol, and Ceramic's and going forward will be helping me with this project. 
 
 ## Version 1.0.9
 * Fix for reported bug for placement in deimos hab
