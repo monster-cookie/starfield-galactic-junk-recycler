@@ -94,6 +94,24 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Plastic_Resources
       Object: 000848:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_DrinksAlcohol_List
+      Object: 00084C:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_DrinksAlcohol_Resources
+      Object: 000854:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_DrinksSoft_List
+      Object: 00084D:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_DrinksSoft_Resources
+      Object: 000855:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Ceramics_List
+      Object: 00084A:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Ceramics_Resources
+      Object: 000853:GalacticJunkRecycler.esm
   Script:
     Name: ''
 Data:

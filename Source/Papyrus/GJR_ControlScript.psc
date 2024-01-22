@@ -41,6 +41,12 @@ FormList Property GJR_GroupRule_Pens_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Pens_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Plastic_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Plastic_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_DrinksAlcohol_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_DrinksAlcohol_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_DrinksSoft_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_DrinksSoft_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Ceramics_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Ceramics_Resources Auto Const Mandatory
 
 ;; Resources - Inorganic
 MiscObject Property InorgCommonCopper Auto
@@ -137,6 +143,17 @@ Function ProcessItem(Form akBaseItem, ObjectReference akOutputContainer)
   ElseIf (GJR_GroupRule_AlienFood_List.HasForm(akBaseItem))
     VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing alien food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_AlienFood_Resources as Form, 1, True)
+    Return
+  ElseIf (GJR_GroupRule_DrinksAlcohol_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing alcoholic drinks group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_DrinksAlcohol_Resources as Form, 1, True)
+  ElseIf (GJR_GroupRule_DrinksSoft_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing nonalcoholic drinks group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_DrinksSoft_Resources as Form, 1, True)
+    Return
+  ElseIf (GJR_GroupRule_Ceramics_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing ceramics group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Ceramics_Resources as Form, 1, True)
     Return
   EndIf
 

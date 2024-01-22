@@ -1,5 +1,8 @@
 # Galactic Junk Recycler
 
+## Version 1.0.10
+* Nikki added new group recipes for Soft Drinks, Alcohol, and Ceramic's and going forward will be helping me with this project. 
+
 ## Version 1.0.9
 * Fix for reported bug for placement in deimos hab
 
@@ -42,8 +45,8 @@
 
 ## Version 1.0.1
 * Added a few direct map conversion for testing
-*   Vacuum Tape -> 0-4 Adhesive & Fiber
-*   Eggmund Desk Assistant -> 0-4 Copper, Gold, and 0-2 Isocentered Magnet
+  * Vacuum Tape -> 0-4 Adhesive & Fiber
+  * Eggmund Desk Assistant -> 0-4 Copper, Gold, and 0-2 Isocentered Magnet
 * Added back the inventory filter registration, it is actually used somehow. Not having its defined breaks the container events after long delay. /facepalm
 
 ## Version 1.0.0
