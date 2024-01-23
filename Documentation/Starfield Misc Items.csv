@@ -1,0 +1,1302 @@
+Record,FULL,EDID
+355212,,Desktop_TestClutter01
+2191259,ȀȀȀ Artifact ALPHA,Artifact_ALPHA
+2191257,ȀȀȀ Artifact BETA,Artifact_BETA
+2191256,ȀȀȀ Artifact CHI,Artifact_CHI
+2191255,ȀȀȀ Artifact DELTA,Artifact_DELTA
+2191254,ȀȀȀ Artifact EPSILON,Artifact_EPSILON
+2191253,ȀȀȀ Artifact ETA,Artifact_ETA
+2191252,ȀȀȀ Artifact GAMMA,Artifact_GAMMA
+2191251,ȀȀȀ Artifact IOTA,Artifact_IOTA
+2191250,ȀȀȀ Artifact KAPPA,Artifact_KAPPA
+2191249,ȀȀȀ Artifact LAMBDA,Artifact_LAMDA
+2191248,ȀȀȀ Artifact MU,Artifact_MU
+2191247,ȀȀȀ Artifact NU,Artifact_NU
+2191246,ȀȀȀ Artifact OMEGA,Artifact_OMEGA
+2191245,ȀȀȀ Artifact OMICRON,Artifact_OMICRON
+2191244,ȀȀȀ Artifact PHI,Artifact_PHI
+2191243,ȀȀȀ Artifact PI,Artifact_PI
+2191242,ȀȀȀ Artifact PSI,Artifact_PSI
+2191241,ȀȀȀ Artifact RHO,Artifact_RHO
+2191240,ȀȀȀ Artifact SIGMA,Artifact_SIGMA
+2191239,ȀȀȀ Artifact TAU,Artifact_TAU
+2191238,ȀȀȀ Artifact THETA,Artifact_THETA
+2191260,ȀȀȀ Artifact UPSILON,Artifact_UPSILON
+2191237,ȀȀȀ Artifact XI,Artifact_XI
+2191258,ȀȀȀ Artifact ZETA,Artifact_ZETA
+10,ȀȀȀ Digipick,Digipick
+410276,ȀȀ Crate of Adaptive Clothing,MissionCargoType01
+410278,ȀȀ Crate of Anti-Venin,MissionCargoType03
+2196176,ȀȀ Crate of Assorted Jewelry,MissionCargoType04
+2196175,ȀȀ Crate of Broadcast Nodes,MissionCargoType05
+2196174,ȀȀ Crate of Catalysts,MissionCargoType06
+2196173,ȀȀ Crate of Cellular Inhibitors,MissionCargoType07
+2196172,ȀȀ Crate of Cherenkov Converters,MissionCargoType08
+2196171,ȀȀ Crate of Choice Meat Cuts,MissionCargoType09
+2196169,ȀȀ Crate of Disinfectants,MissionCargoType11
+2196167,ȀȀ Crate of Electro-Plated Wafers,MissionCargoType13
+2196168,ȀȀ Crate of Electrolytic Substrates,MissionCargoType12
+2196166,ȀȀ Crate of Exotic Furniture,MissionCargoType14
+2196165,ȀȀ Crate of Exotic Liquors,MissionCargoType15
+2196164,ȀȀ Crate of Fermented Brews,MissionCargoType16
+2196163,ȀȀ Crate of Frozen Meat,MissionCargoType17
+2196162,ȀȀ Crate of Fruits,MissionCargoType18
+2196161,ȀȀ Crate of Geothermal Probes,MissionCargoType19
+2196160,ȀȀ Crate of Grain,MissionCargoType20
+2196159,ȀȀ Crate of Guidance Systems,MissionCargoType21
+2196158,ȀȀ Crate of Hazmat Detectors,MissionCargoType22
+2196157,ȀȀ Crate of Heat Sinks,MissionCargoType23
+2196170,ȀȀ Crate of Hygiene Products,MissionCargoType10
+2196156,ȀȀ Crate of Industrial Masers,MissionCargoType24
+2196155,ȀȀ Crate of Inertial Batteries,MissionCargoType25
+2196154,ȀȀ Crate of Integrated Circuits,MissionCargoType26
+2196153,ȀȀ Crate of Integrity Response Drones,MissionCargoType27
+2196152,ȀȀ Crate of Laser Diodes,MissionCargoType28
+2196151,ȀȀ Crate of LED Illuminators,MissionCargoType29
+2196150,ȀȀ Crate of Low-K Superconductors,MissionCargoType30
+2196149,ȀȀ Crate of Meat Byproducts,MissionCargoType31
+2196148,ȀȀ Crate of Medical Scanners,MissionCargoType32
+410277,ȀȀ Crate of Medical Treatments,MissionCargoType02
+2196147,ȀȀ Crate of Micro Drones,MissionCargoType33
+2196146,ȀȀ Crate of Micro Motors,MissionCargoType34
+2196145,ȀȀ Crate of Monofilament Drill Bits,MissionCargoType35
+2196144,ȀȀ Crate of Nanobots,MissionCargoType36
+2196143,ȀȀ Crate of Neocranial Probes,MissionCargoType37
+2196142,ȀȀ Crate of Optical Resonators,MissionCargoType38
+2196141,ȀȀ Crate of Organic Mortar,MissionCargoType39
+2196140,ȀȀ Crate of Parcels and Mail,MissionCargoType40
+2196139,ȀȀ Crate of Photovoltaic Cells,MissionCargoType41
+2196138,ȀȀ Crate of Polysensorial Art,MissionCargoType42
+2196137,ȀȀ Crate of Preservative,MissionCargoType43
+2196136,ȀȀ Crate of Protein Delicacies,MissionCargoType44
+2196135,ȀȀ Crate of Psychoactive Spices,MissionCargoType45
+2196134,ȀȀ Crate of Radiological Amplifers,MissionCargoType46
+2196133,ȀȀ Crate of Reactive Paints,MissionCargoType47
+2196132,ȀȀ Crate of Recursion Modules,MissionCargoType48
+2196131,ȀȀ Crate of Robotic Inverters,MissionCargoType49
+2196130,ȀȀ Crate of Signal Amplifiers,MissionCargoType50
+2196129,ȀȀ Crate of Smart Sensors,MissionCargoType51
+2196128,ȀȀ Crate of Specialty Crops,MissionCargoType52
+2196127,ȀȀ Crate of Super Luminescent Dye,MissionCargoType53
+2196126,ȀȀ Crate of Synthetic Synapses,MissionCargoType54
+2196125,ȀȀ Crate of Synthetic Vaccines,MissionCargoType55
+2196124,ȀȀ Crate of Telemetry Processors,MissionCargoType56
+2196123,ȀȀ Crate of Ultra Batteries,MissionCargoType57
+2196122,ȀȀ Crate of Ultra Light Frames,MissionCargoType58
+2196121,ȀȀ Crate of Ultra Reflective Mirrors,MissionCargoType59
+2196120,ȀȀ Crate of Unusual Wines,MissionCargoType60
+2196119,ȀȀ Crate of Vegetables,MissionCargoType61
+639784,ȀȀ Earth Savior Award,CF04_ESAward
+527988,ȀȀ Chronomark Watch Case,ChronomarkCase01
+15,ȀȀ Credits,Credits
+279989, HopeTech Trophy,HopeTech_TrophyPlate01D
+279990, HopeTech Trophy,HopeTech_TrophyPlate01C
+279991, HopeTech Trophy,HopeTech_TrophyPlate01B
+279992, HopeTech Trophy,HopeTech_TrophyPlate01A
+2012661, Robotics Part,RobotMachinePart01
+165357, Toy Rocket,LC017_Nasa_Collectable_ToyRocket01
+2204, Toy Space Shuttle,SpaceShuttleToys
+2187, Toy Spaceship,AK_Toy_Spaceship_01
+1399173, Deployment Deck,Deployment_Deck_01
+2824305, Desktop Organizer,DesktopOrganizer01
+2209783, Utensil Holder,Kitchen_Utensil_Holder01
+1238436, Old Earth Flip Lighter,Exotic_Antique_Lighter01
+2099666, Blender Lid,Blender_LID01
+10404, Food Container Lid,FoodDrink_Set_Container01_Empty_Lid
+1641802, Lid,KidneyDish03_Lid
+1641804, Lid,KidneyDish02_Lid
+1641806, Lid,KidneyDish01_Lid
+1273933, Moonshine Pot Lid,Bootleg_Moonshine_Pot01_Lid01
+2452243, TerraBrew Lid,CoffeeToGoCupLid01
+403582, Tranquilitea "To Go" Cup,TranquiliteaToGoCupEmptyWithLid01
+2802174, Oven Mitt,Kitchenware_OvenMitt01
+2802198, Dishrag,Kitchenware_Dishrag01
+2876909, Dishrag,Dishrag01
+43865, Tissues,TissueBox01b_Black
+43866, Tissues,TissueBox01_Black
+43867, Tissues,TissueBox01b_Metal
+43868, Tissues,TissueBox01_Metal
+2129691, Tissues,TissueBox01b
+2824356, Tissues,TissueBox01
+2099665, Blender Base,Blender_Base01
+1137015, Toilet Paper,ToiletPaperRoll01
+1008465, Toilet Paper Tube,ToiletPaperRoll01Empty
+1121960, Samson’s Art,City_newatlantis_z_theartcollector_artwork
+2357223, Stack of Space Frog Drawings,ffCydoniaZ04_Drawing
+1997051, Vae Victis Poster,FFDenR01_PosterMiscItem
+2771870, Solomon's Maps,MQ103SolomonMap
+3591407, Antique Computer,Antique_OldPC01
+1488083, Derelict Ship Flight Data,SE_GenericDerelict_BlackBox
+2041218, GalBank Data Core,CF_Galbank_DataCore_Active
+2041219, GalBank Data Core,CF_Galbank_DataCore_Inactive
+2138096, Hammer,Tool_Hammer02
+2144645, Hammer,Tool_Hammer03
+2804065, Hammer,Tool_Hammer01
+2138098, Chisel,Tool_Chisel03
+2138099, Chisel,Tool_Chisel02
+2138100, Chisel,Tool_Chisel01
+2138093, Ratchet,Tool_Ratchet01
+2138092, Screwdriver,Tool_Screwdriver02
+2144638, Screwdriver,Tool_Screwdriver01
+1311259, Cube,Desktop_CubeToy01
+1220701, Spyglass,TelescopeHandheld01
+1220702, Spyglass Case,TelescopeHandheldCase01
+2433040, Microscope,Microscope02Science
+1220707, Traditional Microscope,Microscope01
+3938226, Circuit Board,Circuit_Board01
+3938228, Circuit Board,Circuit_Board02
+3938229, Circuit Board,Circuit_Board03
+3938230, Circuit Board,Circuit_Board04
+3938231, Circuit Board,Circuit_Board05
+3938383, Circuit Board,Circuit_Board01A
+3938409, Circuit Board,Circuit_Board03A
+3938424, Circuit Board,Circuit_Board06
+3938425, Circuit Board,Circuit_Board07
+3938426, Circuit Board,Circuit_Board08
+3938480, Circuit Board,Circuit_Board09
+2096262, Plunger,Plunger02
+2096263, Plunger,Plunger01
+64475, Portable Desk Fan,Deskfan03
+2824364, Portable Desk Fan,Deskfan01
+1225978, Stylized Desk Fan,Exotic_DeskFan01
+1381514, Stylized Desk Fan,Exotic_DeskFan01On
+2802171, Grinder,Kitchenware_Grinder01b
+2802172, Grinder,Kitchenware_Grinder01
+635274, Desk Phone,LC017_NASA_DeskPhone01
+615470, Agent Plato's Package,FFNewAtlantis02_Package
+2666781, Cosmetics Supply Box,BeautySupplyBox01
+1392036, Empty Priority Package,UC_GG_Connection_Package
+1398392, General Supply Crate,ResearchUI_Supplies_Generic_NOCLUTTER
+3408550, Neshar's Package,Neon_Chem01_Package
+2535504, Package for Nyssa,City_NA_Viewport01_Maguffin
+2316578, Peter Brennan's Package,City_CY_RedTape02_Package
+2545745, Refined Rothicite Shipment,RI06_RothiciteShipment
+243829, Salinas's Package,City_NewAtlantis_Z_AShipmentForSalinas_Box
+463956, Solomon's Art,City_NewAtlantis_PackageForNyssa01
+375039, Star Parcel Package,SE_FAB14_StarParcelPackage
+3462537, Yannick's Package,Neon_Chem03_AuroraStash
+373988, Antique Video Tape,Antique_Video_Tape01
+2548431, Hypno Art Lamp,LavaLamp01
+1445535, Lamp,AmbiantLampDesk01Off01
+1445536, Lamp,AmbiantLampDesk01On01
+1311261, Lamp Planter,Desktop_HerbLamp01
+227519, Impact Driver,Tool_ImpactDriver02
+227521, Impact Driver,Tool_ImpactDriver03
+227524, Impact Driver,Tool_ImpactDriver04
+227526, Impact Driver,Tool_ImpactDriver05
+227527, Impact Driver,Tool_ImpactDriver01
+1220711, Binoculars,Binoculars01
+1241340, Art Deco Sun Sculpture,Exotic_ClassicSunDial
+3712205, Desktop Globe,Desktop_PlanetGlobe02
+1311257, Desktop Globe Sculpture,Desktop_PlanetGlobe01
+1239427, Levitating Desk Planet,Exotic_MagnetPlanet01
+1241342, Planetary System Sculpture,Exotic_SystemMiniature
+1767010, Baking Pan,Kitchenware_Baking_Pan
+2819702, Pan,Kitchenware_Pan01
+2819694, Pot,Kitchenware_Pot03
+2819704, Pot,Kitchenware_Pot02
+2819706, Pot,Kitchenware_Pot01
+2513628, Erlenmeyer Flask,ScienceGlass_ErlenmFlask01
+1598401, Scientific Sample,ScienceGlass_Vial03Closed01Full03
+1598400, Vial,ScienceGlass_Vial03Closed01Full04
+1598402, Vial,ScienceGlass_Vial03Closed01Full02
+2513622, Vial,ScienceGlass_Vial02
+2513623, Vial,ScienceGlass_Vial02Closed01
+2513624, Vial,ScienceGlass_Vial03
+2513625, Vial,ScienceGlass_Vial03Closed01
+2513632, Vial,ScienceGlass_Vial01
+2513657, Vial,ScienceGlass_Vial03Closed01Full01
+2513660, Vial,ScienceGlass_Vial02Closed01Full01
+2513665, Vial,ScienceGlass_Vial01Full01
+1307387, Bar Spoon,Bar_Spoon03
+1307388, Bar Spoon,Bar_Spoon02
+1307389, Bar Spoon,Bar_Spoon01
+2209788, Ladle,Kitchen_Utensil_Ladle01
+2209789, Spatula,Kitchen_Utensil_Spatula01
+257466, Spoon,Dining_Spoon01
+407723, Spoon,OpiInd_UtensilSpoon01
+1041013, Spoon,Kitchenware_Spoon01
+2569149, Dauntless Crew Genetag,COM_SMQ01_Genetag
+2298675, Genetag: Sanon, Hadrian,UC02_HadrianGenetag
+2556452, UC Military Genetag,UC_Genetag01
+2395142, UC Science Division ID: Orlase, Reginald,UC06_OrlaseID
+1615979, Bogdonov's Boutique Liquor (Box Set),UC_GG_Bet_Liquor
+1241350, Exotic Bottle,Exotic_bottle_01
+257458, Liquor Decanter,Bar_Decanter02
+2254555, Red Harvest Reserve,City_CY_Runaway01_Whiskey_DONOTPLACE
+257459, Wine Decanter,Bar_Decanter01
+257452, Pepper Shaker,Bar_PepperShaker01
+257451, Salt Shaker,Bar_SaltShaker01
+2140759, Push Broom,Broom_03_SwapToMovableStatic
+1225977, Triangular Organizer,Exotic_TriangularOrganizer01
+2192, Antique Toy Motorcycle,AntiqueMetalAutoToys01
+2194, Antique Toy Motorcycle,AntiqueMetalAutoToys02
+2196, Antique Toy Motorcycle,AntiqueMetalAutoToys03
+2198, Antique Toy Motorcycle,AntiqueMetalAutoToys04
+1231344, Desktop Digiframe,DigitalPictureFrame01_Cycle_Images01
+1311234, Personal Digiframe,Desktop_PhotoFrame01
+1311250, Desktop Geode Sculpture,Desktop_Geode01
+1230541, Space Rock Display,ExoticSpaceRockDisplay01
+1641796, Scissors,Scissors_03
+1641797, Scissors,Scissors_02
+1641798, Scissors,Scissors_01
+2802176, Scissors,Kitchenware_Scissors01
+257465, Fine Dining Fork,Dining_Fork01
+1041010, Fork,Kitchenware_Fork01
+257469, Knife,Dining_Knife01
+407722, Knife,OpiInd_UtensilKnife01
+1041012, Knife,Kitchenware_Knife01
+407721, Steel Fork,OpiInd_UtensilFork01
+1026426, Steel Cup,AK_Cup_Metal_01
+1441138, Steel Cup,AK_Cup_Metal_02
+1426693, Tea Cup,RyujinTower_TeaSets_cup
+2548974, Tea Cup,SeokguhTeaCup02
+2548975, Tea Cup,SeokguhTeaCup01
+1168758, Prototype Equipment,Prototype_Tech_03
+1168759, Prototype Equipment,Prototype_Tech_02
+1168760, Prototype Equipment,Prototype_Tech_01
+3938495, High-Speed Data Cable,TechWire_01
+3938498, High-Speed Data Cable,TechWire_02
+3938502, High-Speed Data Cable,TechWire_03
+2667382, Wire Spool,WireSpoolSmall01
+554301, Cased FreeStar Deputy Badge,FreeStarDeputyBadgeCase_Silver
+554303, Cased FreeStar Ranger Badge,FreeStarRangeBadgeCase_Gold
+554300, FreeStar Deputy Badge,FreeStarDeputyBadge
+905737, FreeStar Deputy Badge,FreeStarRangerBadge
+554302, FreeStar Ranger Badge,FreeStarRangeBadge_Cinimatic
+2138095, Tape Measure,Tool_MeasureTape01
+3015258, Empty Hookah Canister,Canisterhookah_Empty
+42195, Empty Oxygen Booster,OxygenRescueMask01
+3015117, Hookah Canister,Canisterhookah01
+3015118, Hookah Canister,Canisterhookah02
+3015119, Hookah Canister,Canisterhookah03
+3015120, Hookah Canister,Canisterhookah04
+1237423, Personal Groomer,Exotic_PersonalGroomer01
+197823, Dumbbell,Weight_Dumbell01
+1584223, Triple Grip Dumbbell,Triple_Grip_Dumbell
+1107598, Weight Plate,Weight_Plate01
+1307391, Cocktail Muddler,Bar_Muddler01
+2209787, Mortar,Kitchen_Mortar01
+2209785, Pestle,Kitchen_Pestle01
+2276847, Wooden Duck,WoodenDuckToy01
+1641803, Kidney Dish,KidneyDish03_Base
+1641805, Kidney Dish,KidneyDish02_Base
+1641807, Kidney Dish,KidneyDish01_Base
+1273934, Moonshine Pot,Bootleg_Moonshine_Pot01
+2802164, Electric Tea Pot,Kitchenware_Teasteeper01
+2074502, Kitchen Tea Steeper,Kitchenware_Teasteeper_Full
+1241347, Quick Boil Coffee Brewer,Exotic_Coffee_Kettle
+1426692, Tea Pot,RyujinTower_TeaSets_pot
+2548981, Tea Pot,SeokguhTeapot01
+1641799, Scalpel,MedicalScalpel
+2804060, Staple Gun,Tool_StapleGun01
+2042584, Alien Bug Paperweight,Deco_Display02b_Table
+2042599, Alien Critter Display,Deco_Display01b_Table
+2042595, Alien Tick Display,Deco_Display01c_Table
+2042570, Alien Trilobyte Display,Deco_Display03c_Table
+1311253, Desktop Fish Bowl,Desktop_Fishbowl01
+2042591, Eargrub Display,Deco_Display01d_Table
+2042579, Eargrub Paperweight,Deco_Display02d_Table
+2042602, Empty Desktop Display,Deco_Display01a_Table
+2042588, Empty Half-Globe Display,Deco_Display02a_Table
+2042575, Empty Stadium Display,Deco_Display03a_Table
+2042571, Encased Alien Trilobyte,Deco_Display03b_Table
+2042582, Insectoid Paperweight,Deco_Display02c_Table
+1311264, Microfloater Terrarium,Desktop_Terrarium01
+2042592, Nosegrub Display,Deco_Display01e_Table
+2042578, Nosegrub Paperweight,Deco_Display02e_Table
+197847, Molecule Extractor,MoleculeExtractor01
+2282497, Probe Control Unit,MQ207C_ProbeControlUnit
+2457272, Aqueous Hematite Data,UC03_HematiteDataMisc
+1452552, Case T-18: Terrormorphs,ArmisticeDataObject_01
+2422856, Case T-18: Terrormorphs,UC05_TerrormorphData
+2075801, Encrypted Files,RI04_EncryptedFiles
+1861875, Lost Slate,FFParadisoZ02_Slate
+2796588, Nina's Presentation,RI02_NinaPresentation
+2796581, Nina's Presentation (Fake),RI02_NinaPresentationReplacement
+2078618, Nyx's Program: Rover,RI04_NyxProgram
+1163500, Overseer Program,RI07_OverseerProgram
+1163547, Project Dominion,RI03_DataSlate_ProjectDominion
+2767110, Prototype Schematic,RIR05_Schematic
+2905798, Unmarked Data Slate,RIR01_DataSlate
+1163563, Untraceable Storage Slate,RI03_DataSlate_Empty
+1937389, Updated Overseer Program,RI07_UpdatedOverseerProgram
+2802196, Bowl Lid,Kitchenware_BowlLid01
+2080244, Container Lid,Kitchenware_Storagecontainer03Lid
+2802182, Container Lid,Kitchenware_Storagecontainer02Lid
+2802188, Container Lid,Kitchenware_Storagecontainer01Lid
+2802170, Grinder Lid,Kitchenware_Grinder01Lid
+2819701, Pan Lid,Kitchenware_Pan01Lid
+2819693, Pot Lid,Kitchenware_Pot03Lid
+2819703, Pot Lid,Kitchenware_Pot02Lid
+2819705, Pot Lid,Kitchenware_Pot01Lid
+2804063, Vacuum Tape,Tool_DuctTape01
+1641794, Swab Container,Swabs01B
+1641795, Swabs,Swabs01A
+2786027, ARC Device,RIR04_Device
+2535488, Bio-Sensor,City_NA_Botany01_Sensor02
+2535490, Bio-Sensor,City_NA_Botany01_Sensor
+1725021, Keoni's Sensor,AkilaAshta_Sensor
+3192980, Tracking Sensor,FFCydoniaZ08_TrackingDevice
+1358080, Blue Fluted Vase,VaseTableLG03_Blue01
+1358097, Blue Microvase,VaseTableSM01_Blue01
+1358084, Blue Olpe Vase,VaseTableMed01_Blue01
+1358072, Blue Plant Vase,VaseTableLG01_Blue01
+1358076, Blue Xenoflower Vase,VaseTableLG02_Blue01
+2824285, Crystal Desk Phial,VaseTableSM02
+1358079, Green Fluted Vase,VaseTableLG03_Green01
+1358096, Green Microvase,VaseTableSM01_Green01
+1358083, Green Olpe Vase,VaseTableMed01_Green01
+1358071, Green Plant Vase,VaseTableLG01_Green01
+1358075, Green Xenoflower Vase,VaseTableLG02_Green01
+1358078, Mustard Fluted Vase,VaseTableLG03_Orange01
+1358088, Mustard Microvase,VaseTableSM01_Orange01
+1358082, Mustard Olpe Vase,VaseTableMed01_Orange01
+1358070, Mustard Plant Vase,VaseTableLG01_Orange01
+1358074, Mustard Xenoflower Vase,VaseTableLG02_Orange01
+2824286, Small Crystal Desk Phial,VaseTableSM03
+1848518, Vase,VaseShelf_Sm02
+2824288, Vase,VaseFloorMed01
+2824290, Vase,VaseFloorLG01
+2824296, White Fluted Vase,VaseTableLG03
+2824292, White Microvase,VaseTableSM01
+2824294, White Olpe Vase,VaseTableMed01
+2824300, White Plant Vase,VaseTableLG01
+2824298, White Xenoflower Vase,VaseTableLG02
+1358077, Yellow Fluted Vase,VaseTableLG03_Yellow01
+1358086, Yellow Microvase,VaseTableSM01_Yellow01
+1358081, Yellow Olpe Vase,VaseTableMed01_Yellow01
+1358069, Yellow Plant Vase,VaseTableLG01_Yellow01
+1358073, Yellow Xenoflower Vase,VaseTableLG02_Yellow01
+2136036, Cement Bucket,Bucket_Open02_SwapToMovStatic
+2843959, "Solar Frontiers" Game,Boardgame02
+2843956, "Starlocked" Board Game,Boardgame01
+1643052, Symbol Game Mat,GameBoard_Mat01
+1264569, Wooden Puzzle Box,Puzzlebox01
+561244, Medical Supplies,FFNeonZ05_MedicalSupplies
+1794393, Medical Supplies,FFKeyZ02_MedicalSupplies
+2289410, Medical Supplies,CF02_MedicalSupplies
+2893105, Confidential Files,RIR02_ConfidentialFiles
+924633, Folder,Office_Folder02_Red01
+924634, Folder,Office_Folder02_Manilla01
+924635, Folder,Office_Folder02_Blue01
+924636, Folder,Office_Folder01_Red01
+924637, Folder,Office_Folder01_Manilla01
+924638, Folder,Office_Folder01_Blue01
+2012086, Folder,Office_Folder02
+2012087, Folder,Office_Folder01
+2430255, Folder,Office_FilingFolder01Open
+2802123, Folder,Office_FilingFolder01
+297022, Nasa Notebook,LC017_NASA_Notebook02
+297023, Nasa Notebook,LC017_NASA_Notebook01
+1814409, Note Pad,Office_NotePadLrg01
+2012083, Note Pad,Office_NotePad03
+2012084, Note Pad,Office_NotePad02
+2012085, Note Pad,Office_NotePad01
+1260817, Note Pads,Office_NotePad_Stack02
+1260818, Note Pads,Office_NotePad_Stack01
+1260819, Note Pads,Office_NotePadLrg_Stack02
+1260820, Note Pads,Office_NotePadLrg_Stack01
+752699, Notebook,Notebook01_Red01
+752700, Notebook,Notebook01_Black01
+752701, Notebook,Notebook02_Yellow01
+752702, Notebook,Notebook02_Red01
+752703, Notebook,Notebook02_Black01
+752704, Notebook,Notebook01_Yellow01
+1681033, Notebook,Notebook02
+1681061, Notebook,Notebook01
+297021, Notepad,LC017_NASA_NotepadLrg01
+1603247, Recruitment Materials,UC_GG_Marines_RecruitmentMaterials
+1235276, Scroll Holder,Exotic_Scroll_Holder01
+2667070, Cafeteria Tray,IndustrialCafeteriaTray01
+1311223, Desktop Paper Tray,Desktop_PaperTray01
+1311221, Document Tray,Desktop_PaperTrayEmpty01
+197827, Food Tray,FoodPackets_EmptyTray
+717821, Food Tray,FoamContainer01_Alt01
+1258343, Food Tray,FoamContainer01
+2477829, Meal Tray,FoodDrink_Set_PortableKit_TrayOpen01
+2477828, Meal Tray Lid,FoodDrink_Set_PortableKit_TrayLid01
+2477830, Meal Tray Three-Stack,FoodDrink_Set_PortableKit_TrayStack01
+2433622, Medical Sample Tray,GeneticSampler01
+2477827, Sealed Meal Tray,FoodDrink_Set_PortableKit_TrayClosed01
+2494263, Surgical Tray,MedicalSurgicalTray01
+697213, Synthefoam Container,FoamContainer03_Alt01
+717824, Synthefoam Container,FoamContainer02_Alt01
+1100816, Synthefoam Container,FoamContainer03
+1258342, Synthefoam Container,FoamContainer02
+2452244, TerraBrew Cup Carrier,CoffeeToGoCupHolderEmpty01
+2209786, Tray,Kitchen_Tray01
+2824244, Utensil Tray,Kitchenware_UtensilTray01
+2824234, Cutting Board,Kitchenware_CuttingboardSM01
+2824236, Cutting Board,Kitchenware_CuttingboardMed01
+2824238, Cutting Board,Kitchenware_CuttingboardLG01
+1965215, Brochure,SirenoftheStars_Pamphlet01
+1965216, Brochure,Sirenofthestars_Pamphlet06
+1965217, Brochure,Sirenofthestars_Pamphlet05
+1965218, Brochure,Sirenofthestars_Pamphlet04
+1965220, Brochure,SirenoftheStars_Pamphlet02
+1965223, Brochure,Sirenofthestars_Pamphlet03
+3177049, Pamphlet,LC017_NASA_Pamphlet01
+3177065, Pamphlet,LC017_NASA_Pamphlet02
+1223288, Pamphlet Holder,PamphletHolder01
+2171066, Black Stylus,Pen_Stylus01_Black01
+2171064, Blue Stylus,Pen_Stylus01_Blue01
+2171063, Gray Stylus,Pen_Stylus01_Gray01
+1991124, Marker,Office_Whiteboardmarker02_Red
+1991125, Marker,Office_Whiteboardmarker02_Green
+1991126, Marker,Office_Whiteboardmarker02_Blue
+1991127, Marker,Office_Whiteboardmarker02_Black
+1991128, Marker,Office_Whiteboardmarker01_Red
+1991129, Marker,Office_Whiteboardmarker01_Green
+1991130, Marker,Office_Whiteboardmarker01_Blue
+1991131, Marker,Office_Whiteboardmarker01_Black
+2802121, Marker,Office_Whiteboardmarker01
+1232992, Pen,Digitalnotetabletpen01
+2012234, Pen,Office_Pen02
+2012235, Pen,Office_Pen01
+3168544, Pen,LC017_NASA_Office_Pen01
+1311212, Pencil Case,Desktop_PencilCase01
+2824307, Pencil Holder,Pencilholder01
+2171062, Red Stylus,Pen_Stylus01_Red01
+2171061, Teal Stylus,Pen_Stylus01_Teal01
+2171065, Yellow Stylus,Pen_Stylus01_Yellow01
+969965, Emergency Power Cell,Power_Cell
+646761, MicroCell Conductor Array,UC07_Microcell_ConductorArray
+646760, MicroCell Power Source,UC07_Microcell_PowerSource
+646762, MicroCell Shielding,UC07_Microcell_Shielding
+2923469, TerraBrew Order,RI01_TerraBrewOrder
+2121993, Aceles Gene Sample (Alpha),UC08_AcelesCellSample_Alpha
+548816, Aceles Gene Sample (Beta),UC08_AcelesCellSample_Beta
+548815, Aceles Gene Sample (Gamma),UC08_AcelesCellSample_Gamma
+2121992, Anomalous Sample,UC08_TerrormorphCellSample
+2496351, Aurora Sample,CF01_AuroraShipSample
+1997232, Cell Sample,UCR04_SpecimenSample
+2121962, Metamorphed Tissue Sample,UC08_TransformedTerrormorphCellSample
+2555789, Terrormorph Cell Sample,UC03_TerrormorphCellSample
+2386794, Adaptive Frame,Mfg_Tier01_AdaptiveFrame
+2495125, Adhesive (Bone),OrgRareAdhesive_Bone
+2495124, Adhesive (Carapace),OrgRareAdhesive_Carapace
+2493883, Adhesive (Flower),OrgRareAdhesive_Flower
+2495123, Adhesive (Gland),OrgRareAdhesive_Gland
+2495122, Adhesive (Hide),OrgRareAdhesive_Hide
+2493882, Adhesive (Leaf),OrgRareAdhesive_Leaf
+2493881, Adhesive (Root),OrgRareAdhesive_Root
+2493880, Adhesive (Sap),OrgRareAdhesive_Sap
+2493879, Adhesive (Seed),OrgRareAdhesive_Seed
+2493878, Adhesive (Stalk),OrgRareAdhesive_Stalk
+2495121, Adhesive (Tissue),OrgRareAdhesive_Tissue
+2495120, Adhesive (Vital Fluids),OrgRareAdhesive_Fluids
+21937, Adhesive,OrgRareAdhesive
+2109274, Aldumite Drilling Rig,Mfg_Tier03_AldumiteDrillingRig
+24044, Aldumite,InorgUniqueAldumite
+21872, Alkanes,InorgUncommonAlkanes
+21885, Aluminum,InorgCommonAluminum
+2495119, Amino Acids (Bone),OrgRareAminoAcids_Bone
+2495118, Amino Acids (Carapace),OrgRareAminoAcids_Carapace
+2493877, Amino Acids (Flower),OrgRareAminoAcids_Flower
+2495116, Amino Acids (Gland),OrgRareAminoAcids_Gland
+2495115, Amino Acids (Hide),OrgRareAminoAcids_Hide
+2493876, Amino Acids (Leaf),OrgRareAminoAcids_Leaf
+2493875, Amino Acids (Root),OrgRareAminoAcids_Root
+2493874, Amino Acids (Sap),OrgRareAminoAcids_Sap
+2493873, Amino Acids (Seed),OrgRareAminoAcids_Seed
+2493872, Amino Acids (Stalk),OrgRareAminoAcids_Stalk
+2495114, Amino Acids (Tissue),OrgRareAminoAcids_Tissue
+2495117, Amino Acids (Vital Fluids),OrgRareAminoAcids_Fluids
+21965, Amino Acids,OrgRareAminoAcids
+2495113, Analgesic (Bone),OrgRareAnalgesic_Bone
+2495112, Analgesic (Carapace),OrgRareAnalgesic_Carapace
+2493871, Analgesic (Flower),OrgRareAnalgesic_Flower
+2495110, Analgesic (Gland),OrgRareAnalgesic_Gland
+2495109, Analgesic (Hide),OrgRareAnalgesic_Hide
+2493870, Analgesic (Leaf),OrgRareAnalgesic_Leaf
+2493869, Analgesic (Root),OrgRareAnalgesic_Root
+2493868, Analgesic (Sap),OrgRareAnalgesic_Sap
+2493816, Analgesic (Seed),OrgRareAnalgesic_Seed
+2493815, Analgesic (Stalk),OrgRareAnalgesic_Stalk
+2495108, Analgesic (Tissue),OrgRareAnalgesic_Tissue
+2495111, Analgesic (Vital Fluids),OrgRareAnalgesic_Fluids
+21929, Analgesic,OrgRareAnalgesic
+2495176, Antimicrobial (Bone),OrgUncommonAntimicrobial_Bone
+2495175, Antimicrobial (Carapace),OrgUncommonAntimicrobial_Carapace
+2493947, Antimicrobial (Flower),OrgUncommonAntimicrobial_Flower
+2495177, Antimicrobial (Gland),OrgUncommonAntimicrobial_Gland
+2422208, Antimicrobial (Hide),OrgUncommonAntimicrobial_Hide
+2493945, Antimicrobial (Leaf),OrgUncommonAntimicrobial_Leaf
+2493946, Antimicrobial (Root),OrgUncommonAntimicrobial_Root
+2493943, Antimicrobial (Sap),OrgUncommonAntimicrobial_Sap
+2493944, Antimicrobial (Seed),OrgUncommonAntimicrobial_Seed
+2493948, Antimicrobial (Stalk),OrgUncommonAntimicrobial_Stalk
+2422207, Antimicrobial (Tissue),OrgUncommonAntimicrobial_Tissue
+2422209, Antimicrobial (Vital Fluids),OrgUncommonAntimicrobial_Fluids
+21931, Antimicrobial,OrgUncommonAntimicrobial
+21883, Antimony,InorgExoticAntimony
+2740258, Aqueous Hematite,InorgUniqueAqueousHematite
+21896, Argon,InorgCommonArgon
+2495155, Aromatic (Bone),OrgRareAromatic_Bone
+2495151, Aromatic (Carapace),OrgRareAromatic_Carapace
+2493916, Aromatic (Flower),OrgRareAromatic_Flower
+2495154, Aromatic (Gland),OrgRareAromatic_Gland
+2495150, Aromatic (Hide),OrgRareAromatic_Hide
+2493915, Aromatic (Leaf),OrgRareAromatic_Leaf
+2493914, Aromatic (Root),OrgRareAromatic_Root
+2493913, Aromatic (Sap),OrgRareAromatic_Sap
+2493912, Aromatic (Seed),OrgRareAromatic_Seed
+2495153, Aromatic (Tissue),OrgRareAromatic_Tissue
+2495152, Aromatic (Vital Fluids),OrgRareAromatic_Fluids
+21944, Aromatic,OrgRareAromatic
+2386812, Austenitic Manifold,Mfg_Tier01_AusteniticManifold
+21893, Benzene,InorgUncommonBenzene
+22489, Beryllium,InorgUncommonBeryllium
+2495092, Biosuppressant (Bone),OrgExoticBiosuppressant_Bone
+2495091, Biosuppressant (Carapace),OrgExoticBiosuppressant_Carapace
+2493799, Biosuppressant (Flower),OrgExoticBiosuppressant_Flower
+2495089, Biosuppressant (Gland),OrgExoticBiosuppressant_Gland
+2495088, Biosuppressant (Hide),OrgExoticBiosuppressant_Hide
+2493798, Biosuppressant (Leaf),OrgExoticBiosuppressant_Leaf
+2493797, Biosuppressant (Root),OrgExoticBiosuppressant_Root
+2493796, Biosuppressant (Sap),OrgExoticBiosuppressant_Sap
+2493795, Biosuppressant (Seed),OrgExoticBiosuppressant_Seed
+2493794, Biosuppressant (Stalk),OrgExoticBiosuppressant_Stalk
+2495086, Biosuppressant (Tissue),OrgExoticBiosuppressant_Tissue
+2495090, Biosuppressant (Vital Fluids),OrgExoticBiosuppressant_Fluids
+21938, Biosuppressant,OrgExoticBiosuppressant
+1053299, Bulk Tranquilitea Breakfast,Tea_Container_Breakfast_Blend01
+1112581, Bulk Tranquilitea Chamomile,Tea_Container_Chamomile01
+732900, Bulk Tranquilitea Classic,Tea_Container_Black01
+622347, Bulk Tranquilitea Dynastic,Tea_Container_Dynastic01
+622349, Bulk Tranquilitea Earl Grey,Tea_Container_Earl01
+1183027, Bulk Tranquilitea Lemon,Tea_Container_Lemon01
+1053300, Bulk Tranquilitea Lotus,Tea_Container_Lotus_Blossom01
+622348, Bulk Tranquilitea Sleepy,Tea_Container_Sleepy01
+994436, Bulk Tranquilitea Sunray,Tea_Container_Sunray01
+493782, Caelumite,InorgUniqueCaelumite
+22495, Caesium,InorgExoticCaesium
+21894, Carboxylic Acids,InorgRareCarboxylicAcids
+1293724, Chasmbass Oil,ChasmbassOil
+21884, Chlorine,InorgCommonChlorine
+21886, Chlorosilanes,InorgUncommonChlorosilanes
+21877, Cobalt,InorgUncommonCobalt
+2470139, Coffee Bag,FoodDrink_Set_CoffeeBag01
+2386788, Comm Relay,Mfg_Tier01_CommRelay
+2386811, Control Rod,Mfg_Tier02_ControlRod
+21878, Copper,InorgCommonCopper
+2495149, Cosmetic (Bone),OrgUncommonCosmetic_Bone
+2495148, Cosmetic (Carapace),OrgUncommonCosmetic_Carapace
+2493911, Cosmetic (Flower),OrgUncommonCosmetic_Flower
+2495146, Cosmetic (Gland),OrgUncommonCosmetic_Gland
+2495145, Cosmetic (Hide),OrgUncommonCosmetic_Hide
+2493910, Cosmetic (Leaf),OrgUncommonCosmetic_Leaf
+2493909, Cosmetic (Root),OrgUncommonCosmetic_Root
+2493908, Cosmetic (Sap),OrgUncommonCosmetic_Sap
+2493907, Cosmetic (Seed),OrgUncommonCosmetic_Seed
+2493906, Cosmetic (Stalk),OrgUncommonCosmetic_Stalk
+2495144, Cosmetic (Tissue),OrgUncommonCosmetic_Tissue
+2495147, Cosmetic (Vital Fluids),OrgUncommonCosmetic_Fluids
+21928, Cosmetic,OrgUncommonCosmetic
+2386810, Deformable Nozzle,Mfg_Tier02_DeformableNozzle_NOCLUTTER
+2138159, Drilling Rig,Mfg_Tier02_DrillingRig
+21865, Dysprosium,InorgExoticDysprosium
+2386787, Electron Pump,Mfg_Tier03_ElectronPump_NOCLUTTER
+22497, Europium,InorgExoticEuropium
+2495170, Fiber (Bone),OrgCommonFiber_Bone
+2495171, Fiber (Carapace),OrgCommonFiber_Carapace
+2422212, Fiber (Hide),OrgCommonFiber_Hide
+2493934, Fiber (Leaf),OrgCommonFiber_Leaf
+2493936, Fiber (Root),OrgCommonFiber_Root
+2493935, Fiber (Stalk),OrgCommonFiber_Stalk
+2422211, Fiber (Tissue),OrgCommonFiber_Tissue
+21935, Fiber,OrgCommonFiber
+21879, Fluorine,InorgUncommonFluorine
+21917, Gastronomic Delight,OrgUniqueGastronomic
+21881, Gold,InorgRareGold
+2386808, Gravitic Laminate,Mfg_Tier02_GraviticLaminate_NOCLUTTER
+2386786, Gravity Inducer,Mfg_Tier03_GravityInducer_NOCLUTTER
+2495107, Hallucinogen (Bone),OrgRareHallucinogen_Bone
+2495106, Hallucinogen (Carapace),OrgRareHallucinogen_Carapace
+2493814, Hallucinogen (Flower),OrgRareHallucinogen_Flower
+2495104, Hallucinogen (Gland),OrgRareHallucinogen_Gland
+2495103, Hallucinogen (Hide),OrgRareHallucinogen_Hide
+2493813, Hallucinogen (Leaf),OrgRareHallucinogen_Leaf
+2493812, Hallucinogen (Root),OrgRareHallucinogen_Root
+2493811, Hallucinogen (Sap),OrgRareHallucinogen_Sap
+2493810, Hallucinogen (Seed),OrgRareHallucinogen_Seed
+2493809, Hallucinogen (Stalk),OrgRareHallucinogen_Stalk
+2495102, Hallucinogen (Tissue),OrgRareHallucinogen_Tissue
+2495105, Hallucinogen (Vital Fluids),OrgRareHallucinogen_Fluids
+2749445, Hallucinogen,OrgRareHallucinogen
+2386785, Helical Equalizer,Mfg_Tier03_HelicalEqualizer_NOCLUTTER
+21902, Helium-3,InorgCommonHelium3
+21930, High-Tensile Spidroin,OrgUniqueHighTensileSpidroin
+2495087, Hypercatalyst (Bone),OrgExoticHypercatalyst_Bone
+2495085, Hypercatalyst (Carapace),OrgExoticHypercatalyst_Carapace
+2493793, Hypercatalyst (Flower),OrgExoticHypercatalyst_Flower
+2495083, Hypercatalyst (Gland),OrgExoticHypercatalyst_Gland
+2495082, Hypercatalyst (Hide),OrgExoticHypercatalyst_Hide
+2493792, Hypercatalyst (Leaf),OrgExoticHypercatalyst_Leaf
+2493791, Hypercatalyst (Root),OrgExoticHypercatalyst_Root
+2493744, Hypercatalyst (Sap),OrgExoticHypercatalyst_Sap
+2493733, Hypercatalyst (Seed),OrgExoticHypercatalyst_Seed
+2493708, Hypercatalyst (Stalk),OrgExoticHypercatalyst_Stalk
+2495081, Hypercatalyst (Tissue),OrgExoticHypercatalyst_Tissue
+2495084, Hypercatalyst (Vital Fluids),OrgExoticHypercatalyst_Fluids
+2749453, Hypercatalyst,OrgExoticHypercatalyst
+21939, Immunostimulant,OrgUniqueImmunostimulant
+2113204, Indicite Wafer,Mfg_Tier03_IndiciteWafer
+309815, Indicite,InorgUniqueIndicite
+21882, Ionic Liquids,InorgExoticIonicLiquids
+21898, Iridium,InorgUncommonIridium
+21870, Iron,InorgCommonIron
+2386807, Isocentered Magnet,Mfg_Tier01_IsocenteredMagnet
+2386806, Isotopic Coolant,Mfg_Tier01_IsotopicCoolant
+21864, Lead,InorgCommonLead
+21887, Lithium,InorgRareLithium
+2493707, Lubricant (Flower),OrgExoticLubricant_Flower
+2495079, Lubricant (Gland),OrgExoticLubricant_Gland
+2495078, Lubricant (Hide),OrgExoticLubricant_Hide
+2493706, Lubricant (Leaf),OrgExoticLubricant_Leaf
+2493666, Lubricant (Root),OrgExoticLubricant_Root
+2493622, Lubricant (Sap),OrgExoticLubricant_Sap
+2493561, Lubricant (Seed),OrgExoticLubricant_Seed
+2493556, Lubricant (Stalk),OrgExoticLubricant_Stalk
+2495077, Lubricant (Tissue),OrgExoticLubricant_Tissue
+2495080, Lubricant (Vital Fluids),OrgExoticLubricant_Fluids
+21946, Lubricant,OrgExoticLubricant
+21918, Luxury Textile,OrgUniqueLuxuryTextile
+2386800, Mag Pressure Tank,Mfg_Tier01_MagPressureTank
+2495143, Membrane (Carapace),OrgUncommonMembrane_Carapace
+2493905, Membrane (Flower),OrgUncommonMembrane_Flower
+2495142, Membrane (Gland),OrgUncommonMembrane_Gland
+2495141, Membrane (Hide),OrgUncommonMembrane_Hide
+2493904, Membrane (Leaf),OrgUncommonMembrane_Leaf
+2493903, Membrane (Root),OrgUncommonMembrane_Root
+2493902, Membrane (Stalk),OrgUncommonMembrane_Stalk
+2495140, Membrane (Tissue),OrgUncommonMembrane_Tissue
+21936, Membrane,OrgUncommonMembrane
+21915, Memory Substrate,OrgUniqueMemorySubstrate
+2606241, Mercury,InorgRareMercury
+2495169, Metabolic Agent (Bone),OrgCommonMetabolicAgent_Bone
+2495168, Metabolic Agent (Carapace),OrgCommonMetabolicAgent_Carapace
+2493932, Metabolic Agent (Flower),OrgCommonMetabolicAgent_Flower
+2495167, Metabolic Agent (Gland),OrgCommonMetabolicAgent_Gland
+2495166, Metabolic Agent (Hide),OrgCommonMetabolicAgent_Hide
+2493931, Metabolic Agent (Leaf),OrgCommonMetabolicAgent_Leaf
+2493930, Metabolic Agent (Root),OrgCommonMetabolicAgent_Root
+2493929, Metabolic Agent (Sap),OrgCommonMetabolicAgent_Sap
+2493928, Metabolic Agent (Seed),OrgCommonMetabolicAgent_Seed
+2493933, Metabolic Agent (Stalk),OrgCommonMetabolicAgent_Stalk
+2749432, Metabolic Agent (Tissue),OrgCommonMetabolicAgent_Tissue
+2749433, Metabolic Agent (Vital Fluids),OrgCommonMetabolicAgent_Fluids
+2749436, Metabolic Agent,OrgCommonMetabolicAgent
+2386783, Microsecond Regulator,Mfg_Tier03_MicrosecondRegulator
+2386805, Molecular Sieve,Mfg_Tier02_MolecularSieve
+2386804, Monopropellant,Mfg_Tier01_Monopropellant
+21888, Neodymium,InorgRareNeodymium
+21895, Neon,InorgExoticNeon
+2749449, Neurologic,OrgUniqueNeurologic
+2386782, Neutral Capacitor,Mfg_Tier03_NeutralCapacitor_NOCLUTTER
+21874, Nickel,InorgCommonNickel
+2386809, Nuclear Fuel Rod,Mfg_Tier02_NuclearFuelRod
+2495174, Nutrient (Bone),OrgCommonNutrient_Bone
+2495172, Nutrient (Carapace),OrgCommonNutrient_Carapace
+2493942, Nutrient (Flower),OrgCommonNutrient_Flower
+2495173, Nutrient (Gland),OrgCommonNutrient_Gland
+2749430, Nutrient (Hide),OrgCommonNutrient_Hide
+2493941, Nutrient (Leaf),OrgCommonNutrient_Leaf
+2493940, Nutrient (Root),OrgCommonNutrient_Root
+2493939, Nutrient (Sap),OrgCommonNutrient_Sap
+2493938, Nutrient (Seed),OrgCommonNutrient_Seed
+2493937, Nutrient (Stalk),OrgCommonNutrient_Stalk
+2422210, Nutrient (Tissue),OrgCommonNutrient_Tissue
+2749431, Nutrient (Vital Fluids),OrgCommonNutrient_Fluids
+489469, Nutrient,OrgCommonNutrient
+2495165, Ornamental (Bone),OrgUncommonOrnamental_Bone
+2495164, Ornamental (Carapace),OrgUncommonOrnamental_Carapace
+2493927, Ornamental (Flower),OrgUncommonOrnamental_Flower
+2495161, Ornamental (Gland),OrgUncommonOrnamental_Gland
+2495162, Ornamental (Hide),OrgUncommonOrnamental_Hide
+2493926, Ornamental (Leaf),OrgUncommonOrnamental_Leaf
+2493925, Ornamental (Root),OrgUncommonOrnamental_Root
+2493924, Ornamental (Sap),OrgUncommonOrnamental_Sap
+2493923, Ornamental (Seed),OrgUncommonOrnamental_Seed
+2493922, Ornamental (Stalk),OrgUncommonOrnamental_Stalk
+2495160, Ornamental (Tissue),OrgUncommonOrnamental_Tissue
+2495163, Ornamental (Vital Fluids),OrgUncommonOrnamental_Fluids
+21927, Ornamental Material,OrgUncommonOrnamental
+21876, Palladium,InorgExoticPalladium
+2386803, Paramagnon Conductor,Mfg_Tier02_ParamagnonSuperconductor
+2495139, Pigment (Bone),OrgUncommonPigment_Bone
+2495138, Pigment (Carapace),OrgUncommonPigment_Carapace
+2493901, Pigment (Flower),OrgUncommonPigment_Flower
+2495136, Pigment (Gland),OrgUncommonPigment_Gland
+2495135, Pigment (Hide),OrgUncommonPigment_Hide
+2493900, Pigment (Leaf),OrgUncommonPigment_Leaf
+2493899, Pigment (Root),OrgUncommonPigment_Root
+2493898, Pigment (Sap),OrgUncommonPigment_Sap
+2493897, Pigment (Seed),OrgUncommonPigment_Seed
+2493896, Pigment (Stalk),OrgUncommonPigment_Stalk
+2495134, Pigment (Tissue),OrgUncommonPigment_Tissue
+2495137, Pigment (Vital Fluids),OrgUncommonPigment_Fluids
+2749440, Pigment,OrgUncommonPigment
+2386781, Plasma Igniter,Mfg_Tier03_PlasmaIgniter_NOCLUTTER
+21875, Platinum,InorgRarePlatinum
+21900, Plutonium,InorgExoticPlutonium
+2495070, Polymer (Bone),OrgExoticPolymer_Bone
+2495069, Polymer (Carapace),OrgExoticPolymer_Carapace
+2493499, Polymer (Flower),OrgExoticPolymer_Flower
+2495067, Polymer (Gland),OrgExoticPolymer_Gland
+2495066, Polymer (Hide),OrgExoticPolymer_Hide
+2493496, Polymer (Leaf),OrgExoticPolymer_Leaf
+2493494, Polymer (Root),OrgExoticPolymer_Root
+2493485, Polymer (Sap),OrgExoticPolymer_Sap
+2493468, Polymer (Seed),OrgExoticPolymer_Seed
+2493439, Polymer (Stalk),OrgExoticPolymer_Stalk
+2495065, Polymer (Tissue),OrgExoticPolymer_Tissue
+2495068, Polymer (Vital Fluids),OrgExoticPolymer_Fluids
+21926, Polymer,OrgExoticPolymer
+2386802, Polytextile,Mfg_Tier01_Polytextile
+2386801, Positron Battery,Mfg_Tier02_PositronBattery
+2386780, Power Circuit,Mfg_Tier03_PowerCircuit
+1191608, Quark-Degenerate Tissues,OrgLegQuarkDegenerateTissue
+2386779, Quasi-neutralizer,Mfg_Tier03_Quasineutralizer_NOCLUTTER
+2386799, Reactive Gauge,Mfg_Tier01_ReactiveGauge
+2386798, Regenerative Illuminator,Mfg_Tier02_RegenerativeIlluminator_NOCLUTTER
+2113202, Rothicite Magnet,Mfg_Tier03_RothiciteMagnet_NOCLUTTER
+10463, Rothicite,InorgUniqueRothicite_NOCLUTTER
+2495133, Sealant (Carapace),OrgCommonSealant_Carapace
+2493895, Sealant (Flower),OrgCommonSealant_Flower
+2495132, Sealant (Gland),OrgCommonSealant_Gland
+2798487, Sealant (Hide),OrgCommonSealant_Hide
+2493894, Sealant (Leaf),OrgCommonSealant_Leaf
+2493893, Sealant (Root),OrgCommonSealant_Root
+2493892, Sealant (Sap),OrgCommonSealant_Sap
+2493891, Sealant (Seed),OrgCommonSealant_Seed
+2493890, Sealant (Stalk),OrgCommonSealant_Stalk
+2798489, Sealant (Tissue),OrgCommonSealant_Tissue
+2798488, Sealant (Vital Fluids),OrgCommonSealant_Fluids
+21964, Sealant,OrgCommonSealant
+2495101, Sedative (Bone),OrgRareSedative_Bone
+2495100, Sedative (Carapace),OrgRareSedative_Carapace
+2493808, Sedative (Flower),OrgRareSedative_Flower
+2495098, Sedative (Gland),OrgRareSedative_Gland
+2495097, Sedative (Hide),OrgRareSedative_Hide
+2493807, Sedative (Leaf),OrgRareSedative_Leaf
+2493806, Sedative (Root),OrgRareSedative_Root
+2493805, Sedative (Sap),OrgRareSedative_Sap
+2493804, Sedative (Seed),OrgRareSedative_Seed
+2493803, Sedative (Stalk),OrgRareSedative_Stalk
+2495096, Sedative (Tissue),OrgRareSedative_Tissue
+2495099, Sedative (Vital Fluids),OrgRareSedative_Fluids
+21933, Sedative,OrgRareSedative
+2386797, Semimetal Wafer,Mfg_Tier02_SemimetalWafer
+21866, Silver,InorgUncommonSilver
+2493431, Solvent (Flower),OrgExoticSolvent_Flower
+2495063, Solvent (Gland),OrgExoticSolvent_Gland
+2493430, Solvent (Leaf),OrgExoticSolvent_Leaf
+2493429, Solvent (Root),OrgExoticSolvent_Root
+2493428, Solvent (Sap),OrgExoticSolvent_Sap
+2493427, Solvent (Seed),OrgExoticSolvent_Seed
+2493426, Solvent (Stalk),OrgExoticSolvent_Stalk
+2495062, Solvent (Tissue),OrgExoticSolvent_Tissue
+2495064, Solvent (Vital Fluids),OrgExoticSolvent_Fluids
+21966, Solvent,OrgExoticSolvent
+2495131, Spice (Bone),OrgUncommonSpice_Bone
+2495130, Spice (Carapace),OrgUncommonSpice_Carapace
+2493889, Spice (Flower),OrgUncommonSpice_Flower
+2495128, Spice (Gland),OrgUncommonSpice_Gland
+2495127, Spice (Hide),OrgUncommonSpice_Hide
+2493888, Spice (Leaf),OrgUncommonSpice_Leaf
+2493887, Spice (Root),OrgUncommonSpice_Root
+2493886, Spice (Sap),OrgUncommonSpice_Sap
+2493885, Spice (Seed),OrgUncommonSpice_Seed
+2493884, Spice (Stalk),OrgUncommonSpice_Stalk
+2495126, Spice (Tissue),OrgUncommonSpice_Tissue
+2495129, Spice (Vital Fluids),OrgUncommonSpice_Fluids
+21932, Spice,OrgUncommonSpice
+2386796, Sterile Nanotubes,Mfg_Tier02_SterileNanotubes
+2495076, Stimulant (Bone),OrgExoticStimulant_Bone
+2495075, Stimulant (Carapace),OrgExoticStimulant_Carapace
+2493542, Stimulant (Flower),OrgExoticStimulant_Flower
+2495072, Stimulant (Gland),OrgExoticStimulant_Gland
+2495073, Stimulant (Hide),OrgExoticStimulant_Hide
+2493538, Stimulant (Leaf),OrgExoticStimulant_Leaf
+2493532, Stimulant (Root),OrgExoticStimulant_Root
+2493503, Stimulant (Sap),OrgExoticStimulant_Sap
+2493502, Stimulant (Seed),OrgExoticStimulant_Seed
+2493500, Stimulant (Stalk),OrgExoticStimulant_Stalk
+2495071, Stimulant (Tissue),OrgExoticStimulant_Tissue
+2495074, Stimulant (Vital Fluids),OrgExoticStimulant_Fluids
+21934, Stimulant,OrgExoticStimulant
+2386795, Stimulated Shielding,Mfg_Tier02_StimulatedShielding_NOCLUTTER
+2386778, Stochastic Emitter,Mfg_Tier03_StochasticEmitter_NOCLUTTER
+2495095, Structural (Bone),OrgCommonStructural_Bone
+2495094, Structural (Carapace),OrgCommonStructural_Carapace
+2495093, Structural (Hide),OrgCommonStructural_Hide
+2493800, Structural (Leaf),OrgCommonStructural_Leaf
+2493801, Structural (Root),OrgCommonStructural_Root
+2493802, Structural (Stalk),OrgCommonStructural_Stalk
+21945, Structural Material,OrgCommonStructural
+2107266, Substrate Molecule Sieve,Mfg_Tier03_SubstrateMolecularSieve
+2386793, Supercooled Magnet,Mfg_Tier02_SupercooledMagnet
+21871, Tantalum,InorgRareTantalum
+2113199, Tasine Superconductor,Mfg_Tier03_TasineSuperconductor
+24045, Tasine,InorgUniqueTasine
+2386792, Tau Grade Rheostat,Mfg_Tier01_TauGradeRheostat
+21880, Tetrafluorides,InorgRareTetrafluorides
+2386784, Thread-Logic Circuit,Mfg_Tier03_ThreadlogicCircuit_NOCLUTTER
+21869, Titanium,InorgRareTitanium
+2495159, Toxin (Bone),OrgCommonToxin_Bone
+2495158, Toxin (Carapace),OrgCommonToxin_Carapace
+2493921, Toxin (Flower),OrgCommonToxin_Flower
+2495157, Toxin (Gland),OrgCommonToxin_Gland
+2495156, Toxin (Hide),OrgCommonToxin_Hide
+2493920, Toxin (Leaf),OrgCommonToxin_Leaf
+2493919, Toxin (Root),OrgCommonToxin_Root
+2493918, Toxin (Sap),OrgCommonToxin_Sap
+2493917, Toxin (Seed),OrgCommonToxin_Seed
+2422213, Toxin (Tissue),OrgCommonToxin_Tissue
+2422214, Toxin (Vital Fluids),OrgCommonToxin_Fluids
+21963, Toxin,OrgCommonToxin
+2680747, Tranquilitea Breakfast Pack,Tea_Pack_Breakfast_Blend01
+1606216, Tranquilitea Chamomile Pack,Tea_Pack_Chamomile01
+2680748, Tranquilitea Classic Pack,Tea_Pack_Black01
+1398781, Tranquilitea Dynastic Pack,Tea_Pack_Dynastic01
+1398773, Tranquilitea Earl Grey Pack,Tea_Pack_Earl01
+1263321, Tranquilitea Lemon Pack,Tea_Pack_Lemon01
+1118099, Tranquilitea Lotus Pack,Tea_Pack_Lotus_Blossom01
+608051, Tranquilitea Sleepy Pack,Tea_Pack_Sleepy01
+608050, Tranquilitea Sunray Pack,Tea_Pack_Sunray01
+21867, Tungsten,InorgUncommonTungsten
+21897, Uranium,InorgCommonUranium
+2386791, Vac Grade Explosive,Mfg_Tier01_VacGradeExplosive_NOCLUTTER
+21899, Vanadium,InorgRareVanadium
+2113213, Veryl Explosive,Mfg_Tier03_VerylExplosive_NOCLUTTER
+2113200, Veryl-Treated Manifold,Mfg_Tier03_VerylManifold
+24046, Veryl,InorgUniqueVeryl
+2113203, Vytinium Fuel Rod,Mfg_Tier03_VytiniumFuelRod
+24047, Vytinium,InorgUniqueVytinium
+21905, Water,InorgCommonWater
+22493, Xenon,InorgExoticXenon
+21873, Ytterbium,InorgExoticYtterbium
+2386789, Zero Wire,Mfg_Tier01_ZeroWire
+2386790, Zero-G Gimbal,Mfg_Tier02_ZeroGGimbal
+2548433, AI Control Board,MS03_ControlBoard
+2591253, Comms Repair Suite,UC02_ReplacementAntennas
+5123, Dr Reginald Orlase D,DONOTUSE_FakeID
+3685297, Harvey,BQ01_ErvinCommitmentItem
+1324268, Internal Neuroamp Prototype,Neuroamp_Infinity01
+1619446, Internal Neuroamp Prototype,RI07_Prototype
+1105886, Neuroamp Mod,Neuroamp_Mod_Box
+372512, Paul's Tools,RadiantQuestObject_Test
+1324267, Ryujin Internal Neuroamp,Neuroamp_Ryujin01
+2361308, Test 1,Mfg_Test01_DELETE
+2361307, Test 2,Mfg_Test02_DELETE
+2361306, Test 3,Mfg_Test03_DELETE
+684818, Warlord's Credits,FFNeonZ03_Credits
+1398402,ȀȀ Black Market Antiquities,Contraband_BlackMarketAntiquities
+1777101,ȀȀ Crate of Aurora,MissionCargoType62Contraband
+1771137,ȀȀ Crate of Black Market Antiquities,MissionCargoType68Contraband
+1775371,ȀȀ Crate of Harvested Organs,MissionCargoType65Contraband
+1775373,ȀȀ Crate of Mech Components,MissionCargoType63Contraband
+1771138,ȀȀ Crate of Sentient AI Adapters,MissionCargoType67Contraband
+1771136,ȀȀ Crate of Stolen Artwork,MissionCargoType69Contraband
+1775372,ȀȀ Crate of Va'ruun Heretic Writings,MissionCargoType64Contraband
+1775370,ȀȀ Crate of Xenowarfare Tech,MissionCargoType66Contraband
+1398398,ȀȀ Harvested Organs,Contraband_UnethicallyHarvestedOrgans
+1398401,ȀȀ Mech Components,Contraband_MechComponents
+1262808,ȀȀ Mr. Sood's Package,Hope01SoodPackage
+1398400,ȀȀ Sentient AI Adapters,Contraband_SentientAIAdapters
+1398399,ȀȀ Stolen Artwork,Contraband_StolenArtwork
+1398397,ȀȀ Va'ruun Heretic Writings,Contraband_VaRuunHereticPamphlets
+1398396,ȀȀ Xenowarfare Tech,Contraband_XenowarfareTech
+3155857, Heart Of Mars,FFCydoniaZ07_HeartOfMarsTitanium
+1674913, Antique Earth Computer,MS06_Antique_OldPC
+1674916, Antique Earth Video Tape,MS06_Antique_Video_Tape01
+3591410, Antique Earth Hockey Stick,MS06_HockeyStick01
+3591412, Antique Earth Duck Figure,MS06_WoodenDuckToy01
+609253, Antique Piggy Bank,MS06_PiggyBank01
+1753246, Antique Piggy Bank,AntiquePiggyBank
+2569154, Dauntless Power Cell,COM_SMQ01_PowerCell
+646758, MicroCell,UC07_Microcell
+1426506, Burkina Faso Bobo Mask,MQ202_HistoricalMask_BoboBurkinaFaso
+1674922, Antique Earth CD Player,MS06_Antique_PortableCDPlayer01
+3591409, Antique Earth Basketball,MS06_BasketBallDisplay01
+3591411, Antique Earth Soccer Ball,MS06_SoccerBallDisplay01
+3591408, Antique Earth Baseball,MS06_BaseBallDisplay01
+1235262, Ornate Startar,Exotic_Antique_MusicInst01
+569361, Crate of Contraband,FFNewAtlantis05_MissionCargoTypeContraband
+755059, Andreja's Commitment Gift,CommitmentGift_Andreja_MiscObj
+1512861, Barrett's Commitment Gift,CommitmentGift_Barrett_MiscObj
+228967, Logan's Present,FFCydoniaZ06_Present
+1556557, Sam's Commitment Gift,CommitmentGift_SamCoe_MiscObj
+1556556, Sarah's Commitment Gift,CommitmentGift_SarahMorgan_MiscObj
+1142596, Champagne Glass,Bar_ChampagneGlass01
+257435, Cocktail Glass,Bar_MartiniGlass02
+257438, Cocktail Tumbler,Bar_DrinkingGlass02
+2109232, Cylindrical Glass,Bar_DrinkingGlass03
+257442, Wine Glass,Bar_WaterGlass01
+552977, Prime Meat,RQS_CollectColonist_Meat_Player
+2571265, Prime Meat,RQS_CollectColonist_Meat
+2666639, Medical Injector,MedicalInjector01
+1641792, Syringe,Syringes_02
+1641793, Syringe,Syringes_01
+1241344, Desktop Mask Decoration,Exotic_Mask
+1235264, Wooden Face Sculpture,Exotic_MaskB
+808299, "Priceless" Gem,City_NewAtlantis_Z_GemJealousy_Gem
+597149, Engagement Ring,FFNewAtlantis04_WeddingRing
+1861877, Lost Wedding Ring,FFParadisoZ02_WeddingRing
+2016017, Maddie's Ring,FFKeyZ01_MadeleineLaRuesRing
+880546, Lucky Boots,UC_Den_Z_TheBoot_Boots
+1643061, Blue-Flighted Dart,Dart01
+1643058, Red-Flighted Dart,Dart03
+1643060, Yellow-Flighted Dart,Dart02
+750805, Akila City Resident's ID Card,SE_GenericDerelict_IDCard04
+3662268, Cydonia Resident's ID Card,SE_GenericDerelict_IDCard03
+1012434, Encrypted Security Override Code,MS02_EncryptedSecurityOverrideCode
+1012433, Facility Security Override Code,MS02_SecurityOverrideCode
+1861876, Lost Room Keycard,FFParadisoZ02_RoomKey
+750796, New Atlantis Resident's ID Card,SE_GenericDerelict_IDCard01
+2861229, Security Keycard,RIR03_Keycard
+551195, Siren of the Stars Access Card,CF04_SirenCard
+1496264, UC Archival Code,UC05_ArmisticeCode_UC
+2202238, UC Citizen ID: <Alias=Player>,UC04_PlayerCitizenshipID
+1995002, UC Security Keycard,UC_Security_Keycard_Misc
+1496262, Va'ruun Archival Code,UC05_ArmisticeCode_Varuun
+750800, Well Resident's ID Card,SE_GenericDerelict_IDCard02
+1496265, Freestar Archival Code,UC05_ArmisticeCode_Freestar
+1452573, Freestar Biometric Key,Biometric_Key_FreeStar01
+1452572, Varuun Biometric Key,Biometric_Key_Varuun01
+1311214, My Friend Wilby,Desktop_CuteToy01
+1552247, My Friend Wilby,Desktop_CuteToy01b
+1552252, My Friend Wilby,Desktop_CuteToy01c
+1552254, My Friend Wilby,Desktop_CuteToy01d
+2076, Plushie Cuddleosaur,AK_Plushy_01
+1236989, Plushie Galacticat,Toyplushie_Cat01
+1236988, Plushie Parsecpooch,Toyplushie_Dog01
+2179, Plushie Starpal,AK_Plushy_03
+2089, Plushie Xenosnuggle,AK_Plushy_02
+2804062, Bolt Cutter,Tool_BoltCutter01
+2804064, Clamp,Tool_Clamp01
+197824, Crimping Tool,Tool_Crimp01
+2144640, Cutting Pliers,Tool_Pliers01
+2144639, Hose Clamp Pliers,Tool_Pliers02
+2144643, Hydraulic Clamp,Tool_HydraulicClamp02
+2144644, Hydraulic Clamp,Tool_HydraulicClamp01
+2138094, Pliers,Tool_Pliers03
+2666634, Tweezers,MedicalTweezers01
+2666636, Tweezers,MedicalTweezers02
+2804061, Utility Knife,Tool_UtilityKnife01
+2144642, Bubble Level,Tool_Level01
+1733236, Left Easyslip Shoe,Slipper_Gen_L01
+1358142, Left Slipper,Slipper_B_L01
+1704895, Left Slipper,Slipper_A_L01
+1733237, Right Easyslip Shoe,Slipper_Gen_R01
+1358141, Right Slipper,Slipper_B_R01
+1704894, Right Slipper,Slipper_A_R01
+26199, Benjamin Bayu Figurine,NeonBenBayuStatue02
+2950697, Game Piece - Assaulter,GameBoard_MatGamePiece04
+2950696, Game Piece - Defender,GameBoard_MatGamePiece03
+1643046, Game Piece - Shadowqueen,GameBoard_MatGamePiece02
+1643053, Game Piece - Snowlord,GameBoard_MatGamePiece01
+1241338, Decorative Pendulum,Exotic_Decorative_Pendulum
+1311248, Exotic Wood Decoration,Desktop_ExoticWood01
+1223525, Funky Sphere Sculpture,Exotic_LightFixture01
+1235274, Gold Pyramid Sculpture,Exotic_Pyramid_Sculpture01
+1311246, Sand Pendulum,Desktop_SandScratcher01
+1311263, Sand Sculpture,Desktop_SandDisk01
+2042608, Sculpture,Sculpture_Table05
+2042609, Sculpture,Sculpture_Table04
+2042610, Sculpture,Sculpture_Table03
+2042611, Sculpture,Sculpture_Table02
+2042615, Sculpture,Sculpture_Table01
+114271, Microdrive,CF06_Microdrive
+373941, Portable CD Player,Antique_PortableCDPlayer01
+1441140, Canteen,AK_Bottle_Metal_01
+1861878, Lost Thermos,FFParadisoZ02_Thermos
+1441142, Steel Bottle,AK_Bottle_Metal_02
+2824302, Thermos,Thermos01
+2513629, Funnel,ScienceGlass_Funnel01
+2513655, Beaker Tongs,ScienceGlass_BeakerTongs01
+1641800, Retractor,Retractor
+1311197, Origami Sculpture,Desktop_Origami01
+2036059, Paper Airplane,PaperAirplane01
+1308493, Corkscrew,Bar_Corkscrew01
+3186080, Garden Trowel,Tool_Trowel_03Garden
+1311192, Sand Garden Tool,Desktop_SandGarden_Tool01
+3186081, Trowel,Tool_Trowel_02
+3186082, Trowel,Tool_Trowel_01
+1225975, E-Pipe,Exotic_E-Pipe02
+1225976, E-Pipe,Exotic_E-Pipe01
+1311219, Incense Burner,Desktop_IncenseBurner01
+1307399, Cocktail Strainer,Bar_strainer01
+1223289, Bell,CallBell01
+2099664, Blender Jar,Blender_Container01
+1281839, Bowl,Bar_Bowl02
+2209782, Bowl,Kitchen_Bowl_Small01
+2209784, Bowl,Kitchen_Bowl_Large01
+2802194, Bowl,Kitchenware_Bowl02
+2802195, Bowl,Kitchenware_Bowl01
+1311199, Desktop Soil Bowl,Desktop_SoilBowl01
+2819688, Mixing Bowl,Kitchenware_Mixingbowl03
+2819690, Mixing Bowl,Kitchenware_Mixingbowl02
+2824240, Mixing Bowl,Kitchenware_Mixingbowl01
+1311244, Soil Box,Desktop_HomeSoilBox01
+1641809, Surgical Bowl,SurgicalBowl01
+1641810, Surgical Bowl,SurgicalBowl02
+3015259, Hookah Hose,hookah_Cable01
+1767009, Empty Chunks Packaging,FoodDrink_Set_Chunks_Empty
+10400, Empty Drink Pack,FoodDrink_Set_DrinkPack01_Empty
+10402, Empty Drink Pack,FoodDrink_Set_DrinkPack02_Empty
+10403, Empty Food Container,FoodDrink_Set_Container01_Empty
+2080246, Opened Container,Kitchenware_Storagecontainer03
+2802181, Opened Container,Kitchenware_Storagecontainer02
+2802190, Opened Container,Kitchenware_Storagecontainer01
+2080245, Sealed Container,Kitchenware_Storagecontainer03b
+2802183, Sealed Container,Kitchenware_Storagecontainer02b
+2802189, Sealed Container,Kitchenware_Storagecontainer01b
+2080243, Storage Container,Kitchenware_Storagecontainer04
+1307397, Cocktail Shaker,Bar_Shaker01A
+1307395, Cocktail Shaker Lid,Bar_Shaker01C
+1307396, Cocktail Shaker Strainer,Bar_Shaker01B
+257462, Sealed Cocktail Mixer,Bar_CocktailMixer01
+1307398, Sealed Cocktail Shaker,Bar_Shaker01
+422143, Genetic Sample Bottle,GeneticSampleBottle01
+257449, Fancy Ice Bucket,Bar_IceBucket01
+1237417, Desktop Speakers,Exotic_SpeakerSystem01
+1273938, Large Moonshine Jug,Bootleg_Moonshine_Container01
+1273936, Liquor Jug,Bootleg_Moonshine_Container03
+1273937, Small Moonshine Jug,Bootleg_Moonshine_Container02
+3895177, Xenofresh Container,XenofreshContainer
+1307390, Bottle Opener,Bar_BottleOpener01
+1311242, Desktop Sand Garden,Desktop_SandGarden01
+2094774, Empty Planter,PottedPlant_Empty
+3835380, Planter,Office_Deskplant_Empty01
+1220700, Theodolite,Theodolite01
+1684693, Red Ping Pong Paddle,PingPongPaddle01
+1543595, Yellow Ping Pong Paddle,PingPongPaddle02
+159409, Apollo Snow Globe,Landmark_Apollo_Snowglobe_NOCLUTTER
+39487, Cairo Snow Globe,Landmark_Cairo_Snowglobe_NOCLUTTER
+167692, Cydonia Snow Globe,Landmark_Cydonia_Snowglobe_NOCLUTTER
+39481, Dubai Snow Globe,Landmark_Dubai_Snowglobe_NOCLUTTER
+159399, Hong Kong Snow Globe,Landmark_HongKong_Snowglobe_NOCLUTTER
+39471, London Snow Globe,Landmark_London_Snowglobe_NOCLUTTER
+39476, Los Angeles Snow Globe,Landmark_LosAngeles_Snowglobe_NOCLUTTER
+167693, New York Snow Globe,Landmark_NewYork_Snowglobe_NOCLUTTER
+39473, Opportunity Snow Globe,Landmark_Opportunity_Snowglobe_NOCLUTTER
+159405, Osaka Snow Globe,Landmark_Osaka_Snowglobe_NOCLUTTER
+167694, Shanghai Snow Globe,Landmark_Shanghai_Snowglobe_NOCLUTTER
+161628, Snow Globe,LC017_Nasa_Collectable_Snowglobe02
+161631, Snow Globe,LC017_Nasa_Collectable_Snowglobe01
+3180505, Snow Globe,LC017_Nasa_Collectable_Snowglobe03
+3180506, Snow Globe,LC017_Nasa_Collectable_Snowglobe04
+167695, St. Louis Snow Globe,Landmark_StLouis_Snowglobe_NOCLUTTER
+278877, Tower of Pisa Snow Globe,Landmark_Pisa_Snowglobe_NOCLUTTER
+257433, Martini Glass,Bar_MartiniGlass01
+257437, Shot Glass,Bar_ShotGlass01
+257444, Stylish Shot Glass,Bar_ShotGlass02
+257439, Whiskey Glass,Bar_DrinkingGlass01
+2548977, Jar,SeokguhFancyJar05
+2548978, Jar,SeokguhFancyJar04
+2548979, Jar,SeokguhFancyJar02
+2548980, Jar,SeokguhFancyJar01
+2666787, Skin Cream Bottle,BeautySupplyBottle01
+2548976, Small Fancy Dispenser,SeokguhFancyJar06
+2824354, Soap Dispenser,SoapDispenser01
+1311277, "Eggmund" Desk Assistant,Desktop_Speaker01
+1311227, Humidifier,Desktop_Humidifier01
+2144636, Wrench,Tool_Wrench01
+2144646, Wrench,Tool_Wrench02
+1237421, Hourglass,Exotic_HourGlass01
+1232994, Tablet,Digitalnotetablet01
+2171059, Tablet,WritingTablet01
+257464, Dinner Plate,Dining_Plate01
+1595998, Metal Plate,Metal_Plate01
+808298, Old-Earth Plate,City_NewAtlantis_Z_GemJealousy_Plate
+407718, Plate,OpiInd_Plate01
+1038289, Plate,Kitchenware_Plate01
+2802160, Plant,Office_Deskplant03
+2802161, Plant,Office_Deskplant02
+2802162, Plant,Office_Deskplant01
+57017, Succulent,PottedPlant_Succulent_SM03Metal01
+57018, Succulent,PottedPlant_Succulent_SM03Black01
+57020, Succulent,PottedPlant_Succulent_SM02Black01
+57025, Succulent,PottedPlant_Succulent_SM01Black01Metal01
+57026, Succulent,PottedPlant_Succulent_SM01Black01
+57029, Succulent,PottedPlant_Succulent_SM04_Black01
+57030, Succulent,PottedPlant_Succulent_SM04_Metal01
+2094779, Succulent,PottedPlant_Succulent_SM04
+2094780, Succulent,PottedPlant_Succulent_SM03
+2094781, Succulent,PottedPlant_Succulent_SM02
+2094782, Succulent,PottedPlant_Succulent_SM01
+2094785, Succulent,PottedPlant_Succulent_LG05
+2094786, Succulent,PottedPlant_Succulent_LG04
+2094788, Succulent,PottedPlant_Succulent_LG03
+2094790, Succulent,PottedPlant_Succulent_LG02
+2099655, Succulent,PottedPlant_Succulent_LG01
+1311201, Newton's Cradle,Desktop_SwingToy01
+2276856, Basketball Display,BasketBallDisplay01
+2314505, Soccer Ball,SoccerBall_01
+2314506, Soccer Ball,SoccerBall_02deflated
+1838747, Soccer Ball Display,SoccerBallDisplay01
+2468130, Volleyball,Volleyball_Ball01
+2276853, Baseball Display,BaseBallDisplay01
+1311225, Old Earth Baseball,Desktop_SportsStand01
+1543594, Ping Pong Ball,PingPongBall02
+1684692, Ping Pong Ball,PingPongBall01
+1545527, Smiling Ping Pong Ball,PingPongBall03_UniqueSmiling_NOCLUTTER
+1241348, Coffee Glass,Exotic_Coffee_Glass
+717822, Foam Cup,FoamCup02_Alt01
+717823, Foam Cup,FoamCup01_Alt01
+1258341, Foam Cup,FoamCup02
+1701342, Foam Cup,FoamCup01
+1546584, Party Cup,Plastic_Cup01
+1546590, Party Cup,Plastic_Cup02
+1237425, Street Java Coffee Cup,Exotic_Neon_CoffeeCup01
+419839, Stylized TerraBrew Cup,CoffeeCup_TB_02
+2548779, Cue Ball,PoolTable_Ball_Cueball
+1311255, Desktop Sphere Toy,Desktop_BallToy01
+2548765, Pool Ball - 1,PoolTable_Ball_01
+2548773, Pool Ball - 10,PoolTable_Ball_10
+2548774, Pool Ball - 11,PoolTable_Ball_11
+2548775, Pool Ball - 12,PoolTable_Ball_12
+2548776, Pool Ball - 13,PoolTable_Ball_13
+2548777, Pool Ball - 14,PoolTable_Ball_14
+2548778, Pool Ball - 15,PoolTable_Ball_15
+2548764, Pool Ball - 2,PoolTable_Ball_02
+2548766, Pool Ball - 3,PoolTable_Ball_03
+2548767, Pool Ball - 4,PoolTable_Ball_04
+2548768, Pool Ball - 5,PoolTable_Ball_05
+2548769, Pool Ball - 6,PoolTable_Ball_06
+2548770, Pool Ball - 7,PoolTable_Ball_07
+2548771, Pool Ball - 8,PoolTable_Ball_08
+2548772, Pool Ball - 9,PoolTable_Ball_09
+1230479, Deck of Cards,ExoticPlayingCardBox01
+752030, Playing Card - 10 of Clubs,ExoticPlayingCard_Club_10
+1091480, Playing Card - 10 of Diamonds,ExoticPlayingCard_Diamond_10
+601574, Playing Card - 10 of Hearts,ExoticPlayingCard_Heart_10
+1091486, Playing Card - 10 of Spades,ExoticPlayingCard_Spade_10
+1078126, Playing Card - 2 of Clubs,ExoticPlayingCard_Club_2
+1078132, Playing Card - 2 of Diamonds,ExoticPlayingCard_Diamond_2
+596598, Playing Card - 2 of Hearts,ExoticPlayingCard_Heart_2
+1078138, Playing Card - 2 of Spades,ExoticPlayingCard_Spade_2
+601686, Playing Card - 3 of Clubs,ExoticPlayingCard_Club_3
+752775, Playing Card - 3 of Diamonds,ExoticPlayingCard_Diamond_3
+601540, Playing Card - 3 of Hearts,ExoticPlayingCard_Heart_3
+1091481, Playing Card - 3 of Spades,ExoticPlayingCard_Spade_3
+601687, Playing Card - 4 of Clubs,ExoticPlayingCard_Club_4
+1091475, Playing Card - 4 of Diamonds,ExoticPlayingCard_Diamond_4
+601541, Playing Card - 4 of Hearts,ExoticPlayingCard_Heart_4
+1091482, Playing Card - 4 of Spades,ExoticPlayingCard_Spade_4
+601688, Playing Card - 5 of Clubs,ExoticPlayingCard_Club_5
+1091476, Playing Card - 5 of Diamonds,ExoticPlayingCard_Diamond_5
+601548, Playing Card - 5 of Hearts,ExoticPlayingCard_Heart_5
+1091483, Playing Card - 5 of Spades,ExoticPlayingCard_Spade_5
+751866, Playing Card - 6 of Clubs,ExoticPlayingCard_Club_6
+1091477, Playing Card - 6 of Diamonds,ExoticPlayingCard_Diamond_6
+601566, Playing Card - 6 of Hearts,ExoticPlayingCard_Heart_6
+1091484, Playing Card - 6 of Spades,ExoticPlayingCard_Spade_6
+751888, Playing Card - 7 of Clubs,ExoticPlayingCard_Club_7
+1091478, Playing Card - 7 of Diamonds,ExoticPlayingCard_Diamond_7
+601573, Playing Card - 7 of Hearts,ExoticPlayingCard_Heart_7
+1091485, Playing Card - 7 of Spades,ExoticPlayingCard_Spade_7
+1078127, Playing Card - 8 of Clubs,ExoticPlayingCard_Club_8
+1078133, Playing Card - 8 of Diamonds,ExoticPlayingCard_Diamond_8
+1078124, Playing Card - 8 of Hearts,ExoticPlayingCard_Heart_8
+1078139, Playing Card - 8 of Spades,ExoticPlayingCard_Spade_8
+1078128, Playing Card - 9 of Clubs,ExoticPlayingCard_Club_9
+1078134, Playing Card - 9 of Diamonds,ExoticPlayingCard_Diamond_9
+1078125, Playing Card - 9 of Hearts,ExoticPlayingCard_Heart_9
+1078140, Playing Card - 9 of Spades,ExoticPlayingCard_Spade_9
+1078129, Playing Card - Ace of Clubs,ExoticPlayingCard_Club_A
+1078135, Playing Card - Ace of Diamonds,ExoticPlayingCard_Diamond_A
+1078123, Playing Card - Ace of Hearts,ExoticPlayingCard_Heart_A
+1078141, Playing Card - Ace of Spades,ExoticPlayingCard_Spade_A
+1078130, Playing Card - Jack of Clubs,ExoticPlayingCard_Club_J
+1078136, Playing Card - Jack of Diamonds,ExoticPlayingCard_Diamond_J
+1230478, Playing Card - Jack of Hearts,ExoticPlayingCard_Heart_J
+1078142, Playing Card - Jack of Spades,ExoticPlayingCard_Spade_J
+1078131, Playing Card - King of Clubs,ExoticPlayingCard_Club_K
+1078137, Playing Card - King of Diamonds,ExoticPlayingCard_Diamond_K
+328512, Playing Card - King of Hearts,ExoticPlayingCard_Heart_K
+1078144, Playing Card - King of Spades,ExoticPlayingCard_Spade_K
+752037, Playing Card - Queen of Clubs,ExoticPlayingCard_Club_Q
+1091479, Playing Card - Queen of Diamonds,ExoticPlayingCard_Diamond_Q
+601575, Playing Card - Queen of Hearts,ExoticPlayingCard_Heart_Q
+1091487, Playing Card - Queen of Spades,ExoticPlayingCard_Spade_Q
+1220705, Antique Submarine Clock,SubmarineClock01
+1241336, Desktop Sundial,Exotic_SunDial
+1220708, Fancy Compass,EquinocialDial01
+1220710, Mariner's Compass,CompassMariners01
+1273932, Moonshine Thermometer,Bootleg_Moonshine_Thermometer01
+1220709, Nautical Compass,CompassYacht01
+1220706, Sextant,Sextant01
+1220704, Sundial,Sundial01
+2513626, Beaker,ScienceGlass_Beaker01
+2513630, Graduated Cylinder,ScienceGlass_GradCylinder01
+2513631, Graduated Cylinder,ScienceGlass_GradCylinder01a
+1307392, Jigger,Bar_Jigger03
+1307393, Jigger,Bar_Jigger02
+1307394, Jigger,Bar_Jigger01
+2802166, Pitcher,Kitchenware_Waterpitcher01
+871259, Water Pitcher,Kitchenware_Waterpitcher_Alt01Metal
+871260, Water Pitcher,Kitchenware_Waterpitcher_Alt02Plastic
+871262, Water Pitcher,Kitchenware_Waterpitcher_Alt03Glass
+1313157, Alexis' Coffee,RI01_AlexisCoffee
+1313161, Camden's Coffee,RI01_CamdenCoffee
+257480, Coffee Mug,CoffeeMug01
+3110017, Coffee Mug,Mug_With_Phrases_11
+3110018, Coffee Mug,Mug_With_Phrases_12
+3110019, Coffee Mug,Mug_With_Phrases_13
+3110020, Coffee Mug,Mug_With_Phrases_01
+3110021, Coffee Mug,Mug_With_Phrases_14
+3110022, Coffee Mug,Mug_With_Phrases_02
+3110023, Coffee Mug,Mug_With_Phrases_03
+3110024, Coffee Mug,Mug_With_Phrases_15
+3110025, Coffee Mug,Mug_With_Phrases_04
+3110026, Coffee Mug,Mug_With_Phrases_05
+3110027, Coffee Mug,Mug_With_Phrases_16
+3110028, Coffee Mug,Mug_With_Phrases_06
+3110029, Coffee Mug,Mug_With_Phrases_07
+3110030, Coffee Mug,Mug_With_Phrases_17
+3110031, Coffee Mug,Mug_With_Phrases_08
+3110032, Coffee Mug,Mug_With_Phrases_09
+3110033, Coffee Mug,Mug_With_Phrases_18
+3110034, Coffee Mug,Mug_With_Phrases_10
+3110045, Coffee Mug,Mug_With_Phrases_19
+3110049, Coffee Mug,Mug_With_Phrases_20
+1313159, Genevieve's Coffee,RI01_GenevieveCoffee
+1313160, Imogene's Coffee,RI01_ImogeneCoffee
+1313158, Linden's Coffee,RI01_LindenCoffee
+297025, Nasa Coffee Mug,LC017_NASA_CoffeeMug01
+324102, Nova Galactic Coffee Mug,NovaGalacticMug01
+419840, Stylized TerraBrew Mug,CoffeeCup_TB_01
+2452245, TerraBrew "To Go" Cup,CoffeeToGoCupEmptyWithLid01
+2452242, TerraBrew Cup,CoffeeToGoCupEmpty01
+436956, Alien Egg,OE_Creature_Egg
+1230543, Double Bone Horn,ExoticBoneInstrument01
+808377, Olive Seed,City_NA_Z_OliveBranch_Seed
+304839, Poison Canister,OE_KT_HiveMine_Canister_Poison
+1865246, Air Purifier Parts,FFParadisoZ01_Parts
+2728983, Malfunctioning Engine,POI027_ProbeEngine02
+2941340, Mech Scrap Parts,RL003_MechParts
+10401, Empty Coffee Bag,FoodDrink_Set_CoffeeBag01_Empty
+2958878, IntelliWheat Delivery,AkilaLife08_WheatJar
+1329258, Display Projector,DisplayProjector01
+180829, Mercury Camera,CameraMercury
+2138097, Caliper,Tool_DigitalCaliper01
+2144641, Pipe Wrench,Tool_PipeWrench01
+2144637, Vice Grip,Tool_ViceGrip01
+1174993, Pack of Cigarettes,ContemporaryCigarettesPack01
+1175126, Pack of Smokes,ContemporaryCigarettesPack02
+2200876, Chunks Special Sauce,FFNewHomesteadR05_SpecialSauce
+1273278, Jam Jar,Neon_Jam_Jar_Medium
+2666629, Pill Bottle,MedicalPillBottle01
+1273279, Small Jam Jar,Neon_Jam_Jar_Small
+2031675, Fire Extinguisher,TRP_FireExtinguisher01
+2513627, Bottle,ScienceGlass_Bottle01
+2513661, Bottle,ScienceGlass_Bottle01Full01
+4082058, Empty Beer Bottle,Generic_Beer_Empty_01
+1441145, Sports Bottle,AK_Bottle_Plastic_01
+602090, Ancient Branch,City_NA_Botany03_AncientBranch
+1285739, Ancient Branch,AncientBranch01
+2007537, Aurora Stash,FC05_AuroraStash

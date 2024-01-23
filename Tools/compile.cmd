@@ -17,6 +17,7 @@ del /s /q "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycle
 rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist-BA2-Main"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist-BA2-Main"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist-BA2-Main\Scripts\"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist-BA2-Main\BatchFiles\"
 
 @REM Compile and deploy Scripts to Dist-BA2-Main folder
 @echo "Compiling all script in Source/Papyrus to Dist-BA2-Main folder"
@@ -35,6 +36,9 @@ copy /y "D:\MO2Staging\Starfield\mods\GalacticJunkRecycler-Experimental\Galactic
 
 @REM Use Spriggit to extract record from ESM
 "D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\GalacticJunkRecycler-Experimental\GalacticJunkRecycler.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Source\ESM-GalacticJunkRecycler-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
+
+@REM Copy batch files to dist folder
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Source\BatchFiles\GJR_MiscItems.txt" "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist-BA2-Main\BatchFiles"
 
 @REM Create and copy the BA2 Main Archive to Dist folder
 @echo "Creating the BA2 Main Archive"

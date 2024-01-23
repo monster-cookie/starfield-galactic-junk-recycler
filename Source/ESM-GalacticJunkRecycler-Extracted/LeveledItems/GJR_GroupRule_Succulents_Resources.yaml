@@ -1,0 +1,25 @@
+FormKey: 000857:GalacticJunkRecycler.esm
+EditorID: GJR_GroupRule_Succulents_Resources
+ChanceNone: 25
+MaxCount: 2
+Flags:
+- CalculateForEachItemInCount
+Entries:
+- Level: 1
+  Reference: 260C3F:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 260DBD:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 260DD8:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 260DDF:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 260DEE:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 260DF5:Starfield.esm
+  Count: 1

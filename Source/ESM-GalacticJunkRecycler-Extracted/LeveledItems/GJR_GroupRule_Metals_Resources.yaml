@@ -1,5 +1,5 @@
 FormKey: 00081B:GalacticJunkRecycler.esm
-EditorID: GJR_GroupRule_Tools_Resources
+EditorID: GJR_GroupRule_Metals_Resources
 ChanceNone: 25
 MaxCount: 2
 Flags:
@@ -8,6 +8,10 @@ Entries:
 - Level: 1
   Reference: 005568:Starfield.esm
   Count: 1
+- Level: 1
+  Reference: 00556B:Starfield.esm
+  Count: 1
+  ChanceNone: 0.19607843137254902
 - Level: 1
   Reference: 00556D:Starfield.esm
   Count: 1
@@ -19,6 +23,9 @@ Entries:
   Reference: 005573:Starfield.esm
   Count: 1
   ChanceNone: 0.29411764705882354
+- Level: 1
+  Reference: 00557D:Starfield.esm
+  Count: 1
 - Level: 1
   Reference: 0055A6:Starfield.esm
   Count: 1

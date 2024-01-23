@@ -1,5 +1,10 @@
 # Galactic Junk Recycler
 
+## Version 1.0.11
+* Jane1986 added new group recipe for plants and an item recipe for wire spool (becomes copper).
+* Old tools and decorative stuff groups have been expanded and renamed. Tools has become Metals and Decorative stuff has become Decorations. 
+* Added batch file GJR_MiscItems for generating 1 item each to test the recycler
+
 ## Version 1.0.10
 * Jane1986 added new group recipes for Soft Drinks, Alcohol, and Ceramic's and going forward will be helping me with this project. 
 

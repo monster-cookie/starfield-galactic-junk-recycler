@@ -29,10 +29,10 @@ VirtualMachineAdapter:
       Name: GJR_GroupRule_Electronics_Resources
       Object: 00081D:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: GJR_GroupRule_Tools_List
+      Name: GJR_GroupRule_Metals_List
       Object: 00081A:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: GJR_GroupRule_Tools_Resources
+      Name: GJR_GroupRule_Metals_Resources
       Object: 00081B:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_Injestible_Recycle_List
@@ -44,10 +44,10 @@ VirtualMachineAdapter:
       Name: GJR_GroupRule_BarStuff_Resources
       Object: 000826:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: GJR_GroupRule_DecorativeStuff_List
+      Name: GJR_GroupRule_Decorations_List
       Object: 000827:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: GJR_GroupRule_DecorativeStuff_Resources
+      Name: GJR_GroupRule_Decorations_Resources
       Object: 000828:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Food_List
@@ -111,6 +111,12 @@ VirtualMachineAdapter:
       Object: 00084A:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Ceramics_Resources
+      Object: 000853:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Succulents_List
+      Object: 000854:GalacticJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GJR_GroupRule_Succulents_Resources
       Object: 000853:GalacticJunkRecycler.esm
   Script:
     Name: ''

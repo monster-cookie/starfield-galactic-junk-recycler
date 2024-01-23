@@ -14,39 +14,41 @@ String Property Venpi_ModName="GalacticJunkRecycler" Auto Const Mandatory
 LeveledItem Property GJR_Ammo_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Armor_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Book_Recycle_List Auto Const Mandatory
+LeveledItem Property GJR_Injestible_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Misc_Recycle_List Auto Const Mandatory
 LeveledItem Property GJR_Weapon_Recycle_List Auto Const Mandatory
-LeveledItem Property GJR_Injestible_Recycle_List Auto Const Mandatory
 
 ;; Group Rule Lists
-FormList Property GJR_GroupRule_Electronics_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_Electronics_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_Tools_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_Tools_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_BarStuff_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_BarStuff_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_DecorativeStuff_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_DecorativeStuff_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_Food_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_Food_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_AlienFood_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_AlienFood_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Aid_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Aid_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_AlienFood_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_AlienFood_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_BarStuff_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_BarStuff_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Ceramics_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Ceramics_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Chems_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Chems_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Decorations_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Decorations_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_DrinksAlcohol_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_DrinksAlcohol_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_DrinksSoft_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_DrinksSoft_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Electronics_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Electronics_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Food_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Food_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Metals_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Metals_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Paper_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Paper_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Pens_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Pens_Resources Auto Const Mandatory
 FormList Property GJR_GroupRule_Plastic_List Auto Const Mandatory
 LeveledItem Property GJR_GroupRule_Plastic_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_DrinksAlcohol_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_DrinksAlcohol_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_DrinksSoft_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_DrinksSoft_Resources Auto Const Mandatory
-FormList Property GJR_GroupRule_Ceramics_List Auto Const Mandatory
-LeveledItem Property GJR_GroupRule_Ceramics_Resources Auto Const Mandatory
+FormList Property GJR_GroupRule_Succulents_List Auto Const Mandatory
+LeveledItem Property GJR_GroupRule_Succulents_Resources Auto Const Mandatory
 
 ;; Resources - Inorganic
 MiscObject Property InorgCommonCopper Auto
@@ -61,6 +63,7 @@ MiscObject Property Mfg_Tier01_IsocenteredMagnet Auto
 
 ;; Items
 MiscObject Property Tool_DuctTape01 Auto
+MiscObject Property WireSpoolSmall01 Auto
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -90,9 +93,13 @@ Function ProcessItem(Form akBaseItem, ObjectReference akOutputContainer)
   ;; Specifically Mapped Item Rules
   ;;
   If (akBaseItem.GetFormID() ==  Tool_DuctTape01.GetFormID())
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing vacuum tape item and returning Adhesive and Fiber.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Vacuum Tape item and returning Adhesive and Fiber.", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(OrgRareAdhesive as Form, Utility.RandomInt(0,4), True)
     akOutputContainer.AddItem(OrgCommonFiber as Form, Utility.RandomInt(0,4), True)
+    Return
+  ElseIf (akBaseItem.GetFormID() ==  WireSpoolSmall01.GetFormID())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Wire Spool item and returning Copper.", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(InorgCommonCopper as Form, Utility.RandomInt(0,2), True)
     Return
   EndIf
 
@@ -101,59 +108,63 @@ Function ProcessItem(Form akBaseItem, ObjectReference akOutputContainer)
   ;; Group Mapped Item Rules
   ;;
   If (GJR_GroupRule_Electronics_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing electronics group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Electronics group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Electronics_Resources as Form, 1, True)
     Return
-  ElseIf (GJR_GroupRule_Tools_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing tools group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    akOutputContainer.AddItem(GJR_GroupRule_Tools_Resources as Form, 1, True)
+  ElseIf (GJR_GroupRule_Metals_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Metal group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Metals_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Paper_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing paper group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Paper group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Paper_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Pens_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing pens group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Pens group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Pens_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Plastic_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing plastic group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Plastic group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Plastic_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_BarStuff_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing bar stuff group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Glass group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_BarStuff_Resources as Form, 1, True)
     Return
-  ElseIf (GJR_GroupRule_DecorativeStuff_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing decorative stuff group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    akOutputContainer.AddItem(GJR_GroupRule_DecorativeStuff_Resources as Form, 1, True)
+  ElseIf (GJR_GroupRule_Decorations_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Decorations group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Decorations_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Food_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Food_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Aid_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing aid group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Aid group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Aid_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Chems_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing chems group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Chems group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Chems_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_AlienFood_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing alien food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Alien Food group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_AlienFood_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_DrinksAlcohol_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing alcoholic drinks group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Alcohol group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_DrinksAlcohol_Resources as Form, 1, True)
   ElseIf (GJR_GroupRule_DrinksSoft_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing nonalcoholic drinks group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Soft Drinks group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_DrinksSoft_Resources as Form, 1, True)
     Return
   ElseIf (GJR_GroupRule_Ceramics_List.HasForm(akBaseItem))
-    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing ceramics group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Ceramics group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
     akOutputContainer.AddItem(GJR_GroupRule_Ceramics_Resources as Form, 1, True)
+    Return
+  ElseIf (GJR_GroupRule_Succulents_List.HasForm(akBaseItem))
+    VPI_Debug.DebugMessage(Venpi_ModName, "GJR_ControlScript", "ProcessItem", "Processing Succulents group item " + akBaseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    akOutputContainer.AddItem(GJR_GroupRule_Succulents_Resources as Form, 1, True)
     Return
   EndIf
 
@@ -228,6 +239,9 @@ EndFunction
 Function PopulateItemVariables()
   If (Tool_DuctTape01 == None || !Tool_DuctTape01)
     Tool_DuctTape01 = Game.GetFormFromFile(0x002AC95F, "Starfield.esm") as MiscObject
+  EndIf
+  If (WireSpoolSmall01 == None || !WireSpoolSmall01)
+    WireSpoolSmall01 = Game.GetFormFromFile(0x0028B376, "Starfield.esm") as MiscObject
   EndIf
 EndFunction
 
