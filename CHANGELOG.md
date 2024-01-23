@@ -1,5 +1,8 @@
 # Galactic Junk Recycler
 
+## Version 1.0.12
+* Fix for xEdit ESM comparison error in an area we didn't even touch. Can't wait for Spriggit to catch up. 
+
 ## Version 1.0.11
 * Jane1986 added new group recipe for plants and an item recipe for wire spool (becomes copper).
 * Old tools and decorative stuff groups have been expanded and renamed. Tools has become Metals and Decorative stuff has become Decorations. 

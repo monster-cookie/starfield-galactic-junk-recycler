@@ -114,10 +114,10 @@ VirtualMachineAdapter:
       Object: 000853:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Succulents_List
-      Object: 000854:GalacticJunkRecycler.esm
+      Object: 000857:GalacticJunkRecycler.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GJR_GroupRule_Succulents_Resources
-      Object: 000853:GalacticJunkRecycler.esm
+      Object: 000857:GalacticJunkRecycler.esm
   Script:
     Name: ''
 Data:
