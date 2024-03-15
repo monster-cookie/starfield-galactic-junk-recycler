@@ -54,7 +54,7 @@ ItemSizes Property EnumItemSize Auto
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Variables - Junk Recycler Keywords
+;;; Variables
 ;;;
 Keyword Property VJR_ItemSize_Huge Auto Mandatory
 Keyword Property VJR_ItemSize_Large Auto Mandatory
@@ -62,38 +62,93 @@ Keyword Property VJR_ItemSize_Normal Auto Mandatory
 Keyword Property VJR_ItemSize_Small Auto Mandatory
 Keyword Property VJR_ItemSize_Tiny Auto Mandatory
 
-Keyword Property VJR_Breakdown_Adhesive_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TD Auto Mandatory
+Keyword Property VJR_Breakdown_RandomInorganic_TA Auto Mandatory
+Keyword Property VJR_Breakdown_RandomInorganic_TB Auto Mandatory
+Keyword Property VJR_Breakdown_RandomInorganic_TC Auto Mandatory
+Keyword Property VJR_Breakdown_RandomInorganic_TD Auto Mandatory
 
+Keyword Property VJR_Breakdown_RandomOrganic_TA Auto Mandatory
+Keyword Property VJR_Breakdown_RandomOrganic_TB Auto Mandatory
+Keyword Property VJR_Breakdown_RandomOrganic_TC Auto Mandatory
+Keyword Property VJR_Breakdown_RandomOrganic_TD Auto Mandatory
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Inorganic Materials (Common)
+;;;
+MiscObject Property InorgCommonAluminum Auto Mandatory
+Keyword Property VJR_Breakdown_Aluminum_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Aluminum_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Aluminum_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Aluminum_TD Auto Mandatory
+
+MiscObject Property InorgCommonArgon Auto Mandatory
+Keyword Property VJR_Breakdown_Argon_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Argon_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Argon_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Argon_TD Auto Mandatory
+
+MiscObject Property InorgCommonChlorine Auto Mandatory
+Keyword Property VJR_Breakdown_Chlorine_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Chlorine_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Chlorine_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Chlorine_TD Auto Mandatory
+
+MiscObject Property InorgCommonCopper Auto Mandatory
+Keyword Property VJR_Breakdown_Copper_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Copper_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Copper_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Copper_TD Auto Mandatory
+
+MiscObject Property InorgCommonHelium3 Auto Mandatory
+Keyword Property VJR_Breakdown_Helium3_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Helium3_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Helium3_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Helium3_TD Auto Mandatory
+
+MiscObject Property InorgCommonIron Auto Mandatory
+Keyword Property VJR_Breakdown_Iron_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Iron_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Iron_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Iron_TD Auto Mandatory
+
+MiscObject Property InorgCommonLead Auto Mandatory
+Keyword Property VJR_Breakdown_Lead_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Lead_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Lead_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Lead_TD Auto Mandatory
+
+MiscObject Property InorgCommonNickel Auto Mandatory
+Keyword Property VJR_Breakdown_Nickel_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Nickel_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Nickel_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Nickel_TD Auto Mandatory
+
+MiscObject Property InorgCommonUranium Auto Mandatory
+Keyword Property VJR_Breakdown_Uranium_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Uranium_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Uranium_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Uranium_TD Auto Mandatory
+
+MiscObject Property InorgCommonWater Auto Mandatory
+Keyword Property VJR_Breakdown_Water_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Water_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Water_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Water_TD Auto Mandatory
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Inorganic Materials (Uncommon)
+;;;
+MiscObject Property InorgUncommonAlkanes Auto Mandatory
 Keyword Property VJR_Breakdown_Alkanes_TA Auto Mandatory
 Keyword Property VJR_Breakdown_Alkanes_TB Auto Mandatory
 Keyword Property VJR_Breakdown_Alkanes_TC Auto Mandatory
 Keyword Property VJR_Breakdown_Alkanes_TD Auto Mandatory
 
-Keyword Property VJR_Breakdown_Fiber_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TD Auto Mandatory
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Inorganic Materials
-;;;
-MiscObject Property InorgCommonAluminum Auto Mandatory
-MiscObject Property InorgCommonArgon Auto Mandatory
-MiscObject Property InorgCommonChlorine Auto Mandatory
-MiscObject Property InorgCommonCopper Auto Mandatory
-MiscObject Property InorgCommonHelium3 Auto Mandatory
-MiscObject Property InorgCommonIron Auto Mandatory
-MiscObject Property InorgCommonLead Auto Mandatory
-MiscObject Property InorgCommonNickel Auto Mandatory
-MiscObject Property InorgCommonUranium Auto Mandatory
-MiscObject Property InorgCommonWater Auto Mandatory
-
-MiscObject Property InorgUncommonAlkanes Auto Mandatory
 MiscObject Property InorgUncommonBenzene Auto Mandatory
 MiscObject Property InorgUncommonBeryllium Auto Mandatory
 MiscObject Property InorgUncommonChlorosilanes Auto Mandatory
@@ -103,6 +158,11 @@ MiscObject Property InorgUncommonIridium Auto Mandatory
 MiscObject Property InorgUncommonSilver Auto Mandatory
 MiscObject Property InorgUncommonTungsten Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Inorganic Materials (Rare)
+;;;
 MiscObject Property InorgRareCarboxylicAcids Auto Mandatory
 MiscObject Property InorgRareGold Auto Mandatory
 MiscObject Property InorgRareLithium Auto Mandatory
@@ -114,6 +174,11 @@ MiscObject Property InorgRareTetrafluorides Auto Mandatory
 MiscObject Property InorgRareTitanium Auto Mandatory
 MiscObject Property InorgRareVanadium Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Inorganic Materials (Exotic)
+;;;
 MiscObject Property InorgExoticAntimony Auto Mandatory
 MiscObject Property InorgExoticCaesium Auto Mandatory
 MiscObject Property InorgExoticDysprosium Auto Mandatory
@@ -125,6 +190,11 @@ MiscObject Property InorgExoticPlutonium Auto Mandatory
 MiscObject Property InorgExoticXenon Auto Mandatory
 MiscObject Property InorgExoticYtterbium Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Inorganic Materials (Unique)
+;;;
 MiscObject Property InorgUniqueAldumite Auto Mandatory
 MiscObject Property InorgUniqueAqueousHematite Auto Mandatory
 MiscObject Property InorgUniqueCaelumite Auto Mandatory
@@ -137,15 +207,25 @@ MiscObject Property InorgUniqueVytinium Auto Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Variables - Starfield Organic Materials
+;;; Variables - Starfield Organic Materials (Common)
 ;;;
 MiscObject Property OrgCommonFiber Auto Mandatory
+Keyword Property VJR_Breakdown_Fiber_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Fiber_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Fiber_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Fiber_TD Auto Mandatory
+
 MiscObject Property OrgCommonMetabolicAgent Auto Mandatory
 MiscObject Property OrgCommonNutrient Auto Mandatory
 MiscObject Property OrgCommonSealant Auto Mandatory
 MiscObject Property OrgCommonStructural Auto Mandatory
 MiscObject Property OrgCommonToxin Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Organic Materials (Uncommon)
+;;;
 MiscObject Property OrgUncommonAntimicrobial Auto Mandatory
 MiscObject Property OrgUncommonCosmetic Auto Mandatory
 MiscObject Property OrgUncommonMembrane Auto Mandatory
@@ -153,13 +233,28 @@ MiscObject Property OrgUncommonOrnamental Auto Mandatory
 MiscObject Property OrgUncommonPigment Auto Mandatory
 MiscObject Property OrgUncommonSpice Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Organic Materials (Rare)
+;;;
 MiscObject Property OrgRareAdhesive Auto Mandatory
+Keyword Property VJR_Breakdown_Adhesive_TA Auto Mandatory
+Keyword Property VJR_Breakdown_Adhesive_TB Auto Mandatory
+Keyword Property VJR_Breakdown_Adhesive_TC Auto Mandatory
+Keyword Property VJR_Breakdown_Adhesive_TD Auto Mandatory
+
 MiscObject Property OrgRareAminoAcids Auto Mandatory
 MiscObject Property OrgRareAnalgesic Auto Mandatory
 MiscObject Property OrgRareAromatic Auto Mandatory
 MiscObject Property OrgRareHallucinogen Auto Mandatory
 MiscObject Property OrgRareSedative Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Organic Materials (Exotic)
+;;;
 MiscObject Property OrgExoticBiosuppressant Auto Mandatory
 MiscObject Property OrgExoticHypercatalyst Auto Mandatory
 MiscObject Property OrgExoticLubricant Auto Mandatory
@@ -167,6 +262,11 @@ MiscObject Property OrgExoticPolymer Auto Mandatory
 MiscObject Property OrgExoticSolvent Auto Mandatory
 MiscObject Property OrgExoticStimulant Auto Mandatory
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables - Starfield Organic Materials (Unique)
+;;;
 MiscObject Property OrgUniqueGastronomic Auto Mandatory
 MiscObject Property OrgUniqueHighTensileSpidroin Auto Mandatory
 MiscObject Property OrgUniqueImmunostimulant Auto Mandatory
@@ -185,18 +285,19 @@ Event OnInit()
   EnumItemSize = new ItemSizes
   AddInventoryEventFilter(None)
   
-  SetupMaterialsInorganicCommon()
-  SetupMaterialsInorganicUncommon()
-  SetupMaterialsInorganicRare()
-  SetupMaterialsInorganicExotic()
-  SetupMaterialsInorganicUnique()
+  Setup()
+
+  SetupInorganicCommon()
+  SetupInorganicUncommon()
+  SetupInorganicRare()
+  SetupInorganicExotic()
+  SetupInorganicUnique()
   
-  SetupMaterialsOrganicCommon()
-  SetupMaterialsOrganicUncommon()
-  SetupMaterialsOrganicRare()
-  SetupMaterialsOrganicExotic()
-  SetupMaterialsOrganicUnique()
-  SetupKeywords()
+  SetupOrganicCommon()
+  SetupOrganicUncommon()
+  SetupOrganicRare()
+  SetupOrganicExotic()
+  SetupOrganicUnique()
 EndEvent
 
 Event OnLoad()
@@ -216,29 +317,103 @@ Event OnItemAdded(Form akBaseItem, Int aiItemCount, ObjectReference akItemRefere
   ProcessItem(akBaseItem, aiItemCount)
 EndEvent
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Functions
+;;; Functions - Setup
 ;;;
-Function SetupMaterialsInorganicCommon()
-  InorgCommonAluminum = Game.GetFormFromFile(0x0000557D, "Starfield.esm") as MiscObject
-  InorgCommonArgon = Game.GetFormFromFile(0x00005588, "Starfield.esm") as MiscObject
-  InorgCommonChlorine = Game.GetFormFromFile(0x0000557C, "Starfield.esm") as MiscObject
-  InorgCommonCopper = Game.GetFormFromFile(0x00005576, "Starfield.esm") as MiscObject
-  InorgCommonHelium3 = Game.GetFormFromFile(0x0000558E, "Starfield.esm") as MiscObject
-  InorgCommonIron = Game.GetFormFromFile(0x0000556E, "Starfield.esm") as MiscObject
-  InorgCommonLead = Game.GetFormFromFile(0x00005568, "Starfield.esm") as MiscObject
-  InorgCommonNickel = Game.GetFormFromFile(0x00005572, "Starfield.esm") as MiscObject
-  InorgCommonUranium = Game.GetFormFromFile(0x00005589, "Starfield.esm") as MiscObject
-  InorgCommonWater = Game.GetFormFromFile(0x00005591, "Starfield.esm") as MiscObject
+Function Setup()
+  VJR_ItemSize_Huge = Game.GetFormFromFile(0x0000080B, "VenworksJunkRecycler.esm") as Keyword
+  VJR_ItemSize_Large = Game.GetFormFromFile(0x0000080C, "VenworksJunkRecycler.esm") as Keyword
+  VJR_ItemSize_Normal = Game.GetFormFromFile(0x0000080D, "VenworksJunkRecycler.esm") as Keyword
+  VJR_ItemSize_Small = Game.GetFormFromFile(0x0000080E, "VenworksJunkRecycler.esm") as Keyword
+  VJR_ItemSize_Tiny = Game.GetFormFromFile(0x0000080F, "VenworksJunkRecycler.esm") as Keyword
 
-  If (InorgCommonAluminum == None || InorgCommonArgon == None || InorgCommonChlorine == None || InorgCommonCopper == None || InorgCommonHelium3 == None || InorgCommonIron == None || InorgCommonLead == None || InorgCommonNickel == None || InorgCommonUranium == None || InorgCommonWater == None)
-    Debug.MessageBox("Failed to load 1 or more common inorganic materials from Starfield.esm.")
-  EndIf
+  VJR_Breakdown_RandomInorganic_TA = Game.GetFormFromFile(0x0000081C, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_RandomInorganic_TB = Game.GetFormFromFile(0x0000081D, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_RandomInorganic_TC = Game.GetFormFromFile(0x0000081E, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_RandomInorganic_TD = Game.GetFormFromFile(0x0000081F, "VenworksJunkRecycler.esm") as Keyword
+
+  VJR_Breakdown_RandomOrganic_TA = Game.GetFormFromFile(0x00000820, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_RandomOrganic_TB = Game.GetFormFromFile(0x00000821, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_RandomOrganic_TC = Game.GetFormFromFile(0x00000822, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_RandomOrganic_TD = Game.GetFormFromFile(0x00000823, "VenworksJunkRecycler.esm") as Keyword
 EndFunction
 
-Function SetupMaterialsInorganicUncommon()
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Functions - Setup Inorganic Materials and Keywords
+;;;
+Function SetupInorganicCommon()
+  InorgCommonAluminum = Game.GetFormFromFile(0x0000557D, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Aluminum_TA = Game.GetFormFromFile(0x00000824, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Aluminum_TB = Game.GetFormFromFile(0x00000825, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Aluminum_TC = Game.GetFormFromFile(0x00000826, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Aluminum_TD = Game.GetFormFromFile(0x00000827, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonArgon = Game.GetFormFromFile(0x00005588, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Argon_TA = Game.GetFormFromFile(0x00000828, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Argon_TB = Game.GetFormFromFile(0x00000829, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Argon_TC = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Argon_TD = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonChlorine = Game.GetFormFromFile(0x0000557C, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Chlorine_TA = Game.GetFormFromFile(0x0000082C, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Chlorine_TB = Game.GetFormFromFile(0x0000082D, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Chlorine_TC = Game.GetFormFromFile(0x0000082E, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Chlorine_TD = Game.GetFormFromFile(0x0000082F, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonCopper = Game.GetFormFromFile(0x00005576, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Copper_TA = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Copper_TB = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Copper_TC = Game.GetFormFromFile(0x00000832, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Copper_TD = Game.GetFormFromFile(0x00000833, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonHelium3 = Game.GetFormFromFile(0x0000558E, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Helium3_TA = Game.GetFormFromFile(0x00000834, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Helium3_TB = Game.GetFormFromFile(0x00000835, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Helium3_TC = Game.GetFormFromFile(0x00000836, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Helium3_TD = Game.GetFormFromFile(0x00000837, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonIron = Game.GetFormFromFile(0x0000556E, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Iron_TA = Game.GetFormFromFile(0x00000838, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Iron_TB = Game.GetFormFromFile(0x00000839, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Iron_TC = Game.GetFormFromFile(0x0000083A, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Iron_TD = Game.GetFormFromFile(0x0000083B, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonLead = Game.GetFormFromFile(0x00005568, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Lead_TA = Game.GetFormFromFile(0x0000083C, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Lead_TB = Game.GetFormFromFile(0x0000083D, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Lead_TC = Game.GetFormFromFile(0x0000083E, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Lead_TD = Game.GetFormFromFile(0x0000083F, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonNickel = Game.GetFormFromFile(0x00005572, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Nickel_TA = Game.GetFormFromFile(0x00000840, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Nickel_TB = Game.GetFormFromFile(0x00000841, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Nickel_TC = Game.GetFormFromFile(0x00000842, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Nickel_TD = Game.GetFormFromFile(0x00000843, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonUranium = Game.GetFormFromFile(0x00005589, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Uranium_TA = Game.GetFormFromFile(0x00000844, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Uranium_TB = Game.GetFormFromFile(0x00000845, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Uranium_TC = Game.GetFormFromFile(0x00000846, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Uranium_TD = Game.GetFormFromFile(0x00000847, "VenworksJunkRecycler.esm") as Keyword
+
+  InorgCommonWater = Game.GetFormFromFile(0x00005591, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Water_TA = Game.GetFormFromFile(0x00000848, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Water_TB = Game.GetFormFromFile(0x00000849, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Water_TC = Game.GetFormFromFile(0x0000084A, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Water_TD = Game.GetFormFromFile(0x0000084B, "VenworksJunkRecycler.esm") as Keyword
+EndFunction
+
+Function SetupInorganicUncommon()
   InorgUncommonAlkanes = Game.GetFormFromFile(0x000055AF, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Alkanes_TA = Game.GetFormFromFile(0x00000814, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Alkanes_TB = Game.GetFormFromFile(0x00000815, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Alkanes_TC = Game.GetFormFromFile(0x00000816, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Alkanes_TD = Game.GetFormFromFile(0x00000817, "VenworksJunkRecycler.esm") as Keyword
+
   InorgUncommonBenzene = Game.GetFormFromFile(0x00005585, "Starfield.esm") as MiscObject
   InorgUncommonBeryllium = Game.GetFormFromFile(0x000057D9, "Starfield.esm") as MiscObject
   InorgUncommonChlorosilanes = Game.GetFormFromFile(0x0000557E, "Starfield.esm") as MiscObject
@@ -247,13 +422,9 @@ Function SetupMaterialsInorganicUncommon()
   InorgUncommonIridium = Game.GetFormFromFile(0x0000558A, "Starfield.esm") as MiscObject
   InorgUncommonSilver = Game.GetFormFromFile(0x0000556A, "Starfield.esm") as MiscObject
   InorgUncommonTungsten = Game.GetFormFromFile(0x0000556B, "Starfield.esm") as MiscObject
-
-  If (InorgUncommonAlkanes == None || InorgUncommonBenzene == None || InorgUncommonBeryllium == None || InorgUncommonChlorosilanes == None || InorgUncommonCobalt == None || InorgUncommonFluorine == None || InorgUncommonIridium == None || InorgUncommonSilver == None || InorgUncommonTungsten == None)
-    Debug.MessageBox("Failed to load 1 or more uncommon inorganic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsInorganicRare()
+Function SetupInorganicRare()
   InorgRareCarboxylicAcids = Game.GetFormFromFile(0x00005586, "Starfield.esm") as MiscObject
   InorgRareGold = Game.GetFormFromFile(0x00005579, "Starfield.esm") as MiscObject
   InorgRareLithium = Game.GetFormFromFile(0x0000557F, "Starfield.esm") as MiscObject
@@ -264,13 +435,9 @@ Function SetupMaterialsInorganicRare()
   InorgRareTetrafluorides = Game.GetFormFromFile(0x00005578, "Starfield.esm") as MiscObject
   InorgRareTitanium = Game.GetFormFromFile(0x0000556D, "Starfield.esm") as MiscObject
   InorgRareVanadium = Game.GetFormFromFile(0x0000558B, "Starfield.esm") as MiscObject
-
-  If (InorgRareCarboxylicAcids == None || InorgRareGold == None || InorgRareLithium == None || InorgRareMercury == None || InorgRareNeodymium == None || InorgRarePlatinum == None || InorgRareTantalum == None || InorgRareTetrafluorides == None || InorgRareTitanium == None || InorgRareVanadium == None)
-    Debug.MessageBox("Failed to load 1 or more rare inorganic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsInorganicExotic()
+Function SetupInorganicExotic()
   InorgExoticAntimony = Game.GetFormFromFile(0x0000557B, "Starfield.esm") as MiscObject
   InorgExoticCaesium = Game.GetFormFromFile(0x000057DF, "Starfield.esm") as MiscObject
   InorgExoticDysprosium = Game.GetFormFromFile(0x00005569, "Starfield.esm") as MiscObject
@@ -281,13 +448,9 @@ Function SetupMaterialsInorganicExotic()
   InorgExoticPlutonium = Game.GetFormFromFile(0x0000558C, "Starfield.esm") as MiscObject
   InorgExoticXenon = Game.GetFormFromFile(0x000057DD, "Starfield.esm") as MiscObject
   InorgExoticYtterbium = Game.GetFormFromFile(0x00005571, "Starfield.esm") as MiscObject
-
-  If (InorgExoticAntimony == None || InorgExoticCaesium == None || InorgExoticDysprosium == None || InorgExoticEuropium == None || InorgExoticIonicLiquids == None || InorgExoticNeon == None || InorgExoticPalladium == None || InorgExoticPlutonium == None || InorgExoticXenon == None || InorgExoticYtterbium == None)
-    Debug.MessageBox("Failed to load 1 or more exotic inorganic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsInorganicUnique()
+Function SetupInorganicUnique()
   InorgUniqueAldumite = Game.GetFormFromFile(0x00005DEC, "Starfield.esm") as MiscObject
   InorgUniqueAqueousHematite = Game.GetFormFromFile(0x0029D022, "Starfield.esm") as MiscObject
   InorgUniqueCaelumite = Game.GetFormFromFile(0x000788D6, "Starfield.esm") as MiscObject
@@ -296,100 +459,73 @@ Function SetupMaterialsInorganicUnique()
   InorgUniqueTasine = Game.GetFormFromFile(0x00005DED, "Starfield.esm") as MiscObject
   InorgUniqueVeryl = Game.GetFormFromFile(0x00005DEE, "Starfield.esm") as MiscObject
   InorgUniqueVytinium = Game.GetFormFromFile(0x00005DEF, "Starfield.esm") as MiscObject
-
-  If (InorgUniqueAldumite == None || InorgUniqueAqueousHematite == None || InorgUniqueCaelumite == None || InorgUniqueIndicite == None || InorgUniqueRothicite == None || InorgUniqueTasine == None || InorgUniqueVeryl == None || InorgUniqueVytinium == None)
-    Debug.MessageBox("Failed to load 1 or more unique inorganic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsOrganicCommon()
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Functions - Setup Organic Materials and Keywords
+;;;
+Function SetupOrganicCommon()
   OrgCommonFiber = Game.GetFormFromFile(0x000055AF, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Fiber_TA = Game.GetFormFromFile(0x00000810, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Fiber_TB = Game.GetFormFromFile(0x00000811, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Fiber_TC = Game.GetFormFromFile(0x00000812, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Fiber_TD = Game.GetFormFromFile(0x00000813, "VenworksJunkRecycler.esm") as Keyword
+
   OrgCommonMetabolicAgent = Game.GetFormFromFile(0x0029F3FC, "Starfield.esm") as MiscObject
   OrgCommonNutrient = Game.GetFormFromFile(0x000777FD, "Starfield.esm") as MiscObject
   OrgCommonSealant = Game.GetFormFromFile(0x000055CC, "Starfield.esm") as MiscObject
   OrgCommonStructural = Game.GetFormFromFile(0x000055B9, "Starfield.esm") as MiscObject
   OrgCommonToxin = Game.GetFormFromFile(0x000055CB, "Starfield.esm") as MiscObject
-
-  If (OrgCommonFiber == None || OrgCommonMetabolicAgent == None || OrgCommonNutrient == None || OrgCommonSealant == None || OrgCommonStructural == None || OrgCommonToxin == None)
-    Debug.MessageBox("Failed to load 1 or more common organic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsOrganicUncommon()
+Function SetupOrganicUncommon()
   OrgUncommonAntimicrobial = Game.GetFormFromFile(0x000055AB, "Starfield.esm") as MiscObject
   OrgUncommonCosmetic = Game.GetFormFromFile(0x000055A8, "Starfield.esm") as MiscObject
   OrgUncommonMembrane = Game.GetFormFromFile(0x000055B0, "Starfield.esm") as MiscObject
   OrgUncommonOrnamental = Game.GetFormFromFile(0x000055A7, "Starfield.esm") as MiscObject
   OrgUncommonPigment = Game.GetFormFromFile(0x0029F400, "Starfield.esm") as MiscObject
   OrgUncommonSpice = Game.GetFormFromFile(0x000055AC, "Starfield.esm") as MiscObject
-
-  If (OrgUncommonAntimicrobial == None || OrgUncommonCosmetic == None || OrgUncommonMembrane == None || OrgUncommonOrnamental == None || OrgUncommonPigment == None || OrgUncommonSpice == None)
-    Debug.MessageBox("Failed to load 1 or more uncommon organic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsOrganicRare()
+Function SetupOrganicRare()
   OrgRareAdhesive = Game.GetFormFromFile(0x000055B1, "Starfield.esm") as MiscObject
+  VJR_Breakdown_Adhesive_TA = Game.GetFormFromFile(0x00000803, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Adhesive_TB = Game.GetFormFromFile(0x00000804, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Adhesive_TC = Game.GetFormFromFile(0x00000805, "VenworksJunkRecycler.esm") as Keyword
+  VJR_Breakdown_Adhesive_TD = Game.GetFormFromFile(0x00000806, "VenworksJunkRecycler.esm") as Keyword
+
   OrgRareAminoAcids = Game.GetFormFromFile(0x000055CD, "Starfield.esm") as MiscObject
   OrgRareAnalgesic = Game.GetFormFromFile(0x000055A9, "Starfield.esm") as MiscObject
   OrgRareAromatic = Game.GetFormFromFile(0x000055B8, "Starfield.esm") as MiscObject
   OrgRareHallucinogen = Game.GetFormFromFile(0x0029F405, "Starfield.esm") as MiscObject
   OrgRareSedative = Game.GetFormFromFile(0x000055AD, "Starfield.esm") as MiscObject
-
-  If (OrgRareAdhesive == None || OrgRareAminoAcids == None || OrgRareAnalgesic == None || OrgRareAromatic == None || OrgRareHallucinogen == None || OrgRareSedative == None)
-    Debug.MessageBox("Failed to load 1 or more rare organic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsOrganicExotic()
+Function SetupOrganicExotic()
   OrgExoticBiosuppressant = Game.GetFormFromFile(0x000055B2, "Starfield.esm") as MiscObject
   OrgExoticHypercatalyst = Game.GetFormFromFile(0x0029F40D, "Starfield.esm") as MiscObject
   OrgExoticLubricant = Game.GetFormFromFile(0x000055BA, "Starfield.esm") as MiscObject
   OrgExoticPolymer = Game.GetFormFromFile(0x000055A6, "Starfield.esm") as MiscObject
   OrgExoticSolvent = Game.GetFormFromFile(0x000055CE, "Starfield.esm") as MiscObject
   OrgExoticStimulant = Game.GetFormFromFile(0x000055AE, "Starfield.esm") as MiscObject
-
-  If (OrgExoticBiosuppressant == None || OrgExoticHypercatalyst == None || OrgExoticLubricant == None || OrgExoticPolymer == None || OrgExoticSolvent == None || OrgExoticStimulant == None)
-    Debug.MessageBox("Failed to load 1 or more exotic organic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupMaterialsOrganicUnique()
+Function SetupOrganicUnique()
   OrgUniqueGastronomic = Game.GetFormFromFile(0x0000559D, "Starfield.esm") as MiscObject
   OrgUniqueHighTensileSpidroin = Game.GetFormFromFile(0x000055AA, "Starfield.esm") as MiscObject
   OrgUniqueImmunostimulant = Game.GetFormFromFile(0x000055B3, "Starfield.esm") as MiscObject
   OrgUniqueLuxuryTextile = Game.GetFormFromFile(0x0000559E, "Starfield.esm") as MiscObject
   OrgUniqueMemorySubstrate = Game.GetFormFromFile(0x0000559B, "Starfield.esm") as MiscObject
   OrgUniqueNeurologic = Game.GetFormFromFile(0x0029F409, "Starfield.esm") as MiscObject
-
-  If (OrgUniqueGastronomic == None || OrgUniqueHighTensileSpidroin == None || OrgUniqueImmunostimulant == None || OrgUniqueLuxuryTextile == None || OrgUniqueMemorySubstrate == None || OrgUniqueNeurologic == None)
-    Debug.MessageBox("Failed to load 1 or more unique organic materials from Starfield.esm.")
-  EndIf
 EndFunction
 
-Function SetupKeywords()
-  VJR_ItemSize_Huge = Game.GetFormFromFile(0x0000080B, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Large = Game.GetFormFromFile(0x0000080C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Normal = Game.GetFormFromFile(0x0000080D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Small = Game.GetFormFromFile(0x0000080E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Tiny = Game.GetFormFromFile(0x0000080F, "VenworksJunkRecycler.esm") as Keyword
 
-  VJR_Breakdown_Adhesive_TA = Game.GetFormFromFile(0x00000803, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Adhesive_TB = Game.GetFormFromFile(0x00000804, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Adhesive_TC = Game.GetFormFromFile(0x00000805, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Adhesive_TD = Game.GetFormFromFile(0x00000806, "VenworksJunkRecycler.esm") as Keyword
-
-  VJR_Breakdown_Alkanes_TA = Game.GetFormFromFile(0x00000814, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Alkanes_TB = Game.GetFormFromFile(0x00000815, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Alkanes_TC = Game.GetFormFromFile(0x00000816, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Alkanes_TD = Game.GetFormFromFile(0x00000817, "VenworksJunkRecycler.esm") as Keyword
-
-  VJR_Breakdown_Fiber_TA = Game.GetFormFromFile(0x00000810, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fiber_TB = Game.GetFormFromFile(0x00000811, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fiber_TC = Game.GetFormFromFile(0x00000812, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fiber_TD = Game.GetFormFromFile(0x00000813, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Functions - Breakdown Processing
+;;;
 Function ProcessItem(Form baseItem, int count)
   BreakdownResults results=New BreakdownResults
   Actor player = Game.GetPlayer()
