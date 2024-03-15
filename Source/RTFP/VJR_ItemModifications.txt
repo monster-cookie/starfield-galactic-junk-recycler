@@ -1,0 +1,30 @@
+minver=112
+
+# Generally the items are listed <size> <tier A result> <tier B result> <tier C result> <tier D result>
+
+# Item Sizing Keywords:
+# VJR_ItemSize_Huge "Quantity 3x" [VenworksJunkRecycler.esm~0000080B]
+# VJR_ItemSize_Large "Quantity 2x" [VenworksJunkRecycler.esm~0000080C]
+# VJR_ItemSize_Normal "Quantity 1x" [VenworksJunkRecycler.esm~0000080D]
+# VJR_ItemSize_Small "Quantity 0.5x" [VenworksJunkRecycler.esm~0000080E]
+# VJR_ItemSize_Tiny "Quantity 0.25x" [VenworksJunkRecycler.esm~0000080F]
+#
+# Breakdown Keywords:
+# VJR_Breakdown_Adhesive_TA [VenworksJunkRecycler.esm~00000803]
+# VJR_Breakdown_Adhesive_TB [VenworksJunkRecycler.esm~00000804]
+# VJR_Breakdown_Adhesive_TC [VenworksJunkRecycler.esm~00000805]
+# VJR_Breakdown_Adhesive_TD [VenworksJunkRecycler.esm~00000806]
+#
+# VJR_Breakdown_Alkanes_TA [VenworksJunkRecycler.esm~00000814]
+# VJR_Breakdown_Alkanes_TB [VenworksJunkRecycler.esm~00000815]
+# VJR_Breakdown_Alkanes_TC [VenworksJunkRecycler.esm~00000816]
+# VJR_Breakdown_Alkanes_TD [VenworksJunkRecycler.esm~00000817]
+#
+# VJR_Breakdown_Fiber_TA [VenworksJunkRecycler.esm~00000810]
+# VJR_Breakdown_Fiber_TB [VenworksJunkRecycler.esm~00000811]
+# VJR_Breakdown_Fiber_TC [VenworksJunkRecycler.esm~00000812]
+# VJR_Breakdown_Fiber_TD [VenworksJunkRecycler.esm~00000813]
+
+[Misc]
+# Tool_DuctTape01 "Vacuum Tape" [MISC:002AC95F]: Small Size - Tier A (Adhesive) - Tier B (Fiber) - Tier C (Alkanes) - Tier D (None)
+Starfield.esm~002AC95F|kwd_add(VenworksJunkRecycler.esm~0000080E)|kwd_add(VenworksJunkRecycler.esm~00000803)|kwd_add(VenworksJunkRecycler.esm~00000811)|kwd_add(VenworksJunkRecycler.esm~00000816)

@@ -1,5 +1,11 @@
 # Galactic Junk Recycler
 
+## Version 2.0.0 [UNRELEASED]
+* No more annoying vending machine. You can access the recycler from any workbench. 
+
+## Version 1.0.13
+* Drag and drop error from me in the last fix. Its been a fun day. 
+
 ## Version 1.0.12
 * Fix for xEdit ESM comparison error in an area we didn't even touch. Can't wait for Spriggit to catch up. 
 
