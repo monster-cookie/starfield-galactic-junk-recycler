@@ -2,6 +2,8 @@
 
 ## Version 2.0.0 [UNRELEASED]
 * No more annoying vending machine. You can access the recycler from any workbench. 
+* All rules are controlled by RTFP see SFSE/Plugins/RealTimeFormPatcher/VJR_ItemModifications.txt default rules are from the hard work of Yorghan. 
+* Manufactured Goods are no longer returned but over all you should get more of the base materials so will be easy to just craft the items you need at the industrial bench. 
 
 ## Version 1.0.13
 * Drag and drop error from me in the last fix. Its been a fun day. 
