@@ -1208,7 +1208,11 @@ EndFunction
 Form Function GetItemTierA(Form baseItem)
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierA", "Finding Tier A material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
 
-  If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TA))
+  If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TA))
+    Return GetRandomInorganic()
+  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TA))
+    Return GetRandomOrganic()
+  ElseIf (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TA))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TA))
     Return InorgUniqueAldumite
@@ -1320,10 +1324,6 @@ Form Function GetItemTierA(Form baseItem)
     Return InorgExoticPlutonium
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Polymer_TA))
     Return OrgExoticPolymer
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TA))
-    Return GetRandomInorganic()
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TA))
-    Return GetRandomOrganic()
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Rothicite_TA))
     Return InorgUniqueRothicite
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Sealant_TA))
@@ -1374,7 +1374,11 @@ EndFunction
 Form Function GetItemTierB(Form baseItem)
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierB", "Finding Tier B material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
 
-  If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TB))
+  If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TB))
+    Return GetRandomInorganic()
+  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TB))
+    Return GetRandomOrganic()
+  ElseIf (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TB))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TB))
     Return InorgUniqueAldumite
@@ -1486,10 +1490,6 @@ Form Function GetItemTierB(Form baseItem)
     Return InorgExoticPlutonium
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Polymer_TB))
     Return OrgExoticPolymer
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TB))
-    Return GetRandomInorganic()
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TB))
-    Return GetRandomOrganic()
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Rothicite_TB))
     Return InorgUniqueRothicite
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Sealant_TB))
@@ -1540,7 +1540,11 @@ EndFunction
 Form Function GetItemTierC(Form baseItem)
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierC", "Finding Tier C material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
 
-  If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TC))
+  If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TC))
+    Return GetRandomInorganic()
+  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TC))
+    Return GetRandomOrganic()
+  ElseIf (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TC))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TC))
     Return InorgUniqueAldumite
@@ -1652,10 +1656,6 @@ Form Function GetItemTierC(Form baseItem)
     Return InorgExoticPlutonium
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Polymer_TC))
     Return OrgExoticPolymer
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TC))
-    Return GetRandomInorganic()
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TC))
-    Return GetRandomOrganic()
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Rothicite_TC))
     Return InorgUniqueRothicite
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Sealant_TC))
@@ -1706,7 +1706,11 @@ EndFunction
 Form Function GetItemTierD(Form baseItem)
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierD", "Finding Tier D material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
 
-  If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TD))
+  If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TD))
+    Return GetRandomInorganic()
+  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TD))
+    Return GetRandomOrganic()
+  ElseIf (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TD))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TD))
     Return InorgUniqueAldumite
@@ -1818,10 +1822,6 @@ Form Function GetItemTierD(Form baseItem)
     Return InorgExoticPlutonium
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Polymer_TD))
     Return OrgExoticPolymer
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TD))
-    Return GetRandomInorganic()
-  ElseIf(baseItem.HasKeyword(VJR_Breakdown_RandomOrganic_TD))
-    Return GetRandomOrganic()
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Rothicite_TD))
     Return InorgUniqueRothicite
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Sealant_TD))
