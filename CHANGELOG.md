@@ -3,10 +3,10 @@
 ## Version 2.0.0
 * No more annoying vending machine. You can access the recycler from any workbench. 
 * All rules are controlled by RTFP see SFSE/Plugins/RealTimeFormPatcher/VJR_ItemModifications.txt default rules are from the hard work of Yorghan. 
-* Manufactured Goods are no longer returned but over all you should get more of the base materials so will be easy to just craft the items you need at the industrial bench. 
+* Manufactured Goods are no longer returned but over all you should get more of the base materials so will be easy to just craft the items you need at the industrial bench.  
 * Ammo isn't current breaking down I think RTFP isn't allowing Keywords on Ammo records or the form list filters aren't working researching with the author. 
-* The new keyword system is a lot more faster then the old system and in most cases will not have a queue. Groups are now processed as a single entity. 
-* NOTE: DO NOT UPGRADE this new version is meant to work along side Galactic Junk Recycler until you can do a new game or new universe. Removing Galactic Junk Recycler will call a CTD. So when ready ofr a new universe get into unity, saver, exit, uninstall Galactic Junk Recycler, load the game and save and exit into the unity portal. 
+* The new keyword system is a lot faster than the old system and, in most cases, will not have a queue. Groups are now processed as a single entity.  
+* NOTE: DO NOT UPGRADE this new version is meant to work alongside Galactic Junk Recycler until you can do a new game or new universe. Removing Galactic Junk Recycler will call a CTD. So, when ready for a new universe get into unity, saver, exit, uninstall Galactic Junk Recycler, load the game and save and exit into the unity portal. 
 
 ## Version 1.0.13
 * Drag and drop error from me in the last fix. Its been a fun day. 

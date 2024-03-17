@@ -1,50 +1,48 @@
 [b][size=4][u]Overview[/u][/size][/b]
-Welcome to the new branch of Galactic Pawn Shop, Galactic Junk Recycler. Galactic Junk Recycler will break down your old armor, weapons, clothing, books, and junk from your exploration and give you usable resources. 
+Venworks Junk Recycler will break down your old armor, weapons, clothing, books, and junk from your exploration and give you usable resources at any workbench in the game.
 
-Aside from Venpi, I want this to be an option for players that do not like the outpost mining mess and need a way to get the resources you can't from pure exploration. 
+We want this to be an option for players that do not like the outpost mining mess and need a way to get the resources you can't from pure exploration.
 
-[b][size=3]Features[/size][/b]
-[list]
-[*]Initially weapons become inorganic resources, armor becomes organic resources, books become fiber and polytextile, misc/junk items become manufactured findable items. 
-[*]Long term there will be targeted mappings like tape becomes adhesive, notebooks become fiber, etc
-[/list]
-
-[b][size=3]Planned Updates[/size][/b]
-[list]
-[*]Planned mappings of junk to specific resources
-[*]Built in recycler terminal in the Lodge and Ship Workspace Habs
-[*]Keyword based rules allowing for user customization using xedit patched (Probably not possible until Starfield Creation Kit) 
-[/list]
+[quote]
+  DO NOT UPGRADE to Venworks Galactic Recycler (2.0) from Galactic Junk Recycler (1.0). They are meant to be used in parallel until you can make a new game or new universe. Removing Galactic Junk Recycler outside of a Unity or via a new game will result in CTDs.
+[/quote]
 
 [b][u][size=4]Usage[/size]
+
 [/u][size=3]Deployment[/size]
 [/b]Go into outpost build mode and find it in the miscellaneous section and build it.
 
 [b][size=3]Recycling Items[/size][/b]
-Aim at the vending machine part it says deposit on
+Aim at the workbench you should see a new option recycle (usually bound to R but sometimes space)
 [list=1]
-[*]Press e that opens a container 
-[*]Transfer/Deposit the items you want to recycle into it
-[*]Close the one-way transfer menu
-[*]Open the yellow container below the vending machine
-[*]Remove the resources.  
+[*]Press the bound key for recycle.
+[*]Transfer/Deposit the items you want to recycle into it.
+[*]The broken-down materials are immediately transferred to your inventory.
+[/list]
+
+[b][size=3]Modifying the rules[/size][/b]
+[list=1]
+[*]Open the mod folder and go to SFSE\Plugins\RealTimeFormPatcher
+[*]Edit VJR_ItemModifications.txt
+[*]Instruction and helpful list of the keyword for controlling the break-down rules is at the time.
 [/list]
 
 [b][u][size=4]Installation[/size][/u][/b]
 [size=3][b]Via Vortex/MO2[/b][/size]
-Install as normally would any mod. 
+Install as normally would any mod.
 
 [size=3][b]Manually[/b][/size]
-Really please use a mod manage :) 
+Really please use a mod manage :)
 
-Download the current zip file. Please everything in the Data folder in the zip to the same place under <Game Install Dir aka where starfield.exe is>\Data.  
+Download the current zip file. Please everything in the Data folder in the zip to the same place under <Game Install Dir aka where starfield.exe is>\Data.
 
 [size=3][b]Handling the plugins.txt file[/b][/size]
-You need to add GalacticJunkRecycler.esm,  and VenpiCore.esm to your plugins.txt file see below for help. Should be ordered like this in the file. 
+You need to add VenworksJunkRecycler.esm and VenpiCore.esm to your plugins.txt file see below for help. Should be ordered like this in the file.
 [code]
-*VenpiCore.esm
-*GalacticJunkRecycler
+  *VenpiCore.esm
+  *VenworksJunkRecycler
 [/code]
+
 These are instructions from the author of the mod:
 [img]https://i.imgur.com/MD5uU3j.png[/img]
 
@@ -52,7 +50,7 @@ These are instructions from the author of the mod:
 [/size]
 [list]
 [*]I can be found as Venpi hanging out in the xEdit and Starfield NexusMods discord servers.
-[*]I have created the [url=https://discord.gg/zssJMGHmWD]Venworks Discord Community[/url]﻿ for discussing, tracking, bug reporting, and helping out with my mods and Starfield modding research.
+[*]I have created the [url=https://discord.gg/zssJMGHmWD]Venworks Discord Community[/url] for discussing, tracking, bug reporting, and helping out with my mods and Starfield modding research.
 [*]You can follow me on threads as [url=https://www.threads.net/@monstercookiebd]@monstercookiebd[/url]
 [/list]
 [b][u][size=4]Source Code[/size][/u][/b]
