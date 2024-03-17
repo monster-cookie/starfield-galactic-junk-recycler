@@ -2,7 +2,7 @@ ScriptName VJR_TransferContainerScript Extends ObjectReference
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Global Variables
+;;; Structs
 ;;;
 Struct BreakdownResults
   Form TierA_Item=None
@@ -14,16 +14,6 @@ Struct BreakdownResults
   Form TierD_Item=None
   Int TierD_Quantity=1
   Float SizeAdjustment=1
-EndStruct
-
-
-Struct ItemSizes
-  Int Unknown=0
-  Int Tiny=1
-  Int Small=2
-  Int Normal=3
-  Int Large=4
-  Int Huge=5
 EndStruct
 
 
@@ -43,13 +33,14 @@ GlobalVariable Property VJR_BreakdownQuantity_TierD Auto Const Mandatory
 ;;;
 ;;; Properties
 ;;;
+FormList Property AllInorganicResources Auto Const Mandatory
+FormList Property AllOrganicResources Auto Const Mandatory
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables
 ;;;
-ItemSizes Property EnumItemSize Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -71,9 +62,6 @@ Keyword Property VJR_Breakdown_RandomOrganic_TA Auto Mandatory
 Keyword Property VJR_Breakdown_RandomOrganic_TB Auto Mandatory
 Keyword Property VJR_Breakdown_RandomOrganic_TC Auto Mandatory
 Keyword Property VJR_Breakdown_RandomOrganic_TD Auto Mandatory
-
-FormList Property AllInorganicResources Auto Mandatory
-FormList Property AllOrganicResources Auto Mandatory
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -595,26 +583,7 @@ Keyword Property VJR_Breakdown_Neurologic_TD Auto Mandatory
 ;;;
 Event OnInit()
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "OnInit", "On OnInit triggered.", 0, Venpi_DebugEnabled.GetValueInt())
-  
-  EnumItemSize = new ItemSizes
-  AllInorganicResources = new FormList
-  AllOrganicResources = new FormList
-
-  AddInventoryEventFilter(None)
-  
   Setup()
-
-  SetupInorganicCommon()
-  SetupInorganicUncommon()
-  SetupInorganicRare()
-  SetupInorganicExotic()
-  SetupInorganicUnique()
-  
-  SetupOrganicCommon()
-  SetupOrganicUncommon()
-  SetupOrganicRare()
-  SetupOrganicExotic()
-  SetupOrganicUnique()
 EndEvent
 
 Event OnLoad()
@@ -629,6 +598,9 @@ EndEvent
 Event OnItemAdded(Form akBaseItem, Int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer, Int aiTransferReason)
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "OnItemAdded", "On OnItemAdded triggered.", 0, Venpi_DebugEnabled.GetValueInt())
 
+  ;; No init/load events get called this was so need to call Setup ourself
+  Setup()
+
   ;; Loop and process items
   VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "OnItemAdded", "Processing item " + akBaseItem +  " of which there are " + aiItemCount + " of them.", 0, Venpi_DebugEnabled.GetValueInt())
   ProcessItem(akBaseItem, aiItemCount)
@@ -640,6 +612,8 @@ EndEvent
 ;;; Functions - Setup
 ;;;
 Function Setup()
+  AddInventoryEventFilter(None)
+  
   VJR_ItemSize_Huge = Game.GetFormFromFile(0x0000080B, "VenworksJunkRecycler.esm") as Keyword
   VJR_ItemSize_Large = Game.GetFormFromFile(0x0000080C, "VenworksJunkRecycler.esm") as Keyword
   VJR_ItemSize_Normal = Game.GetFormFromFile(0x0000080D, "VenworksJunkRecycler.esm") as Keyword
@@ -655,6 +629,18 @@ Function Setup()
   VJR_Breakdown_RandomOrganic_TB = Game.GetFormFromFile(0x00000821, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_RandomOrganic_TC = Game.GetFormFromFile(0x00000822, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_RandomOrganic_TD = Game.GetFormFromFile(0x00000823, "VenworksJunkRecycler.esm") as Keyword
+
+  SetupInorganicCommon()
+  SetupInorganicUncommon()
+  SetupInorganicRare()
+  SetupInorganicExotic()
+  SetupInorganicUnique()
+  
+  SetupOrganicCommon()
+  SetupOrganicUncommon()
+  SetupOrganicRare()
+  SetupOrganicExotic()
+  SetupOrganicUnique()
 EndFunction
 
 
@@ -664,70 +650,60 @@ EndFunction
 ;;;
 Function SetupInorganicCommon()
   InorgCommonAluminum = Game.GetFormFromFile(0x0000557D, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonAluminum)
   VJR_Breakdown_Aluminum_TA = Game.GetFormFromFile(0x00000824, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aluminum_TB = Game.GetFormFromFile(0x00000825, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aluminum_TC = Game.GetFormFromFile(0x00000826, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aluminum_TD = Game.GetFormFromFile(0x00000827, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonArgon = Game.GetFormFromFile(0x00005588, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonArgon)
   VJR_Breakdown_Argon_TA = Game.GetFormFromFile(0x00000828, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Argon_TB = Game.GetFormFromFile(0x00000829, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Argon_TC = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Argon_TD = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonChlorine = Game.GetFormFromFile(0x0000557C, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonChlorine)
   VJR_Breakdown_Chlorine_TA = Game.GetFormFromFile(0x0000082C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Chlorine_TB = Game.GetFormFromFile(0x0000082D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Chlorine_TC = Game.GetFormFromFile(0x0000082E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Chlorine_TD = Game.GetFormFromFile(0x0000082F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonCopper = Game.GetFormFromFile(0x00005576, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonCopper)
   VJR_Breakdown_Copper_TA = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Copper_TB = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Copper_TC = Game.GetFormFromFile(0x00000832, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Copper_TD = Game.GetFormFromFile(0x00000833, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonHelium3 = Game.GetFormFromFile(0x0000558E, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonHelium3)
   VJR_Breakdown_Helium3_TA = Game.GetFormFromFile(0x00000834, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Helium3_TB = Game.GetFormFromFile(0x00000835, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Helium3_TC = Game.GetFormFromFile(0x00000836, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Helium3_TD = Game.GetFormFromFile(0x00000837, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonIron = Game.GetFormFromFile(0x0000556E, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonIron)
   VJR_Breakdown_Iron_TA = Game.GetFormFromFile(0x00000838, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Iron_TB = Game.GetFormFromFile(0x00000839, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Iron_TC = Game.GetFormFromFile(0x0000083A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Iron_TD = Game.GetFormFromFile(0x0000083B, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonLead = Game.GetFormFromFile(0x00005568, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonLead)
   VJR_Breakdown_Lead_TA = Game.GetFormFromFile(0x0000083C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lead_TB = Game.GetFormFromFile(0x0000083D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lead_TC = Game.GetFormFromFile(0x0000083E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lead_TD = Game.GetFormFromFile(0x0000083F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonNickel = Game.GetFormFromFile(0x00005572, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonNickel)
   VJR_Breakdown_Nickel_TA = Game.GetFormFromFile(0x00000840, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Nickel_TB = Game.GetFormFromFile(0x00000841, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Nickel_TC = Game.GetFormFromFile(0x00000842, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Nickel_TD = Game.GetFormFromFile(0x00000843, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonUranium = Game.GetFormFromFile(0x00005589, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonUranium)
   VJR_Breakdown_Uranium_TA = Game.GetFormFromFile(0x00000844, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Uranium_TB = Game.GetFormFromFile(0x00000845, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Uranium_TC = Game.GetFormFromFile(0x00000846, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Uranium_TD = Game.GetFormFromFile(0x00000847, "VenworksJunkRecycler.esm") as Keyword
 
   InorgCommonWater = Game.GetFormFromFile(0x00005591, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgCommonWater)
   VJR_Breakdown_Water_TA = Game.GetFormFromFile(0x00000848, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Water_TB = Game.GetFormFromFile(0x00000849, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Water_TC = Game.GetFormFromFile(0x0000084A, "VenworksJunkRecycler.esm") as Keyword
@@ -735,64 +711,55 @@ Function SetupInorganicCommon()
 EndFunction
 
 Function SetupInorganicUncommon()
-  InorgUncommonAlkanes = Game.GetFormFromFile(0x000055AF, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonAlkanes)
+  InorgUncommonAlkanes = Game.GetFormFromFile(0x00005570, "Starfield.esm") as MiscObject
   VJR_Breakdown_Alkanes_TA = Game.GetFormFromFile(0x00000814, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Alkanes_TB = Game.GetFormFromFile(0x00000815, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Alkanes_TC = Game.GetFormFromFile(0x00000816, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Alkanes_TD = Game.GetFormFromFile(0x00000817, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonBenzene = Game.GetFormFromFile(0x00005585, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonBenzene)
   VJR_Breakdown_Benzene_TA = Game.GetFormFromFile(0x0000084C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Benzene_TB = Game.GetFormFromFile(0x0000084D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Benzene_TC = Game.GetFormFromFile(0x0000084E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Benzene_TD = Game.GetFormFromFile(0x0000084F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonBeryllium = Game.GetFormFromFile(0x000057D9, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonBeryllium)
   VJR_Breakdown_Beryllium_TA = Game.GetFormFromFile(0x00000850, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Beryllium_TB = Game.GetFormFromFile(0x00000851, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Beryllium_TC = Game.GetFormFromFile(0x00000852, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Beryllium_TD = Game.GetFormFromFile(0x00000853, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonChlorosilanes = Game.GetFormFromFile(0x0000557E, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonChlorosilanes)
   VJR_Breakdown_Chlorosilanes_TA = Game.GetFormFromFile(0x00000854, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Chlorosilanes_TB = Game.GetFormFromFile(0x00000855, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Chlorosilanes_TC = Game.GetFormFromFile(0x00000856, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Chlorosilanes_TD = Game.GetFormFromFile(0x00000857, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonCobalt = Game.GetFormFromFile(0x00005575, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonCobalt)
   VJR_Breakdown_Cobalt_TA = Game.GetFormFromFile(0x00000858, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Cobalt_TB = Game.GetFormFromFile(0x00000859, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Cobalt_TC = Game.GetFormFromFile(0x0000085A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Cobalt_TD = Game.GetFormFromFile(0x0000085B, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonFluorine = Game.GetFormFromFile(0x00005577, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonFluorine)
   VJR_Breakdown_Fluorine_TA = Game.GetFormFromFile(0x0000085C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Fluorine_TB = Game.GetFormFromFile(0x0000085D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Fluorine_TC = Game.GetFormFromFile(0x0000085E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Fluorine_TD = Game.GetFormFromFile(0x0000085F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonIridium = Game.GetFormFromFile(0x0000558A, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonIridium)
   VJR_Breakdown_Iridium_TA = Game.GetFormFromFile(0x00000860, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Iridium_TB = Game.GetFormFromFile(0x00000861, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Iridium_TC = Game.GetFormFromFile(0x00000862, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Iridium_TD = Game.GetFormFromFile(0x00000863, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonSilver = Game.GetFormFromFile(0x0000556A, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonSilver)
   VJR_Breakdown_Silver_TA = Game.GetFormFromFile(0x00000864, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Silver_TB = Game.GetFormFromFile(0x00000865, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Silver_TC = Game.GetFormFromFile(0x00000866, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Silver_TD = Game.GetFormFromFile(0x00000867, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUncommonTungsten = Game.GetFormFromFile(0x0000556B, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUncommonTungsten)
   VJR_Breakdown_Tungsten_TA = Game.GetFormFromFile(0x00000868, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tungsten_TB = Game.GetFormFromFile(0x00000869, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tungsten_TC = Game.GetFormFromFile(0x0000086A, "VenworksJunkRecycler.esm") as Keyword
@@ -801,70 +768,60 @@ EndFunction
 
 Function SetupInorganicRare()
   InorgRareCarboxylicAcids = Game.GetFormFromFile(0x00005586, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareCarboxylicAcids)
   VJR_Breakdown_CarboxylicAcids_TA = Game.GetFormFromFile(0x0000086C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_CarboxylicAcids_TB = Game.GetFormFromFile(0x0000086D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_CarboxylicAcids_TC = Game.GetFormFromFile(0x0000086E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_CarboxylicAcids_TD = Game.GetFormFromFile(0x0000086F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareGold = Game.GetFormFromFile(0x00005579, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareGold)
   VJR_Breakdown_Gold_TA = Game.GetFormFromFile(0x00000870, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Gold_TB = Game.GetFormFromFile(0x00000871, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Gold_TC = Game.GetFormFromFile(0x00000872, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Gold_TD = Game.GetFormFromFile(0x00000873, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareLithium = Game.GetFormFromFile(0x0000557F, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareLithium)
   VJR_Breakdown_Lithium_TA = Game.GetFormFromFile(0x00000874, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lithium_TB = Game.GetFormFromFile(0x00000875, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lithium_TC = Game.GetFormFromFile(0x00000876, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lithium_TD = Game.GetFormFromFile(0x00000877, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareMercury = Game.GetFormFromFile(0x0027C4A1, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareMercury)
   VJR_Breakdown_Mercury_TA = Game.GetFormFromFile(0x00000878, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Mercury_TB = Game.GetFormFromFile(0x00000879, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Mercury_TC = Game.GetFormFromFile(0x0000087A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Mercury_TD = Game.GetFormFromFile(0x0000087B, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareNeodymium = Game.GetFormFromFile(0x00005580, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareNeodymium)
   VJR_Breakdown_Neodymium_TA = Game.GetFormFromFile(0x0000087C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neodymium_TB = Game.GetFormFromFile(0x0000087D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neodymium_TC = Game.GetFormFromFile(0x0000087E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neodymium_TD = Game.GetFormFromFile(0x0000087F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRarePlatinum = Game.GetFormFromFile(0x00005573, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRarePlatinum)
   VJR_Breakdown_Platinum_TA = Game.GetFormFromFile(0x00000880, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Platinum_TB = Game.GetFormFromFile(0x00000881, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Platinum_TC = Game.GetFormFromFile(0x00000882, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Platinum_TD = Game.GetFormFromFile(0x00000883, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareTantalum = Game.GetFormFromFile(0x0000556F, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareTantalum)
   VJR_Breakdown_Tantalum_TA = Game.GetFormFromFile(0x00000884, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tantalum_TB = Game.GetFormFromFile(0x00000885, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tantalum_TC = Game.GetFormFromFile(0x00000886, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tantalum_TD = Game.GetFormFromFile(0x00000887, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareTetrafluorides = Game.GetFormFromFile(0x00005578, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareTetrafluorides)
   VJR_Breakdown_Tetrafluorides_TA = Game.GetFormFromFile(0x00000888, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tetrafluorides_TB = Game.GetFormFromFile(0x00000889, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tetrafluorides_TC = Game.GetFormFromFile(0x0000088A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tetrafluorides_TD = Game.GetFormFromFile(0x0000088B, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareTitanium = Game.GetFormFromFile(0x0000556D, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareTitanium)
   VJR_Breakdown_Titanium_TA = Game.GetFormFromFile(0x0000088C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Titanium_TB = Game.GetFormFromFile(0x0000088D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Titanium_TC = Game.GetFormFromFile(0x0000088E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Titanium_TD = Game.GetFormFromFile(0x0000088F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgRareVanadium = Game.GetFormFromFile(0x0000558B, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgRareVanadium)
   VJR_Breakdown_Vanadium_TA = Game.GetFormFromFile(0x00000890, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Vanadium_TB = Game.GetFormFromFile(0x00000891, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Vanadium_TC = Game.GetFormFromFile(0x00000892, "VenworksJunkRecycler.esm") as Keyword
@@ -873,70 +830,60 @@ EndFunction
 
 Function SetupInorganicExotic()
   InorgExoticAntimony = Game.GetFormFromFile(0x0000557B, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticAntimony)
   VJR_Breakdown_Antimony_TA = Game.GetFormFromFile(0x00000894, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Antimony_TB = Game.GetFormFromFile(0x00000895, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Antimony_TC = Game.GetFormFromFile(0x00000896, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Antimony_TD = Game.GetFormFromFile(0x00000897, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticCaesium = Game.GetFormFromFile(0x000057DF, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticCaesium)
   VJR_Breakdown_Caesium_TA = Game.GetFormFromFile(0x00000898, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Caesium_TB = Game.GetFormFromFile(0x00000899, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Caesium_TC = Game.GetFormFromFile(0x0000089A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Caesium_TD = Game.GetFormFromFile(0x0000089B, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticDysprosium = Game.GetFormFromFile(0x00005569, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticDysprosium)
   VJR_Breakdown_Dysprosium_TA = Game.GetFormFromFile(0x0000089C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Dysprosium_TB = Game.GetFormFromFile(0x0000089D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Dysprosium_TC = Game.GetFormFromFile(0x0000089E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Dysprosium_TD = Game.GetFormFromFile(0x0000089F, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticEuropium = Game.GetFormFromFile(0x000057E1, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticEuropium)
   VJR_Breakdown_Europium_TA = Game.GetFormFromFile(0x000008A0, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Europium_TB = Game.GetFormFromFile(0x000008A1, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Europium_TC = Game.GetFormFromFile(0x000008A2, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Europium_TD = Game.GetFormFromFile(0x000008A3, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticIonicLiquids = Game.GetFormFromFile(0x0000557A, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticIonicLiquids)
   VJR_Breakdown_IonicLiquids_TA = Game.GetFormFromFile(0x000008A4, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_IonicLiquids_TB = Game.GetFormFromFile(0x000008A5, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_IonicLiquids_TC = Game.GetFormFromFile(0x000008A6, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_IonicLiquids_TD = Game.GetFormFromFile(0x000008A7, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticNeon = Game.GetFormFromFile(0x00005587, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticNeon)
   VJR_Breakdown_Neon_TA = Game.GetFormFromFile(0x000008A8, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neon_TB = Game.GetFormFromFile(0x000008A9, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neon_TC = Game.GetFormFromFile(0x000008AA, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neon_TD = Game.GetFormFromFile(0x000008AB, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticPalladium = Game.GetFormFromFile(0x00005574, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticPalladium)
   VJR_Breakdown_Palladium_TA = Game.GetFormFromFile(0x000008AC, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Palladium_TB = Game.GetFormFromFile(0x000008AD, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Palladium_TC = Game.GetFormFromFile(0x000008AE, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Palladium_TD = Game.GetFormFromFile(0x000008AF, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticPlutonium = Game.GetFormFromFile(0x0000558C, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticPlutonium)
   VJR_Breakdown_Plutonium_TA = Game.GetFormFromFile(0x000008B0, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Plutonium_TB = Game.GetFormFromFile(0x000008B1, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Plutonium_TC = Game.GetFormFromFile(0x000008B2, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Plutonium_TD = Game.GetFormFromFile(0x000008B3, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticXenon = Game.GetFormFromFile(0x000057DD, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticXenon)
   VJR_Breakdown_Xenon_TA = Game.GetFormFromFile(0x000008B4, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Xenon_TB = Game.GetFormFromFile(0x000008B5, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Xenon_TC = Game.GetFormFromFile(0x000008B6, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Xenon_TD = Game.GetFormFromFile(0x000008B7, "VenworksJunkRecycler.esm") as Keyword
 
   InorgExoticYtterbium = Game.GetFormFromFile(0x00005571, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgExoticYtterbium)
   VJR_Breakdown_Ytterbium_TA = Game.GetFormFromFile(0x000008B8, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Ytterbium_TB = Game.GetFormFromFile(0x000008B9, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Ytterbium_TC = Game.GetFormFromFile(0x000008BA, "VenworksJunkRecycler.esm") as Keyword
@@ -945,56 +892,48 @@ EndFunction
 
 Function SetupInorganicUnique()
   InorgUniqueAldumite = Game.GetFormFromFile(0x00005DEC, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueAldumite)
   VJR_Breakdown_Aldumite_TA = Game.GetFormFromFile(0x000008BC, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aldumite_TB = Game.GetFormFromFile(0x000008BD, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aldumite_TC = Game.GetFormFromFile(0x000008BE, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aldumite_TD = Game.GetFormFromFile(0x000008BF, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueAqueousHematite = Game.GetFormFromFile(0x0029D022, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueAqueousHematite)
   VJR_Breakdown_AqueousHematite_TA = Game.GetFormFromFile(0x000008C0, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_AqueousHematite_TB = Game.GetFormFromFile(0x000008C1, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_AqueousHematite_TC = Game.GetFormFromFile(0x000008C2, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_AqueousHematite_TD = Game.GetFormFromFile(0x000008C3, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueCaelumite = Game.GetFormFromFile(0x000788D6, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueCaelumite)
   VJR_Breakdown_Caelumite_TA = Game.GetFormFromFile(0x000008C4, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Caelumite_TB = Game.GetFormFromFile(0x000008C5, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Caelumite_TC = Game.GetFormFromFile(0x000008C6, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Caelumite_TD = Game.GetFormFromFile(0x000008C7, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueIndicite = Game.GetFormFromFile(0x0004BA37, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueIndicite)
   VJR_Breakdown_Indicite_TA = Game.GetFormFromFile(0x000008C8, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Indicite_TB = Game.GetFormFromFile(0x000008C9, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Indicite_TC = Game.GetFormFromFile(0x000008CA, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Indicite_TD = Game.GetFormFromFile(0x000008CB, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueRothicite = Game.GetFormFromFile(0x000028DF, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueRothicite)
   VJR_Breakdown_Rothicite_TA = Game.GetFormFromFile(0x000008CC, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Rothicite_TB = Game.GetFormFromFile(0x000008CD, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Rothicite_TC = Game.GetFormFromFile(0x000008CE, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Rothicite_TD = Game.GetFormFromFile(0x000008CF, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueTasine = Game.GetFormFromFile(0x00005DED, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueTasine)
   VJR_Breakdown_Tasine_TA = Game.GetFormFromFile(0x000008D0, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tasine_TB = Game.GetFormFromFile(0x000008D1, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tasine_TC = Game.GetFormFromFile(0x000008D2, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Tasine_TD = Game.GetFormFromFile(0x000008D3, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueVeryl = Game.GetFormFromFile(0x00005DEE, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueVeryl)
   VJR_Breakdown_Veryl_TA = Game.GetFormFromFile(0x000008D4, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Veryl_TB = Game.GetFormFromFile(0x000008D5, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Veryl_TC = Game.GetFormFromFile(0x000008D6, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Veryl_TD = Game.GetFormFromFile(0x000008D7, "VenworksJunkRecycler.esm") as Keyword
 
   InorgUniqueVytinium = Game.GetFormFromFile(0x00005DEF, "Starfield.esm") as MiscObject
-  AllInorganicResources.AddForm(InorgUniqueVytinium)
   VJR_Breakdown_Vytinium_TA = Game.GetFormFromFile(0x000008D8, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Vytinium_TB = Game.GetFormFromFile(0x000008D9, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Vytinium_TC = Game.GetFormFromFile(0x000008DA, "VenworksJunkRecycler.esm") as Keyword
@@ -1008,42 +947,36 @@ EndFunction
 ;;;
 Function SetupOrganicCommon()
   OrgCommonFiber = Game.GetFormFromFile(0x000055AF, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgCommonFiber)
   VJR_Breakdown_Fiber_TA = Game.GetFormFromFile(0x00000810, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Fiber_TB = Game.GetFormFromFile(0x00000811, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Fiber_TC = Game.GetFormFromFile(0x00000812, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Fiber_TD = Game.GetFormFromFile(0x00000813, "VenworksJunkRecycler.esm") as Keyword
 
   OrgCommonMetabolicAgent = Game.GetFormFromFile(0x0029F3FC, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgCommonMetabolicAgent)
   VJR_Breakdown_MetabolicAgent_TA = Game.GetFormFromFile(0x000008DC, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_MetabolicAgent_TB = Game.GetFormFromFile(0x000008DD, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_MetabolicAgent_TC = Game.GetFormFromFile(0x000008DE, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_MetabolicAgent_TD = Game.GetFormFromFile(0x000008DF, "VenworksJunkRecycler.esm") as Keyword
 
   OrgCommonNutrient = Game.GetFormFromFile(0x000777FD, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgCommonNutrient)
   VJR_Breakdown_Nutrient_TA = Game.GetFormFromFile(0x000008E0, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Nutrient_TB = Game.GetFormFromFile(0x000008E1, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Nutrient_TC = Game.GetFormFromFile(0x000008E2, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Nutrient_TD = Game.GetFormFromFile(0x000008E3, "VenworksJunkRecycler.esm") as Keyword
 
   OrgCommonSealant = Game.GetFormFromFile(0x000055CC, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgCommonSealant)
   VJR_Breakdown_Sealant_TA = Game.GetFormFromFile(0x000008E4, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Sealant_TB = Game.GetFormFromFile(0x000008E5, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Sealant_TC = Game.GetFormFromFile(0x000008E6, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Sealant_TD = Game.GetFormFromFile(0x000008E7, "VenworksJunkRecycler.esm") as Keyword
 
   OrgCommonStructural = Game.GetFormFromFile(0x000055B9, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgCommonStructural)
   VJR_Breakdown_Structural_TA = Game.GetFormFromFile(0x000008E8, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Structural_TB = Game.GetFormFromFile(0x000008E9, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Structural_TC = Game.GetFormFromFile(0x000008EA, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Structural_TD = Game.GetFormFromFile(0x000008EB, "VenworksJunkRecycler.esm") as Keyword
 
   OrgCommonToxin = Game.GetFormFromFile(0x000055CB, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgCommonToxin)
   VJR_Breakdown_Toxin_TA = Game.GetFormFromFile(0x000008EC, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Toxin_TB = Game.GetFormFromFile(0x000008ED, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Toxin_TC = Game.GetFormFromFile(0x000008EE, "VenworksJunkRecycler.esm") as Keyword
@@ -1052,42 +985,36 @@ EndFunction
 
 Function SetupOrganicUncommon()
   OrgUncommonAntimicrobial = Game.GetFormFromFile(0x000055AB, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUncommonAntimicrobial)
   VJR_Breakdown_Antimicrobial_TA = Game.GetFormFromFile(0x000008F0, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Antimicrobial_TB = Game.GetFormFromFile(0x000008F1, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Antimicrobial_TC = Game.GetFormFromFile(0x000008F2, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Antimicrobial_TD = Game.GetFormFromFile(0x000008F3, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUncommonCosmetic = Game.GetFormFromFile(0x000055A8, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUncommonCosmetic)
   VJR_Breakdown_Cosmetic_TA = Game.GetFormFromFile(0x000008F4, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Cosmetic_TB = Game.GetFormFromFile(0x000008F5, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Cosmetic_TC = Game.GetFormFromFile(0x000008F6, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Cosmetic_TD = Game.GetFormFromFile(0x000008F7, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUncommonMembrane = Game.GetFormFromFile(0x000055B0, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUncommonMembrane)
   VJR_Breakdown_Membrane_TA = Game.GetFormFromFile(0x000008F8, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Membrane_TB = Game.GetFormFromFile(0x000008F9, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Membrane_TC = Game.GetFormFromFile(0x000008FA, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Membrane_TD = Game.GetFormFromFile(0x000008FB, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUncommonOrnamental = Game.GetFormFromFile(0x000055A7, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUncommonOrnamental)
   VJR_Breakdown_Ornamental_TA = Game.GetFormFromFile(0x000008FC, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Ornamental_TB = Game.GetFormFromFile(0x000008FD, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Ornamental_TC = Game.GetFormFromFile(0x000008FE, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Ornamental_TD = Game.GetFormFromFile(0x000008FF, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUncommonPigment = Game.GetFormFromFile(0x0029F400, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUncommonPigment)
   VJR_Breakdown_Pigment_TA = Game.GetFormFromFile(0x00000900, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Pigment_TB = Game.GetFormFromFile(0x00000901, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Pigment_TC = Game.GetFormFromFile(0x00000902, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Pigment_TD = Game.GetFormFromFile(0x00000903, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUncommonSpice = Game.GetFormFromFile(0x000055AC, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUncommonSpice)
   VJR_Breakdown_Spice_TA = Game.GetFormFromFile(0x00000904, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Spice_TB = Game.GetFormFromFile(0x00000905, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Spice_TC = Game.GetFormFromFile(0x00000906, "VenworksJunkRecycler.esm") as Keyword
@@ -1096,42 +1023,36 @@ EndFunction
 
 Function SetupOrganicRare()
   OrgRareAdhesive = Game.GetFormFromFile(0x000055B1, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgRareAdhesive)
   VJR_Breakdown_Adhesive_TA = Game.GetFormFromFile(0x00000803, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Adhesive_TB = Game.GetFormFromFile(0x00000804, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Adhesive_TC = Game.GetFormFromFile(0x00000805, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Adhesive_TD = Game.GetFormFromFile(0x00000806, "VenworksJunkRecycler.esm") as Keyword
 
   OrgRareAminoAcids = Game.GetFormFromFile(0x000055CD, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgRareAminoAcids)
   VJR_Breakdown_AminoAcids_TA = Game.GetFormFromFile(0x00000908, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_AminoAcids_TB = Game.GetFormFromFile(0x00000909, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_AminoAcids_TC = Game.GetFormFromFile(0x0000090A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_AminoAcids_TD = Game.GetFormFromFile(0x0000090B, "VenworksJunkRecycler.esm") as Keyword
 
   OrgRareAnalgesic = Game.GetFormFromFile(0x000055A9, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgRareAnalgesic)
   VJR_Breakdown_Analgesic_TA = Game.GetFormFromFile(0x0000090C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Analgesic_TB = Game.GetFormFromFile(0x0000090D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Analgesic_TC = Game.GetFormFromFile(0x0000090E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Analgesic_TD = Game.GetFormFromFile(0x0000090F, "VenworksJunkRecycler.esm") as Keyword
 
   OrgRareAromatic = Game.GetFormFromFile(0x000055B8, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgRareAromatic)
   VJR_Breakdown_Aromatic_TA = Game.GetFormFromFile(0x00000910, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aromatic_TB = Game.GetFormFromFile(0x00000911, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aromatic_TC = Game.GetFormFromFile(0x00000912, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Aromatic_TD = Game.GetFormFromFile(0x00000913, "VenworksJunkRecycler.esm") as Keyword
 
   OrgRareHallucinogen = Game.GetFormFromFile(0x0029F405, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgRareHallucinogen)
   VJR_Breakdown_Hallucinogen_TA = Game.GetFormFromFile(0x00000914, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Hallucinogen_TB = Game.GetFormFromFile(0x00000915, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Hallucinogen_TC = Game.GetFormFromFile(0x00000916, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Hallucinogen_TD = Game.GetFormFromFile(0x00000917, "VenworksJunkRecycler.esm") as Keyword
 
   OrgRareSedative = Game.GetFormFromFile(0x000055AD, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgRareSedative)
   VJR_Breakdown_Sedative_TA = Game.GetFormFromFile(0x00000918, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Sedative_TB = Game.GetFormFromFile(0x00000919, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Sedative_TC = Game.GetFormFromFile(0x0000091A, "VenworksJunkRecycler.esm") as Keyword
@@ -1140,42 +1061,36 @@ EndFunction
 
 Function SetupOrganicExotic()
   OrgExoticBiosuppressant = Game.GetFormFromFile(0x000055B2, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgExoticBiosuppressant)
   VJR_Breakdown_Biosuppressant_TA = Game.GetFormFromFile(0x0000091C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Biosuppressant_TB = Game.GetFormFromFile(0x0000091D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Biosuppressant_TC = Game.GetFormFromFile(0x0000091E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Biosuppressant_TD = Game.GetFormFromFile(0x0000091F, "VenworksJunkRecycler.esm") as Keyword
 
   OrgExoticHypercatalyst = Game.GetFormFromFile(0x0029F40D, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgExoticHypercatalyst)
   VJR_Breakdown_Hypercatalyst_TA = Game.GetFormFromFile(0x00000920, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Hypercatalyst_TB = Game.GetFormFromFile(0x00000921, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Hypercatalyst_TC = Game.GetFormFromFile(0x00000922, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Hypercatalyst_TD = Game.GetFormFromFile(0x00000923, "VenworksJunkRecycler.esm") as Keyword
 
   OrgExoticLubricant = Game.GetFormFromFile(0x000055BA, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgExoticLubricant)
   VJR_Breakdown_Lubricant_TA = Game.GetFormFromFile(0x00000924, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lubricant_TB = Game.GetFormFromFile(0x00000925, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lubricant_TC = Game.GetFormFromFile(0x00000926, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Lubricant_TD = Game.GetFormFromFile(0x00000927, "VenworksJunkRecycler.esm") as Keyword
 
   OrgExoticPolymer = Game.GetFormFromFile(0x000055A6, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgExoticPolymer)
   VJR_Breakdown_Polymer_TA = Game.GetFormFromFile(0x00000928, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Polymer_TB = Game.GetFormFromFile(0x00000929, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Polymer_TC = Game.GetFormFromFile(0x0000092A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Polymer_TD = Game.GetFormFromFile(0x0000092B, "VenworksJunkRecycler.esm") as Keyword
 
   OrgExoticSolvent = Game.GetFormFromFile(0x000055CE, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgExoticSolvent)
   VJR_Breakdown_Solvent_TA = Game.GetFormFromFile(0x0000092C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Solvent_TB = Game.GetFormFromFile(0x0000092D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Solvent_TC = Game.GetFormFromFile(0x0000092E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Solvent_TD = Game.GetFormFromFile(0x0000092F, "VenworksJunkRecycler.esm") as Keyword
 
   OrgExoticStimulant = Game.GetFormFromFile(0x000055AE, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgExoticStimulant)
   VJR_Breakdown_Stimulant_TA = Game.GetFormFromFile(0x00000930, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Stimulant_TB = Game.GetFormFromFile(0x00000931, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Stimulant_TC = Game.GetFormFromFile(0x00000932, "VenworksJunkRecycler.esm") as Keyword
@@ -1184,42 +1099,36 @@ EndFunction
 
 Function SetupOrganicUnique()
   OrgUniqueGastronomic = Game.GetFormFromFile(0x0000559D, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUniqueGastronomic)
   VJR_Breakdown_Gastronomic_TA = Game.GetFormFromFile(0x00000934, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Gastronomic_TB = Game.GetFormFromFile(0x00000935, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Gastronomic_TC = Game.GetFormFromFile(0x00000936, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Gastronomic_TD = Game.GetFormFromFile(0x00000937, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUniqueHighTensileSpidroin = Game.GetFormFromFile(0x000055AA, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUniqueHighTensileSpidroin)
   VJR_Breakdown_HighTensileSpidroin_TA = Game.GetFormFromFile(0x00000938, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_HighTensileSpidroin_TB = Game.GetFormFromFile(0x00000939, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_HighTensileSpidroin_TC = Game.GetFormFromFile(0x0000093A, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_HighTensileSpidroin_TD = Game.GetFormFromFile(0x0000093B, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUniqueImmunostimulant = Game.GetFormFromFile(0x000055B3, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUniqueImmunostimulant)
   VJR_Breakdown_Immunostimulant_TA = Game.GetFormFromFile(0x0000093C, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Immunostimulant_TB = Game.GetFormFromFile(0x0000093D, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Immunostimulant_TC = Game.GetFormFromFile(0x0000093E, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Immunostimulant_TD = Game.GetFormFromFile(0x0000093F, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUniqueLuxuryTextile = Game.GetFormFromFile(0x0000559E, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUniqueLuxuryTextile)
   VJR_Breakdown_LuxuryTextile_TA = Game.GetFormFromFile(0x00000940, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_LuxuryTextile_TB = Game.GetFormFromFile(0x00000941, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_LuxuryTextile_TC = Game.GetFormFromFile(0x00000942, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_LuxuryTextile_TD = Game.GetFormFromFile(0x00000943, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUniqueMemorySubstrate = Game.GetFormFromFile(0x0000559B, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUniqueMemorySubstrate)
   VJR_Breakdown_MemorySubstrate_TA = Game.GetFormFromFile(0x00000944, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_MemorySubstrate_TB = Game.GetFormFromFile(0x00000945, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_MemorySubstrate_TC = Game.GetFormFromFile(0x00000946, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_MemorySubstrate_TD = Game.GetFormFromFile(0x00000947, "VenworksJunkRecycler.esm") as Keyword
 
   OrgUniqueNeurologic = Game.GetFormFromFile(0x0029F409, "Starfield.esm") as MiscObject
-  AllOrganicResources.AddForm(OrgUniqueNeurologic)
   VJR_Breakdown_Neurologic_TA = Game.GetFormFromFile(0x00000948, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neurologic_TB = Game.GetFormFromFile(0x00000949, "VenworksJunkRecycler.esm") as Keyword
   VJR_Breakdown_Neurologic_TC = Game.GetFormFromFile(0x0000094A, "VenworksJunkRecycler.esm") as Keyword
@@ -1234,7 +1143,7 @@ EndFunction
 Function ProcessItem(Form baseItem, int count)
   BreakdownResults results=New BreakdownResults
   Actor player = Game.GetPlayer()
-  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "Processing item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "Processing " + count + " item(s) of " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
 
   results.SizeAdjustment = GetItemSizeAdjustment(baseItem)
   results.TierA_Item = GetItemTierA(baseItem)
@@ -1279,6 +1188,8 @@ Function ProcessItem(Form baseItem, int count)
 EndFunction
 
 Float Function GetItemSizeAdjustment(Form baseItem)
+  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemSizeAdjustment", "Processing item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+
   If (baseItem.HasKeyword(VJR_ItemSize_Huge))
     Return 3
   ElseIf(baseItem.HasKeyword(VJR_ItemSize_Large))
@@ -1295,6 +1206,8 @@ Float Function GetItemSizeAdjustment(Form baseItem)
 EndFunction
 
 Form Function GetItemTierA(Form baseItem)
+  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierA", "Finding Tier A material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+
   If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TA))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TA))
@@ -1459,6 +1372,8 @@ Form Function GetItemTierA(Form baseItem)
 EndFunction
 
 Form Function GetItemTierB(Form baseItem)
+  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierB", "Finding Tier B material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+
   If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TB))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TB))
@@ -1623,6 +1538,8 @@ Form Function GetItemTierB(Form baseItem)
 EndFunction
 
 Form Function GetItemTierC(Form baseItem)
+  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierC", "Finding Tier C material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+
   If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TC))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TC))
@@ -1787,6 +1704,8 @@ Form Function GetItemTierC(Form baseItem)
 EndFunction
 
 Form Function GetItemTierD(Form baseItem)
+  VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "GetItemTierD", "Finding Tier D material for item " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
+
   If (baseItem.HasKeyword(VJR_Breakdown_Adhesive_TD))
     Return OrgRareAdhesive
   ElseIf(baseItem.HasKeyword(VJR_Breakdown_Aldumite_TD))
@@ -1951,11 +1870,11 @@ Form Function GetItemTierD(Form baseItem)
 EndFunction
 
 Form Function GetRandomInorganic()
-  Int randomInt = Utility.RandomInt(1, AllInorganicResources.GetSize())
+  Int randomInt = Utility.RandomInt(0, AllInorganicResources.GetSize())
   Return AllInorganicResources.GetAt(randomInt)
 EndFunction
 
 Form Function GetRandomOrganic()
-  Int randomInt = Utility.RandomInt(1, AllOrganicResources.GetSize())
+  Int randomInt = Utility.RandomInt(0, AllOrganicResources.GetSize())
   Return AllOrganicResources.GetAt(randomInt)
 EndFunction

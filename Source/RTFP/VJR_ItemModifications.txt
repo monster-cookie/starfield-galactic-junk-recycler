@@ -392,3 +392,10 @@ Starfield.esm~0000088B,Starfield.esm~0000089C|kwd_add(VenworksJunkRecycler.esm~0
 # Default filter Using Keywords: WeaponTypeRanged [Starfield.esm~0002B714], WeaponTypeMelee1H [Starfield.esm~0004A0A4], WeaponTypeMelee2H [Starfield.esm~0004A0A5], ma_Cutter [Starfield.esm~001F70DF]
 # Breakdown Default Rule: Normal Size - Tier A (Random Inorganic) - Tier B (Random Organic) - Tier C (Random Organic) - Tier D (Random Inorganic)
 *keyw_incl_any(Starfield.esm~0002B714, Starfield.esm~0004A0A4, Starfield.esm~0004A0A5, Starfield.esm~001F70DF)|kwd_add(VenworksJunkRecycler.esm~0000080D)|kwd_add(VenworksJunkRecycler.esm~0000081C)|kwd_add(VenworksJunkRecycler.esm~00000821)|kwd_add(VenworksJunkRecycler.esm~00000822)|kwd_add(VenworksJunkRecycler.esm~0000081F)
+
+
+
+[Ammo]
+# Default filter Using Form List: VJR_AllAmmo [VenworksJunkRecycler.esm~0000094E]
+# Breakdown Default Rule: Tiny Size - Tier A (Random Inorganic) - Tier B (Random Organic) - Tier C (Random Organic) - Tier D (Random Inorganic)
+frml_incl(VenworksJunkRecycler.esm~0000094E)|kwd_add(VenworksJunkRecycler.esm~0000080F)|kwd_add(VenworksJunkRecycler.esm~0000081C)|kwd_add(VenworksJunkRecycler.esm~00000821)|kwd_add(VenworksJunkRecycler.esm~00000822)|kwd_add(VenworksJunkRecycler.esm~0000081F)

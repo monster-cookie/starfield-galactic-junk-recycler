@@ -19,6 +19,12 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: VJR_BreakdownQuantity_TierC
       Object: 000809:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllOrganicResources
+      Object: 00094C:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllInorganicResources
+      Object: 00094D:VenworksJunkRecycler.esm
 ObjectBounds:
   First: -0.351564, -0.222362, -0.002491
   Second: 0.353999, 0.252492, 0.212581
