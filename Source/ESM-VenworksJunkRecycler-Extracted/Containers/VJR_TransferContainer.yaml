@@ -1,0 +1,41 @@
+FormKey: 000801:VenworksJunkRecycler.esm
+EditorID: VJR_TransferContainer
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VJR_TransferContainerScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierB
+      Object: 000808:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierD
+      Object: 00080A:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierA
+      Object: 000807:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierC
+      Object: 000809:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllOrganicResources
+      Object: 00094C:VenworksJunkRecycler.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllInorganicResources
+      Object: 00094D:VenworksJunkRecycler.esm
+ObjectBounds:
+  First: -0.351564, -0.222362, -0.002491
+  Second: 0.353999, 0.252492, 0.212581
+ODTY: 0
+Name:
+  TargetLanguage: English
+  Value: Transfer Storage
+Model:
+  File: Markers\EditorMarkers\containermarker.nif
+  FLLD: 0x01000000
+Keywords:
+- 2A14C9:Starfield.esm
+NativeTerminal: 1A9EC3:Starfield.esm
+DisplayFilter: 000802:VenworksJunkRecycler.esm
