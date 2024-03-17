@@ -9,5 +9,5 @@ REM Clear Dist DIR
 del /q "C:\Users\degre\Downloads\VenworksJunkRecycler.zip"
 
 REM Archive Dist Dir
-"D:\Program Files\PexTools\7za.exe" a -tzip "C:\Users\degre\Downloads\VenworksJunkRecycler.zip" "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist\*.*"
+"D:\Program Files\PexTools\7za.exe" a -r -tzip "C:\Users\degre\Downloads\VenworksJunkRecycler.zip" "C:\Repositories\Public\Starfield Mods\starfield-galactic-junk-recycler\Dist\*.*"
 

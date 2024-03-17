@@ -1,5 +1,8 @@
 # Venworks Junk Recycler
 
+## Version 2.0.1
+* Doh forgot to tell 7zip to go recursive aka I messed the -r when I copied the compile changes from encounters :) 
+
 ## Version 2.0.0
 * No more annoying vending machine. You can access the recycler from any workbench. 
 * All rules are controlled by RTFP see SFSE/Plugins/RealTimeFormPatcher/VJR_ItemModifications.txt default rules are from the hard work of Yorghan. 
