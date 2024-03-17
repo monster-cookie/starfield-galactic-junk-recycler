@@ -1,5 +1,11 @@
 # Venworks Junk Recycler
 
+## Version 2.0.2
+* Stupid typo prevented the ammo breakdown list from loading
+* Disabled the inventory add notifications they horrendously lag for little benefit
+* Melee items should work again
+* NOTE: THe known issue with the perk not getting applied so far has only happened to 3 people and not to a lot so leaving it as a known issue but not fixing yet. Though I will write a global function to detect if the perk is missing and add it sometime today. I just wanted to get the major problems fixed right awa this morning. 
+
 ## Version 2.0.1
 * Doh forgot to tell 7zip to go recursive aka I messed the -r when I copied the compile changes from encounters :) 
 
