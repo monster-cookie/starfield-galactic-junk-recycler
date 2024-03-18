@@ -29,6 +29,11 @@ GlobalVariable Property VJR_BreakdownQuantity_TierB Auto Const Mandatory
 GlobalVariable Property VJR_BreakdownQuantity_TierC Auto Const Mandatory
 GlobalVariable Property VJR_BreakdownQuantity_TierD Auto Const Mandatory
 
+GlobalVariable Property VJR_BreakdownChance_TierA Auto Const Mandatory
+GlobalVariable Property VJR_BreakdownChance_TierB Auto Const Mandatory
+GlobalVariable Property VJR_BreakdownChance_TierC Auto Const Mandatory
+GlobalVariable Property VJR_BreakdownChance_TierD Auto Const Mandatory
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties
@@ -1177,31 +1182,39 @@ Function ProcessItem(Form baseItem, int count)
   EndIf
 
   If (results.TierA_Item != None)
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier A breakdown component of " + results.TierA_Item + " at a quantity of " + results.TierA_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    player.AddItem(akItemToAdd=results.TierA_Item, aiCount=results.TierA_Quantity, abSilent=True)
+    If (VJR_BreakdownChance_TierA.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierA.GetValueInt(), 1, 100, -1, -1))
+      VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier A breakdown component of " + results.TierA_Item + " at a quantity of " + results.TierA_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
+      player.AddItem(akItemToAdd=results.TierA_Item, aiCount=results.TierA_Quantity, abSilent=True)
+    EndIf
   Else
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier A.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier A for " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
   EndIf
 
   If (results.TierB_Item != None)
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier B breakdown component of " + results.TierB_Item + " at a quantity of " + results.TierB_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    player.AddItem(akItemToAdd=results.TierB_Item, aiCount=results.TierB_Quantity, abSilent=True)
+    If (VJR_BreakdownChance_TierB.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierB.GetValueInt(), 1, 100, -1, -1))
+      VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier B breakdown component of " + results.TierB_Item + " at a quantity of " + results.TierB_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
+      player.AddItem(akItemToAdd=results.TierB_Item, aiCount=results.TierB_Quantity, abSilent=True)
+    EndIf
   Else
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier B.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier B for " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
   EndIf
   
   If (results.TierC_Item != None)
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier C breakdown component of " + results.TierC_Item + " at a quantity of " + results.TierC_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    player.AddItem(akItemToAdd=results.TierC_Item, aiCount=results.TierC_Quantity, abSilent=True)
+    If (VJR_BreakdownChance_TierC.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierC.GetValueInt(), 1, 100, -1, -1))
+      VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier C breakdown component of " + results.TierC_Item + " at a quantity of " + results.TierC_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
+      player.AddItem(akItemToAdd=results.TierC_Item, aiCount=results.TierC_Quantity, abSilent=True)
+    EndIf
   Else
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier C.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier C for " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
   EndIf
   
   If (results.TierD_Item != None)
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier D breakdown component of " + results.TierD_Item + " at a quantity of " + results.TierD_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    player.AddItem(akItemToAdd=results.TierD_Item, aiCount=results.TierD_Quantity, abSilent=True)
+    If (VJR_BreakdownChance_TierD.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierD.GetValueInt(), 1, 100, -1, -1))
+      VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "To player's inventory adding Tier D breakdown component of " + results.TierD_Item + " at a quantity of " + results.TierD_Quantity + ".", 0, Venpi_DebugEnabled.GetValueInt())
+      player.AddItem(akItemToAdd=results.TierD_Item, aiCount=results.TierD_Quantity, abSilent=True)
+    EndIf
   Else
-    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier D.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "VJR_TransferContainerScript", "ProcessItem", "No break down item was found for Tier D for " + baseItem + ".", 0, Venpi_DebugEnabled.GetValueInt())
   EndIf
   
   RemoveItem(akItemToRemove=baseItem, aiCount=count, abSilent=True, akOtherContainer=None)

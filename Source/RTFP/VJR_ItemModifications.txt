@@ -1,5 +1,9 @@
 minver=112
 
+# For help with RTFP see the following sites
+# - https://github.com/monster-cookie/starfield-modding-notes/blob/master/RTFP.md
+# - https://www.nexusmods.com/starfield/mods/8324
+
 # Generally the items are listed <size> <tier A result> <tier B result> <tier C result> <tier D result>
 
 # Item Sizing Keywords:
@@ -340,8 +344,13 @@ minver=112
 [Global]
 VJR_BreakdownQuantity_TierA|val(4)
 VJR_BreakdownQuantity_TierB|val(2)
-VJR_BreakdownQuantity_TierC|val(1)
+VJR_BreakdownQuantity_TierC|val(2)
 VJR_BreakdownQuantity_TierD|val(1)
+
+VJR_BreakdownChance_TierA|val(25)
+VJR_BreakdownChance_TierB|val(50)
+VJR_BreakdownChance_TierC|val(80)
+VJR_BreakdownChance_TierD|val(95)
 
 
 
@@ -391,7 +400,13 @@ Starfield.esm~0000088B,Starfield.esm~0000089C|kwd_add(VenworksJunkRecycler.esm~0
 [Weapon]
 # Default filter Using Keywords: WeaponTypeRanged [Starfield.esm~0002B714], WeaponTypeMelee1H [Starfield.esm~0004A0A4], WeaponTypeMelee2H [Starfield.esm~0004A0A5], ma_Cutter [Starfield.esm~001F70DF]
 # Breakdown Default Rule: Normal Size - Tier A (Random Inorganic) - Tier B (Random Organic) - Tier C (Random Organic) - Tier D (Random Inorganic)
-*keyw_incl_any(Starfield.esm~0002B714,Starfield.esm~0004A0A4,Starfield.esm~0004A0A5,Starfield.esm~001F70DF)|kwd_add(VenworksJunkRecycler.esm~0000080D)|kwd_add(VenworksJunkRecycler.esm~0000081C)|kwd_add(VenworksJunkRecycler.esm~00000821)|kwd_add(VenworksJunkRecycler.esm~00000822)|kwd_add(VenworksJunkRecycler.esm~0000081F)
+*keyw_incl_any(Starfield.esm~0002B714,Starfield.esm~0004A0A4,Starfield.esm~0004A0A5,Starfield.esm~001F70DF,Starfield.esm~0010C414,Starfield.esm~0004A0A6)|kwd_add(VenworksJunkRecycler.esm~0000080D)|kwd_add(VenworksJunkRecycler.esm~0000081C)|kwd_add(VenworksJunkRecycler.esm~00000821)|kwd_add(VenworksJunkRecycler.esm~00000822)|kwd_add(VenworksJunkRecycler.esm~0000081F)
+
+# Thrown Weapons filter: WeaponTypeMine [Starfield.esm~0010C414], WeaponTypeThrown [Starfield.esm~0004A0A6]
+# Breakdown Default Rule: Small Size - Tier A (Random Inorganic) - Tier B (Random Organic) - Tier C (Random Organic) - Tier D (Random Inorganic)
+*keyw_incl_any(Starfield.esm~0010C414,Starfield.esm~0004A0A6)|kwd_add(VenworksJunkRecycler.esm~0000080E)|kwd_add(VenworksJunkRecycler.esm~0000081C)|kwd_add(VenworksJunkRecycler.esm~00000821)|kwd_add(VenworksJunkRecycler.esm~00000822)|kwd_add(VenworksJunkRecycler.esm~0000081F)
+
+
 
 [Ammo]
 # Default filter Using Form List: VJR_AllAmmo [VenworksJunkRecycler.esm~0000094E]
