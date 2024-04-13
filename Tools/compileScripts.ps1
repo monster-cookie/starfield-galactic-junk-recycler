@@ -17,7 +17,7 @@ Write-Host -ForegroundColor Green "Compiling all scripts in Source/Papyrus to SF
 
 $pinfo = New-Object System.Diagnostics.ProcessStartInfo
 $pinfo.FileName = "$ENV:PAPYRUS_COMPILER_PATH\PapyrusCompiler.exe"
-$pinfo.Arguments = "`".\Source\Papyrus`" -all -f -optimize -output=`"$ENV:PAPYRUS_SCRIPTS_PATH`" -import=`"$ENV:PAPYRUS_SOURCE_PATH`" -ignorecwd"
+$pinfo.Arguments = "`".\Source\Papyrus`" -all -f -optimize -flags=`"$ENV:PAPYRUS_SOURCE_PATH\Starfield_Papyrus_Flags.flg`" -output=`"$ENV:PAPYRUS_SCRIPTS_PATH`" -import=`"$ENV:PAPYRUS_SOURCE_PATH`" -ignorecwd"
 $pinfo.CreateNoWindow = $false
 $pinfo.RedirectStandardError = $true
 $pinfo.RedirectStandardOutput = $true
@@ -25,7 +25,7 @@ $pinfo.UseShellExecute = $false
 
 $compileProcess = New-Object System.Diagnostics.Process
 $compileProcess.StartInfo = $pinfo
-$compileProcess.Start()
+$compileProcess.Start() | Out-Null
 $compileProcess.WaitForExit()
 if ($compileProcess.ExitCode -ne 0) {
   $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor DarkYellow
