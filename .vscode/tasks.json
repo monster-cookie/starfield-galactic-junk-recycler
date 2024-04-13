@@ -22,7 +22,7 @@
     {
       "type": "shell",
       "label": "Update SFCK",
-      "command": "${workspaceFolder}/tools/updateSFCK.ps1",
+      "command": "${workspaceFolder}/Tools/updateSFCK.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -40,7 +40,43 @@
     {
       "type": "shell",
       "label": "Update Repository",
-      "command": "${workspaceFolder}/tools/updateRepository.ps1",
+      "command": "${workspaceFolder}/Tools/updateRepository.ps1",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Spriggit Dump Datafiles",
+      "command": "${workspaceFolder}/Tools/spriggitDumpFile.ps1",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Spriggit Assemble Datafiles",
+      "command": "${workspaceFolder}/Tools/spriggitAssembleFile.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },

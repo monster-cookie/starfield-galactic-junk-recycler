@@ -14,6 +14,7 @@ Write-Host -ForegroundColor Yellow "BGS Archive2 path is $ENV:ARCHIVER_PATH\Arch
 Write-Host -ForegroundColor Yellow "BGS Papyrus Compiler path is $ENV:PAPYRUS_COMPILER_PATH\PapyrusCompiler.exe"
 Write-Host -ForegroundColor Yellow "BGS Papyrus Script path is $ENV:PAPYRUS_SCRIPTS_PATH"
 Write-Host -ForegroundColor Yellow "BGS Papyrus Source path is $ENV:PAPYRUS_SOURCE_PATH"
+Write-Host -ForegroundColor Yellow "Spriggit CLI path is $ENV:SPRIGGIT_PATH"
 
 $Global:Databases = @(
   ("Venworks-JunkRecycler.esp")
