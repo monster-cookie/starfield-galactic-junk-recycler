@@ -10,7 +10,7 @@ if (!$Global:SharedConfigurationLoaded) {
 
 # Need to copy the source scripts to the Scripts Source folder so SFCK can use them
 Write-Host -ForegroundColor Green "Copying the source scripts to the Scripts Source folder so SFCK can use them"
-Copy-Item -Recurse -Force -Path "$ENV:PAPYRUS_SOURCE_PATH\Venworks\**" -Destination ".\Source\Papyrus\Venworks"
+Copy-Item -Recurse -Force -Path "$ENV:PAPYRUS_SOURCE_PATH\$Global:ScriptingNamespaceCompany\**" -Destination ".\Source\Papyrus\$Global:ScriptingNamespaceCompany"
 
 # Need to copy the ESM/ESP/ESL files from the Game Data folder to update the repository verison for commit
 Write-Host -ForegroundColor Green "Copying the ESM/ESP/ESL files from the Game Data folder to update the repository verison for commit"

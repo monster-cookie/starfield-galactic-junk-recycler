@@ -19,6 +19,13 @@ $Global:Databases = @(
   ("Venworks-JunkRecycler.esp")
 )
 
+$Global:ScriptingNamespaceCompany = "Venworks"
+$Global:ScriptingNamespaceModule = "JunkRecycler"
+$Global:ScriptingNamespaceSharedLibrary = "Shared"
+
+Write-Host -ForegroundColor Yellow "Papyrus Scripting namespace for module is $Global:SCriptingNamespaceCompany`:$Global:ScriptingNamespaceModule"
+Write-Host -ForegroundColor Yellow "Papyrus Scripting namespace for shared library is $Global:SCriptingNamespaceCompany`:$Global:ScriptingNamespaceSharedLibrary"
+
 Write-Host -ForegroundColor Yellow ""
 Write-Host -ForegroundColor Yellow "Game Database Files:"
 foreach ($database in $Global:Databases) {
