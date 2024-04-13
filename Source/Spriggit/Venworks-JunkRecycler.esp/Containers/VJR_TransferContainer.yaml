@@ -1,0 +1,1251 @@
+FormKey: 00080A:Venworks-JunkRecycler.esp
+EditorID: VJR_TransferContainer
+FormVersion: 557
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Venworks:JunkRecycler:TransferContainerScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgRareAdhesive
+      Object: 0055B1:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareCarboxylicAcids
+      Object: 005586:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonWater
+      Object: 005591:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Analgesic_TA
+      Object: 000841:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonUranium
+      Object: 005589:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caesium_TC
+      Object: 000880:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgRareAnalgesic
+      Object: 0055A9:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgCommonFiber
+      Object: 0055AF:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Xenon_TA
+      Object: 000A20:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AminoAcids_TB
+      Object: 00083C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgRareSedative
+      Object: 0055AD:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caesium_TB
+      Object: 00087F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonIron
+      Object: 00556E:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Beryllium_TD
+      Object: 00086E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonFluorine
+      Object: 005577:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DebugEnabled
+      Object: 000A39:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_ItemSize_Tiny
+      Object: 000A30:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_ItemSize_Small
+      Object: 000A2F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonChlorosilanes
+      Object: 00557E:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownChance_TierC
+      Object: 000813:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownChance_TierB
+      Object: 000812:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownChance_TierA
+      Object: 000811:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ytterbium_TA
+      Object: 000A26:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Benzene_TA
+      Object: 000865:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Rothicite_TC
+      Object: 0009A5:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Water_TD
+      Object: 000A1D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonNickel
+      Object: 005572:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Water_TC
+      Object: 000A1C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Water_TB
+      Object: 000A1B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vytinium_TD
+      Object: 000A17:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vytinium_TA
+      Object: 000A14:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Veryl_TD
+      Object: 000A11:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Veryl_TB
+      Object: 000A0F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tasine_TB
+      Object: 0009DF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Indicite_TA
+      Object: 0008F8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vanadium_TD
+      Object: 000A08:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vanadium_TC
+      Object: 000A07:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vanadium_TB
+      Object: 000A06:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vanadium_TA
+      Object: 000A05:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Copper_TD
+      Object: 0008A5:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Uranium_TB
+      Object: 000A00:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Uranium_TA
+      Object: 0009FF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUncommonCosmetic
+      Object: 0055A8:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownChance_TierD
+      Object: 000814:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tungsten_TC
+      Object: 0009FB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tungsten_TB
+      Object: 0009FA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tungsten_TA
+      Object: 0009F9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Toxin_TD
+      Object: 0009F6:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Toxin_TC
+      Object: 0009F5:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Toxin_TB
+      Object: 0009F4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorosilanes_TD
+      Object: 000896:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Toxin_TA
+      Object: 0009F3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Palladium_TA
+      Object: 00096C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Titanium_TC
+      Object: 0009EF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Titanium_TB
+      Object: 0009EE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonBeryllium
+      Object: 0057D9:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Titanium_TA
+      Object: 0009ED:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tetrafluorides_TD
+      Object: 0009EA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgRareAminoAcids
+      Object: 0055CD:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tetrafluorides_TC
+      Object: 0009E9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tetrafluorides_TB
+      Object: 0009E8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ytterbium_TD
+      Object: 000A29:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tetrafluorides_TA
+      Object: 0009E7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tasine_TD
+      Object: 0009E1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tasine_TC
+      Object: 0009E0:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Veryl_TA
+      Object: 000A0E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aromatic_TD
+      Object: 000862:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tasine_TA
+      Object: 0009DE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tantalum_TC
+      Object: 0009D9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tantalum_TB
+      Object: 0009D8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vytinium_TC
+      Object: 000A16:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tantalum_TA
+      Object: 0009D7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Structural_TD
+      Object: 0009D4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Structural_TC
+      Object: 0009D3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUncommonMembrane
+      Object: 0055B0:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Stimulant_TA
+      Object: 0009CA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Biosuppressant_TA
+      Object: 000871:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Spice_TD
+      Object: 0009C6:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Spice_TA
+      Object: 0009C3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Structural_TB
+      Object: 0009D2:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Solvent_TD
+      Object: 0009C0:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Solvent_TC
+      Object: 0009BF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUncommonAntimicrobial
+      Object: 0055AB:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueTasine
+      Object: 005DED:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Solvent_TA
+      Object: 0009BD:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Silver_TD
+      Object: 0009BA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Silver_TB
+      Object: 0009B8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Silver_TA
+      Object: 0009B7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_ItemSize_Normal
+      Object: 000A2E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sedative_TD
+      Object: 0009B4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUncommonOrnamental
+      Object: 0055A7:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sedative_TB
+      Object: 0009B2:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sedative_TA
+      Object: 0009B1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sealant_TD
+      Object: 0009AD:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sealant_TC
+      Object: 0009AC:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sealant_TB
+      Object: 0009AB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sealant_TA
+      Object: 0009AA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ornamental_TD
+      Object: 000969:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fluorine_TD
+      Object: 0008C8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caelumite_TA
+      Object: 000877:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Xenon_TC
+      Object: 000A22:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomOrganic_TD
+      Object: 00099F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomOrganic_TC
+      Object: 00099E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomOrganic_TB
+      Object: 00099D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomOrganic_TA
+      Object: 00099C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimony_TA
+      Object: 00084D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AqueousHematite_TD
+      Object: 000856:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Rothicite_TB
+      Object: 0009A4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomInorganic_TD
+      Object: 000996:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomInorganic_TC
+      Object: 000995:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomInorganic_TB
+      Object: 000994:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_RandomInorganic_TA
+      Object: 000993:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Polymer_TD
+      Object: 00098D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Polymer_TC
+      Object: 00098C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Beryllium_TB
+      Object: 00086C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Polymer_TB
+      Object: 00098B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Vytinium_TB
+      Object: 000A15:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgCommonNutrient
+      Object: 0777FD:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Polymer_TA
+      Object: 00098A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Plutonium_TD
+      Object: 000985:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Plutonium_TC
+      Object: 000984:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Plutonium_TB
+      Object: 000983:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUniqueNeurologic
+      Object: 29F409:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Plutonium_TA
+      Object: 000982:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Platinum_TD
+      Object: 00097D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierC
+      Object: 000817:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Platinum_TC
+      Object: 00097C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUniqueHighTensileSpidroin
+      Object: 0055AA:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Platinum_TA
+      Object: 00097A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Pigment_TC
+      Object: 000975:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Uranium_TC
+      Object: 000A01:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Pigment_TB
+      Object: 000974:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Pigment_TA
+      Object: 000973:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Palladium_TD
+      Object: 00096F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Solvent_TB
+      Object: 0009BE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareTitanium
+      Object: 00556D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Palladium_TC
+      Object: 00096E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Palladium_TB
+      Object: 00096D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticEuropium
+      Object: 0057E1:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Titanium_TD
+      Object: 0009F0:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Rothicite_TD
+      Object: 0009A6:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ornamental_TC
+      Object: 000968:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ornamental_TA
+      Object: 000966:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_ItemSize_Large
+      Object: 000A2D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareGold
+      Object: 005579:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nutrient_TD
+      Object: 000961:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Analgesic_TC
+      Object: 000843:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nutrient_TC
+      Object: 000960:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nutrient_TB
+      Object: 00095F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nutrient_TA
+      Object: 00095E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nickel_TD
+      Object: 00095A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nickel_TC
+      Object: 000959:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Rothicite_TA
+      Object: 0009A3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nickel_TB
+      Object: 000958:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticPlutonium
+      Object: 00558C:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgExoticSolvent
+      Object: 0055CE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Nickel_TA
+      Object: 000957:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neurologic_TD
+      Object: 000953:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neurologic_TC
+      Object: 000952:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neurologic_TB
+      Object: 000951:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neurologic_TA
+      Object: 000950:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Structural_TA
+      Object: 0009D1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimony_TD
+      Object: 000850:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neon_TD
+      Object: 00094D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aldumite_TD
+      Object: 00082C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neon_TC
+      Object: 00094C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neon_TB
+      Object: 00094B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neon_TA
+      Object: 00094A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neodymium_TD
+      Object: 000947:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neodymium_TC
+      Object: 000946:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgRareHallucinogen
+      Object: 29F405:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Platinum_TB
+      Object: 00097B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neodymium_TB
+      Object: 000945:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Neodymium_TA
+      Object: 000944:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgExoticHypercatalyst
+      Object: 29F40D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MetabolicAgent_TD
+      Object: 000941:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MetabolicAgent_TC
+      Object: 000940:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MetabolicAgent_TB
+      Object: 00093F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Europium_TC
+      Object: 0008B9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllInorganicResources
+      Object: 00080F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Spice_TC
+      Object: 0009C5:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Mercury_TD
+      Object: 00093A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Mercury_TC
+      Object: 000939:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Mercury_TB
+      Object: 000938:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caelumite_TB
+      Object: 000878:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Mercury_TA
+      Object: 000937:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonSilver
+      Object: 00556A:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MemorySubstrate_TD
+      Object: 000934:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MemorySubstrate_TC
+      Object: 000933:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Uranium_TD
+      Object: 000A02:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MemorySubstrate_TB
+      Object: 000932:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MemorySubstrate_TA
+      Object: 000931:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Membrane_TD
+      Object: 00092D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Membrane_TC
+      Object: 00092C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fluorine_TB
+      Object: 0008C6:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueAldumite
+      Object: 005DEC:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Membrane_TB
+      Object: 00092B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Membrane_TA
+      Object: 00092A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_ItemSize_Huge
+      Object: 000A2C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_LuxuryTextile_TD
+      Object: 000927:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_LuxuryTextile_TC
+      Object: 000926:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_LuxuryTextile_TB
+      Object: 000925:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fiber_TC
+      Object: 0008C0:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_LuxuryTextile_TA
+      Object: 000924:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aldumite_TB
+      Object: 00082A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lubricant_TD
+      Object: 000921:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lubricant_TC
+      Object: 000920:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Stimulant_TD
+      Object: 0009CD:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lubricant_TB
+      Object: 00091F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lubricant_TA
+      Object: 00091E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fluorine_TC
+      Object: 0008C7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lithium_TD
+      Object: 00091B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lithium_TC
+      Object: 00091A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lithium_TB
+      Object: 000919:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonHelium3
+      Object: 00558E:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lithium_TA
+      Object: 000918:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Veryl_TC
+      Object: 000A10:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lead_TD
+      Object: 000914:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgExoticStimulant
+      Object: 0055AE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lead_TC
+      Object: 000913:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lead_TB
+      Object: 000912:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Lead_TA
+      Object: 000911:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iron_TD
+      Object: 00090E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AminoAcids_TC
+      Object: 00083D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iron_TC
+      Object: 00090D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ornamental_TB
+      Object: 000967:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Benzene_TD
+      Object: 000868:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iron_TB
+      Object: 00090C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iron_TA
+      Object: 00090B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iridium_TD
+      Object: 000908:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iridium_TC
+      Object: 000907:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iridium_TB
+      Object: 000906:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Iridium_TA
+      Object: 000905:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllOrganicResources
+      Object: 000810:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticAntimony
+      Object: 00557B:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Spice_TB
+      Object: 0009C4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_IonicLiquids_TD
+      Object: 000902:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_IonicLiquids_TC
+      Object: 000901:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_IonicLiquids_TB
+      Object: 000900:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_IonicLiquids_TA
+      Object: 0008FF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Indicite_TD
+      Object: 0008FB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Indicite_TC
+      Object: 0008FA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ytterbium_TC
+      Object: 000A28:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Indicite_TB
+      Object: 0008F9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierA
+      Object: 000815:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimony_TC
+      Object: 00084F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Immunostimulant_TD
+      Object: 0008F4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Immunostimulant_TC
+      Object: 0008F3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Immunostimulant_TB
+      Object: 0008F2:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Immunostimulant_TA
+      Object: 0008F1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareVanadium
+      Object: 00558B:Starfield.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: ModName
+      Data: VenworksJunkRecycler
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Xenon_TD
+      Object: 000A23:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonTungsten
+      Object: 00556B:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hypercatalyst_TC
+      Object: 0008ED:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hypercatalyst_TB
+      Object: 0008EC:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hypercatalyst_TA
+      Object: 0008EB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_HighTensileSpidroin_TD
+      Object: 0008E7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aluminum_TB
+      Object: 000836:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_HighTensileSpidroin_TC
+      Object: 0008E6:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_HighTensileSpidroin_TB
+      Object: 0008E5:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Sedative_TC
+      Object: 0009B3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_HighTensileSpidroin_TA
+      Object: 0008E4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Beryllium_TA
+      Object: 00086B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Helium3_TD
+      Object: 0008E0:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Helium3_TC
+      Object: 0008DF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUncommonPigment
+      Object: 29F400:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Helium3_TB
+      Object: 0008DE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Helium3_TA
+      Object: 0008DD:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hallucinogen_TD
+      Object: 0008DA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hallucinogen_TC
+      Object: 0008D9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hallucinogen_TB
+      Object: 0008D8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonCopper
+      Object: 005576:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hallucinogen_TA
+      Object: 0008D7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Alkanes_TD
+      Object: 000832:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gold_TD
+      Object: 0008D4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gold_TC
+      Object: 0008D3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gold_TB
+      Object: 0008D2:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tantalum_TD
+      Object: 0009DA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gold_TA
+      Object: 0008D1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gastronomic_TD
+      Object: 0008CE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Adhesive_TA
+      Object: 00081A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticDysprosium
+      Object: 005569:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gastronomic_TC
+      Object: 0008CD:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gastronomic_TB
+      Object: 0008CC:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Gastronomic_TA
+      Object: 0008CB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueRothicite
+      Object: 0028DF:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Stimulant_TC
+      Object: 0009CC:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fluorine_TA
+      Object: 0008C5:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fiber_TD
+      Object: 0008C1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimicrobial_TA
+      Object: 000847:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticYtterbium
+      Object: 005571:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fiber_TB
+      Object: 0008BF:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Fiber_TA
+      Object: 0008BE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Pigment_TD
+      Object: 000976:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Europium_TD
+      Object: 0008BA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Europium_TB
+      Object: 0008B8:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Europium_TA
+      Object: 0008B7:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgExoticLubricant
+      Object: 0055BA:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Alkanes_TB
+      Object: 000830:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Dysprosium_TD
+      Object: 0008B3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Dysprosium_TC
+      Object: 0008B2:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Water_TA
+      Object: 000A1A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Dysprosium_TB
+      Object: 0008B1:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Dysprosium_TA
+      Object: 0008B0:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cosmetic_TD
+      Object: 0008AC:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUniqueMemorySubstrate
+      Object: 00559B:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cosmetic_TC
+      Object: 0008AB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cosmetic_TB
+      Object: 0008AA:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonChlorine
+      Object: 00557C:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cosmetic_TA
+      Object: 0008A9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Tungsten_TD
+      Object: 0009FC:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Copper_TC
+      Object: 0008A4:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Copper_TB
+      Object: 0008A3:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgCommonMetabolicAgent
+      Object: 29F3FC:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Copper_TA
+      Object: 0008A2:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cobalt_TD
+      Object: 00089C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cobalt_TC
+      Object: 00089B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cobalt_TB
+      Object: 00089A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caelumite_TD
+      Object: 00087A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierB
+      Object: 000816:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Cobalt_TA
+      Object: 000899:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aluminum_TA
+      Object: 000835:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorosilanes_TC
+      Object: 000895:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorosilanes_TB
+      Object: 000894:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorosilanes_TA
+      Object: 000893:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorine_TD
+      Object: 00088F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Argon_TA
+      Object: 000859:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Stimulant_TB
+      Object: 0009CB:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgCommonSealant
+      Object: 0055CC:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticXenon
+      Object: 0057DD:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorine_TB
+      Object: 00088D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_CarboxylicAcids_TD
+      Object: 000888:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_CarboxylicAcids_TC
+      Object: 000887:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_CarboxylicAcids_TB
+      Object: 000886:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_CarboxylicAcids_TA
+      Object: 000885:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Silver_TC
+      Object: 0009B9:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUniqueImmunostimulant
+      Object: 0055B3:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Benzene_TB
+      Object: 000866:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caesium_TA
+      Object: 00087E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caelumite_TC
+      Object: 000879:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareTantalum
+      Object: 00556F:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUncommonSpice
+      Object: 0055AC:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AminoAcids_TA
+      Object: 00083B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgCommonToxin
+      Object: 0055CB:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Benzene_TC
+      Object: 000867:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticPalladium
+      Object: 005574:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aromatic_TC
+      Object: 000861:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Xenon_TB
+      Object: 000A21:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aromatic_TB
+      Object: 000860:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aromatic_TA
+      Object: 00085F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aldumite_TA
+      Object: 000829:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Argon_TC
+      Object: 00085B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Argon_TB
+      Object: 00085A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorine_TC
+      Object: 00088E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_BreakdownQuantity_TierD
+      Object: 000819:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AqueousHematite_TC
+      Object: 000855:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AqueousHematite_TB
+      Object: 000854:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AqueousHematite_TA
+      Object: 000853:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgExoticPolymer
+      Object: 0055A6:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonAlkanes
+      Object: 005570:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgExoticBiosuppressant
+      Object: 0055B2:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareNeodymium
+      Object: 005580:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimicrobial_TD
+      Object: 00084A:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Analgesic_TD
+      Object: 000844:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Analgesic_TB
+      Object: 000842:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_AminoAcids_TD
+      Object: 00083E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aluminum_TD
+      Object: 000838:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Biosuppressant_TD
+      Object: 000874:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aluminum_TC
+      Object: 000837:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimony_TB
+      Object: 00084E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Alkanes_TC
+      Object: 000831:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Alkanes_TA
+      Object: 00082F:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Aldumite_TC
+      Object: 00082B:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Argon_TD
+      Object: 00085C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Adhesive_TD
+      Object: 000820:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Adhesive_TC
+      Object: 00081E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Adhesive_TB
+      Object: 00081C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueIndicite
+      Object: 04BA37:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUniqueLuxuryTextile
+      Object: 00559E:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgUniqueGastronomic
+      Object: 00559D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Chlorine_TA
+      Object: 00088C:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Beryllium_TC
+      Object: 00086D:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticIonicLiquids
+      Object: 00557A:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Caesium_TD
+      Object: 000881:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimicrobial_TB
+      Object: 000848:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgRareAromatic
+      Object: 0055B8:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Biosuppressant_TB
+      Object: 000872:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueAqueousHematite
+      Object: 29D022:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrgCommonStructural
+      Object: 0055B9:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonLead
+      Object: 005568:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_MetabolicAgent_TA
+      Object: 00093E:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Antimicrobial_TC
+      Object: 000849:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Hypercatalyst_TD
+      Object: 0008EE:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueCaelumite
+      Object: 0788D6:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonBenzene
+      Object: 005585:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueVytinium
+      Object: 005DEF:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUniqueVeryl
+      Object: 005DEE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonIridium
+      Object: 00558A:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgUncommonCobalt
+      Object: 005575:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonArgon
+      Object: 005588:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareTetrafluorides
+      Object: 005578:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Biosuppressant_TC
+      Object: 000873:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRarePlatinum
+      Object: 005573:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VJR_Breakdown_Ytterbium_TB
+      Object: 000A27:Venworks-JunkRecycler.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareMercury
+      Object: 27C4A1:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgRareLithium
+      Object: 00557F:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticCaesium
+      Object: 0057DF:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgCommonAluminum
+      Object: 00557D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InorgExoticNeon
+      Object: 005587:Starfield.esm
+ObjectBounds:
+  First: -0.6298828, -0.47924805, 0
+  Second: 0.6298828, 0.32714844, 0.8442383
+ODTY: 0
+Name:
+  TargetLanguage: English
+  Value: Transfer Storage
+Model:
+  File: Markers\EditorMarkers\containermarker.nif
+  FLLD: 0x01000000
+Keywords:
+- 2A14C9:Starfield.esm
+NativeTerminal: 38D14B:Starfield.esm
+DisplayFilter: 000818:Venworks-JunkRecycler.esp
