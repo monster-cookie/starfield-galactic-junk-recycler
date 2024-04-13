@@ -25,7 +25,7 @@ $pinfo.UseShellExecute = $false
 
 $compileProcess = New-Object System.Diagnostics.Process
 $compileProcess.StartInfo = $pinfo
-$compileProcess.Start() | Out-Null
+$compileProcess.Start()
 $compileProcess.WaitForExit()
 if ($compileProcess.ExitCode -ne 0) {
   $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor DarkYellow

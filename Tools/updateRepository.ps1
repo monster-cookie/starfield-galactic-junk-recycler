@@ -10,8 +10,7 @@ if (!$Global:SharedConfigurationLoaded) {
 
 # Need to copy the source scripts to the Scripts Source folder so SFCK can use them
 Write-Host -ForegroundColor Green "Copying the source scripts to the Scripts Source folder so SFCK can use them"
-Copy-Item -Recurse -Force -Path "$ENV:PAPYRUS_SOURCE_PATH\Venworks\Shared" -Destination ".\Source\Papyrus"
-Copy-Item -Recurse -Force -Path "$ENV:PAPYRUS_SOURCE_PATH\Venworks\JunkRecycler" -Destination ".\Source\Papyrus"
+Copy-Item -Recurse -Force -Path "$ENV:PAPYRUS_SOURCE_PATH\Venworks\**" -Destination ".\Source\Papyrus\Venworks"
 
 # Need to copy the ESM/ESP/ESL files from the Game Data folder to update the repository verison for commit
 Write-Host -ForegroundColor Green "Copying the ESM/ESP/ESL files from the Game Data folder to update the repository verison for commit"
@@ -26,6 +25,6 @@ foreach ($database in $Global:Databases) {
 
 Write-Host -ForegroundColor Cyan "`n`n"
 Write-Host -ForegroundColor Cyan "**************************************************"
-Write-Host -ForegroundColor Cyan "**    Update SFCK Files Workflow complete       **"
+Write-Host -ForegroundColor Cyan "**  Update Repository Files Workflow complete   **"
 Write-Host -ForegroundColor Cyan "**************************************************"
 Write-Host -ForegroundColor Cyan "`n`n"
