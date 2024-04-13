@@ -13,7 +13,7 @@ Struct BreakdownResults
   Int TierC_Quantity=1
   Form TierD_Item=None
   Int TierD_Quantity=1
-  Float SizeAdjustment=1
+  Float SizeAdjustment=1.0
 EndStruct
 
 
@@ -21,25 +21,25 @@ EndStruct
 ;;;
 ;;; Global Variables
 ;;;
-GlobalVariable Property DebugEnabled Auto Const Mandatory
-String Property ModName="VenworksDebug" Auto Const Mandatory
+GlobalVariable Property DebugEnabled Auto Const
+String Property ModName="VenworksDebug" Auto Const
 
-GlobalVariable Property VJR_BreakdownQuantity_TierA Auto Const Mandatory
-GlobalVariable Property VJR_BreakdownQuantity_TierB Auto Const Mandatory
-GlobalVariable Property VJR_BreakdownQuantity_TierC Auto Const Mandatory
-GlobalVariable Property VJR_BreakdownQuantity_TierD Auto Const Mandatory
+GlobalVariable Property VJR_BreakdownQuantity_TierA Auto Const
+GlobalVariable Property VJR_BreakdownQuantity_TierB Auto Const
+GlobalVariable Property VJR_BreakdownQuantity_TierC Auto Const
+GlobalVariable Property VJR_BreakdownQuantity_TierD Auto Const
 
-GlobalVariable Property VJR_BreakdownChance_TierA Auto Const Mandatory
-GlobalVariable Property VJR_BreakdownChance_TierB Auto Const Mandatory
-GlobalVariable Property VJR_BreakdownChance_TierC Auto Const Mandatory
-GlobalVariable Property VJR_BreakdownChance_TierD Auto Const Mandatory
+GlobalVariable Property VJR_BreakdownChance_TierA Auto Const
+GlobalVariable Property VJR_BreakdownChance_TierB Auto Const
+GlobalVariable Property VJR_BreakdownChance_TierC Auto Const
+GlobalVariable Property VJR_BreakdownChance_TierD Auto Const
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties
 ;;;
-FormList Property AllInorganicResources Auto Const Mandatory
-FormList Property AllOrganicResources Auto Const Mandatory
+FormList Property AllInorganicResources Auto Const
+FormList Property AllOrganicResources Auto Const
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -52,86 +52,86 @@ FormList Property AllOrganicResources Auto Const Mandatory
 ;;;
 ;;; Variables
 ;;;
-Keyword Property VJR_ItemSize_Huge Auto Mandatory
-Keyword Property VJR_ItemSize_Large Auto Mandatory
-Keyword Property VJR_ItemSize_Normal Auto Mandatory
-Keyword Property VJR_ItemSize_Small Auto Mandatory
-Keyword Property VJR_ItemSize_Tiny Auto Mandatory
+Keyword Property VJR_ItemSize_Huge Auto
+Keyword Property VJR_ItemSize_Large Auto
+Keyword Property VJR_ItemSize_Normal Auto
+Keyword Property VJR_ItemSize_Small Auto
+Keyword Property VJR_ItemSize_Tiny Auto
 
-Keyword Property VJR_Breakdown_RandomInorganic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_RandomInorganic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_RandomInorganic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_RandomInorganic_TD Auto Mandatory
+Keyword Property VJR_Breakdown_RandomInorganic_TA Auto
+Keyword Property VJR_Breakdown_RandomInorganic_TB Auto
+Keyword Property VJR_Breakdown_RandomInorganic_TC Auto
+Keyword Property VJR_Breakdown_RandomInorganic_TD Auto
 
-Keyword Property VJR_Breakdown_RandomOrganic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_RandomOrganic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_RandomOrganic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_RandomOrganic_TD Auto Mandatory
+Keyword Property VJR_Breakdown_RandomOrganic_TA Auto
+Keyword Property VJR_Breakdown_RandomOrganic_TB Auto
+Keyword Property VJR_Breakdown_RandomOrganic_TC Auto
+Keyword Property VJR_Breakdown_RandomOrganic_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Inorganic Materials (Common)
 ;;;
-MiscObject Property InorgCommonAluminum Auto Mandatory
-Keyword Property VJR_Breakdown_Aluminum_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Aluminum_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Aluminum_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Aluminum_TD Auto Mandatory
+MiscObject Property InorgCommonAluminum Auto
+Keyword Property VJR_Breakdown_Aluminum_TA Auto
+Keyword Property VJR_Breakdown_Aluminum_TB Auto
+Keyword Property VJR_Breakdown_Aluminum_TC Auto
+Keyword Property VJR_Breakdown_Aluminum_TD Auto
 
-MiscObject Property InorgCommonArgon Auto Mandatory
-Keyword Property VJR_Breakdown_Argon_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Argon_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Argon_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Argon_TD Auto Mandatory
+MiscObject Property InorgCommonArgon Auto
+Keyword Property VJR_Breakdown_Argon_TA Auto
+Keyword Property VJR_Breakdown_Argon_TB Auto
+Keyword Property VJR_Breakdown_Argon_TC Auto
+Keyword Property VJR_Breakdown_Argon_TD Auto
 
-MiscObject Property InorgCommonChlorine Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorine_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorine_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorine_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorine_TD Auto Mandatory
+MiscObject Property InorgCommonChlorine Auto
+Keyword Property VJR_Breakdown_Chlorine_TA Auto
+Keyword Property VJR_Breakdown_Chlorine_TB Auto
+Keyword Property VJR_Breakdown_Chlorine_TC Auto
+Keyword Property VJR_Breakdown_Chlorine_TD Auto
 
-MiscObject Property InorgCommonCopper Auto Mandatory
-Keyword Property VJR_Breakdown_Copper_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Copper_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Copper_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Copper_TD Auto Mandatory
+MiscObject Property InorgCommonCopper Auto
+Keyword Property VJR_Breakdown_Copper_TA Auto
+Keyword Property VJR_Breakdown_Copper_TB Auto
+Keyword Property VJR_Breakdown_Copper_TC Auto
+Keyword Property VJR_Breakdown_Copper_TD Auto
 
-MiscObject Property InorgCommonHelium3 Auto Mandatory
-Keyword Property VJR_Breakdown_Helium3_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Helium3_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Helium3_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Helium3_TD Auto Mandatory
+MiscObject Property InorgCommonHelium3 Auto
+Keyword Property VJR_Breakdown_Helium3_TA Auto
+Keyword Property VJR_Breakdown_Helium3_TB Auto
+Keyword Property VJR_Breakdown_Helium3_TC Auto
+Keyword Property VJR_Breakdown_Helium3_TD Auto
 
-MiscObject Property InorgCommonIron Auto Mandatory
-Keyword Property VJR_Breakdown_Iron_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Iron_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Iron_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Iron_TD Auto Mandatory
+MiscObject Property InorgCommonIron Auto
+Keyword Property VJR_Breakdown_Iron_TA Auto
+Keyword Property VJR_Breakdown_Iron_TB Auto
+Keyword Property VJR_Breakdown_Iron_TC Auto
+Keyword Property VJR_Breakdown_Iron_TD Auto
 
-MiscObject Property InorgCommonLead Auto Mandatory
-Keyword Property VJR_Breakdown_Lead_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Lead_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Lead_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Lead_TD Auto Mandatory
+MiscObject Property InorgCommonLead Auto
+Keyword Property VJR_Breakdown_Lead_TA Auto
+Keyword Property VJR_Breakdown_Lead_TB Auto
+Keyword Property VJR_Breakdown_Lead_TC Auto
+Keyword Property VJR_Breakdown_Lead_TD Auto
 
-MiscObject Property InorgCommonNickel Auto Mandatory
-Keyword Property VJR_Breakdown_Nickel_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Nickel_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Nickel_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Nickel_TD Auto Mandatory
+MiscObject Property InorgCommonNickel Auto
+Keyword Property VJR_Breakdown_Nickel_TA Auto
+Keyword Property VJR_Breakdown_Nickel_TB Auto
+Keyword Property VJR_Breakdown_Nickel_TC Auto
+Keyword Property VJR_Breakdown_Nickel_TD Auto
 
-MiscObject Property InorgCommonUranium Auto Mandatory
-Keyword Property VJR_Breakdown_Uranium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Uranium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Uranium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Uranium_TD Auto Mandatory
+MiscObject Property InorgCommonUranium Auto
+Keyword Property VJR_Breakdown_Uranium_TA Auto
+Keyword Property VJR_Breakdown_Uranium_TB Auto
+Keyword Property VJR_Breakdown_Uranium_TC Auto
+Keyword Property VJR_Breakdown_Uranium_TD Auto
 
-MiscObject Property InorgCommonWater Auto Mandatory
-Keyword Property VJR_Breakdown_Water_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Water_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Water_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Water_TD Auto Mandatory
+MiscObject Property InorgCommonWater Auto
+Keyword Property VJR_Breakdown_Water_TA Auto
+Keyword Property VJR_Breakdown_Water_TB Auto
+Keyword Property VJR_Breakdown_Water_TC Auto
+Keyword Property VJR_Breakdown_Water_TD Auto
 
 
 
@@ -139,447 +139,447 @@ Keyword Property VJR_Breakdown_Water_TD Auto Mandatory
 ;;;
 ;;; Variables - Starfield Inorganic Materials (Uncommon)
 ;;;
-MiscObject Property InorgUncommonAlkanes Auto Mandatory
-Keyword Property VJR_Breakdown_Alkanes_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Alkanes_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Alkanes_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Alkanes_TD Auto Mandatory
+MiscObject Property InorgUncommonAlkanes Auto
+Keyword Property VJR_Breakdown_Alkanes_TA Auto
+Keyword Property VJR_Breakdown_Alkanes_TB Auto
+Keyword Property VJR_Breakdown_Alkanes_TC Auto
+Keyword Property VJR_Breakdown_Alkanes_TD Auto
 
-MiscObject Property InorgUncommonBenzene Auto Mandatory
-Keyword Property VJR_Breakdown_Benzene_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Benzene_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Benzene_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Benzene_TD Auto Mandatory
+MiscObject Property InorgUncommonBenzene Auto
+Keyword Property VJR_Breakdown_Benzene_TA Auto
+Keyword Property VJR_Breakdown_Benzene_TB Auto
+Keyword Property VJR_Breakdown_Benzene_TC Auto
+Keyword Property VJR_Breakdown_Benzene_TD Auto
 
-MiscObject Property InorgUncommonBeryllium Auto Mandatory
-Keyword Property VJR_Breakdown_Beryllium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Beryllium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Beryllium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Beryllium_TD Auto Mandatory
+MiscObject Property InorgUncommonBeryllium Auto
+Keyword Property VJR_Breakdown_Beryllium_TA Auto
+Keyword Property VJR_Breakdown_Beryllium_TB Auto
+Keyword Property VJR_Breakdown_Beryllium_TC Auto
+Keyword Property VJR_Breakdown_Beryllium_TD Auto
 
-MiscObject Property InorgUncommonChlorosilanes Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorosilanes_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorosilanes_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorosilanes_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Chlorosilanes_TD Auto Mandatory
+MiscObject Property InorgUncommonChlorosilanes Auto
+Keyword Property VJR_Breakdown_Chlorosilanes_TA Auto
+Keyword Property VJR_Breakdown_Chlorosilanes_TB Auto
+Keyword Property VJR_Breakdown_Chlorosilanes_TC Auto
+Keyword Property VJR_Breakdown_Chlorosilanes_TD Auto
 
-MiscObject Property InorgUncommonCobalt Auto Mandatory
-Keyword Property VJR_Breakdown_Cobalt_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Cobalt_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Cobalt_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Cobalt_TD Auto Mandatory
+MiscObject Property InorgUncommonCobalt Auto
+Keyword Property VJR_Breakdown_Cobalt_TA Auto
+Keyword Property VJR_Breakdown_Cobalt_TB Auto
+Keyword Property VJR_Breakdown_Cobalt_TC Auto
+Keyword Property VJR_Breakdown_Cobalt_TD Auto
 
-MiscObject Property InorgUncommonFluorine Auto Mandatory
-Keyword Property VJR_Breakdown_Fluorine_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Fluorine_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Fluorine_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Fluorine_TD Auto Mandatory
+MiscObject Property InorgUncommonFluorine Auto
+Keyword Property VJR_Breakdown_Fluorine_TA Auto
+Keyword Property VJR_Breakdown_Fluorine_TB Auto
+Keyword Property VJR_Breakdown_Fluorine_TC Auto
+Keyword Property VJR_Breakdown_Fluorine_TD Auto
 
-MiscObject Property InorgUncommonIridium Auto Mandatory
-Keyword Property VJR_Breakdown_Iridium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Iridium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Iridium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Iridium_TD Auto Mandatory
+MiscObject Property InorgUncommonIridium Auto
+Keyword Property VJR_Breakdown_Iridium_TA Auto
+Keyword Property VJR_Breakdown_Iridium_TB Auto
+Keyword Property VJR_Breakdown_Iridium_TC Auto
+Keyword Property VJR_Breakdown_Iridium_TD Auto
 
-MiscObject Property InorgUncommonSilver Auto Mandatory
-Keyword Property VJR_Breakdown_Silver_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Silver_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Silver_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Silver_TD Auto Mandatory
+MiscObject Property InorgUncommonSilver Auto
+Keyword Property VJR_Breakdown_Silver_TA Auto
+Keyword Property VJR_Breakdown_Silver_TB Auto
+Keyword Property VJR_Breakdown_Silver_TC Auto
+Keyword Property VJR_Breakdown_Silver_TD Auto
 
-MiscObject Property InorgUncommonTungsten Auto Mandatory
-Keyword Property VJR_Breakdown_Tungsten_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Tungsten_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Tungsten_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Tungsten_TD Auto Mandatory
+MiscObject Property InorgUncommonTungsten Auto
+Keyword Property VJR_Breakdown_Tungsten_TA Auto
+Keyword Property VJR_Breakdown_Tungsten_TB Auto
+Keyword Property VJR_Breakdown_Tungsten_TC Auto
+Keyword Property VJR_Breakdown_Tungsten_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Inorganic Materials (Rare)
 ;;;
-MiscObject Property InorgRareCarboxylicAcids Auto Mandatory
-Keyword Property VJR_Breakdown_CarboxylicAcids_TA Auto Mandatory
-Keyword Property VJR_Breakdown_CarboxylicAcids_TB Auto Mandatory
-Keyword Property VJR_Breakdown_CarboxylicAcids_TC Auto Mandatory
-Keyword Property VJR_Breakdown_CarboxylicAcids_TD Auto Mandatory
+MiscObject Property InorgRareCarboxylicAcids Auto
+Keyword Property VJR_Breakdown_CarboxylicAcids_TA Auto
+Keyword Property VJR_Breakdown_CarboxylicAcids_TB Auto
+Keyword Property VJR_Breakdown_CarboxylicAcids_TC Auto
+Keyword Property VJR_Breakdown_CarboxylicAcids_TD Auto
 
-MiscObject Property InorgRareGold Auto Mandatory
-Keyword Property VJR_Breakdown_Gold_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Gold_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Gold_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Gold_TD Auto Mandatory
+MiscObject Property InorgRareGold Auto
+Keyword Property VJR_Breakdown_Gold_TA Auto
+Keyword Property VJR_Breakdown_Gold_TB Auto
+Keyword Property VJR_Breakdown_Gold_TC Auto
+Keyword Property VJR_Breakdown_Gold_TD Auto
 
-MiscObject Property InorgRareLithium Auto Mandatory
-Keyword Property VJR_Breakdown_Lithium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Lithium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Lithium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Lithium_TD Auto Mandatory
+MiscObject Property InorgRareLithium Auto
+Keyword Property VJR_Breakdown_Lithium_TA Auto
+Keyword Property VJR_Breakdown_Lithium_TB Auto
+Keyword Property VJR_Breakdown_Lithium_TC Auto
+Keyword Property VJR_Breakdown_Lithium_TD Auto
 
-MiscObject Property InorgRareMercury Auto Mandatory
-Keyword Property VJR_Breakdown_Mercury_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Mercury_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Mercury_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Mercury_TD Auto Mandatory
+MiscObject Property InorgRareMercury Auto
+Keyword Property VJR_Breakdown_Mercury_TA Auto
+Keyword Property VJR_Breakdown_Mercury_TB Auto
+Keyword Property VJR_Breakdown_Mercury_TC Auto
+Keyword Property VJR_Breakdown_Mercury_TD Auto
 
-MiscObject Property InorgRareNeodymium Auto Mandatory
-Keyword Property VJR_Breakdown_Neodymium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Neodymium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Neodymium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Neodymium_TD Auto Mandatory
+MiscObject Property InorgRareNeodymium Auto
+Keyword Property VJR_Breakdown_Neodymium_TA Auto
+Keyword Property VJR_Breakdown_Neodymium_TB Auto
+Keyword Property VJR_Breakdown_Neodymium_TC Auto
+Keyword Property VJR_Breakdown_Neodymium_TD Auto
 
-MiscObject Property InorgRarePlatinum Auto Mandatory
-Keyword Property VJR_Breakdown_Platinum_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Platinum_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Platinum_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Platinum_TD Auto Mandatory
+MiscObject Property InorgRarePlatinum Auto
+Keyword Property VJR_Breakdown_Platinum_TA Auto
+Keyword Property VJR_Breakdown_Platinum_TB Auto
+Keyword Property VJR_Breakdown_Platinum_TC Auto
+Keyword Property VJR_Breakdown_Platinum_TD Auto
 
-MiscObject Property InorgRareTantalum Auto Mandatory
-Keyword Property VJR_Breakdown_Tantalum_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Tantalum_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Tantalum_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Tantalum_TD Auto Mandatory
+MiscObject Property InorgRareTantalum Auto
+Keyword Property VJR_Breakdown_Tantalum_TA Auto
+Keyword Property VJR_Breakdown_Tantalum_TB Auto
+Keyword Property VJR_Breakdown_Tantalum_TC Auto
+Keyword Property VJR_Breakdown_Tantalum_TD Auto
 
-MiscObject Property InorgRareTetrafluorides Auto Mandatory
-Keyword Property VJR_Breakdown_Tetrafluorides_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Tetrafluorides_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Tetrafluorides_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Tetrafluorides_TD Auto Mandatory
+MiscObject Property InorgRareTetrafluorides Auto
+Keyword Property VJR_Breakdown_Tetrafluorides_TA Auto
+Keyword Property VJR_Breakdown_Tetrafluorides_TB Auto
+Keyword Property VJR_Breakdown_Tetrafluorides_TC Auto
+Keyword Property VJR_Breakdown_Tetrafluorides_TD Auto
 
-MiscObject Property InorgRareTitanium Auto Mandatory
-Keyword Property VJR_Breakdown_Titanium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Titanium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Titanium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Titanium_TD Auto Mandatory
+MiscObject Property InorgRareTitanium Auto
+Keyword Property VJR_Breakdown_Titanium_TA Auto
+Keyword Property VJR_Breakdown_Titanium_TB Auto
+Keyword Property VJR_Breakdown_Titanium_TC Auto
+Keyword Property VJR_Breakdown_Titanium_TD Auto
 
-MiscObject Property InorgRareVanadium Auto Mandatory
-Keyword Property VJR_Breakdown_Vanadium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Vanadium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Vanadium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Vanadium_TD Auto Mandatory
+MiscObject Property InorgRareVanadium Auto
+Keyword Property VJR_Breakdown_Vanadium_TA Auto
+Keyword Property VJR_Breakdown_Vanadium_TB Auto
+Keyword Property VJR_Breakdown_Vanadium_TC Auto
+Keyword Property VJR_Breakdown_Vanadium_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Inorganic Materials (Exotic)
 ;;;
-MiscObject Property InorgExoticAntimony Auto Mandatory
-Keyword Property VJR_Breakdown_Antimony_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Antimony_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Antimony_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Antimony_TD Auto Mandatory
+MiscObject Property InorgExoticAntimony Auto
+Keyword Property VJR_Breakdown_Antimony_TA Auto
+Keyword Property VJR_Breakdown_Antimony_TB Auto
+Keyword Property VJR_Breakdown_Antimony_TC Auto
+Keyword Property VJR_Breakdown_Antimony_TD Auto
 
-MiscObject Property InorgExoticCaesium Auto Mandatory
-Keyword Property VJR_Breakdown_Caesium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Caesium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Caesium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Caesium_TD Auto Mandatory
+MiscObject Property InorgExoticCaesium Auto
+Keyword Property VJR_Breakdown_Caesium_TA Auto
+Keyword Property VJR_Breakdown_Caesium_TB Auto
+Keyword Property VJR_Breakdown_Caesium_TC Auto
+Keyword Property VJR_Breakdown_Caesium_TD Auto
 
-MiscObject Property InorgExoticDysprosium Auto Mandatory
-Keyword Property VJR_Breakdown_Dysprosium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Dysprosium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Dysprosium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Dysprosium_TD Auto Mandatory
+MiscObject Property InorgExoticDysprosium Auto
+Keyword Property VJR_Breakdown_Dysprosium_TA Auto
+Keyword Property VJR_Breakdown_Dysprosium_TB Auto
+Keyword Property VJR_Breakdown_Dysprosium_TC Auto
+Keyword Property VJR_Breakdown_Dysprosium_TD Auto
 
-MiscObject Property InorgExoticEuropium Auto Mandatory
-Keyword Property VJR_Breakdown_Europium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Europium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Europium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Europium_TD Auto Mandatory
+MiscObject Property InorgExoticEuropium Auto
+Keyword Property VJR_Breakdown_Europium_TA Auto
+Keyword Property VJR_Breakdown_Europium_TB Auto
+Keyword Property VJR_Breakdown_Europium_TC Auto
+Keyword Property VJR_Breakdown_Europium_TD Auto
 
-MiscObject Property InorgExoticIonicLiquids Auto Mandatory
-Keyword Property VJR_Breakdown_IonicLiquids_TA Auto Mandatory
-Keyword Property VJR_Breakdown_IonicLiquids_TB Auto Mandatory
-Keyword Property VJR_Breakdown_IonicLiquids_TC Auto Mandatory
-Keyword Property VJR_Breakdown_IonicLiquids_TD Auto Mandatory
+MiscObject Property InorgExoticIonicLiquids Auto
+Keyword Property VJR_Breakdown_IonicLiquids_TA Auto
+Keyword Property VJR_Breakdown_IonicLiquids_TB Auto
+Keyword Property VJR_Breakdown_IonicLiquids_TC Auto
+Keyword Property VJR_Breakdown_IonicLiquids_TD Auto
 
-MiscObject Property InorgExoticNeon Auto Mandatory
-Keyword Property VJR_Breakdown_Neon_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Neon_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Neon_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Neon_TD Auto Mandatory
+MiscObject Property InorgExoticNeon Auto
+Keyword Property VJR_Breakdown_Neon_TA Auto
+Keyword Property VJR_Breakdown_Neon_TB Auto
+Keyword Property VJR_Breakdown_Neon_TC Auto
+Keyword Property VJR_Breakdown_Neon_TD Auto
 
-MiscObject Property InorgExoticPalladium Auto Mandatory
-Keyword Property VJR_Breakdown_Palladium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Palladium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Palladium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Palladium_TD Auto Mandatory
+MiscObject Property InorgExoticPalladium Auto
+Keyword Property VJR_Breakdown_Palladium_TA Auto
+Keyword Property VJR_Breakdown_Palladium_TB Auto
+Keyword Property VJR_Breakdown_Palladium_TC Auto
+Keyword Property VJR_Breakdown_Palladium_TD Auto
 
-MiscObject Property InorgExoticPlutonium Auto Mandatory
-Keyword Property VJR_Breakdown_Plutonium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Plutonium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Plutonium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Plutonium_TD Auto Mandatory
+MiscObject Property InorgExoticPlutonium Auto
+Keyword Property VJR_Breakdown_Plutonium_TA Auto
+Keyword Property VJR_Breakdown_Plutonium_TB Auto
+Keyword Property VJR_Breakdown_Plutonium_TC Auto
+Keyword Property VJR_Breakdown_Plutonium_TD Auto
 
-MiscObject Property InorgExoticXenon Auto Mandatory
-Keyword Property VJR_Breakdown_Xenon_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Xenon_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Xenon_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Xenon_TD Auto Mandatory
+MiscObject Property InorgExoticXenon Auto
+Keyword Property VJR_Breakdown_Xenon_TA Auto
+Keyword Property VJR_Breakdown_Xenon_TB Auto
+Keyword Property VJR_Breakdown_Xenon_TC Auto
+Keyword Property VJR_Breakdown_Xenon_TD Auto
 
-MiscObject Property InorgExoticYtterbium Auto Mandatory
-Keyword Property VJR_Breakdown_Ytterbium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Ytterbium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Ytterbium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Ytterbium_TD Auto Mandatory
+MiscObject Property InorgExoticYtterbium Auto
+Keyword Property VJR_Breakdown_Ytterbium_TA Auto
+Keyword Property VJR_Breakdown_Ytterbium_TB Auto
+Keyword Property VJR_Breakdown_Ytterbium_TC Auto
+Keyword Property VJR_Breakdown_Ytterbium_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Inorganic Materials (Unique)
 ;;;
-MiscObject Property InorgUniqueAldumite Auto Mandatory
-Keyword Property VJR_Breakdown_Aldumite_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Aldumite_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Aldumite_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Aldumite_TD Auto Mandatory
+MiscObject Property InorgUniqueAldumite Auto
+Keyword Property VJR_Breakdown_Aldumite_TA Auto
+Keyword Property VJR_Breakdown_Aldumite_TB Auto
+Keyword Property VJR_Breakdown_Aldumite_TC Auto
+Keyword Property VJR_Breakdown_Aldumite_TD Auto
 
-MiscObject Property InorgUniqueAqueousHematite Auto Mandatory
-Keyword Property VJR_Breakdown_AqueousHematite_TA Auto Mandatory
-Keyword Property VJR_Breakdown_AqueousHematite_TB Auto Mandatory
-Keyword Property VJR_Breakdown_AqueousHematite_TC Auto Mandatory
-Keyword Property VJR_Breakdown_AqueousHematite_TD Auto Mandatory
+MiscObject Property InorgUniqueAqueousHematite Auto
+Keyword Property VJR_Breakdown_AqueousHematite_TA Auto
+Keyword Property VJR_Breakdown_AqueousHematite_TB Auto
+Keyword Property VJR_Breakdown_AqueousHematite_TC Auto
+Keyword Property VJR_Breakdown_AqueousHematite_TD Auto
 
-MiscObject Property InorgUniqueCaelumite Auto Mandatory
-Keyword Property VJR_Breakdown_Caelumite_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Caelumite_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Caelumite_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Caelumite_TD Auto Mandatory
+MiscObject Property InorgUniqueCaelumite Auto
+Keyword Property VJR_Breakdown_Caelumite_TA Auto
+Keyword Property VJR_Breakdown_Caelumite_TB Auto
+Keyword Property VJR_Breakdown_Caelumite_TC Auto
+Keyword Property VJR_Breakdown_Caelumite_TD Auto
 
-MiscObject Property InorgUniqueIndicite Auto Mandatory
-Keyword Property VJR_Breakdown_Indicite_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Indicite_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Indicite_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Indicite_TD Auto Mandatory
+MiscObject Property InorgUniqueIndicite Auto
+Keyword Property VJR_Breakdown_Indicite_TA Auto
+Keyword Property VJR_Breakdown_Indicite_TB Auto
+Keyword Property VJR_Breakdown_Indicite_TC Auto
+Keyword Property VJR_Breakdown_Indicite_TD Auto
 
-MiscObject Property InorgUniqueRothicite Auto Mandatory
-Keyword Property VJR_Breakdown_Rothicite_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Rothicite_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Rothicite_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Rothicite_TD Auto Mandatory
+MiscObject Property InorgUniqueRothicite Auto
+Keyword Property VJR_Breakdown_Rothicite_TA Auto
+Keyword Property VJR_Breakdown_Rothicite_TB Auto
+Keyword Property VJR_Breakdown_Rothicite_TC Auto
+Keyword Property VJR_Breakdown_Rothicite_TD Auto
 
-MiscObject Property InorgUniqueTasine Auto Mandatory
-Keyword Property VJR_Breakdown_Tasine_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Tasine_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Tasine_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Tasine_TD Auto Mandatory
+MiscObject Property InorgUniqueTasine Auto
+Keyword Property VJR_Breakdown_Tasine_TA Auto
+Keyword Property VJR_Breakdown_Tasine_TB Auto
+Keyword Property VJR_Breakdown_Tasine_TC Auto
+Keyword Property VJR_Breakdown_Tasine_TD Auto
 
-MiscObject Property InorgUniqueVeryl Auto Mandatory
-Keyword Property VJR_Breakdown_Veryl_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Veryl_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Veryl_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Veryl_TD Auto Mandatory
+MiscObject Property InorgUniqueVeryl Auto
+Keyword Property VJR_Breakdown_Veryl_TA Auto
+Keyword Property VJR_Breakdown_Veryl_TB Auto
+Keyword Property VJR_Breakdown_Veryl_TC Auto
+Keyword Property VJR_Breakdown_Veryl_TD Auto
 
-MiscObject Property InorgUniqueVytinium Auto Mandatory
-Keyword Property VJR_Breakdown_Vytinium_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Vytinium_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Vytinium_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Vytinium_TD Auto Mandatory
+MiscObject Property InorgUniqueVytinium Auto
+Keyword Property VJR_Breakdown_Vytinium_TA Auto
+Keyword Property VJR_Breakdown_Vytinium_TB Auto
+Keyword Property VJR_Breakdown_Vytinium_TC Auto
+Keyword Property VJR_Breakdown_Vytinium_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Organic Materials (Common)
 ;;;
-MiscObject Property OrgCommonFiber Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Fiber_TD Auto Mandatory
+MiscObject Property OrgCommonFiber Auto
+Keyword Property VJR_Breakdown_Fiber_TA Auto
+Keyword Property VJR_Breakdown_Fiber_TB Auto
+Keyword Property VJR_Breakdown_Fiber_TC Auto
+Keyword Property VJR_Breakdown_Fiber_TD Auto
 
-MiscObject Property OrgCommonMetabolicAgent Auto Mandatory
-Keyword Property VJR_Breakdown_MetabolicAgent_TA Auto Mandatory
-Keyword Property VJR_Breakdown_MetabolicAgent_TB Auto Mandatory
-Keyword Property VJR_Breakdown_MetabolicAgent_TC Auto Mandatory
-Keyword Property VJR_Breakdown_MetabolicAgent_TD Auto Mandatory
+MiscObject Property OrgCommonMetabolicAgent Auto
+Keyword Property VJR_Breakdown_MetabolicAgent_TA Auto
+Keyword Property VJR_Breakdown_MetabolicAgent_TB Auto
+Keyword Property VJR_Breakdown_MetabolicAgent_TC Auto
+Keyword Property VJR_Breakdown_MetabolicAgent_TD Auto
 
-MiscObject Property OrgCommonNutrient Auto Mandatory
-Keyword Property VJR_Breakdown_Nutrient_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Nutrient_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Nutrient_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Nutrient_TD Auto Mandatory
+MiscObject Property OrgCommonNutrient Auto
+Keyword Property VJR_Breakdown_Nutrient_TA Auto
+Keyword Property VJR_Breakdown_Nutrient_TB Auto
+Keyword Property VJR_Breakdown_Nutrient_TC Auto
+Keyword Property VJR_Breakdown_Nutrient_TD Auto
 
-MiscObject Property OrgCommonSealant Auto Mandatory
-Keyword Property VJR_Breakdown_Sealant_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Sealant_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Sealant_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Sealant_TD Auto Mandatory
+MiscObject Property OrgCommonSealant Auto
+Keyword Property VJR_Breakdown_Sealant_TA Auto
+Keyword Property VJR_Breakdown_Sealant_TB Auto
+Keyword Property VJR_Breakdown_Sealant_TC Auto
+Keyword Property VJR_Breakdown_Sealant_TD Auto
 
-MiscObject Property OrgCommonStructural Auto Mandatory
-Keyword Property VJR_Breakdown_Structural_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Structural_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Structural_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Structural_TD Auto Mandatory
+MiscObject Property OrgCommonStructural Auto
+Keyword Property VJR_Breakdown_Structural_TA Auto
+Keyword Property VJR_Breakdown_Structural_TB Auto
+Keyword Property VJR_Breakdown_Structural_TC Auto
+Keyword Property VJR_Breakdown_Structural_TD Auto
 
-MiscObject Property OrgCommonToxin Auto Mandatory
-Keyword Property VJR_Breakdown_Toxin_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Toxin_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Toxin_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Toxin_TD Auto Mandatory
+MiscObject Property OrgCommonToxin Auto
+Keyword Property VJR_Breakdown_Toxin_TA Auto
+Keyword Property VJR_Breakdown_Toxin_TB Auto
+Keyword Property VJR_Breakdown_Toxin_TC Auto
+Keyword Property VJR_Breakdown_Toxin_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Organic Materials (Uncommon)
 ;;;
-MiscObject Property OrgUncommonAntimicrobial Auto Mandatory
-Keyword Property VJR_Breakdown_Antimicrobial_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Antimicrobial_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Antimicrobial_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Antimicrobial_TD Auto Mandatory
+MiscObject Property OrgUncommonAntimicrobial Auto
+Keyword Property VJR_Breakdown_Antimicrobial_TA Auto
+Keyword Property VJR_Breakdown_Antimicrobial_TB Auto
+Keyword Property VJR_Breakdown_Antimicrobial_TC Auto
+Keyword Property VJR_Breakdown_Antimicrobial_TD Auto
 
-MiscObject Property OrgUncommonCosmetic Auto Mandatory
-Keyword Property VJR_Breakdown_Cosmetic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Cosmetic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Cosmetic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Cosmetic_TD Auto Mandatory
+MiscObject Property OrgUncommonCosmetic Auto
+Keyword Property VJR_Breakdown_Cosmetic_TA Auto
+Keyword Property VJR_Breakdown_Cosmetic_TB Auto
+Keyword Property VJR_Breakdown_Cosmetic_TC Auto
+Keyword Property VJR_Breakdown_Cosmetic_TD Auto
 
-MiscObject Property OrgUncommonMembrane Auto Mandatory
-Keyword Property VJR_Breakdown_Membrane_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Membrane_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Membrane_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Membrane_TD Auto Mandatory
+MiscObject Property OrgUncommonMembrane Auto
+Keyword Property VJR_Breakdown_Membrane_TA Auto
+Keyword Property VJR_Breakdown_Membrane_TB Auto
+Keyword Property VJR_Breakdown_Membrane_TC Auto
+Keyword Property VJR_Breakdown_Membrane_TD Auto
 
-MiscObject Property OrgUncommonOrnamental Auto Mandatory
-Keyword Property VJR_Breakdown_Ornamental_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Ornamental_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Ornamental_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Ornamental_TD Auto Mandatory
+MiscObject Property OrgUncommonOrnamental Auto
+Keyword Property VJR_Breakdown_Ornamental_TA Auto
+Keyword Property VJR_Breakdown_Ornamental_TB Auto
+Keyword Property VJR_Breakdown_Ornamental_TC Auto
+Keyword Property VJR_Breakdown_Ornamental_TD Auto
 
-MiscObject Property OrgUncommonPigment Auto Mandatory
-Keyword Property VJR_Breakdown_Pigment_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Pigment_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Pigment_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Pigment_TD Auto Mandatory
+MiscObject Property OrgUncommonPigment Auto
+Keyword Property VJR_Breakdown_Pigment_TA Auto
+Keyword Property VJR_Breakdown_Pigment_TB Auto
+Keyword Property VJR_Breakdown_Pigment_TC Auto
+Keyword Property VJR_Breakdown_Pigment_TD Auto
 
-MiscObject Property OrgUncommonSpice Auto Mandatory
-Keyword Property VJR_Breakdown_Spice_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Spice_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Spice_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Spice_TD Auto Mandatory
+MiscObject Property OrgUncommonSpice Auto
+Keyword Property VJR_Breakdown_Spice_TA Auto
+Keyword Property VJR_Breakdown_Spice_TB Auto
+Keyword Property VJR_Breakdown_Spice_TC Auto
+Keyword Property VJR_Breakdown_Spice_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Organic Materials (Rare)
 ;;;
-MiscObject Property OrgRareAdhesive Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Adhesive_TD Auto Mandatory
+MiscObject Property OrgRareAdhesive Auto
+Keyword Property VJR_Breakdown_Adhesive_TA Auto
+Keyword Property VJR_Breakdown_Adhesive_TB Auto
+Keyword Property VJR_Breakdown_Adhesive_TC Auto
+Keyword Property VJR_Breakdown_Adhesive_TD Auto
 
-MiscObject Property OrgRareAminoAcids Auto Mandatory
-Keyword Property VJR_Breakdown_AminoAcids_TA Auto Mandatory
-Keyword Property VJR_Breakdown_AminoAcids_TB Auto Mandatory
-Keyword Property VJR_Breakdown_AminoAcids_TC Auto Mandatory
-Keyword Property VJR_Breakdown_AminoAcids_TD Auto Mandatory
+MiscObject Property OrgRareAminoAcids Auto
+Keyword Property VJR_Breakdown_AminoAcids_TA Auto
+Keyword Property VJR_Breakdown_AminoAcids_TB Auto
+Keyword Property VJR_Breakdown_AminoAcids_TC Auto
+Keyword Property VJR_Breakdown_AminoAcids_TD Auto
 
-MiscObject Property OrgRareAnalgesic Auto Mandatory
-Keyword Property VJR_Breakdown_Analgesic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Analgesic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Analgesic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Analgesic_TD Auto Mandatory
+MiscObject Property OrgRareAnalgesic Auto
+Keyword Property VJR_Breakdown_Analgesic_TA Auto
+Keyword Property VJR_Breakdown_Analgesic_TB Auto
+Keyword Property VJR_Breakdown_Analgesic_TC Auto
+Keyword Property VJR_Breakdown_Analgesic_TD Auto
 
-MiscObject Property OrgRareAromatic Auto Mandatory
-Keyword Property VJR_Breakdown_Aromatic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Aromatic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Aromatic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Aromatic_TD Auto Mandatory
+MiscObject Property OrgRareAromatic Auto
+Keyword Property VJR_Breakdown_Aromatic_TA Auto
+Keyword Property VJR_Breakdown_Aromatic_TB Auto
+Keyword Property VJR_Breakdown_Aromatic_TC Auto
+Keyword Property VJR_Breakdown_Aromatic_TD Auto
 
-MiscObject Property OrgRareHallucinogen Auto Mandatory
-Keyword Property VJR_Breakdown_Hallucinogen_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Hallucinogen_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Hallucinogen_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Hallucinogen_TD Auto Mandatory
+MiscObject Property OrgRareHallucinogen Auto
+Keyword Property VJR_Breakdown_Hallucinogen_TA Auto
+Keyword Property VJR_Breakdown_Hallucinogen_TB Auto
+Keyword Property VJR_Breakdown_Hallucinogen_TC Auto
+Keyword Property VJR_Breakdown_Hallucinogen_TD Auto
 
-MiscObject Property OrgRareSedative Auto Mandatory
-Keyword Property VJR_Breakdown_Sedative_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Sedative_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Sedative_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Sedative_TD Auto Mandatory
+MiscObject Property OrgRareSedative Auto
+Keyword Property VJR_Breakdown_Sedative_TA Auto
+Keyword Property VJR_Breakdown_Sedative_TB Auto
+Keyword Property VJR_Breakdown_Sedative_TC Auto
+Keyword Property VJR_Breakdown_Sedative_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Organic Materials (Exotic)
 ;;;
-MiscObject Property OrgExoticBiosuppressant Auto Mandatory
-Keyword Property VJR_Breakdown_Biosuppressant_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Biosuppressant_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Biosuppressant_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Biosuppressant_TD Auto Mandatory
+MiscObject Property OrgExoticBiosuppressant Auto
+Keyword Property VJR_Breakdown_Biosuppressant_TA Auto
+Keyword Property VJR_Breakdown_Biosuppressant_TB Auto
+Keyword Property VJR_Breakdown_Biosuppressant_TC Auto
+Keyword Property VJR_Breakdown_Biosuppressant_TD Auto
 
-MiscObject Property OrgExoticHypercatalyst Auto Mandatory
-Keyword Property VJR_Breakdown_Hypercatalyst_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Hypercatalyst_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Hypercatalyst_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Hypercatalyst_TD Auto Mandatory
+MiscObject Property OrgExoticHypercatalyst Auto
+Keyword Property VJR_Breakdown_Hypercatalyst_TA Auto
+Keyword Property VJR_Breakdown_Hypercatalyst_TB Auto
+Keyword Property VJR_Breakdown_Hypercatalyst_TC Auto
+Keyword Property VJR_Breakdown_Hypercatalyst_TD Auto
 
-MiscObject Property OrgExoticLubricant Auto Mandatory
-Keyword Property VJR_Breakdown_Lubricant_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Lubricant_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Lubricant_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Lubricant_TD Auto Mandatory
+MiscObject Property OrgExoticLubricant Auto
+Keyword Property VJR_Breakdown_Lubricant_TA Auto
+Keyword Property VJR_Breakdown_Lubricant_TB Auto
+Keyword Property VJR_Breakdown_Lubricant_TC Auto
+Keyword Property VJR_Breakdown_Lubricant_TD Auto
 
-MiscObject Property OrgExoticPolymer Auto Mandatory
-Keyword Property VJR_Breakdown_Polymer_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Polymer_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Polymer_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Polymer_TD Auto Mandatory
+MiscObject Property OrgExoticPolymer Auto
+Keyword Property VJR_Breakdown_Polymer_TA Auto
+Keyword Property VJR_Breakdown_Polymer_TB Auto
+Keyword Property VJR_Breakdown_Polymer_TC Auto
+Keyword Property VJR_Breakdown_Polymer_TD Auto
 
-MiscObject Property OrgExoticSolvent Auto Mandatory
-Keyword Property VJR_Breakdown_Solvent_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Solvent_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Solvent_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Solvent_TD Auto Mandatory
+MiscObject Property OrgExoticSolvent Auto
+Keyword Property VJR_Breakdown_Solvent_TA Auto
+Keyword Property VJR_Breakdown_Solvent_TB Auto
+Keyword Property VJR_Breakdown_Solvent_TC Auto
+Keyword Property VJR_Breakdown_Solvent_TD Auto
 
-MiscObject Property OrgExoticStimulant Auto Mandatory
-Keyword Property VJR_Breakdown_Stimulant_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Stimulant_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Stimulant_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Stimulant_TD Auto Mandatory
+MiscObject Property OrgExoticStimulant Auto
+Keyword Property VJR_Breakdown_Stimulant_TA Auto
+Keyword Property VJR_Breakdown_Stimulant_TB Auto
+Keyword Property VJR_Breakdown_Stimulant_TC Auto
+Keyword Property VJR_Breakdown_Stimulant_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables - Starfield Organic Materials (Unique)
 ;;;
-MiscObject Property OrgUniqueGastronomic Auto Mandatory
-Keyword Property VJR_Breakdown_Gastronomic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Gastronomic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Gastronomic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Gastronomic_TD Auto Mandatory
+MiscObject Property OrgUniqueGastronomic Auto
+Keyword Property VJR_Breakdown_Gastronomic_TA Auto
+Keyword Property VJR_Breakdown_Gastronomic_TB Auto
+Keyword Property VJR_Breakdown_Gastronomic_TC Auto
+Keyword Property VJR_Breakdown_Gastronomic_TD Auto
 
-MiscObject Property OrgUniqueHighTensileSpidroin Auto Mandatory
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TA Auto Mandatory
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TB Auto Mandatory
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TC Auto Mandatory
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TD Auto Mandatory
+MiscObject Property OrgUniqueHighTensileSpidroin Auto
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TA Auto
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TB Auto
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TC Auto
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TD Auto
 
-MiscObject Property OrgUniqueImmunostimulant Auto Mandatory
-Keyword Property VJR_Breakdown_Immunostimulant_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Immunostimulant_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Immunostimulant_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Immunostimulant_TD Auto Mandatory
+MiscObject Property OrgUniqueImmunostimulant Auto
+Keyword Property VJR_Breakdown_Immunostimulant_TA Auto
+Keyword Property VJR_Breakdown_Immunostimulant_TB Auto
+Keyword Property VJR_Breakdown_Immunostimulant_TC Auto
+Keyword Property VJR_Breakdown_Immunostimulant_TD Auto
 
-MiscObject Property OrgUniqueLuxuryTextile Auto Mandatory
-Keyword Property VJR_Breakdown_LuxuryTextile_TA Auto Mandatory
-Keyword Property VJR_Breakdown_LuxuryTextile_TB Auto Mandatory
-Keyword Property VJR_Breakdown_LuxuryTextile_TC Auto Mandatory
-Keyword Property VJR_Breakdown_LuxuryTextile_TD Auto Mandatory
+MiscObject Property OrgUniqueLuxuryTextile Auto
+Keyword Property VJR_Breakdown_LuxuryTextile_TA Auto
+Keyword Property VJR_Breakdown_LuxuryTextile_TB Auto
+Keyword Property VJR_Breakdown_LuxuryTextile_TC Auto
+Keyword Property VJR_Breakdown_LuxuryTextile_TD Auto
 
-MiscObject Property OrgUniqueMemorySubstrate Auto Mandatory
-Keyword Property VJR_Breakdown_MemorySubstrate_TA Auto Mandatory
-Keyword Property VJR_Breakdown_MemorySubstrate_TB Auto Mandatory
-Keyword Property VJR_Breakdown_MemorySubstrate_TC Auto Mandatory
-Keyword Property VJR_Breakdown_MemorySubstrate_TD Auto Mandatory
+MiscObject Property OrgUniqueMemorySubstrate Auto
+Keyword Property VJR_Breakdown_MemorySubstrate_TA Auto
+Keyword Property VJR_Breakdown_MemorySubstrate_TB Auto
+Keyword Property VJR_Breakdown_MemorySubstrate_TC Auto
+Keyword Property VJR_Breakdown_MemorySubstrate_TD Auto
 
-MiscObject Property OrgUniqueNeurologic Auto Mandatory
-Keyword Property VJR_Breakdown_Neurologic_TA Auto Mandatory
-Keyword Property VJR_Breakdown_Neurologic_TB Auto Mandatory
-Keyword Property VJR_Breakdown_Neurologic_TC Auto Mandatory
-Keyword Property VJR_Breakdown_Neurologic_TD Auto Mandatory
+MiscObject Property OrgUniqueNeurologic Auto
+Keyword Property VJR_Breakdown_Neurologic_TA Auto
+Keyword Property VJR_Breakdown_Neurologic_TB Auto
+Keyword Property VJR_Breakdown_Neurologic_TC Auto
+Keyword Property VJR_Breakdown_Neurologic_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -587,27 +587,27 @@ Keyword Property VJR_Breakdown_Neurologic_TD Auto Mandatory
 ;;; Events
 ;;;
 Event OnInit()
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnInit", "On OnInit triggered.", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnInit", "On OnInit triggered.", 0, DebugEnabled.GetValueInt())
   Setup()
 EndEvent
 
 Event OnLoad()
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnLoad", "On OnLoad triggered.", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnLoad", "On OnLoad triggered.", 0, DebugEnabled.GetValueInt())
 EndEvent
 
 Event OnUnload()
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnUnload", "On OnUnload triggered.", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnUnload", "On OnUnload triggered.", 0, DebugEnabled.GetValueInt())
   RemoveAllInventoryEventFilters()
 EndEvent
 
 Event OnItemAdded(Form akBaseItem, Int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer, Int aiTransferReason)
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnItemAdded", "On OnItemAdded triggered.", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnItemAdded", "On OnItemAdded triggered.", 0, DebugEnabled.GetValueInt())
 
   ;; No init/load events get called this was so need to call Setup ourself
   Setup()
 
   ;; Loop and process items
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnItemAdded", "Processing item " + akBaseItem +  " of which there are " + aiItemCount + " of them.", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "OnItemAdded", "Processing item " + akBaseItem +  " of which there are " + aiItemCount + " of them.", 0, DebugEnabled.GetValueInt())
   ProcessItem(akBaseItem, aiItemCount)
 EndEvent
 
@@ -1148,7 +1148,7 @@ EndFunction
 Function ProcessItem(Form baseItem, int count)
   BreakdownResults results=New BreakdownResults
   Actor player = Game.GetPlayer()
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "Processing " + count + " item(s) of " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "Processing " + count + " item(s) of " + baseItem + ".", 0, DebugEnabled.GetValueInt())
 
   results.SizeAdjustment = GetItemSizeAdjustment(baseItem)
   results.TierA_Item = GetItemTierA(baseItem)
@@ -1161,7 +1161,7 @@ Function ProcessItem(Form baseItem, int count)
   results.TierD_Quantity = Math.Floor(VJR_BreakdownQuantity_TierD.GetValueInt() * count * results.SizeAdjustment)
 
   If (results.TierA_Item == None && results.TierB_Item == None && results.TierC_Item == None && results.TierD_Item == None)
-    Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "Failed to find breakdown rules for " + baseItem + " returning to player inventory.", 0, DebugEnabled.GetValueInt())
+    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "Failed to find breakdown rules for " + baseItem + " returning to player inventory.", 0, DebugEnabled.GetValueInt())
     player.AddItem(akItemToAdd=baseItem, aiCount=count, abSilent=False)
     RemoveItem(akItemToRemove=baseItem, aiCount=count, abSilent=False, akOtherContainer=None)
     Return
@@ -1183,45 +1183,45 @@ Function ProcessItem(Form baseItem, int count)
 
   If (results.TierA_Item != None)
     If (VJR_BreakdownChance_TierA.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierA.GetValueInt(), 1, 100, -1, -1))
-      Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier A breakdown component of " + results.TierA_Item + " at a quantity of " + results.TierA_Quantity + ".", 0, DebugEnabled.GetValueInt())
+      Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier A breakdown component of " + results.TierA_Item + " at a quantity of " + results.TierA_Quantity + ".", 0, DebugEnabled.GetValueInt())
       player.AddItem(akItemToAdd=results.TierA_Item, aiCount=results.TierA_Quantity, abSilent=True)
     EndIf
   Else
-    Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier A for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier A for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
   EndIf
 
   If (results.TierB_Item != None)
     If (VJR_BreakdownChance_TierB.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierB.GetValueInt(), 1, 100, -1, -1))
-      Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier B breakdown component of " + results.TierB_Item + " at a quantity of " + results.TierB_Quantity + ".", 0, DebugEnabled.GetValueInt())
+      Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier B breakdown component of " + results.TierB_Item + " at a quantity of " + results.TierB_Quantity + ".", 0, DebugEnabled.GetValueInt())
       player.AddItem(akItemToAdd=results.TierB_Item, aiCount=results.TierB_Quantity, abSilent=True)
     EndIf
   Else
-    Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier B for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier B for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
   EndIf
   
   If (results.TierC_Item != None)
     If (VJR_BreakdownChance_TierC.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierC.GetValueInt(), 1, 100, -1, -1))
-      Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier C breakdown component of " + results.TierC_Item + " at a quantity of " + results.TierC_Quantity + ".", 0, DebugEnabled.GetValueInt())
+      Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier C breakdown component of " + results.TierC_Item + " at a quantity of " + results.TierC_Quantity + ".", 0, DebugEnabled.GetValueInt())
       player.AddItem(akItemToAdd=results.TierC_Item, aiCount=results.TierC_Quantity, abSilent=True)
     EndIf
   Else
-    Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier C for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier C for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
   EndIf
   
   If (results.TierD_Item != None)
     If (VJR_BreakdownChance_TierD.GetValueInt() == 100 || Game.GetDieRollSuccess(VJR_BreakdownChance_TierD.GetValueInt(), 1, 100, -1, -1))
-      Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier D breakdown component of " + results.TierD_Item + " at a quantity of " + results.TierD_Quantity + ".", 0, DebugEnabled.GetValueInt())
+      Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "To player's inventory adding Tier D breakdown component of " + results.TierD_Item + " at a quantity of " + results.TierD_Quantity + ".", 0, DebugEnabled.GetValueInt())
       player.AddItem(akItemToAdd=results.TierD_Item, aiCount=results.TierD_Quantity, abSilent=True)
     EndIf
   Else
-    Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier D for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "No break down item was found for Tier D for " + baseItem + ".", 0, DebugEnabled.GetValueInt())
   EndIf
   
   RemoveItem(akItemToRemove=baseItem, aiCount=count, abSilent=True, akOtherContainer=None)
 EndFunction
 
 Float Function GetItemSizeAdjustment(Form baseItem)
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemSizeAdjustment", "Processing item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemSizeAdjustment", "Processing item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
 
   If (baseItem.HasKeyword(VJR_ItemSize_Huge))
     Return 3
@@ -1239,7 +1239,7 @@ Float Function GetItemSizeAdjustment(Form baseItem)
 EndFunction
 
 Form Function GetItemTierA(Form baseItem)
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierA", "Finding Tier A material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierA", "Finding Tier A material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
 
   If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TA))
     Return GetRandomInorganic()
@@ -1405,7 +1405,7 @@ Form Function GetItemTierA(Form baseItem)
 EndFunction
 
 Form Function GetItemTierB(Form baseItem)
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierB", "Finding Tier B material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierB", "Finding Tier B material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
 
   If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TB))
     Return GetRandomInorganic()
@@ -1571,7 +1571,7 @@ Form Function GetItemTierB(Form baseItem)
 EndFunction
 
 Form Function GetItemTierC(Form baseItem)
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierC", "Finding Tier C material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierC", "Finding Tier C material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
 
   If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TC))
     Return GetRandomInorganic()
@@ -1737,7 +1737,7 @@ Form Function GetItemTierC(Form baseItem)
 EndFunction
 
 Form Function GetItemTierD(Form baseItem)
-  Venworks:JunkRecycler:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierD", "Finding Tier D material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
+  Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "GetItemTierD", "Finding Tier D material for item " + baseItem + ".", 0, DebugEnabled.GetValueInt())
 
   If(baseItem.HasKeyword(VJR_Breakdown_RandomInorganic_TD))
     Return GetRandomInorganic()

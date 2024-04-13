@@ -13,11 +13,11 @@ Function FeatureFlags() Global
   Actor player = Game.GetPlayer()
   Perk VJR_PERK_Activator = Game.GetFormFromFile(0x00000800, "VenworksJunkRecycler.esm") as Perk
 
-  String message = "Current Feature Flag Settings (1-On, 0=Off)\n\n"
-  message += " Activator Perk = " + player.HasPerk(VJR_PERK_Activator) + "\n"
+  String output = "Current Feature Flag Settings (1-On, 0=Off)\n\n"
+  output += " Activator Perk = " + player.HasPerk(VJR_PERK_Activator) + "\n"
 
-  Debug.MessageBox(message)
-  Debug.Trace(message, 2)
+  Debug.MessageBox(output)
+  Debug.Trace(output, 2)
 EndFunction
 
 ;; Call using: CGF "Venworks:JunkRecycler:VJR_Debug.CheckFixPerk" 
