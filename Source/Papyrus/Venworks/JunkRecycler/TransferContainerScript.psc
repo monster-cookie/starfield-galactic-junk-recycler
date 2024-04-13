@@ -34,6 +34,8 @@ GlobalVariable Property VJR_BreakdownChance_TierB Auto Const
 GlobalVariable Property VJR_BreakdownChance_TierC Auto Const
 GlobalVariable Property VJR_BreakdownChance_TierD Auto Const
 
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties
@@ -41,545 +43,543 @@ GlobalVariable Property VJR_BreakdownChance_TierD Auto Const
 FormList Property AllInorganicResources Auto Const
 FormList Property AllOrganicResources Auto Const
 
+Keyword Property VJR_ItemSize_Huge Auto Const
+Keyword Property VJR_ItemSize_Large Auto Const
+Keyword Property VJR_ItemSize_Normal Auto Const
+Keyword Property VJR_ItemSize_Small Auto Const
+Keyword Property VJR_ItemSize_Tiny Auto Const
+
+Keyword Property VJR_Breakdown_RandomInorganic_TA Auto Const
+Keyword Property VJR_Breakdown_RandomInorganic_TB Auto Const
+Keyword Property VJR_Breakdown_RandomInorganic_TC Auto Const
+Keyword Property VJR_Breakdown_RandomInorganic_TD Auto Const
+
+Keyword Property VJR_Breakdown_RandomOrganic_TA Auto Const
+Keyword Property VJR_Breakdown_RandomOrganic_TB Auto Const
+Keyword Property VJR_Breakdown_RandomOrganic_TC Auto Const
+Keyword Property VJR_Breakdown_RandomOrganic_TD Auto Const
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Inorganic Materials (Common)
+;;;
+MiscObject Property InorgCommonAluminum Auto Const
+Keyword Property VJR_Breakdown_Aluminum_TA Auto Const
+Keyword Property VJR_Breakdown_Aluminum_TB Auto Const
+Keyword Property VJR_Breakdown_Aluminum_TC Auto Const
+Keyword Property VJR_Breakdown_Aluminum_TD Auto Const
+
+MiscObject Property InorgCommonArgon Auto Const
+Keyword Property VJR_Breakdown_Argon_TA Auto Const
+Keyword Property VJR_Breakdown_Argon_TB Auto Const
+Keyword Property VJR_Breakdown_Argon_TC Auto Const
+Keyword Property VJR_Breakdown_Argon_TD Auto Const
+
+MiscObject Property InorgCommonChlorine Auto Const
+Keyword Property VJR_Breakdown_Chlorine_TA Auto Const
+Keyword Property VJR_Breakdown_Chlorine_TB Auto Const
+Keyword Property VJR_Breakdown_Chlorine_TC Auto Const
+Keyword Property VJR_Breakdown_Chlorine_TD Auto Const
+
+MiscObject Property InorgCommonCopper Auto Const
+Keyword Property VJR_Breakdown_Copper_TA Auto Const
+Keyword Property VJR_Breakdown_Copper_TB Auto Const
+Keyword Property VJR_Breakdown_Copper_TC Auto Const
+Keyword Property VJR_Breakdown_Copper_TD Auto Const
+
+MiscObject Property InorgCommonHelium3 Auto Const
+Keyword Property VJR_Breakdown_Helium3_TA Auto Const
+Keyword Property VJR_Breakdown_Helium3_TB Auto Const
+Keyword Property VJR_Breakdown_Helium3_TC Auto Const
+Keyword Property VJR_Breakdown_Helium3_TD Auto Const
+
+MiscObject Property InorgCommonIron Auto Const
+Keyword Property VJR_Breakdown_Iron_TA Auto Const
+Keyword Property VJR_Breakdown_Iron_TB Auto Const
+Keyword Property VJR_Breakdown_Iron_TC Auto Const
+Keyword Property VJR_Breakdown_Iron_TD Auto Const
+
+MiscObject Property InorgCommonLead Auto Const
+Keyword Property VJR_Breakdown_Lead_TA Auto Const
+Keyword Property VJR_Breakdown_Lead_TB Auto Const
+Keyword Property VJR_Breakdown_Lead_TC Auto Const
+Keyword Property VJR_Breakdown_Lead_TD Auto Const
+
+MiscObject Property InorgCommonNickel Auto Const
+Keyword Property VJR_Breakdown_Nickel_TA Auto Const
+Keyword Property VJR_Breakdown_Nickel_TB Auto Const
+Keyword Property VJR_Breakdown_Nickel_TC Auto Const
+Keyword Property VJR_Breakdown_Nickel_TD Auto Const
+
+MiscObject Property InorgCommonUranium Auto Const
+Keyword Property VJR_Breakdown_Uranium_TA Auto Const
+Keyword Property VJR_Breakdown_Uranium_TB Auto Const
+Keyword Property VJR_Breakdown_Uranium_TC Auto Const
+Keyword Property VJR_Breakdown_Uranium_TD Auto Const
+
+MiscObject Property InorgCommonWater Auto Const
+Keyword Property VJR_Breakdown_Water_TA Auto Const
+Keyword Property VJR_Breakdown_Water_TB Auto Const
+Keyword Property VJR_Breakdown_Water_TC Auto Const
+Keyword Property VJR_Breakdown_Water_TD Auto Const
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Inorganic Materials (Uncommon)
+;;;
+MiscObject Property InorgUncommonAlkanes Auto Const
+Keyword Property VJR_Breakdown_Alkanes_TA Auto Const
+Keyword Property VJR_Breakdown_Alkanes_TB Auto Const
+Keyword Property VJR_Breakdown_Alkanes_TC Auto Const
+Keyword Property VJR_Breakdown_Alkanes_TD Auto Const
+
+MiscObject Property InorgUncommonBenzene Auto Const
+Keyword Property VJR_Breakdown_Benzene_TA Auto Const
+Keyword Property VJR_Breakdown_Benzene_TB Auto Const
+Keyword Property VJR_Breakdown_Benzene_TC Auto Const
+Keyword Property VJR_Breakdown_Benzene_TD Auto Const
+
+MiscObject Property InorgUncommonBeryllium Auto Const
+Keyword Property VJR_Breakdown_Beryllium_TA Auto Const
+Keyword Property VJR_Breakdown_Beryllium_TB Auto Const
+Keyword Property VJR_Breakdown_Beryllium_TC Auto Const
+Keyword Property VJR_Breakdown_Beryllium_TD Auto Const
+
+MiscObject Property InorgUncommonChlorosilanes Auto Const
+Keyword Property VJR_Breakdown_Chlorosilanes_TA Auto Const
+Keyword Property VJR_Breakdown_Chlorosilanes_TB Auto Const
+Keyword Property VJR_Breakdown_Chlorosilanes_TC Auto Const
+Keyword Property VJR_Breakdown_Chlorosilanes_TD Auto Const
+
+MiscObject Property InorgUncommonCobalt Auto Const
+Keyword Property VJR_Breakdown_Cobalt_TA Auto Const
+Keyword Property VJR_Breakdown_Cobalt_TB Auto Const
+Keyword Property VJR_Breakdown_Cobalt_TC Auto Const
+Keyword Property VJR_Breakdown_Cobalt_TD Auto Const
+
+MiscObject Property InorgUncommonFluorine Auto Const
+Keyword Property VJR_Breakdown_Fluorine_TA Auto Const
+Keyword Property VJR_Breakdown_Fluorine_TB Auto Const
+Keyword Property VJR_Breakdown_Fluorine_TC Auto Const
+Keyword Property VJR_Breakdown_Fluorine_TD Auto Const
+
+MiscObject Property InorgUncommonIridium Auto Const
+Keyword Property VJR_Breakdown_Iridium_TA Auto Const
+Keyword Property VJR_Breakdown_Iridium_TB Auto Const
+Keyword Property VJR_Breakdown_Iridium_TC Auto Const
+Keyword Property VJR_Breakdown_Iridium_TD Auto Const
+
+MiscObject Property InorgUncommonSilver Auto Const
+Keyword Property VJR_Breakdown_Silver_TA Auto Const
+Keyword Property VJR_Breakdown_Silver_TB Auto Const
+Keyword Property VJR_Breakdown_Silver_TC Auto Const
+Keyword Property VJR_Breakdown_Silver_TD Auto Const
+
+MiscObject Property InorgUncommonTungsten Auto Const
+Keyword Property VJR_Breakdown_Tungsten_TA Auto Const
+Keyword Property VJR_Breakdown_Tungsten_TB Auto Const
+Keyword Property VJR_Breakdown_Tungsten_TC Auto Const
+Keyword Property VJR_Breakdown_Tungsten_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Inorganic Materials (Rare)
+;;;
+MiscObject Property InorgRareCarboxylicAcids Auto Const
+Keyword Property VJR_Breakdown_CarboxylicAcids_TA Auto Const
+Keyword Property VJR_Breakdown_CarboxylicAcids_TB Auto Const
+Keyword Property VJR_Breakdown_CarboxylicAcids_TC Auto Const
+Keyword Property VJR_Breakdown_CarboxylicAcids_TD Auto Const
+
+MiscObject Property InorgRareGold Auto Const
+Keyword Property VJR_Breakdown_Gold_TA Auto Const
+Keyword Property VJR_Breakdown_Gold_TB Auto Const
+Keyword Property VJR_Breakdown_Gold_TC Auto Const
+Keyword Property VJR_Breakdown_Gold_TD Auto Const
+
+MiscObject Property InorgRareLithium Auto Const
+Keyword Property VJR_Breakdown_Lithium_TA Auto Const
+Keyword Property VJR_Breakdown_Lithium_TB Auto Const
+Keyword Property VJR_Breakdown_Lithium_TC Auto Const
+Keyword Property VJR_Breakdown_Lithium_TD Auto Const
+
+MiscObject Property InorgRareMercury Auto Const
+Keyword Property VJR_Breakdown_Mercury_TA Auto Const
+Keyword Property VJR_Breakdown_Mercury_TB Auto Const
+Keyword Property VJR_Breakdown_Mercury_TC Auto Const
+Keyword Property VJR_Breakdown_Mercury_TD Auto Const
+
+MiscObject Property InorgRareNeodymium Auto Const
+Keyword Property VJR_Breakdown_Neodymium_TA Auto Const
+Keyword Property VJR_Breakdown_Neodymium_TB Auto Const
+Keyword Property VJR_Breakdown_Neodymium_TC Auto Const
+Keyword Property VJR_Breakdown_Neodymium_TD Auto Const
+
+MiscObject Property InorgRarePlatinum Auto Const
+Keyword Property VJR_Breakdown_Platinum_TA Auto Const
+Keyword Property VJR_Breakdown_Platinum_TB Auto Const
+Keyword Property VJR_Breakdown_Platinum_TC Auto Const
+Keyword Property VJR_Breakdown_Platinum_TD Auto Const
+
+MiscObject Property InorgRareTantalum Auto Const
+Keyword Property VJR_Breakdown_Tantalum_TA Auto Const
+Keyword Property VJR_Breakdown_Tantalum_TB Auto Const
+Keyword Property VJR_Breakdown_Tantalum_TC Auto Const
+Keyword Property VJR_Breakdown_Tantalum_TD Auto Const
+
+MiscObject Property InorgRareTetrafluorides Auto Const
+Keyword Property VJR_Breakdown_Tetrafluorides_TA Auto Const
+Keyword Property VJR_Breakdown_Tetrafluorides_TB Auto Const
+Keyword Property VJR_Breakdown_Tetrafluorides_TC Auto Const
+Keyword Property VJR_Breakdown_Tetrafluorides_TD Auto Const
+
+MiscObject Property InorgRareTitanium Auto Const
+Keyword Property VJR_Breakdown_Titanium_TA Auto Const
+Keyword Property VJR_Breakdown_Titanium_TB Auto Const
+Keyword Property VJR_Breakdown_Titanium_TC Auto Const
+Keyword Property VJR_Breakdown_Titanium_TD Auto Const
+
+MiscObject Property InorgRareVanadium Auto Const
+Keyword Property VJR_Breakdown_Vanadium_TA Auto Const
+Keyword Property VJR_Breakdown_Vanadium_TB Auto Const
+Keyword Property VJR_Breakdown_Vanadium_TC Auto Const
+Keyword Property VJR_Breakdown_Vanadium_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Inorganic Materials (Exotic)
+;;;
+MiscObject Property InorgExoticAntimony Auto Const
+Keyword Property VJR_Breakdown_Antimony_TA Auto Const
+Keyword Property VJR_Breakdown_Antimony_TB Auto Const
+Keyword Property VJR_Breakdown_Antimony_TC Auto Const
+Keyword Property VJR_Breakdown_Antimony_TD Auto Const
+
+MiscObject Property InorgExoticCaesium Auto Const
+Keyword Property VJR_Breakdown_Caesium_TA Auto Const
+Keyword Property VJR_Breakdown_Caesium_TB Auto Const
+Keyword Property VJR_Breakdown_Caesium_TC Auto Const
+Keyword Property VJR_Breakdown_Caesium_TD Auto Const
+
+MiscObject Property InorgExoticDysprosium Auto Const
+Keyword Property VJR_Breakdown_Dysprosium_TA Auto Const
+Keyword Property VJR_Breakdown_Dysprosium_TB Auto Const
+Keyword Property VJR_Breakdown_Dysprosium_TC Auto Const
+Keyword Property VJR_Breakdown_Dysprosium_TD Auto Const
+
+MiscObject Property InorgExoticEuropium Auto Const
+Keyword Property VJR_Breakdown_Europium_TA Auto Const
+Keyword Property VJR_Breakdown_Europium_TB Auto Const
+Keyword Property VJR_Breakdown_Europium_TC Auto Const
+Keyword Property VJR_Breakdown_Europium_TD Auto Const
+
+MiscObject Property InorgExoticIonicLiquids Auto Const
+Keyword Property VJR_Breakdown_IonicLiquids_TA Auto Const
+Keyword Property VJR_Breakdown_IonicLiquids_TB Auto Const
+Keyword Property VJR_Breakdown_IonicLiquids_TC Auto Const
+Keyword Property VJR_Breakdown_IonicLiquids_TD Auto Const
+
+MiscObject Property InorgExoticNeon Auto Const
+Keyword Property VJR_Breakdown_Neon_TA Auto Const
+Keyword Property VJR_Breakdown_Neon_TB Auto Const
+Keyword Property VJR_Breakdown_Neon_TC Auto Const
+Keyword Property VJR_Breakdown_Neon_TD Auto Const
+
+MiscObject Property InorgExoticPalladium Auto Const
+Keyword Property VJR_Breakdown_Palladium_TA Auto Const
+Keyword Property VJR_Breakdown_Palladium_TB Auto Const
+Keyword Property VJR_Breakdown_Palladium_TC Auto Const
+Keyword Property VJR_Breakdown_Palladium_TD Auto Const
+
+MiscObject Property InorgExoticPlutonium Auto Const
+Keyword Property VJR_Breakdown_Plutonium_TA Auto Const
+Keyword Property VJR_Breakdown_Plutonium_TB Auto Const
+Keyword Property VJR_Breakdown_Plutonium_TC Auto Const
+Keyword Property VJR_Breakdown_Plutonium_TD Auto Const
+
+MiscObject Property InorgExoticXenon Auto Const
+Keyword Property VJR_Breakdown_Xenon_TA Auto Const
+Keyword Property VJR_Breakdown_Xenon_TB Auto Const
+Keyword Property VJR_Breakdown_Xenon_TC Auto Const
+Keyword Property VJR_Breakdown_Xenon_TD Auto Const
+
+MiscObject Property InorgExoticYtterbium Auto Const
+Keyword Property VJR_Breakdown_Ytterbium_TA Auto Const
+Keyword Property VJR_Breakdown_Ytterbium_TB Auto Const
+Keyword Property VJR_Breakdown_Ytterbium_TC Auto Const
+Keyword Property VJR_Breakdown_Ytterbium_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Inorganic Materials (Unique)
+;;;
+MiscObject Property InorgUniqueAldumite Auto Const
+Keyword Property VJR_Breakdown_Aldumite_TA Auto Const
+Keyword Property VJR_Breakdown_Aldumite_TB Auto Const
+Keyword Property VJR_Breakdown_Aldumite_TC Auto Const
+Keyword Property VJR_Breakdown_Aldumite_TD Auto Const
+
+MiscObject Property InorgUniqueAqueousHematite Auto Const
+Keyword Property VJR_Breakdown_AqueousHematite_TA Auto Const
+Keyword Property VJR_Breakdown_AqueousHematite_TB Auto Const
+Keyword Property VJR_Breakdown_AqueousHematite_TC Auto Const
+Keyword Property VJR_Breakdown_AqueousHematite_TD Auto Const
+
+MiscObject Property InorgUniqueCaelumite Auto Const
+Keyword Property VJR_Breakdown_Caelumite_TA Auto Const
+Keyword Property VJR_Breakdown_Caelumite_TB Auto Const
+Keyword Property VJR_Breakdown_Caelumite_TC Auto Const
+Keyword Property VJR_Breakdown_Caelumite_TD Auto Const
+
+MiscObject Property InorgUniqueIndicite Auto Const
+Keyword Property VJR_Breakdown_Indicite_TA Auto Const
+Keyword Property VJR_Breakdown_Indicite_TB Auto Const
+Keyword Property VJR_Breakdown_Indicite_TC Auto Const
+Keyword Property VJR_Breakdown_Indicite_TD Auto Const
+
+MiscObject Property InorgUniqueRothicite Auto Const
+Keyword Property VJR_Breakdown_Rothicite_TA Auto Const
+Keyword Property VJR_Breakdown_Rothicite_TB Auto Const
+Keyword Property VJR_Breakdown_Rothicite_TC Auto Const
+Keyword Property VJR_Breakdown_Rothicite_TD Auto Const
+
+MiscObject Property InorgUniqueTasine Auto Const
+Keyword Property VJR_Breakdown_Tasine_TA Auto Const
+Keyword Property VJR_Breakdown_Tasine_TB Auto Const
+Keyword Property VJR_Breakdown_Tasine_TC Auto Const
+Keyword Property VJR_Breakdown_Tasine_TD Auto Const
+
+MiscObject Property InorgUniqueVeryl Auto Const
+Keyword Property VJR_Breakdown_Veryl_TA Auto Const
+Keyword Property VJR_Breakdown_Veryl_TB Auto Const
+Keyword Property VJR_Breakdown_Veryl_TC Auto Const
+Keyword Property VJR_Breakdown_Veryl_TD Auto Const
+
+MiscObject Property InorgUniqueVytinium Auto Const
+Keyword Property VJR_Breakdown_Vytinium_TA Auto Const
+Keyword Property VJR_Breakdown_Vytinium_TB Auto Const
+Keyword Property VJR_Breakdown_Vytinium_TC Auto Const
+Keyword Property VJR_Breakdown_Vytinium_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Organic Materials (Common)
+;;;
+MiscObject Property OrgCommonFiber Auto Const
+Keyword Property VJR_Breakdown_Fiber_TA Auto Const
+Keyword Property VJR_Breakdown_Fiber_TB Auto Const
+Keyword Property VJR_Breakdown_Fiber_TC Auto Const
+Keyword Property VJR_Breakdown_Fiber_TD Auto Const
+
+MiscObject Property OrgCommonMetabolicAgent Auto Const
+Keyword Property VJR_Breakdown_MetabolicAgent_TA Auto Const
+Keyword Property VJR_Breakdown_MetabolicAgent_TB Auto Const
+Keyword Property VJR_Breakdown_MetabolicAgent_TC Auto Const
+Keyword Property VJR_Breakdown_MetabolicAgent_TD Auto Const
+
+MiscObject Property OrgCommonNutrient Auto Const
+Keyword Property VJR_Breakdown_Nutrient_TA Auto Const
+Keyword Property VJR_Breakdown_Nutrient_TB Auto Const
+Keyword Property VJR_Breakdown_Nutrient_TC Auto Const
+Keyword Property VJR_Breakdown_Nutrient_TD Auto Const
+
+MiscObject Property OrgCommonSealant Auto Const
+Keyword Property VJR_Breakdown_Sealant_TA Auto Const
+Keyword Property VJR_Breakdown_Sealant_TB Auto Const
+Keyword Property VJR_Breakdown_Sealant_TC Auto Const
+Keyword Property VJR_Breakdown_Sealant_TD Auto Const
+
+MiscObject Property OrgCommonStructural Auto Const
+Keyword Property VJR_Breakdown_Structural_TA Auto Const
+Keyword Property VJR_Breakdown_Structural_TB Auto Const
+Keyword Property VJR_Breakdown_Structural_TC Auto Const
+Keyword Property VJR_Breakdown_Structural_TD Auto Const
+
+MiscObject Property OrgCommonToxin Auto Const
+Keyword Property VJR_Breakdown_Toxin_TA Auto Const
+Keyword Property VJR_Breakdown_Toxin_TB Auto Const
+Keyword Property VJR_Breakdown_Toxin_TC Auto Const
+Keyword Property VJR_Breakdown_Toxin_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Organic Materials (Uncommon)
+;;;
+MiscObject Property OrgUncommonAntimicrobial Auto Const
+Keyword Property VJR_Breakdown_Antimicrobial_TA Auto Const
+Keyword Property VJR_Breakdown_Antimicrobial_TB Auto Const
+Keyword Property VJR_Breakdown_Antimicrobial_TC Auto Const
+Keyword Property VJR_Breakdown_Antimicrobial_TD Auto Const
+
+MiscObject Property OrgUncommonCosmetic Auto Const
+Keyword Property VJR_Breakdown_Cosmetic_TA Auto Const
+Keyword Property VJR_Breakdown_Cosmetic_TB Auto Const
+Keyword Property VJR_Breakdown_Cosmetic_TC Auto Const
+Keyword Property VJR_Breakdown_Cosmetic_TD Auto Const
+
+MiscObject Property OrgUncommonMembrane Auto Const
+Keyword Property VJR_Breakdown_Membrane_TA Auto Const
+Keyword Property VJR_Breakdown_Membrane_TB Auto Const
+Keyword Property VJR_Breakdown_Membrane_TC Auto Const
+Keyword Property VJR_Breakdown_Membrane_TD Auto Const
+
+MiscObject Property OrgUncommonOrnamental Auto Const
+Keyword Property VJR_Breakdown_Ornamental_TA Auto Const
+Keyword Property VJR_Breakdown_Ornamental_TB Auto Const
+Keyword Property VJR_Breakdown_Ornamental_TC Auto Const
+Keyword Property VJR_Breakdown_Ornamental_TD Auto Const
+
+MiscObject Property OrgUncommonPigment Auto Const
+Keyword Property VJR_Breakdown_Pigment_TA Auto Const
+Keyword Property VJR_Breakdown_Pigment_TB Auto Const
+Keyword Property VJR_Breakdown_Pigment_TC Auto Const
+Keyword Property VJR_Breakdown_Pigment_TD Auto Const
+
+MiscObject Property OrgUncommonSpice Auto Const
+Keyword Property VJR_Breakdown_Spice_TA Auto Const
+Keyword Property VJR_Breakdown_Spice_TB Auto Const
+Keyword Property VJR_Breakdown_Spice_TC Auto Const
+Keyword Property VJR_Breakdown_Spice_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Organic Materials (Rare)
+;;;
+MiscObject Property OrgRareAdhesive Auto Const
+Keyword Property VJR_Breakdown_Adhesive_TA Auto Const
+Keyword Property VJR_Breakdown_Adhesive_TB Auto Const
+Keyword Property VJR_Breakdown_Adhesive_TC Auto Const
+Keyword Property VJR_Breakdown_Adhesive_TD Auto Const
+
+MiscObject Property OrgRareAminoAcids Auto Const
+Keyword Property VJR_Breakdown_AminoAcids_TA Auto Const
+Keyword Property VJR_Breakdown_AminoAcids_TB Auto Const
+Keyword Property VJR_Breakdown_AminoAcids_TC Auto Const
+Keyword Property VJR_Breakdown_AminoAcids_TD Auto Const
+
+MiscObject Property OrgRareAnalgesic Auto Const
+Keyword Property VJR_Breakdown_Analgesic_TA Auto Const
+Keyword Property VJR_Breakdown_Analgesic_TB Auto Const
+Keyword Property VJR_Breakdown_Analgesic_TC Auto Const
+Keyword Property VJR_Breakdown_Analgesic_TD Auto Const
+
+MiscObject Property OrgRareAromatic Auto Const
+Keyword Property VJR_Breakdown_Aromatic_TA Auto Const
+Keyword Property VJR_Breakdown_Aromatic_TB Auto Const
+Keyword Property VJR_Breakdown_Aromatic_TC Auto Const
+Keyword Property VJR_Breakdown_Aromatic_TD Auto Const
+
+MiscObject Property OrgRareHallucinogen Auto Const
+Keyword Property VJR_Breakdown_Hallucinogen_TA Auto Const
+Keyword Property VJR_Breakdown_Hallucinogen_TB Auto Const
+Keyword Property VJR_Breakdown_Hallucinogen_TC Auto Const
+Keyword Property VJR_Breakdown_Hallucinogen_TD Auto Const
+
+MiscObject Property OrgRareSedative Auto Const
+Keyword Property VJR_Breakdown_Sedative_TA Auto Const
+Keyword Property VJR_Breakdown_Sedative_TB Auto Const
+Keyword Property VJR_Breakdown_Sedative_TC Auto Const
+Keyword Property VJR_Breakdown_Sedative_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Organic Materials (Exotic)
+;;;
+MiscObject Property OrgExoticBiosuppressant Auto Const
+Keyword Property VJR_Breakdown_Biosuppressant_TA Auto Const
+Keyword Property VJR_Breakdown_Biosuppressant_TB Auto Const
+Keyword Property VJR_Breakdown_Biosuppressant_TC Auto Const
+Keyword Property VJR_Breakdown_Biosuppressant_TD Auto Const
+
+MiscObject Property OrgExoticHypercatalyst Auto Const
+Keyword Property VJR_Breakdown_Hypercatalyst_TA Auto Const
+Keyword Property VJR_Breakdown_Hypercatalyst_TB Auto Const
+Keyword Property VJR_Breakdown_Hypercatalyst_TC Auto Const
+Keyword Property VJR_Breakdown_Hypercatalyst_TD Auto Const
+
+MiscObject Property OrgExoticLubricant Auto Const
+Keyword Property VJR_Breakdown_Lubricant_TA Auto Const
+Keyword Property VJR_Breakdown_Lubricant_TB Auto Const
+Keyword Property VJR_Breakdown_Lubricant_TC Auto Const
+Keyword Property VJR_Breakdown_Lubricant_TD Auto Const
+
+MiscObject Property OrgExoticPolymer Auto Const
+Keyword Property VJR_Breakdown_Polymer_TA Auto Const
+Keyword Property VJR_Breakdown_Polymer_TB Auto Const
+Keyword Property VJR_Breakdown_Polymer_TC Auto Const
+Keyword Property VJR_Breakdown_Polymer_TD Auto Const
+
+MiscObject Property OrgExoticSolvent Auto Const
+Keyword Property VJR_Breakdown_Solvent_TA Auto Const
+Keyword Property VJR_Breakdown_Solvent_TB Auto Const
+Keyword Property VJR_Breakdown_Solvent_TC Auto Const
+Keyword Property VJR_Breakdown_Solvent_TD Auto Const
+
+MiscObject Property OrgExoticStimulant Auto Const
+Keyword Property VJR_Breakdown_Stimulant_TA Auto Const
+Keyword Property VJR_Breakdown_Stimulant_TB Auto Const
+Keyword Property VJR_Breakdown_Stimulant_TC Auto Const
+Keyword Property VJR_Breakdown_Stimulant_TD Auto Const
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Properties - Starfield Organic Materials (Unique)
+;;;
+MiscObject Property OrgUniqueGastronomic Auto Const
+Keyword Property VJR_Breakdown_Gastronomic_TA Auto Const
+Keyword Property VJR_Breakdown_Gastronomic_TB Auto Const
+Keyword Property VJR_Breakdown_Gastronomic_TC Auto Const
+Keyword Property VJR_Breakdown_Gastronomic_TD Auto Const
+
+MiscObject Property OrgUniqueHighTensileSpidroin Auto Const
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TA Auto Const
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TB Auto Const
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TC Auto Const
+Keyword Property VJR_Breakdown_HighTensileSpidroin_TD Auto Const
+
+MiscObject Property OrgUniqueImmunostimulant Auto Const
+Keyword Property VJR_Breakdown_Immunostimulant_TA Auto Const
+Keyword Property VJR_Breakdown_Immunostimulant_TB Auto Const
+Keyword Property VJR_Breakdown_Immunostimulant_TC Auto Const
+Keyword Property VJR_Breakdown_Immunostimulant_TD Auto Const
+
+MiscObject Property OrgUniqueLuxuryTextile Auto Const
+Keyword Property VJR_Breakdown_LuxuryTextile_TA Auto Const
+Keyword Property VJR_Breakdown_LuxuryTextile_TB Auto Const
+Keyword Property VJR_Breakdown_LuxuryTextile_TC Auto Const
+Keyword Property VJR_Breakdown_LuxuryTextile_TD Auto Const
+
+MiscObject Property OrgUniqueMemorySubstrate Auto Const
+Keyword Property VJR_Breakdown_MemorySubstrate_TA Auto Const
+Keyword Property VJR_Breakdown_MemorySubstrate_TB Auto Const
+Keyword Property VJR_Breakdown_MemorySubstrate_TC Auto Const
+Keyword Property VJR_Breakdown_MemorySubstrate_TD Auto Const
+
+MiscObject Property OrgUniqueNeurologic Auto Const
+Keyword Property VJR_Breakdown_Neurologic_TA Auto Const
+Keyword Property VJR_Breakdown_Neurologic_TB Auto Const
+Keyword Property VJR_Breakdown_Neurologic_TC Auto Const
+Keyword Property VJR_Breakdown_Neurologic_TD Auto Const
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Variables
 ;;;
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables
-;;;
-Keyword Property VJR_ItemSize_Huge Auto
-Keyword Property VJR_ItemSize_Large Auto
-Keyword Property VJR_ItemSize_Normal Auto
-Keyword Property VJR_ItemSize_Small Auto
-Keyword Property VJR_ItemSize_Tiny Auto
-
-Keyword Property VJR_Breakdown_RandomInorganic_TA Auto
-Keyword Property VJR_Breakdown_RandomInorganic_TB Auto
-Keyword Property VJR_Breakdown_RandomInorganic_TC Auto
-Keyword Property VJR_Breakdown_RandomInorganic_TD Auto
-
-Keyword Property VJR_Breakdown_RandomOrganic_TA Auto
-Keyword Property VJR_Breakdown_RandomOrganic_TB Auto
-Keyword Property VJR_Breakdown_RandomOrganic_TC Auto
-Keyword Property VJR_Breakdown_RandomOrganic_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Inorganic Materials (Common)
-;;;
-MiscObject Property InorgCommonAluminum Auto
-Keyword Property VJR_Breakdown_Aluminum_TA Auto
-Keyword Property VJR_Breakdown_Aluminum_TB Auto
-Keyword Property VJR_Breakdown_Aluminum_TC Auto
-Keyword Property VJR_Breakdown_Aluminum_TD Auto
-
-MiscObject Property InorgCommonArgon Auto
-Keyword Property VJR_Breakdown_Argon_TA Auto
-Keyword Property VJR_Breakdown_Argon_TB Auto
-Keyword Property VJR_Breakdown_Argon_TC Auto
-Keyword Property VJR_Breakdown_Argon_TD Auto
-
-MiscObject Property InorgCommonChlorine Auto
-Keyword Property VJR_Breakdown_Chlorine_TA Auto
-Keyword Property VJR_Breakdown_Chlorine_TB Auto
-Keyword Property VJR_Breakdown_Chlorine_TC Auto
-Keyword Property VJR_Breakdown_Chlorine_TD Auto
-
-MiscObject Property InorgCommonCopper Auto
-Keyword Property VJR_Breakdown_Copper_TA Auto
-Keyword Property VJR_Breakdown_Copper_TB Auto
-Keyword Property VJR_Breakdown_Copper_TC Auto
-Keyword Property VJR_Breakdown_Copper_TD Auto
-
-MiscObject Property InorgCommonHelium3 Auto
-Keyword Property VJR_Breakdown_Helium3_TA Auto
-Keyword Property VJR_Breakdown_Helium3_TB Auto
-Keyword Property VJR_Breakdown_Helium3_TC Auto
-Keyword Property VJR_Breakdown_Helium3_TD Auto
-
-MiscObject Property InorgCommonIron Auto
-Keyword Property VJR_Breakdown_Iron_TA Auto
-Keyword Property VJR_Breakdown_Iron_TB Auto
-Keyword Property VJR_Breakdown_Iron_TC Auto
-Keyword Property VJR_Breakdown_Iron_TD Auto
-
-MiscObject Property InorgCommonLead Auto
-Keyword Property VJR_Breakdown_Lead_TA Auto
-Keyword Property VJR_Breakdown_Lead_TB Auto
-Keyword Property VJR_Breakdown_Lead_TC Auto
-Keyword Property VJR_Breakdown_Lead_TD Auto
-
-MiscObject Property InorgCommonNickel Auto
-Keyword Property VJR_Breakdown_Nickel_TA Auto
-Keyword Property VJR_Breakdown_Nickel_TB Auto
-Keyword Property VJR_Breakdown_Nickel_TC Auto
-Keyword Property VJR_Breakdown_Nickel_TD Auto
-
-MiscObject Property InorgCommonUranium Auto
-Keyword Property VJR_Breakdown_Uranium_TA Auto
-Keyword Property VJR_Breakdown_Uranium_TB Auto
-Keyword Property VJR_Breakdown_Uranium_TC Auto
-Keyword Property VJR_Breakdown_Uranium_TD Auto
-
-MiscObject Property InorgCommonWater Auto
-Keyword Property VJR_Breakdown_Water_TA Auto
-Keyword Property VJR_Breakdown_Water_TB Auto
-Keyword Property VJR_Breakdown_Water_TC Auto
-Keyword Property VJR_Breakdown_Water_TD Auto
-
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Inorganic Materials (Uncommon)
-;;;
-MiscObject Property InorgUncommonAlkanes Auto
-Keyword Property VJR_Breakdown_Alkanes_TA Auto
-Keyword Property VJR_Breakdown_Alkanes_TB Auto
-Keyword Property VJR_Breakdown_Alkanes_TC Auto
-Keyword Property VJR_Breakdown_Alkanes_TD Auto
-
-MiscObject Property InorgUncommonBenzene Auto
-Keyword Property VJR_Breakdown_Benzene_TA Auto
-Keyword Property VJR_Breakdown_Benzene_TB Auto
-Keyword Property VJR_Breakdown_Benzene_TC Auto
-Keyword Property VJR_Breakdown_Benzene_TD Auto
-
-MiscObject Property InorgUncommonBeryllium Auto
-Keyword Property VJR_Breakdown_Beryllium_TA Auto
-Keyword Property VJR_Breakdown_Beryllium_TB Auto
-Keyword Property VJR_Breakdown_Beryllium_TC Auto
-Keyword Property VJR_Breakdown_Beryllium_TD Auto
-
-MiscObject Property InorgUncommonChlorosilanes Auto
-Keyword Property VJR_Breakdown_Chlorosilanes_TA Auto
-Keyword Property VJR_Breakdown_Chlorosilanes_TB Auto
-Keyword Property VJR_Breakdown_Chlorosilanes_TC Auto
-Keyword Property VJR_Breakdown_Chlorosilanes_TD Auto
-
-MiscObject Property InorgUncommonCobalt Auto
-Keyword Property VJR_Breakdown_Cobalt_TA Auto
-Keyword Property VJR_Breakdown_Cobalt_TB Auto
-Keyword Property VJR_Breakdown_Cobalt_TC Auto
-Keyword Property VJR_Breakdown_Cobalt_TD Auto
-
-MiscObject Property InorgUncommonFluorine Auto
-Keyword Property VJR_Breakdown_Fluorine_TA Auto
-Keyword Property VJR_Breakdown_Fluorine_TB Auto
-Keyword Property VJR_Breakdown_Fluorine_TC Auto
-Keyword Property VJR_Breakdown_Fluorine_TD Auto
-
-MiscObject Property InorgUncommonIridium Auto
-Keyword Property VJR_Breakdown_Iridium_TA Auto
-Keyword Property VJR_Breakdown_Iridium_TB Auto
-Keyword Property VJR_Breakdown_Iridium_TC Auto
-Keyword Property VJR_Breakdown_Iridium_TD Auto
-
-MiscObject Property InorgUncommonSilver Auto
-Keyword Property VJR_Breakdown_Silver_TA Auto
-Keyword Property VJR_Breakdown_Silver_TB Auto
-Keyword Property VJR_Breakdown_Silver_TC Auto
-Keyword Property VJR_Breakdown_Silver_TD Auto
-
-MiscObject Property InorgUncommonTungsten Auto
-Keyword Property VJR_Breakdown_Tungsten_TA Auto
-Keyword Property VJR_Breakdown_Tungsten_TB Auto
-Keyword Property VJR_Breakdown_Tungsten_TC Auto
-Keyword Property VJR_Breakdown_Tungsten_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Inorganic Materials (Rare)
-;;;
-MiscObject Property InorgRareCarboxylicAcids Auto
-Keyword Property VJR_Breakdown_CarboxylicAcids_TA Auto
-Keyword Property VJR_Breakdown_CarboxylicAcids_TB Auto
-Keyword Property VJR_Breakdown_CarboxylicAcids_TC Auto
-Keyword Property VJR_Breakdown_CarboxylicAcids_TD Auto
-
-MiscObject Property InorgRareGold Auto
-Keyword Property VJR_Breakdown_Gold_TA Auto
-Keyword Property VJR_Breakdown_Gold_TB Auto
-Keyword Property VJR_Breakdown_Gold_TC Auto
-Keyword Property VJR_Breakdown_Gold_TD Auto
-
-MiscObject Property InorgRareLithium Auto
-Keyword Property VJR_Breakdown_Lithium_TA Auto
-Keyword Property VJR_Breakdown_Lithium_TB Auto
-Keyword Property VJR_Breakdown_Lithium_TC Auto
-Keyword Property VJR_Breakdown_Lithium_TD Auto
-
-MiscObject Property InorgRareMercury Auto
-Keyword Property VJR_Breakdown_Mercury_TA Auto
-Keyword Property VJR_Breakdown_Mercury_TB Auto
-Keyword Property VJR_Breakdown_Mercury_TC Auto
-Keyword Property VJR_Breakdown_Mercury_TD Auto
-
-MiscObject Property InorgRareNeodymium Auto
-Keyword Property VJR_Breakdown_Neodymium_TA Auto
-Keyword Property VJR_Breakdown_Neodymium_TB Auto
-Keyword Property VJR_Breakdown_Neodymium_TC Auto
-Keyword Property VJR_Breakdown_Neodymium_TD Auto
-
-MiscObject Property InorgRarePlatinum Auto
-Keyword Property VJR_Breakdown_Platinum_TA Auto
-Keyword Property VJR_Breakdown_Platinum_TB Auto
-Keyword Property VJR_Breakdown_Platinum_TC Auto
-Keyword Property VJR_Breakdown_Platinum_TD Auto
-
-MiscObject Property InorgRareTantalum Auto
-Keyword Property VJR_Breakdown_Tantalum_TA Auto
-Keyword Property VJR_Breakdown_Tantalum_TB Auto
-Keyword Property VJR_Breakdown_Tantalum_TC Auto
-Keyword Property VJR_Breakdown_Tantalum_TD Auto
-
-MiscObject Property InorgRareTetrafluorides Auto
-Keyword Property VJR_Breakdown_Tetrafluorides_TA Auto
-Keyword Property VJR_Breakdown_Tetrafluorides_TB Auto
-Keyword Property VJR_Breakdown_Tetrafluorides_TC Auto
-Keyword Property VJR_Breakdown_Tetrafluorides_TD Auto
-
-MiscObject Property InorgRareTitanium Auto
-Keyword Property VJR_Breakdown_Titanium_TA Auto
-Keyword Property VJR_Breakdown_Titanium_TB Auto
-Keyword Property VJR_Breakdown_Titanium_TC Auto
-Keyword Property VJR_Breakdown_Titanium_TD Auto
-
-MiscObject Property InorgRareVanadium Auto
-Keyword Property VJR_Breakdown_Vanadium_TA Auto
-Keyword Property VJR_Breakdown_Vanadium_TB Auto
-Keyword Property VJR_Breakdown_Vanadium_TC Auto
-Keyword Property VJR_Breakdown_Vanadium_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Inorganic Materials (Exotic)
-;;;
-MiscObject Property InorgExoticAntimony Auto
-Keyword Property VJR_Breakdown_Antimony_TA Auto
-Keyword Property VJR_Breakdown_Antimony_TB Auto
-Keyword Property VJR_Breakdown_Antimony_TC Auto
-Keyword Property VJR_Breakdown_Antimony_TD Auto
-
-MiscObject Property InorgExoticCaesium Auto
-Keyword Property VJR_Breakdown_Caesium_TA Auto
-Keyword Property VJR_Breakdown_Caesium_TB Auto
-Keyword Property VJR_Breakdown_Caesium_TC Auto
-Keyword Property VJR_Breakdown_Caesium_TD Auto
-
-MiscObject Property InorgExoticDysprosium Auto
-Keyword Property VJR_Breakdown_Dysprosium_TA Auto
-Keyword Property VJR_Breakdown_Dysprosium_TB Auto
-Keyword Property VJR_Breakdown_Dysprosium_TC Auto
-Keyword Property VJR_Breakdown_Dysprosium_TD Auto
-
-MiscObject Property InorgExoticEuropium Auto
-Keyword Property VJR_Breakdown_Europium_TA Auto
-Keyword Property VJR_Breakdown_Europium_TB Auto
-Keyword Property VJR_Breakdown_Europium_TC Auto
-Keyword Property VJR_Breakdown_Europium_TD Auto
-
-MiscObject Property InorgExoticIonicLiquids Auto
-Keyword Property VJR_Breakdown_IonicLiquids_TA Auto
-Keyword Property VJR_Breakdown_IonicLiquids_TB Auto
-Keyword Property VJR_Breakdown_IonicLiquids_TC Auto
-Keyword Property VJR_Breakdown_IonicLiquids_TD Auto
-
-MiscObject Property InorgExoticNeon Auto
-Keyword Property VJR_Breakdown_Neon_TA Auto
-Keyword Property VJR_Breakdown_Neon_TB Auto
-Keyword Property VJR_Breakdown_Neon_TC Auto
-Keyword Property VJR_Breakdown_Neon_TD Auto
-
-MiscObject Property InorgExoticPalladium Auto
-Keyword Property VJR_Breakdown_Palladium_TA Auto
-Keyword Property VJR_Breakdown_Palladium_TB Auto
-Keyword Property VJR_Breakdown_Palladium_TC Auto
-Keyword Property VJR_Breakdown_Palladium_TD Auto
-
-MiscObject Property InorgExoticPlutonium Auto
-Keyword Property VJR_Breakdown_Plutonium_TA Auto
-Keyword Property VJR_Breakdown_Plutonium_TB Auto
-Keyword Property VJR_Breakdown_Plutonium_TC Auto
-Keyword Property VJR_Breakdown_Plutonium_TD Auto
-
-MiscObject Property InorgExoticXenon Auto
-Keyword Property VJR_Breakdown_Xenon_TA Auto
-Keyword Property VJR_Breakdown_Xenon_TB Auto
-Keyword Property VJR_Breakdown_Xenon_TC Auto
-Keyword Property VJR_Breakdown_Xenon_TD Auto
-
-MiscObject Property InorgExoticYtterbium Auto
-Keyword Property VJR_Breakdown_Ytterbium_TA Auto
-Keyword Property VJR_Breakdown_Ytterbium_TB Auto
-Keyword Property VJR_Breakdown_Ytterbium_TC Auto
-Keyword Property VJR_Breakdown_Ytterbium_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Inorganic Materials (Unique)
-;;;
-MiscObject Property InorgUniqueAldumite Auto
-Keyword Property VJR_Breakdown_Aldumite_TA Auto
-Keyword Property VJR_Breakdown_Aldumite_TB Auto
-Keyword Property VJR_Breakdown_Aldumite_TC Auto
-Keyword Property VJR_Breakdown_Aldumite_TD Auto
-
-MiscObject Property InorgUniqueAqueousHematite Auto
-Keyword Property VJR_Breakdown_AqueousHematite_TA Auto
-Keyword Property VJR_Breakdown_AqueousHematite_TB Auto
-Keyword Property VJR_Breakdown_AqueousHematite_TC Auto
-Keyword Property VJR_Breakdown_AqueousHematite_TD Auto
-
-MiscObject Property InorgUniqueCaelumite Auto
-Keyword Property VJR_Breakdown_Caelumite_TA Auto
-Keyword Property VJR_Breakdown_Caelumite_TB Auto
-Keyword Property VJR_Breakdown_Caelumite_TC Auto
-Keyword Property VJR_Breakdown_Caelumite_TD Auto
-
-MiscObject Property InorgUniqueIndicite Auto
-Keyword Property VJR_Breakdown_Indicite_TA Auto
-Keyword Property VJR_Breakdown_Indicite_TB Auto
-Keyword Property VJR_Breakdown_Indicite_TC Auto
-Keyword Property VJR_Breakdown_Indicite_TD Auto
-
-MiscObject Property InorgUniqueRothicite Auto
-Keyword Property VJR_Breakdown_Rothicite_TA Auto
-Keyword Property VJR_Breakdown_Rothicite_TB Auto
-Keyword Property VJR_Breakdown_Rothicite_TC Auto
-Keyword Property VJR_Breakdown_Rothicite_TD Auto
-
-MiscObject Property InorgUniqueTasine Auto
-Keyword Property VJR_Breakdown_Tasine_TA Auto
-Keyword Property VJR_Breakdown_Tasine_TB Auto
-Keyword Property VJR_Breakdown_Tasine_TC Auto
-Keyword Property VJR_Breakdown_Tasine_TD Auto
-
-MiscObject Property InorgUniqueVeryl Auto
-Keyword Property VJR_Breakdown_Veryl_TA Auto
-Keyword Property VJR_Breakdown_Veryl_TB Auto
-Keyword Property VJR_Breakdown_Veryl_TC Auto
-Keyword Property VJR_Breakdown_Veryl_TD Auto
-
-MiscObject Property InorgUniqueVytinium Auto
-Keyword Property VJR_Breakdown_Vytinium_TA Auto
-Keyword Property VJR_Breakdown_Vytinium_TB Auto
-Keyword Property VJR_Breakdown_Vytinium_TC Auto
-Keyword Property VJR_Breakdown_Vytinium_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Organic Materials (Common)
-;;;
-MiscObject Property OrgCommonFiber Auto
-Keyword Property VJR_Breakdown_Fiber_TA Auto
-Keyword Property VJR_Breakdown_Fiber_TB Auto
-Keyword Property VJR_Breakdown_Fiber_TC Auto
-Keyword Property VJR_Breakdown_Fiber_TD Auto
-
-MiscObject Property OrgCommonMetabolicAgent Auto
-Keyword Property VJR_Breakdown_MetabolicAgent_TA Auto
-Keyword Property VJR_Breakdown_MetabolicAgent_TB Auto
-Keyword Property VJR_Breakdown_MetabolicAgent_TC Auto
-Keyword Property VJR_Breakdown_MetabolicAgent_TD Auto
-
-MiscObject Property OrgCommonNutrient Auto
-Keyword Property VJR_Breakdown_Nutrient_TA Auto
-Keyword Property VJR_Breakdown_Nutrient_TB Auto
-Keyword Property VJR_Breakdown_Nutrient_TC Auto
-Keyword Property VJR_Breakdown_Nutrient_TD Auto
-
-MiscObject Property OrgCommonSealant Auto
-Keyword Property VJR_Breakdown_Sealant_TA Auto
-Keyword Property VJR_Breakdown_Sealant_TB Auto
-Keyword Property VJR_Breakdown_Sealant_TC Auto
-Keyword Property VJR_Breakdown_Sealant_TD Auto
-
-MiscObject Property OrgCommonStructural Auto
-Keyword Property VJR_Breakdown_Structural_TA Auto
-Keyword Property VJR_Breakdown_Structural_TB Auto
-Keyword Property VJR_Breakdown_Structural_TC Auto
-Keyword Property VJR_Breakdown_Structural_TD Auto
-
-MiscObject Property OrgCommonToxin Auto
-Keyword Property VJR_Breakdown_Toxin_TA Auto
-Keyword Property VJR_Breakdown_Toxin_TB Auto
-Keyword Property VJR_Breakdown_Toxin_TC Auto
-Keyword Property VJR_Breakdown_Toxin_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Organic Materials (Uncommon)
-;;;
-MiscObject Property OrgUncommonAntimicrobial Auto
-Keyword Property VJR_Breakdown_Antimicrobial_TA Auto
-Keyword Property VJR_Breakdown_Antimicrobial_TB Auto
-Keyword Property VJR_Breakdown_Antimicrobial_TC Auto
-Keyword Property VJR_Breakdown_Antimicrobial_TD Auto
-
-MiscObject Property OrgUncommonCosmetic Auto
-Keyword Property VJR_Breakdown_Cosmetic_TA Auto
-Keyword Property VJR_Breakdown_Cosmetic_TB Auto
-Keyword Property VJR_Breakdown_Cosmetic_TC Auto
-Keyword Property VJR_Breakdown_Cosmetic_TD Auto
-
-MiscObject Property OrgUncommonMembrane Auto
-Keyword Property VJR_Breakdown_Membrane_TA Auto
-Keyword Property VJR_Breakdown_Membrane_TB Auto
-Keyword Property VJR_Breakdown_Membrane_TC Auto
-Keyword Property VJR_Breakdown_Membrane_TD Auto
-
-MiscObject Property OrgUncommonOrnamental Auto
-Keyword Property VJR_Breakdown_Ornamental_TA Auto
-Keyword Property VJR_Breakdown_Ornamental_TB Auto
-Keyword Property VJR_Breakdown_Ornamental_TC Auto
-Keyword Property VJR_Breakdown_Ornamental_TD Auto
-
-MiscObject Property OrgUncommonPigment Auto
-Keyword Property VJR_Breakdown_Pigment_TA Auto
-Keyword Property VJR_Breakdown_Pigment_TB Auto
-Keyword Property VJR_Breakdown_Pigment_TC Auto
-Keyword Property VJR_Breakdown_Pigment_TD Auto
-
-MiscObject Property OrgUncommonSpice Auto
-Keyword Property VJR_Breakdown_Spice_TA Auto
-Keyword Property VJR_Breakdown_Spice_TB Auto
-Keyword Property VJR_Breakdown_Spice_TC Auto
-Keyword Property VJR_Breakdown_Spice_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Organic Materials (Rare)
-;;;
-MiscObject Property OrgRareAdhesive Auto
-Keyword Property VJR_Breakdown_Adhesive_TA Auto
-Keyword Property VJR_Breakdown_Adhesive_TB Auto
-Keyword Property VJR_Breakdown_Adhesive_TC Auto
-Keyword Property VJR_Breakdown_Adhesive_TD Auto
-
-MiscObject Property OrgRareAminoAcids Auto
-Keyword Property VJR_Breakdown_AminoAcids_TA Auto
-Keyword Property VJR_Breakdown_AminoAcids_TB Auto
-Keyword Property VJR_Breakdown_AminoAcids_TC Auto
-Keyword Property VJR_Breakdown_AminoAcids_TD Auto
-
-MiscObject Property OrgRareAnalgesic Auto
-Keyword Property VJR_Breakdown_Analgesic_TA Auto
-Keyword Property VJR_Breakdown_Analgesic_TB Auto
-Keyword Property VJR_Breakdown_Analgesic_TC Auto
-Keyword Property VJR_Breakdown_Analgesic_TD Auto
-
-MiscObject Property OrgRareAromatic Auto
-Keyword Property VJR_Breakdown_Aromatic_TA Auto
-Keyword Property VJR_Breakdown_Aromatic_TB Auto
-Keyword Property VJR_Breakdown_Aromatic_TC Auto
-Keyword Property VJR_Breakdown_Aromatic_TD Auto
-
-MiscObject Property OrgRareHallucinogen Auto
-Keyword Property VJR_Breakdown_Hallucinogen_TA Auto
-Keyword Property VJR_Breakdown_Hallucinogen_TB Auto
-Keyword Property VJR_Breakdown_Hallucinogen_TC Auto
-Keyword Property VJR_Breakdown_Hallucinogen_TD Auto
-
-MiscObject Property OrgRareSedative Auto
-Keyword Property VJR_Breakdown_Sedative_TA Auto
-Keyword Property VJR_Breakdown_Sedative_TB Auto
-Keyword Property VJR_Breakdown_Sedative_TC Auto
-Keyword Property VJR_Breakdown_Sedative_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Organic Materials (Exotic)
-;;;
-MiscObject Property OrgExoticBiosuppressant Auto
-Keyword Property VJR_Breakdown_Biosuppressant_TA Auto
-Keyword Property VJR_Breakdown_Biosuppressant_TB Auto
-Keyword Property VJR_Breakdown_Biosuppressant_TC Auto
-Keyword Property VJR_Breakdown_Biosuppressant_TD Auto
-
-MiscObject Property OrgExoticHypercatalyst Auto
-Keyword Property VJR_Breakdown_Hypercatalyst_TA Auto
-Keyword Property VJR_Breakdown_Hypercatalyst_TB Auto
-Keyword Property VJR_Breakdown_Hypercatalyst_TC Auto
-Keyword Property VJR_Breakdown_Hypercatalyst_TD Auto
-
-MiscObject Property OrgExoticLubricant Auto
-Keyword Property VJR_Breakdown_Lubricant_TA Auto
-Keyword Property VJR_Breakdown_Lubricant_TB Auto
-Keyword Property VJR_Breakdown_Lubricant_TC Auto
-Keyword Property VJR_Breakdown_Lubricant_TD Auto
-
-MiscObject Property OrgExoticPolymer Auto
-Keyword Property VJR_Breakdown_Polymer_TA Auto
-Keyword Property VJR_Breakdown_Polymer_TB Auto
-Keyword Property VJR_Breakdown_Polymer_TC Auto
-Keyword Property VJR_Breakdown_Polymer_TD Auto
-
-MiscObject Property OrgExoticSolvent Auto
-Keyword Property VJR_Breakdown_Solvent_TA Auto
-Keyword Property VJR_Breakdown_Solvent_TB Auto
-Keyword Property VJR_Breakdown_Solvent_TC Auto
-Keyword Property VJR_Breakdown_Solvent_TD Auto
-
-MiscObject Property OrgExoticStimulant Auto
-Keyword Property VJR_Breakdown_Stimulant_TA Auto
-Keyword Property VJR_Breakdown_Stimulant_TB Auto
-Keyword Property VJR_Breakdown_Stimulant_TC Auto
-Keyword Property VJR_Breakdown_Stimulant_TD Auto
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables - Starfield Organic Materials (Unique)
-;;;
-MiscObject Property OrgUniqueGastronomic Auto
-Keyword Property VJR_Breakdown_Gastronomic_TA Auto
-Keyword Property VJR_Breakdown_Gastronomic_TB Auto
-Keyword Property VJR_Breakdown_Gastronomic_TC Auto
-Keyword Property VJR_Breakdown_Gastronomic_TD Auto
-
-MiscObject Property OrgUniqueHighTensileSpidroin Auto
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TA Auto
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TB Auto
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TC Auto
-Keyword Property VJR_Breakdown_HighTensileSpidroin_TD Auto
-
-MiscObject Property OrgUniqueImmunostimulant Auto
-Keyword Property VJR_Breakdown_Immunostimulant_TA Auto
-Keyword Property VJR_Breakdown_Immunostimulant_TB Auto
-Keyword Property VJR_Breakdown_Immunostimulant_TC Auto
-Keyword Property VJR_Breakdown_Immunostimulant_TD Auto
-
-MiscObject Property OrgUniqueLuxuryTextile Auto
-Keyword Property VJR_Breakdown_LuxuryTextile_TA Auto
-Keyword Property VJR_Breakdown_LuxuryTextile_TB Auto
-Keyword Property VJR_Breakdown_LuxuryTextile_TC Auto
-Keyword Property VJR_Breakdown_LuxuryTextile_TD Auto
-
-MiscObject Property OrgUniqueMemorySubstrate Auto
-Keyword Property VJR_Breakdown_MemorySubstrate_TA Auto
-Keyword Property VJR_Breakdown_MemorySubstrate_TB Auto
-Keyword Property VJR_Breakdown_MemorySubstrate_TC Auto
-Keyword Property VJR_Breakdown_MemorySubstrate_TD Auto
-
-MiscObject Property OrgUniqueNeurologic Auto
-Keyword Property VJR_Breakdown_Neurologic_TA Auto
-Keyword Property VJR_Breakdown_Neurologic_TB Auto
-Keyword Property VJR_Breakdown_Neurologic_TC Auto
-Keyword Property VJR_Breakdown_Neurologic_TD Auto
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -619,33 +619,33 @@ EndEvent
 Function Setup()
   AddInventoryEventFilter(None)
   
-  VJR_ItemSize_Huge = Game.GetFormFromFile(0x0000080B, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Large = Game.GetFormFromFile(0x0000080C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Normal = Game.GetFormFromFile(0x0000080D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Small = Game.GetFormFromFile(0x0000080E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_ItemSize_Tiny = Game.GetFormFromFile(0x0000080F, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_ItemSize_Huge = Game.GetFormFromFile(0x0000080B, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_ItemSize_Large = Game.GetFormFromFile(0x0000080C, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_ItemSize_Normal = Game.GetFormFromFile(0x0000080D, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_ItemSize_Small = Game.GetFormFromFile(0x0000080E, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_ItemSize_Tiny = Game.GetFormFromFile(0x0000080F, "VenworksJunkRecycler.esm") as Keyword
 
-  VJR_Breakdown_RandomInorganic_TA = Game.GetFormFromFile(0x0000081C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_RandomInorganic_TB = Game.GetFormFromFile(0x0000081D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_RandomInorganic_TC = Game.GetFormFromFile(0x0000081E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_RandomInorganic_TD = Game.GetFormFromFile(0x0000081F, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomInorganic_TA = Game.GetFormFromFile(0x0000081C, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomInorganic_TB = Game.GetFormFromFile(0x0000081D, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomInorganic_TC = Game.GetFormFromFile(0x0000081E, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomInorganic_TD = Game.GetFormFromFile(0x0000081F, "VenworksJunkRecycler.esm") as Keyword
 
-  VJR_Breakdown_RandomOrganic_TA = Game.GetFormFromFile(0x00000820, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_RandomOrganic_TB = Game.GetFormFromFile(0x00000821, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_RandomOrganic_TC = Game.GetFormFromFile(0x00000822, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_RandomOrganic_TD = Game.GetFormFromFile(0x00000823, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomOrganic_TA = Game.GetFormFromFile(0x00000820, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomOrganic_TB = Game.GetFormFromFile(0x00000821, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomOrganic_TC = Game.GetFormFromFile(0x00000822, "VenworksJunkRecycler.esm") as Keyword
+  ; VJR_Breakdown_RandomOrganic_TD = Game.GetFormFromFile(0x00000823, "VenworksJunkRecycler.esm") as Keyword
 
-  SetupInorganicCommon()
-  SetupInorganicUncommon()
-  SetupInorganicRare()
-  SetupInorganicExotic()
-  SetupInorganicUnique()
+  ; SetupInorganicCommon()
+  ; SetupInorganicUncommon()
+  ; SetupInorganicRare()
+  ; SetupInorganicExotic()
+  ; SetupInorganicUnique()
   
-  SetupOrganicCommon()
-  SetupOrganicUncommon()
-  SetupOrganicRare()
-  SetupOrganicExotic()
-  SetupOrganicUnique()
+  ; SetupOrganicCommon()
+  ; SetupOrganicUncommon()
+  ; SetupOrganicRare()
+  ; SetupOrganicExotic()
+  ; SetupOrganicUnique()
 EndFunction
 
 
@@ -653,492 +653,492 @@ EndFunction
 ;;;
 ;;; Functions - Setup Inorganic Materials and Keywords
 ;;;
-Function SetupInorganicCommon()
-  InorgCommonAluminum = Game.GetFormFromFile(0x0000557D, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Aluminum_TA = Game.GetFormFromFile(0x00000824, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aluminum_TB = Game.GetFormFromFile(0x00000825, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aluminum_TC = Game.GetFormFromFile(0x00000826, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aluminum_TD = Game.GetFormFromFile(0x00000827, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupInorganicCommon()
+;   InorgCommonAluminum = Game.GetFormFromFile(0x0000557D, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Aluminum_TA = Game.GetFormFromFile(0x00000824, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aluminum_TB = Game.GetFormFromFile(0x00000825, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aluminum_TC = Game.GetFormFromFile(0x00000826, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aluminum_TD = Game.GetFormFromFile(0x00000827, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonArgon = Game.GetFormFromFile(0x00005588, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Argon_TA = Game.GetFormFromFile(0x00000828, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Argon_TB = Game.GetFormFromFile(0x00000829, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Argon_TC = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Argon_TD = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonArgon = Game.GetFormFromFile(0x00005588, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Argon_TA = Game.GetFormFromFile(0x00000828, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Argon_TB = Game.GetFormFromFile(0x00000829, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Argon_TC = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Argon_TD = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonChlorine = Game.GetFormFromFile(0x0000557C, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Chlorine_TA = Game.GetFormFromFile(0x0000082C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Chlorine_TB = Game.GetFormFromFile(0x0000082D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Chlorine_TC = Game.GetFormFromFile(0x0000082E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Chlorine_TD = Game.GetFormFromFile(0x0000082F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonChlorine = Game.GetFormFromFile(0x0000557C, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Chlorine_TA = Game.GetFormFromFile(0x0000082C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Chlorine_TB = Game.GetFormFromFile(0x0000082D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Chlorine_TC = Game.GetFormFromFile(0x0000082E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Chlorine_TD = Game.GetFormFromFile(0x0000082F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonCopper = Game.GetFormFromFile(0x00005576, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Copper_TA = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Copper_TB = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Copper_TC = Game.GetFormFromFile(0x00000832, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Copper_TD = Game.GetFormFromFile(0x00000833, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonCopper = Game.GetFormFromFile(0x00005576, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Copper_TA = Game.GetFormFromFile(0x00000830, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Copper_TB = Game.GetFormFromFile(0x00000831, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Copper_TC = Game.GetFormFromFile(0x00000832, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Copper_TD = Game.GetFormFromFile(0x00000833, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonHelium3 = Game.GetFormFromFile(0x0000558E, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Helium3_TA = Game.GetFormFromFile(0x00000834, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Helium3_TB = Game.GetFormFromFile(0x00000835, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Helium3_TC = Game.GetFormFromFile(0x00000836, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Helium3_TD = Game.GetFormFromFile(0x00000837, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonHelium3 = Game.GetFormFromFile(0x0000558E, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Helium3_TA = Game.GetFormFromFile(0x00000834, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Helium3_TB = Game.GetFormFromFile(0x00000835, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Helium3_TC = Game.GetFormFromFile(0x00000836, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Helium3_TD = Game.GetFormFromFile(0x00000837, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonIron = Game.GetFormFromFile(0x0000556E, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Iron_TA = Game.GetFormFromFile(0x00000838, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Iron_TB = Game.GetFormFromFile(0x00000839, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Iron_TC = Game.GetFormFromFile(0x0000083A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Iron_TD = Game.GetFormFromFile(0x0000083B, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonIron = Game.GetFormFromFile(0x0000556E, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Iron_TA = Game.GetFormFromFile(0x00000838, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Iron_TB = Game.GetFormFromFile(0x00000839, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Iron_TC = Game.GetFormFromFile(0x0000083A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Iron_TD = Game.GetFormFromFile(0x0000083B, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonLead = Game.GetFormFromFile(0x00005568, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Lead_TA = Game.GetFormFromFile(0x0000083C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lead_TB = Game.GetFormFromFile(0x0000083D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lead_TC = Game.GetFormFromFile(0x0000083E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lead_TD = Game.GetFormFromFile(0x0000083F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonLead = Game.GetFormFromFile(0x00005568, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Lead_TA = Game.GetFormFromFile(0x0000083C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lead_TB = Game.GetFormFromFile(0x0000083D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lead_TC = Game.GetFormFromFile(0x0000083E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lead_TD = Game.GetFormFromFile(0x0000083F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonNickel = Game.GetFormFromFile(0x00005572, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Nickel_TA = Game.GetFormFromFile(0x00000840, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Nickel_TB = Game.GetFormFromFile(0x00000841, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Nickel_TC = Game.GetFormFromFile(0x00000842, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Nickel_TD = Game.GetFormFromFile(0x00000843, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonNickel = Game.GetFormFromFile(0x00005572, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Nickel_TA = Game.GetFormFromFile(0x00000840, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Nickel_TB = Game.GetFormFromFile(0x00000841, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Nickel_TC = Game.GetFormFromFile(0x00000842, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Nickel_TD = Game.GetFormFromFile(0x00000843, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonUranium = Game.GetFormFromFile(0x00005589, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Uranium_TA = Game.GetFormFromFile(0x00000844, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Uranium_TB = Game.GetFormFromFile(0x00000845, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Uranium_TC = Game.GetFormFromFile(0x00000846, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Uranium_TD = Game.GetFormFromFile(0x00000847, "VenworksJunkRecycler.esm") as Keyword
+;   InorgCommonUranium = Game.GetFormFromFile(0x00005589, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Uranium_TA = Game.GetFormFromFile(0x00000844, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Uranium_TB = Game.GetFormFromFile(0x00000845, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Uranium_TC = Game.GetFormFromFile(0x00000846, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Uranium_TD = Game.GetFormFromFile(0x00000847, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgCommonWater = Game.GetFormFromFile(0x00005591, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Water_TA = Game.GetFormFromFile(0x00000848, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Water_TB = Game.GetFormFromFile(0x00000849, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Water_TC = Game.GetFormFromFile(0x0000084A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Water_TD = Game.GetFormFromFile(0x0000084B, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   InorgCommonWater = Game.GetFormFromFile(0x00005591, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Water_TA = Game.GetFormFromFile(0x00000848, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Water_TB = Game.GetFormFromFile(0x00000849, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Water_TC = Game.GetFormFromFile(0x0000084A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Water_TD = Game.GetFormFromFile(0x0000084B, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupInorganicUncommon()
-  InorgUncommonAlkanes = Game.GetFormFromFile(0x00005570, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Alkanes_TA = Game.GetFormFromFile(0x00000814, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Alkanes_TB = Game.GetFormFromFile(0x00000815, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Alkanes_TC = Game.GetFormFromFile(0x00000816, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Alkanes_TD = Game.GetFormFromFile(0x00000817, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupInorganicUncommon()
+;   InorgUncommonAlkanes = Game.GetFormFromFile(0x00005570, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Alkanes_TA = Game.GetFormFromFile(0x00000814, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Alkanes_TB = Game.GetFormFromFile(0x00000815, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Alkanes_TC = Game.GetFormFromFile(0x00000816, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Alkanes_TD = Game.GetFormFromFile(0x00000817, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonBenzene = Game.GetFormFromFile(0x00005585, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Benzene_TA = Game.GetFormFromFile(0x0000084C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Benzene_TB = Game.GetFormFromFile(0x0000084D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Benzene_TC = Game.GetFormFromFile(0x0000084E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Benzene_TD = Game.GetFormFromFile(0x0000084F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonBenzene = Game.GetFormFromFile(0x00005585, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Benzene_TA = Game.GetFormFromFile(0x0000084C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Benzene_TB = Game.GetFormFromFile(0x0000084D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Benzene_TC = Game.GetFormFromFile(0x0000084E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Benzene_TD = Game.GetFormFromFile(0x0000084F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonBeryllium = Game.GetFormFromFile(0x000057D9, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Beryllium_TA = Game.GetFormFromFile(0x00000850, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Beryllium_TB = Game.GetFormFromFile(0x00000851, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Beryllium_TC = Game.GetFormFromFile(0x00000852, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Beryllium_TD = Game.GetFormFromFile(0x00000853, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonBeryllium = Game.GetFormFromFile(0x000057D9, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Beryllium_TA = Game.GetFormFromFile(0x00000850, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Beryllium_TB = Game.GetFormFromFile(0x00000851, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Beryllium_TC = Game.GetFormFromFile(0x00000852, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Beryllium_TD = Game.GetFormFromFile(0x00000853, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonChlorosilanes = Game.GetFormFromFile(0x0000557E, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Chlorosilanes_TA = Game.GetFormFromFile(0x00000854, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Chlorosilanes_TB = Game.GetFormFromFile(0x00000855, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Chlorosilanes_TC = Game.GetFormFromFile(0x00000856, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Chlorosilanes_TD = Game.GetFormFromFile(0x00000857, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonChlorosilanes = Game.GetFormFromFile(0x0000557E, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Chlorosilanes_TA = Game.GetFormFromFile(0x00000854, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Chlorosilanes_TB = Game.GetFormFromFile(0x00000855, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Chlorosilanes_TC = Game.GetFormFromFile(0x00000856, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Chlorosilanes_TD = Game.GetFormFromFile(0x00000857, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonCobalt = Game.GetFormFromFile(0x00005575, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Cobalt_TA = Game.GetFormFromFile(0x00000858, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Cobalt_TB = Game.GetFormFromFile(0x00000859, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Cobalt_TC = Game.GetFormFromFile(0x0000085A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Cobalt_TD = Game.GetFormFromFile(0x0000085B, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonCobalt = Game.GetFormFromFile(0x00005575, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Cobalt_TA = Game.GetFormFromFile(0x00000858, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Cobalt_TB = Game.GetFormFromFile(0x00000859, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Cobalt_TC = Game.GetFormFromFile(0x0000085A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Cobalt_TD = Game.GetFormFromFile(0x0000085B, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonFluorine = Game.GetFormFromFile(0x00005577, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Fluorine_TA = Game.GetFormFromFile(0x0000085C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fluorine_TB = Game.GetFormFromFile(0x0000085D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fluorine_TC = Game.GetFormFromFile(0x0000085E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fluorine_TD = Game.GetFormFromFile(0x0000085F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonFluorine = Game.GetFormFromFile(0x00005577, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Fluorine_TA = Game.GetFormFromFile(0x0000085C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Fluorine_TB = Game.GetFormFromFile(0x0000085D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Fluorine_TC = Game.GetFormFromFile(0x0000085E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Fluorine_TD = Game.GetFormFromFile(0x0000085F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonIridium = Game.GetFormFromFile(0x0000558A, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Iridium_TA = Game.GetFormFromFile(0x00000860, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Iridium_TB = Game.GetFormFromFile(0x00000861, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Iridium_TC = Game.GetFormFromFile(0x00000862, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Iridium_TD = Game.GetFormFromFile(0x00000863, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonIridium = Game.GetFormFromFile(0x0000558A, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Iridium_TA = Game.GetFormFromFile(0x00000860, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Iridium_TB = Game.GetFormFromFile(0x00000861, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Iridium_TC = Game.GetFormFromFile(0x00000862, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Iridium_TD = Game.GetFormFromFile(0x00000863, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonSilver = Game.GetFormFromFile(0x0000556A, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Silver_TA = Game.GetFormFromFile(0x00000864, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Silver_TB = Game.GetFormFromFile(0x00000865, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Silver_TC = Game.GetFormFromFile(0x00000866, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Silver_TD = Game.GetFormFromFile(0x00000867, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUncommonSilver = Game.GetFormFromFile(0x0000556A, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Silver_TA = Game.GetFormFromFile(0x00000864, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Silver_TB = Game.GetFormFromFile(0x00000865, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Silver_TC = Game.GetFormFromFile(0x00000866, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Silver_TD = Game.GetFormFromFile(0x00000867, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUncommonTungsten = Game.GetFormFromFile(0x0000556B, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Tungsten_TA = Game.GetFormFromFile(0x00000868, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tungsten_TB = Game.GetFormFromFile(0x00000869, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tungsten_TC = Game.GetFormFromFile(0x0000086A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tungsten_TD = Game.GetFormFromFile(0x0000086B, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   InorgUncommonTungsten = Game.GetFormFromFile(0x0000556B, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Tungsten_TA = Game.GetFormFromFile(0x00000868, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tungsten_TB = Game.GetFormFromFile(0x00000869, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tungsten_TC = Game.GetFormFromFile(0x0000086A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tungsten_TD = Game.GetFormFromFile(0x0000086B, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupInorganicRare()
-  InorgRareCarboxylicAcids = Game.GetFormFromFile(0x00005586, "Starfield.esm") as MiscObject
-  VJR_Breakdown_CarboxylicAcids_TA = Game.GetFormFromFile(0x0000086C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_CarboxylicAcids_TB = Game.GetFormFromFile(0x0000086D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_CarboxylicAcids_TC = Game.GetFormFromFile(0x0000086E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_CarboxylicAcids_TD = Game.GetFormFromFile(0x0000086F, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupInorganicRare()
+;   InorgRareCarboxylicAcids = Game.GetFormFromFile(0x00005586, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_CarboxylicAcids_TA = Game.GetFormFromFile(0x0000086C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_CarboxylicAcids_TB = Game.GetFormFromFile(0x0000086D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_CarboxylicAcids_TC = Game.GetFormFromFile(0x0000086E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_CarboxylicAcids_TD = Game.GetFormFromFile(0x0000086F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareGold = Game.GetFormFromFile(0x00005579, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Gold_TA = Game.GetFormFromFile(0x00000870, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Gold_TB = Game.GetFormFromFile(0x00000871, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Gold_TC = Game.GetFormFromFile(0x00000872, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Gold_TD = Game.GetFormFromFile(0x00000873, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareGold = Game.GetFormFromFile(0x00005579, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Gold_TA = Game.GetFormFromFile(0x00000870, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Gold_TB = Game.GetFormFromFile(0x00000871, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Gold_TC = Game.GetFormFromFile(0x00000872, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Gold_TD = Game.GetFormFromFile(0x00000873, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareLithium = Game.GetFormFromFile(0x0000557F, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Lithium_TA = Game.GetFormFromFile(0x00000874, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lithium_TB = Game.GetFormFromFile(0x00000875, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lithium_TC = Game.GetFormFromFile(0x00000876, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lithium_TD = Game.GetFormFromFile(0x00000877, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareLithium = Game.GetFormFromFile(0x0000557F, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Lithium_TA = Game.GetFormFromFile(0x00000874, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lithium_TB = Game.GetFormFromFile(0x00000875, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lithium_TC = Game.GetFormFromFile(0x00000876, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lithium_TD = Game.GetFormFromFile(0x00000877, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareMercury = Game.GetFormFromFile(0x0027C4A1, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Mercury_TA = Game.GetFormFromFile(0x00000878, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Mercury_TB = Game.GetFormFromFile(0x00000879, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Mercury_TC = Game.GetFormFromFile(0x0000087A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Mercury_TD = Game.GetFormFromFile(0x0000087B, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareMercury = Game.GetFormFromFile(0x0027C4A1, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Mercury_TA = Game.GetFormFromFile(0x00000878, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Mercury_TB = Game.GetFormFromFile(0x00000879, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Mercury_TC = Game.GetFormFromFile(0x0000087A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Mercury_TD = Game.GetFormFromFile(0x0000087B, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareNeodymium = Game.GetFormFromFile(0x00005580, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Neodymium_TA = Game.GetFormFromFile(0x0000087C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neodymium_TB = Game.GetFormFromFile(0x0000087D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neodymium_TC = Game.GetFormFromFile(0x0000087E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neodymium_TD = Game.GetFormFromFile(0x0000087F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareNeodymium = Game.GetFormFromFile(0x00005580, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Neodymium_TA = Game.GetFormFromFile(0x0000087C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neodymium_TB = Game.GetFormFromFile(0x0000087D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neodymium_TC = Game.GetFormFromFile(0x0000087E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neodymium_TD = Game.GetFormFromFile(0x0000087F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRarePlatinum = Game.GetFormFromFile(0x00005573, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Platinum_TA = Game.GetFormFromFile(0x00000880, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Platinum_TB = Game.GetFormFromFile(0x00000881, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Platinum_TC = Game.GetFormFromFile(0x00000882, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Platinum_TD = Game.GetFormFromFile(0x00000883, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRarePlatinum = Game.GetFormFromFile(0x00005573, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Platinum_TA = Game.GetFormFromFile(0x00000880, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Platinum_TB = Game.GetFormFromFile(0x00000881, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Platinum_TC = Game.GetFormFromFile(0x00000882, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Platinum_TD = Game.GetFormFromFile(0x00000883, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareTantalum = Game.GetFormFromFile(0x0000556F, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Tantalum_TA = Game.GetFormFromFile(0x00000884, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tantalum_TB = Game.GetFormFromFile(0x00000885, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tantalum_TC = Game.GetFormFromFile(0x00000886, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tantalum_TD = Game.GetFormFromFile(0x00000887, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareTantalum = Game.GetFormFromFile(0x0000556F, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Tantalum_TA = Game.GetFormFromFile(0x00000884, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tantalum_TB = Game.GetFormFromFile(0x00000885, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tantalum_TC = Game.GetFormFromFile(0x00000886, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tantalum_TD = Game.GetFormFromFile(0x00000887, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareTetrafluorides = Game.GetFormFromFile(0x00005578, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Tetrafluorides_TA = Game.GetFormFromFile(0x00000888, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tetrafluorides_TB = Game.GetFormFromFile(0x00000889, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tetrafluorides_TC = Game.GetFormFromFile(0x0000088A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tetrafluorides_TD = Game.GetFormFromFile(0x0000088B, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareTetrafluorides = Game.GetFormFromFile(0x00005578, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Tetrafluorides_TA = Game.GetFormFromFile(0x00000888, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tetrafluorides_TB = Game.GetFormFromFile(0x00000889, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tetrafluorides_TC = Game.GetFormFromFile(0x0000088A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tetrafluorides_TD = Game.GetFormFromFile(0x0000088B, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareTitanium = Game.GetFormFromFile(0x0000556D, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Titanium_TA = Game.GetFormFromFile(0x0000088C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Titanium_TB = Game.GetFormFromFile(0x0000088D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Titanium_TC = Game.GetFormFromFile(0x0000088E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Titanium_TD = Game.GetFormFromFile(0x0000088F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgRareTitanium = Game.GetFormFromFile(0x0000556D, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Titanium_TA = Game.GetFormFromFile(0x0000088C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Titanium_TB = Game.GetFormFromFile(0x0000088D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Titanium_TC = Game.GetFormFromFile(0x0000088E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Titanium_TD = Game.GetFormFromFile(0x0000088F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgRareVanadium = Game.GetFormFromFile(0x0000558B, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Vanadium_TA = Game.GetFormFromFile(0x00000890, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Vanadium_TB = Game.GetFormFromFile(0x00000891, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Vanadium_TC = Game.GetFormFromFile(0x00000892, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Vanadium_TD = Game.GetFormFromFile(0x00000893, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   InorgRareVanadium = Game.GetFormFromFile(0x0000558B, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Vanadium_TA = Game.GetFormFromFile(0x00000890, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Vanadium_TB = Game.GetFormFromFile(0x00000891, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Vanadium_TC = Game.GetFormFromFile(0x00000892, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Vanadium_TD = Game.GetFormFromFile(0x00000893, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupInorganicExotic()
-  InorgExoticAntimony = Game.GetFormFromFile(0x0000557B, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Antimony_TA = Game.GetFormFromFile(0x00000894, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Antimony_TB = Game.GetFormFromFile(0x00000895, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Antimony_TC = Game.GetFormFromFile(0x00000896, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Antimony_TD = Game.GetFormFromFile(0x00000897, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupInorganicExotic()
+;   InorgExoticAntimony = Game.GetFormFromFile(0x0000557B, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Antimony_TA = Game.GetFormFromFile(0x00000894, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Antimony_TB = Game.GetFormFromFile(0x00000895, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Antimony_TC = Game.GetFormFromFile(0x00000896, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Antimony_TD = Game.GetFormFromFile(0x00000897, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticCaesium = Game.GetFormFromFile(0x000057DF, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Caesium_TA = Game.GetFormFromFile(0x00000898, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Caesium_TB = Game.GetFormFromFile(0x00000899, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Caesium_TC = Game.GetFormFromFile(0x0000089A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Caesium_TD = Game.GetFormFromFile(0x0000089B, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticCaesium = Game.GetFormFromFile(0x000057DF, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Caesium_TA = Game.GetFormFromFile(0x00000898, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Caesium_TB = Game.GetFormFromFile(0x00000899, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Caesium_TC = Game.GetFormFromFile(0x0000089A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Caesium_TD = Game.GetFormFromFile(0x0000089B, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticDysprosium = Game.GetFormFromFile(0x00005569, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Dysprosium_TA = Game.GetFormFromFile(0x0000089C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Dysprosium_TB = Game.GetFormFromFile(0x0000089D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Dysprosium_TC = Game.GetFormFromFile(0x0000089E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Dysprosium_TD = Game.GetFormFromFile(0x0000089F, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticDysprosium = Game.GetFormFromFile(0x00005569, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Dysprosium_TA = Game.GetFormFromFile(0x0000089C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Dysprosium_TB = Game.GetFormFromFile(0x0000089D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Dysprosium_TC = Game.GetFormFromFile(0x0000089E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Dysprosium_TD = Game.GetFormFromFile(0x0000089F, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticEuropium = Game.GetFormFromFile(0x000057E1, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Europium_TA = Game.GetFormFromFile(0x000008A0, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Europium_TB = Game.GetFormFromFile(0x000008A1, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Europium_TC = Game.GetFormFromFile(0x000008A2, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Europium_TD = Game.GetFormFromFile(0x000008A3, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticEuropium = Game.GetFormFromFile(0x000057E1, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Europium_TA = Game.GetFormFromFile(0x000008A0, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Europium_TB = Game.GetFormFromFile(0x000008A1, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Europium_TC = Game.GetFormFromFile(0x000008A2, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Europium_TD = Game.GetFormFromFile(0x000008A3, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticIonicLiquids = Game.GetFormFromFile(0x0000557A, "Starfield.esm") as MiscObject
-  VJR_Breakdown_IonicLiquids_TA = Game.GetFormFromFile(0x000008A4, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_IonicLiquids_TB = Game.GetFormFromFile(0x000008A5, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_IonicLiquids_TC = Game.GetFormFromFile(0x000008A6, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_IonicLiquids_TD = Game.GetFormFromFile(0x000008A7, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticIonicLiquids = Game.GetFormFromFile(0x0000557A, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_IonicLiquids_TA = Game.GetFormFromFile(0x000008A4, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_IonicLiquids_TB = Game.GetFormFromFile(0x000008A5, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_IonicLiquids_TC = Game.GetFormFromFile(0x000008A6, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_IonicLiquids_TD = Game.GetFormFromFile(0x000008A7, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticNeon = Game.GetFormFromFile(0x00005587, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Neon_TA = Game.GetFormFromFile(0x000008A8, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neon_TB = Game.GetFormFromFile(0x000008A9, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neon_TC = Game.GetFormFromFile(0x000008AA, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neon_TD = Game.GetFormFromFile(0x000008AB, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticNeon = Game.GetFormFromFile(0x00005587, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Neon_TA = Game.GetFormFromFile(0x000008A8, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neon_TB = Game.GetFormFromFile(0x000008A9, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neon_TC = Game.GetFormFromFile(0x000008AA, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neon_TD = Game.GetFormFromFile(0x000008AB, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticPalladium = Game.GetFormFromFile(0x00005574, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Palladium_TA = Game.GetFormFromFile(0x000008AC, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Palladium_TB = Game.GetFormFromFile(0x000008AD, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Palladium_TC = Game.GetFormFromFile(0x000008AE, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Palladium_TD = Game.GetFormFromFile(0x000008AF, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticPalladium = Game.GetFormFromFile(0x00005574, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Palladium_TA = Game.GetFormFromFile(0x000008AC, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Palladium_TB = Game.GetFormFromFile(0x000008AD, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Palladium_TC = Game.GetFormFromFile(0x000008AE, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Palladium_TD = Game.GetFormFromFile(0x000008AF, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticPlutonium = Game.GetFormFromFile(0x0000558C, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Plutonium_TA = Game.GetFormFromFile(0x000008B0, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Plutonium_TB = Game.GetFormFromFile(0x000008B1, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Plutonium_TC = Game.GetFormFromFile(0x000008B2, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Plutonium_TD = Game.GetFormFromFile(0x000008B3, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticPlutonium = Game.GetFormFromFile(0x0000558C, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Plutonium_TA = Game.GetFormFromFile(0x000008B0, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Plutonium_TB = Game.GetFormFromFile(0x000008B1, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Plutonium_TC = Game.GetFormFromFile(0x000008B2, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Plutonium_TD = Game.GetFormFromFile(0x000008B3, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticXenon = Game.GetFormFromFile(0x000057DD, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Xenon_TA = Game.GetFormFromFile(0x000008B4, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Xenon_TB = Game.GetFormFromFile(0x000008B5, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Xenon_TC = Game.GetFormFromFile(0x000008B6, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Xenon_TD = Game.GetFormFromFile(0x000008B7, "VenworksJunkRecycler.esm") as Keyword
+;   InorgExoticXenon = Game.GetFormFromFile(0x000057DD, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Xenon_TA = Game.GetFormFromFile(0x000008B4, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Xenon_TB = Game.GetFormFromFile(0x000008B5, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Xenon_TC = Game.GetFormFromFile(0x000008B6, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Xenon_TD = Game.GetFormFromFile(0x000008B7, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgExoticYtterbium = Game.GetFormFromFile(0x00005571, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Ytterbium_TA = Game.GetFormFromFile(0x000008B8, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Ytterbium_TB = Game.GetFormFromFile(0x000008B9, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Ytterbium_TC = Game.GetFormFromFile(0x000008BA, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Ytterbium_TD = Game.GetFormFromFile(0x000008BB, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   InorgExoticYtterbium = Game.GetFormFromFile(0x00005571, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Ytterbium_TA = Game.GetFormFromFile(0x000008B8, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Ytterbium_TB = Game.GetFormFromFile(0x000008B9, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Ytterbium_TC = Game.GetFormFromFile(0x000008BA, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Ytterbium_TD = Game.GetFormFromFile(0x000008BB, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupInorganicUnique()
-  InorgUniqueAldumite = Game.GetFormFromFile(0x00005DEC, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Aldumite_TA = Game.GetFormFromFile(0x000008BC, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aldumite_TB = Game.GetFormFromFile(0x000008BD, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aldumite_TC = Game.GetFormFromFile(0x000008BE, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aldumite_TD = Game.GetFormFromFile(0x000008BF, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupInorganicUnique()
+;   InorgUniqueAldumite = Game.GetFormFromFile(0x00005DEC, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Aldumite_TA = Game.GetFormFromFile(0x000008BC, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aldumite_TB = Game.GetFormFromFile(0x000008BD, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aldumite_TC = Game.GetFormFromFile(0x000008BE, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aldumite_TD = Game.GetFormFromFile(0x000008BF, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueAqueousHematite = Game.GetFormFromFile(0x0029D022, "Starfield.esm") as MiscObject
-  VJR_Breakdown_AqueousHematite_TA = Game.GetFormFromFile(0x000008C0, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_AqueousHematite_TB = Game.GetFormFromFile(0x000008C1, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_AqueousHematite_TC = Game.GetFormFromFile(0x000008C2, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_AqueousHematite_TD = Game.GetFormFromFile(0x000008C3, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUniqueAqueousHematite = Game.GetFormFromFile(0x0029D022, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_AqueousHematite_TA = Game.GetFormFromFile(0x000008C0, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_AqueousHematite_TB = Game.GetFormFromFile(0x000008C1, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_AqueousHematite_TC = Game.GetFormFromFile(0x000008C2, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_AqueousHematite_TD = Game.GetFormFromFile(0x000008C3, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueCaelumite = Game.GetFormFromFile(0x000788D6, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Caelumite_TA = Game.GetFormFromFile(0x000008C4, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Caelumite_TB = Game.GetFormFromFile(0x000008C5, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Caelumite_TC = Game.GetFormFromFile(0x000008C6, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Caelumite_TD = Game.GetFormFromFile(0x000008C7, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUniqueCaelumite = Game.GetFormFromFile(0x000788D6, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Caelumite_TA = Game.GetFormFromFile(0x000008C4, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Caelumite_TB = Game.GetFormFromFile(0x000008C5, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Caelumite_TC = Game.GetFormFromFile(0x000008C6, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Caelumite_TD = Game.GetFormFromFile(0x000008C7, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueIndicite = Game.GetFormFromFile(0x0004BA37, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Indicite_TA = Game.GetFormFromFile(0x000008C8, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Indicite_TB = Game.GetFormFromFile(0x000008C9, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Indicite_TC = Game.GetFormFromFile(0x000008CA, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Indicite_TD = Game.GetFormFromFile(0x000008CB, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUniqueIndicite = Game.GetFormFromFile(0x0004BA37, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Indicite_TA = Game.GetFormFromFile(0x000008C8, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Indicite_TB = Game.GetFormFromFile(0x000008C9, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Indicite_TC = Game.GetFormFromFile(0x000008CA, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Indicite_TD = Game.GetFormFromFile(0x000008CB, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueRothicite = Game.GetFormFromFile(0x000028DF, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Rothicite_TA = Game.GetFormFromFile(0x000008CC, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Rothicite_TB = Game.GetFormFromFile(0x000008CD, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Rothicite_TC = Game.GetFormFromFile(0x000008CE, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Rothicite_TD = Game.GetFormFromFile(0x000008CF, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUniqueRothicite = Game.GetFormFromFile(0x000028DF, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Rothicite_TA = Game.GetFormFromFile(0x000008CC, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Rothicite_TB = Game.GetFormFromFile(0x000008CD, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Rothicite_TC = Game.GetFormFromFile(0x000008CE, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Rothicite_TD = Game.GetFormFromFile(0x000008CF, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueTasine = Game.GetFormFromFile(0x00005DED, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Tasine_TA = Game.GetFormFromFile(0x000008D0, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tasine_TB = Game.GetFormFromFile(0x000008D1, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tasine_TC = Game.GetFormFromFile(0x000008D2, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Tasine_TD = Game.GetFormFromFile(0x000008D3, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUniqueTasine = Game.GetFormFromFile(0x00005DED, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Tasine_TA = Game.GetFormFromFile(0x000008D0, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tasine_TB = Game.GetFormFromFile(0x000008D1, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tasine_TC = Game.GetFormFromFile(0x000008D2, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Tasine_TD = Game.GetFormFromFile(0x000008D3, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueVeryl = Game.GetFormFromFile(0x00005DEE, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Veryl_TA = Game.GetFormFromFile(0x000008D4, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Veryl_TB = Game.GetFormFromFile(0x000008D5, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Veryl_TC = Game.GetFormFromFile(0x000008D6, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Veryl_TD = Game.GetFormFromFile(0x000008D7, "VenworksJunkRecycler.esm") as Keyword
+;   InorgUniqueVeryl = Game.GetFormFromFile(0x00005DEE, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Veryl_TA = Game.GetFormFromFile(0x000008D4, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Veryl_TB = Game.GetFormFromFile(0x000008D5, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Veryl_TC = Game.GetFormFromFile(0x000008D6, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Veryl_TD = Game.GetFormFromFile(0x000008D7, "VenworksJunkRecycler.esm") as Keyword
 
-  InorgUniqueVytinium = Game.GetFormFromFile(0x00005DEF, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Vytinium_TA = Game.GetFormFromFile(0x000008D8, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Vytinium_TB = Game.GetFormFromFile(0x000008D9, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Vytinium_TC = Game.GetFormFromFile(0x000008DA, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Vytinium_TD = Game.GetFormFromFile(0x000008DB, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   InorgUniqueVytinium = Game.GetFormFromFile(0x00005DEF, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Vytinium_TA = Game.GetFormFromFile(0x000008D8, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Vytinium_TB = Game.GetFormFromFile(0x000008D9, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Vytinium_TC = Game.GetFormFromFile(0x000008DA, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Vytinium_TD = Game.GetFormFromFile(0x000008DB, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Functions - Setup Organic Materials and Keywords
 ;;;
-Function SetupOrganicCommon()
-  OrgCommonFiber = Game.GetFormFromFile(0x000055AF, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Fiber_TA = Game.GetFormFromFile(0x00000810, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fiber_TB = Game.GetFormFromFile(0x00000811, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fiber_TC = Game.GetFormFromFile(0x00000812, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Fiber_TD = Game.GetFormFromFile(0x00000813, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupOrganicCommon()
+;   OrgCommonFiber = Game.GetFormFromFile(0x000055AF, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Fiber_TA = Game.GetFormFromFile(0x00000810, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Fiber_TB = Game.GetFormFromFile(0x00000811, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Fiber_TC = Game.GetFormFromFile(0x00000812, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Fiber_TD = Game.GetFormFromFile(0x00000813, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgCommonMetabolicAgent = Game.GetFormFromFile(0x0029F3FC, "Starfield.esm") as MiscObject
-  VJR_Breakdown_MetabolicAgent_TA = Game.GetFormFromFile(0x000008DC, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_MetabolicAgent_TB = Game.GetFormFromFile(0x000008DD, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_MetabolicAgent_TC = Game.GetFormFromFile(0x000008DE, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_MetabolicAgent_TD = Game.GetFormFromFile(0x000008DF, "VenworksJunkRecycler.esm") as Keyword
+;   OrgCommonMetabolicAgent = Game.GetFormFromFile(0x0029F3FC, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_MetabolicAgent_TA = Game.GetFormFromFile(0x000008DC, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_MetabolicAgent_TB = Game.GetFormFromFile(0x000008DD, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_MetabolicAgent_TC = Game.GetFormFromFile(0x000008DE, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_MetabolicAgent_TD = Game.GetFormFromFile(0x000008DF, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgCommonNutrient = Game.GetFormFromFile(0x000777FD, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Nutrient_TA = Game.GetFormFromFile(0x000008E0, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Nutrient_TB = Game.GetFormFromFile(0x000008E1, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Nutrient_TC = Game.GetFormFromFile(0x000008E2, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Nutrient_TD = Game.GetFormFromFile(0x000008E3, "VenworksJunkRecycler.esm") as Keyword
+;   OrgCommonNutrient = Game.GetFormFromFile(0x000777FD, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Nutrient_TA = Game.GetFormFromFile(0x000008E0, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Nutrient_TB = Game.GetFormFromFile(0x000008E1, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Nutrient_TC = Game.GetFormFromFile(0x000008E2, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Nutrient_TD = Game.GetFormFromFile(0x000008E3, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgCommonSealant = Game.GetFormFromFile(0x000055CC, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Sealant_TA = Game.GetFormFromFile(0x000008E4, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Sealant_TB = Game.GetFormFromFile(0x000008E5, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Sealant_TC = Game.GetFormFromFile(0x000008E6, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Sealant_TD = Game.GetFormFromFile(0x000008E7, "VenworksJunkRecycler.esm") as Keyword
+;   OrgCommonSealant = Game.GetFormFromFile(0x000055CC, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Sealant_TA = Game.GetFormFromFile(0x000008E4, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Sealant_TB = Game.GetFormFromFile(0x000008E5, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Sealant_TC = Game.GetFormFromFile(0x000008E6, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Sealant_TD = Game.GetFormFromFile(0x000008E7, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgCommonStructural = Game.GetFormFromFile(0x000055B9, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Structural_TA = Game.GetFormFromFile(0x000008E8, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Structural_TB = Game.GetFormFromFile(0x000008E9, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Structural_TC = Game.GetFormFromFile(0x000008EA, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Structural_TD = Game.GetFormFromFile(0x000008EB, "VenworksJunkRecycler.esm") as Keyword
+;   OrgCommonStructural = Game.GetFormFromFile(0x000055B9, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Structural_TA = Game.GetFormFromFile(0x000008E8, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Structural_TB = Game.GetFormFromFile(0x000008E9, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Structural_TC = Game.GetFormFromFile(0x000008EA, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Structural_TD = Game.GetFormFromFile(0x000008EB, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgCommonToxin = Game.GetFormFromFile(0x000055CB, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Toxin_TA = Game.GetFormFromFile(0x000008EC, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Toxin_TB = Game.GetFormFromFile(0x000008ED, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Toxin_TC = Game.GetFormFromFile(0x000008EE, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Toxin_TD = Game.GetFormFromFile(0x000008EF, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   OrgCommonToxin = Game.GetFormFromFile(0x000055CB, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Toxin_TA = Game.GetFormFromFile(0x000008EC, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Toxin_TB = Game.GetFormFromFile(0x000008ED, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Toxin_TC = Game.GetFormFromFile(0x000008EE, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Toxin_TD = Game.GetFormFromFile(0x000008EF, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupOrganicUncommon()
-  OrgUncommonAntimicrobial = Game.GetFormFromFile(0x000055AB, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Antimicrobial_TA = Game.GetFormFromFile(0x000008F0, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Antimicrobial_TB = Game.GetFormFromFile(0x000008F1, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Antimicrobial_TC = Game.GetFormFromFile(0x000008F2, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Antimicrobial_TD = Game.GetFormFromFile(0x000008F3, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupOrganicUncommon()
+;   OrgUncommonAntimicrobial = Game.GetFormFromFile(0x000055AB, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Antimicrobial_TA = Game.GetFormFromFile(0x000008F0, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Antimicrobial_TB = Game.GetFormFromFile(0x000008F1, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Antimicrobial_TC = Game.GetFormFromFile(0x000008F2, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Antimicrobial_TD = Game.GetFormFromFile(0x000008F3, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUncommonCosmetic = Game.GetFormFromFile(0x000055A8, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Cosmetic_TA = Game.GetFormFromFile(0x000008F4, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Cosmetic_TB = Game.GetFormFromFile(0x000008F5, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Cosmetic_TC = Game.GetFormFromFile(0x000008F6, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Cosmetic_TD = Game.GetFormFromFile(0x000008F7, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUncommonCosmetic = Game.GetFormFromFile(0x000055A8, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Cosmetic_TA = Game.GetFormFromFile(0x000008F4, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Cosmetic_TB = Game.GetFormFromFile(0x000008F5, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Cosmetic_TC = Game.GetFormFromFile(0x000008F6, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Cosmetic_TD = Game.GetFormFromFile(0x000008F7, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUncommonMembrane = Game.GetFormFromFile(0x000055B0, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Membrane_TA = Game.GetFormFromFile(0x000008F8, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Membrane_TB = Game.GetFormFromFile(0x000008F9, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Membrane_TC = Game.GetFormFromFile(0x000008FA, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Membrane_TD = Game.GetFormFromFile(0x000008FB, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUncommonMembrane = Game.GetFormFromFile(0x000055B0, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Membrane_TA = Game.GetFormFromFile(0x000008F8, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Membrane_TB = Game.GetFormFromFile(0x000008F9, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Membrane_TC = Game.GetFormFromFile(0x000008FA, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Membrane_TD = Game.GetFormFromFile(0x000008FB, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUncommonOrnamental = Game.GetFormFromFile(0x000055A7, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Ornamental_TA = Game.GetFormFromFile(0x000008FC, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Ornamental_TB = Game.GetFormFromFile(0x000008FD, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Ornamental_TC = Game.GetFormFromFile(0x000008FE, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Ornamental_TD = Game.GetFormFromFile(0x000008FF, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUncommonOrnamental = Game.GetFormFromFile(0x000055A7, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Ornamental_TA = Game.GetFormFromFile(0x000008FC, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Ornamental_TB = Game.GetFormFromFile(0x000008FD, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Ornamental_TC = Game.GetFormFromFile(0x000008FE, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Ornamental_TD = Game.GetFormFromFile(0x000008FF, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUncommonPigment = Game.GetFormFromFile(0x0029F400, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Pigment_TA = Game.GetFormFromFile(0x00000900, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Pigment_TB = Game.GetFormFromFile(0x00000901, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Pigment_TC = Game.GetFormFromFile(0x00000902, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Pigment_TD = Game.GetFormFromFile(0x00000903, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUncommonPigment = Game.GetFormFromFile(0x0029F400, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Pigment_TA = Game.GetFormFromFile(0x00000900, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Pigment_TB = Game.GetFormFromFile(0x00000901, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Pigment_TC = Game.GetFormFromFile(0x00000902, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Pigment_TD = Game.GetFormFromFile(0x00000903, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUncommonSpice = Game.GetFormFromFile(0x000055AC, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Spice_TA = Game.GetFormFromFile(0x00000904, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Spice_TB = Game.GetFormFromFile(0x00000905, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Spice_TC = Game.GetFormFromFile(0x00000906, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Spice_TD = Game.GetFormFromFile(0x00000907, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   OrgUncommonSpice = Game.GetFormFromFile(0x000055AC, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Spice_TA = Game.GetFormFromFile(0x00000904, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Spice_TB = Game.GetFormFromFile(0x00000905, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Spice_TC = Game.GetFormFromFile(0x00000906, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Spice_TD = Game.GetFormFromFile(0x00000907, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupOrganicRare()
-  OrgRareAdhesive = Game.GetFormFromFile(0x000055B1, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Adhesive_TA = Game.GetFormFromFile(0x00000803, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Adhesive_TB = Game.GetFormFromFile(0x00000804, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Adhesive_TC = Game.GetFormFromFile(0x00000805, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Adhesive_TD = Game.GetFormFromFile(0x00000806, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupOrganicRare()
+;   OrgRareAdhesive = Game.GetFormFromFile(0x000055B1, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Adhesive_TA = Game.GetFormFromFile(0x00000803, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Adhesive_TB = Game.GetFormFromFile(0x00000804, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Adhesive_TC = Game.GetFormFromFile(0x00000805, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Adhesive_TD = Game.GetFormFromFile(0x00000806, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgRareAminoAcids = Game.GetFormFromFile(0x000055CD, "Starfield.esm") as MiscObject
-  VJR_Breakdown_AminoAcids_TA = Game.GetFormFromFile(0x00000908, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_AminoAcids_TB = Game.GetFormFromFile(0x00000909, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_AminoAcids_TC = Game.GetFormFromFile(0x0000090A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_AminoAcids_TD = Game.GetFormFromFile(0x0000090B, "VenworksJunkRecycler.esm") as Keyword
+;   OrgRareAminoAcids = Game.GetFormFromFile(0x000055CD, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_AminoAcids_TA = Game.GetFormFromFile(0x00000908, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_AminoAcids_TB = Game.GetFormFromFile(0x00000909, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_AminoAcids_TC = Game.GetFormFromFile(0x0000090A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_AminoAcids_TD = Game.GetFormFromFile(0x0000090B, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgRareAnalgesic = Game.GetFormFromFile(0x000055A9, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Analgesic_TA = Game.GetFormFromFile(0x0000090C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Analgesic_TB = Game.GetFormFromFile(0x0000090D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Analgesic_TC = Game.GetFormFromFile(0x0000090E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Analgesic_TD = Game.GetFormFromFile(0x0000090F, "VenworksJunkRecycler.esm") as Keyword
+;   OrgRareAnalgesic = Game.GetFormFromFile(0x000055A9, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Analgesic_TA = Game.GetFormFromFile(0x0000090C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Analgesic_TB = Game.GetFormFromFile(0x0000090D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Analgesic_TC = Game.GetFormFromFile(0x0000090E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Analgesic_TD = Game.GetFormFromFile(0x0000090F, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgRareAromatic = Game.GetFormFromFile(0x000055B8, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Aromatic_TA = Game.GetFormFromFile(0x00000910, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aromatic_TB = Game.GetFormFromFile(0x00000911, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aromatic_TC = Game.GetFormFromFile(0x00000912, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Aromatic_TD = Game.GetFormFromFile(0x00000913, "VenworksJunkRecycler.esm") as Keyword
+;   OrgRareAromatic = Game.GetFormFromFile(0x000055B8, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Aromatic_TA = Game.GetFormFromFile(0x00000910, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aromatic_TB = Game.GetFormFromFile(0x00000911, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aromatic_TC = Game.GetFormFromFile(0x00000912, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Aromatic_TD = Game.GetFormFromFile(0x00000913, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgRareHallucinogen = Game.GetFormFromFile(0x0029F405, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Hallucinogen_TA = Game.GetFormFromFile(0x00000914, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Hallucinogen_TB = Game.GetFormFromFile(0x00000915, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Hallucinogen_TC = Game.GetFormFromFile(0x00000916, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Hallucinogen_TD = Game.GetFormFromFile(0x00000917, "VenworksJunkRecycler.esm") as Keyword
+;   OrgRareHallucinogen = Game.GetFormFromFile(0x0029F405, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Hallucinogen_TA = Game.GetFormFromFile(0x00000914, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Hallucinogen_TB = Game.GetFormFromFile(0x00000915, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Hallucinogen_TC = Game.GetFormFromFile(0x00000916, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Hallucinogen_TD = Game.GetFormFromFile(0x00000917, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgRareSedative = Game.GetFormFromFile(0x000055AD, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Sedative_TA = Game.GetFormFromFile(0x00000918, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Sedative_TB = Game.GetFormFromFile(0x00000919, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Sedative_TC = Game.GetFormFromFile(0x0000091A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Sedative_TD = Game.GetFormFromFile(0x0000091B, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   OrgRareSedative = Game.GetFormFromFile(0x000055AD, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Sedative_TA = Game.GetFormFromFile(0x00000918, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Sedative_TB = Game.GetFormFromFile(0x00000919, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Sedative_TC = Game.GetFormFromFile(0x0000091A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Sedative_TD = Game.GetFormFromFile(0x0000091B, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupOrganicExotic()
-  OrgExoticBiosuppressant = Game.GetFormFromFile(0x000055B2, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Biosuppressant_TA = Game.GetFormFromFile(0x0000091C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Biosuppressant_TB = Game.GetFormFromFile(0x0000091D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Biosuppressant_TC = Game.GetFormFromFile(0x0000091E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Biosuppressant_TD = Game.GetFormFromFile(0x0000091F, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupOrganicExotic()
+;   OrgExoticBiosuppressant = Game.GetFormFromFile(0x000055B2, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Biosuppressant_TA = Game.GetFormFromFile(0x0000091C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Biosuppressant_TB = Game.GetFormFromFile(0x0000091D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Biosuppressant_TC = Game.GetFormFromFile(0x0000091E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Biosuppressant_TD = Game.GetFormFromFile(0x0000091F, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgExoticHypercatalyst = Game.GetFormFromFile(0x0029F40D, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Hypercatalyst_TA = Game.GetFormFromFile(0x00000920, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Hypercatalyst_TB = Game.GetFormFromFile(0x00000921, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Hypercatalyst_TC = Game.GetFormFromFile(0x00000922, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Hypercatalyst_TD = Game.GetFormFromFile(0x00000923, "VenworksJunkRecycler.esm") as Keyword
+;   OrgExoticHypercatalyst = Game.GetFormFromFile(0x0029F40D, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Hypercatalyst_TA = Game.GetFormFromFile(0x00000920, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Hypercatalyst_TB = Game.GetFormFromFile(0x00000921, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Hypercatalyst_TC = Game.GetFormFromFile(0x00000922, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Hypercatalyst_TD = Game.GetFormFromFile(0x00000923, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgExoticLubricant = Game.GetFormFromFile(0x000055BA, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Lubricant_TA = Game.GetFormFromFile(0x00000924, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lubricant_TB = Game.GetFormFromFile(0x00000925, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lubricant_TC = Game.GetFormFromFile(0x00000926, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Lubricant_TD = Game.GetFormFromFile(0x00000927, "VenworksJunkRecycler.esm") as Keyword
+;   OrgExoticLubricant = Game.GetFormFromFile(0x000055BA, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Lubricant_TA = Game.GetFormFromFile(0x00000924, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lubricant_TB = Game.GetFormFromFile(0x00000925, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lubricant_TC = Game.GetFormFromFile(0x00000926, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Lubricant_TD = Game.GetFormFromFile(0x00000927, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgExoticPolymer = Game.GetFormFromFile(0x000055A6, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Polymer_TA = Game.GetFormFromFile(0x00000928, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Polymer_TB = Game.GetFormFromFile(0x00000929, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Polymer_TC = Game.GetFormFromFile(0x0000092A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Polymer_TD = Game.GetFormFromFile(0x0000092B, "VenworksJunkRecycler.esm") as Keyword
+;   OrgExoticPolymer = Game.GetFormFromFile(0x000055A6, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Polymer_TA = Game.GetFormFromFile(0x00000928, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Polymer_TB = Game.GetFormFromFile(0x00000929, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Polymer_TC = Game.GetFormFromFile(0x0000092A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Polymer_TD = Game.GetFormFromFile(0x0000092B, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgExoticSolvent = Game.GetFormFromFile(0x000055CE, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Solvent_TA = Game.GetFormFromFile(0x0000092C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Solvent_TB = Game.GetFormFromFile(0x0000092D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Solvent_TC = Game.GetFormFromFile(0x0000092E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Solvent_TD = Game.GetFormFromFile(0x0000092F, "VenworksJunkRecycler.esm") as Keyword
+;   OrgExoticSolvent = Game.GetFormFromFile(0x000055CE, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Solvent_TA = Game.GetFormFromFile(0x0000092C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Solvent_TB = Game.GetFormFromFile(0x0000092D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Solvent_TC = Game.GetFormFromFile(0x0000092E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Solvent_TD = Game.GetFormFromFile(0x0000092F, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgExoticStimulant = Game.GetFormFromFile(0x000055AE, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Stimulant_TA = Game.GetFormFromFile(0x00000930, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Stimulant_TB = Game.GetFormFromFile(0x00000931, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Stimulant_TC = Game.GetFormFromFile(0x00000932, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Stimulant_TD = Game.GetFormFromFile(0x00000933, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   OrgExoticStimulant = Game.GetFormFromFile(0x000055AE, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Stimulant_TA = Game.GetFormFromFile(0x00000930, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Stimulant_TB = Game.GetFormFromFile(0x00000931, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Stimulant_TC = Game.GetFormFromFile(0x00000932, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Stimulant_TD = Game.GetFormFromFile(0x00000933, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
-Function SetupOrganicUnique()
-  OrgUniqueGastronomic = Game.GetFormFromFile(0x0000559D, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Gastronomic_TA = Game.GetFormFromFile(0x00000934, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Gastronomic_TB = Game.GetFormFromFile(0x00000935, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Gastronomic_TC = Game.GetFormFromFile(0x00000936, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Gastronomic_TD = Game.GetFormFromFile(0x00000937, "VenworksJunkRecycler.esm") as Keyword
+; Function SetupOrganicUnique()
+;   OrgUniqueGastronomic = Game.GetFormFromFile(0x0000559D, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Gastronomic_TA = Game.GetFormFromFile(0x00000934, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Gastronomic_TB = Game.GetFormFromFile(0x00000935, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Gastronomic_TC = Game.GetFormFromFile(0x00000936, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Gastronomic_TD = Game.GetFormFromFile(0x00000937, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUniqueHighTensileSpidroin = Game.GetFormFromFile(0x000055AA, "Starfield.esm") as MiscObject
-  VJR_Breakdown_HighTensileSpidroin_TA = Game.GetFormFromFile(0x00000938, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_HighTensileSpidroin_TB = Game.GetFormFromFile(0x00000939, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_HighTensileSpidroin_TC = Game.GetFormFromFile(0x0000093A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_HighTensileSpidroin_TD = Game.GetFormFromFile(0x0000093B, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUniqueHighTensileSpidroin = Game.GetFormFromFile(0x000055AA, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_HighTensileSpidroin_TA = Game.GetFormFromFile(0x00000938, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_HighTensileSpidroin_TB = Game.GetFormFromFile(0x00000939, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_HighTensileSpidroin_TC = Game.GetFormFromFile(0x0000093A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_HighTensileSpidroin_TD = Game.GetFormFromFile(0x0000093B, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUniqueImmunostimulant = Game.GetFormFromFile(0x000055B3, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Immunostimulant_TA = Game.GetFormFromFile(0x0000093C, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Immunostimulant_TB = Game.GetFormFromFile(0x0000093D, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Immunostimulant_TC = Game.GetFormFromFile(0x0000093E, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Immunostimulant_TD = Game.GetFormFromFile(0x0000093F, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUniqueImmunostimulant = Game.GetFormFromFile(0x000055B3, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Immunostimulant_TA = Game.GetFormFromFile(0x0000093C, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Immunostimulant_TB = Game.GetFormFromFile(0x0000093D, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Immunostimulant_TC = Game.GetFormFromFile(0x0000093E, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Immunostimulant_TD = Game.GetFormFromFile(0x0000093F, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUniqueLuxuryTextile = Game.GetFormFromFile(0x0000559E, "Starfield.esm") as MiscObject
-  VJR_Breakdown_LuxuryTextile_TA = Game.GetFormFromFile(0x00000940, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_LuxuryTextile_TB = Game.GetFormFromFile(0x00000941, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_LuxuryTextile_TC = Game.GetFormFromFile(0x00000942, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_LuxuryTextile_TD = Game.GetFormFromFile(0x00000943, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUniqueLuxuryTextile = Game.GetFormFromFile(0x0000559E, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_LuxuryTextile_TA = Game.GetFormFromFile(0x00000940, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_LuxuryTextile_TB = Game.GetFormFromFile(0x00000941, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_LuxuryTextile_TC = Game.GetFormFromFile(0x00000942, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_LuxuryTextile_TD = Game.GetFormFromFile(0x00000943, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUniqueMemorySubstrate = Game.GetFormFromFile(0x0000559B, "Starfield.esm") as MiscObject
-  VJR_Breakdown_MemorySubstrate_TA = Game.GetFormFromFile(0x00000944, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_MemorySubstrate_TB = Game.GetFormFromFile(0x00000945, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_MemorySubstrate_TC = Game.GetFormFromFile(0x00000946, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_MemorySubstrate_TD = Game.GetFormFromFile(0x00000947, "VenworksJunkRecycler.esm") as Keyword
+;   OrgUniqueMemorySubstrate = Game.GetFormFromFile(0x0000559B, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_MemorySubstrate_TA = Game.GetFormFromFile(0x00000944, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_MemorySubstrate_TB = Game.GetFormFromFile(0x00000945, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_MemorySubstrate_TC = Game.GetFormFromFile(0x00000946, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_MemorySubstrate_TD = Game.GetFormFromFile(0x00000947, "VenworksJunkRecycler.esm") as Keyword
 
-  OrgUniqueNeurologic = Game.GetFormFromFile(0x0029F409, "Starfield.esm") as MiscObject
-  VJR_Breakdown_Neurologic_TA = Game.GetFormFromFile(0x00000948, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neurologic_TB = Game.GetFormFromFile(0x00000949, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neurologic_TC = Game.GetFormFromFile(0x0000094A, "VenworksJunkRecycler.esm") as Keyword
-  VJR_Breakdown_Neurologic_TD = Game.GetFormFromFile(0x0000094B, "VenworksJunkRecycler.esm") as Keyword
-EndFunction
+;   OrgUniqueNeurologic = Game.GetFormFromFile(0x0029F409, "Starfield.esm") as MiscObject
+;   VJR_Breakdown_Neurologic_TA = Game.GetFormFromFile(0x00000948, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neurologic_TB = Game.GetFormFromFile(0x00000949, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neurologic_TC = Game.GetFormFromFile(0x0000094A, "VenworksJunkRecycler.esm") as Keyword
+;   VJR_Breakdown_Neurologic_TD = Game.GetFormFromFile(0x0000094B, "VenworksJunkRecycler.esm") as Keyword
+; EndFunction
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1161,10 +1161,30 @@ Function ProcessItem(Form baseItem, int count)
   results.TierD_Quantity = Math.Floor(VJR_BreakdownQuantity_TierD.GetValueInt() * count * results.SizeAdjustment)
 
   If (results.TierA_Item == None && results.TierB_Item == None && results.TierC_Item == None && results.TierD_Item == None)
-    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "Failed to find breakdown rules for " + baseItem + " returning to player inventory.", 0, DebugEnabled.GetValueInt())
-    player.AddItem(akItemToAdd=baseItem, aiCount=count, abSilent=False)
-    RemoveItem(akItemToRemove=baseItem, aiCount=count, abSilent=False, akOtherContainer=None)
-    Return
+    Venworks:Shared:Logging.Log(ModName, "Venworks:JunkRecycler:TransferContainerScript", "ProcessItem", "Failed to find breakdown rules for " + baseItem + " falling back to random results.", 0, DebugEnabled.GetValueInt())
+    ; player.AddItem(akItemToAdd=baseItem, aiCount=count, abSilent=False)
+    ; RemoveItem(akItemToRemove=baseItem, aiCount=count, abSilent=False, akOtherContainer=None)
+    ; Return
+
+    ;; Handle Tier A
+    If (Game.GetDieRollSuccess(50, 1, 100, -1, -1))
+      results.TierA_Item = GetRandomInorganic()
+    Else
+      results.TierA_Item = GetRandomOrganic()
+    EndIf
+
+    ;; Handle Tier B
+    If (Game.GetDieRollSuccess(50, 1, 100, -1, -1))
+      results.TierB_Item = GetRandomOrganic()
+    Else
+      results.TierB_Item = GetRandomInorganic()
+    EndIf
+
+    ;; Handle Tier C
+    results.TierC_Item = GetRandomOrganic()
+
+    ;; Handle Tier D
+    results.TierD_Item = GetRandomInorganic()
   EndIf
   
   ;; Fix up minimum quantities
