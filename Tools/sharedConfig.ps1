@@ -17,7 +17,7 @@ Write-Host -ForegroundColor Yellow "BGS Papyrus Source path is $ENV:PAPYRUS_SOUR
 Write-Host -ForegroundColor Yellow "Spriggit CLI path is $ENV:SPRIGGIT_PATH"
 
 $Global:Databases = @(
-  ("Venworks-JunkRecycler.esp")
+  ("Venworks-JunkRecycler.esl")
 )
 
 $Global:ScriptingNamespaceCompany = "Venworks"
