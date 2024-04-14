@@ -8,7 +8,7 @@ if (!$Global:SharedConfigurationLoaded) {
   . "$PSScriptRoot\sharedConfig.ps1"
 }
 
-# Purge output points incase files were deleted
+# Purge CK output points incase files were deleted
 foreach ($database in $Global:Databases) {
   if ([System.IO.File]::Exists("$ENV:STEAM_DATA_FOLDER\$database")) {
     Remove-Item -Force -Path "$ENV:STEAM_DATA_FOLDER\$database"

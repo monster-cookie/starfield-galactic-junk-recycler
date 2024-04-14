@@ -4,7 +4,7 @@
     {
       "type": "shell",
       "label": "Compile Papyrus Scripts",
-      "command": "${workspaceFolder}/tools/compileScripts.ps1",
+      "command": "${workspaceFolder}/Tools/compileScripts.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },
