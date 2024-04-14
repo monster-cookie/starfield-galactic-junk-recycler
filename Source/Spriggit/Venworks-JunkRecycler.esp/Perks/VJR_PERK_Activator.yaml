@@ -11,11 +11,11 @@ VirtualMachineAdapter:
         Name: ModName
         Data: VenworksJunkRecycler
       - MutagenObjectType: ScriptObjectProperty
-        Name: DebugEnabled
-        Object: 000A39:Venworks-JunkRecycler.esp
-      - MutagenObjectType: ScriptObjectProperty
         Name: TransferContainerRef
         Object: 000809:Venworks-JunkRecycler.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DebugEnabled
+        Object: 000A39:Venworks-JunkRecycler.esp
     Fragments:
     - Unknown2: 1
       ScriptName: Venworks:Fragments:Perks:PRKF_VJR_PERK_Activator_01000A3B
