@@ -10,9 +10,22 @@ ScriptName Venworks:JunkRecycler:ModDebug Extends ScriptObject
 ;;;
 ;; Call using: CGF "Venworks:JunkRecycler:ModDebug.FeatureFlags" 
 Function FeatureFlags() Global
+  If (Game.IsPluginInstalled("Venworks-JunkRecycler.esp"))
+    Debug.Trace("INFO: Venworks-JunkRecycler is loaded.", 0)
+  Else
+    Debug.MessageBox("Venworks-JunkRecycler is not loaded so cannot continue.")
+    Return
+  EndIf
+
   Actor player = Game.GetPlayer()
   GlobalVariable VJR_DebugMode = Game.GetFormFromFile(0x00000A39, "Venworks-JunkRecycler.esp") as GlobalVariable
-  Perk VJR_PERK_Activator = Game.GetFormFromFile(0x00000A38, "Venworks-JunkRecycler.esp") as Perk
+  If (!VJR_DebugMode && VJR_DebugMode == None) 
+    Debug.Trace("LOAD ERROR: No record with Form ID 0x00000A39 found in Venworks-JunkRecycler.esp", 2)
+  EndIf
+  Perk VJR_PERK_Activator = Game.GetFormFromFile(0x00000A3B, "Venworks-JunkRecycler.esp") as Perk
+  If (!VJR_PERK_Activator && VJR_PERK_Activator == None) 
+    Debug.Trace("LOAD ERROR: No record with Form ID 0x00000A38 found in Venworks-JunkRecycler.esp", 2)
+  EndIf
 
   String output = "Current Feature Flag Settings (1-On, 0=Off)\n\n"
   output += "     Debug Mode = " + VJR_DebugMode.GetValueInt() + "\n"
@@ -24,7 +37,19 @@ EndFunction
 
 ;; Call using: CGF "Venworks:JunkRecycler:ModDebug.ToggleDebugMode" 
 Function ToggleDebugMode() Global
+  If (Game.IsPluginInstalled("Venworks-JunkRecycler.esp"))
+    Debug.Trace("INFO: Venworks-JunkRecycler is loaded.", 0)
+  Else
+    Debug.MessageBox("Venworks-JunkRecycler is not loaded so cannot continue.")
+    Return
+  EndIf
+
   GlobalVariable VJR_DebugMode = Game.GetFormFromFile(0x00000A39, "Venworks-JunkRecycler.esp") as GlobalVariable
+  If (!VJR_DebugMode && VJR_DebugMode == None) 
+    Debug.Trace("LOAD ERROR: No record with Form ID 0x00000A39 found in Venworks-JunkRecycler.esp", 2)
+    Return
+  EndIf
+
   If (VJR_DebugMode.GetValueInt() == 0)
     VJR_DebugMode.SetValueInt(1)
   Else
@@ -34,7 +59,19 @@ EndFunction
 
 ;; Call using: CGF "Venworks:JunkRecycler:ModDebug.CheckFixPerk" 
 Function CheckFixPerk() Global
-  Perk VJR_PERK_Activator = Game.GetFormFromFile(0x00000A38, "Venworks-JunkRecycler.esp") as Perk
+  If (Game.IsPluginInstalled("Venworks-JunkRecycler.esp"))
+    Debug.Trace("INFO: Venworks-JunkRecycler is loaded.", 0)
+  Else
+    Debug.MessageBox("Venworks-JunkRecycler is not loaded so cannot continue.")
+    Return
+  EndIf
+
+  Perk VJR_PERK_Activator = Game.GetFormFromFile(0x00000A3B, "Venworks-JunkRecycler.esp") as Perk
+  If (!VJR_PERK_Activator && VJR_PERK_Activator == None) 
+    Debug.Trace("LOAD ERROR: No record with Form ID 0x00000A3B found in Venworks-JunkRecycler.esp", 2)
+    Return
+  EndIf
+
   Actor player = Game.GetPlayer()
   If (player.HasPerk(VJR_PERK_Activator))
     Debug.MessageBox("You already have the perk assigned if the workbenches are not showing the recycler please join and ask for help on the Venworks Discord Community.")
@@ -45,6 +82,13 @@ EndFunction
 
 ;; Call using: CGF "Venworks:JunkRecycler:ModDebug.ResetSettings" 
 Function ResetSettings() Global
+  If (Game.IsPluginInstalled("Venworks-JunkRecycler.esp"))
+    Debug.Trace("INFO: Venworks-JunkRecycler is loaded.", 0)
+  Else
+    Debug.MessageBox("Venworks-JunkRecycler is not loaded so cannot continue.")
+    Return
+  EndIf
+
   CheckFixPerk()
 
   GlobalVariable VJR_BreakdownQuantity_TierA = Game.GetFormFromFile(0x00000815, "Venworks-JunkRecycler.esp") as GlobalVariable
