@@ -4,7 +4,7 @@
     {
       "type": "shell",
       "label": "Compile Papyrus Scripts",
-      "command": "${workspaceFolder}/Tools/compileScripts.ps1",
+      "command": "${workspaceFolder}/Tools/SFCKDataDirMode/compileScripts.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -21,8 +21,8 @@
     },
     {
       "type": "shell",
-      "label": "Update SFCK",
-      "command": "${workspaceFolder}/Tools/updateSFCK.ps1",
+      "label": "Update SFCK from Repository",
+      "command": "${workspaceFolder}/Tools/SFCKDataDirMode/updateGameDataFromRepository.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -39,8 +39,8 @@
     },
     {
       "type": "shell",
-      "label": "Update Repository",
-      "command": "${workspaceFolder}/Tools/updateRepository.ps1",
+      "label": "Update Repository from SFCK",
+      "command": "${workspaceFolder}/Tools/SFCKDataDirMode/updateRepositoryFromGameData.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -58,7 +58,43 @@
     {
       "type": "shell",
       "label": "Spriggit Dump Datafiles",
-      "command": "${workspaceFolder}/Tools/spriggitDumpFile.ps1",
+      "command": "${workspaceFolder}/Tools/Spriggit/DumpFileToYaml.ps1",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Spriggit Assemble Datafiles",
+      "command": "${workspaceFolder}/Tools/Spriggit/AssembleFileFromYaml.ps1",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Update MO2 from Repository",
+      "command": "${workspaceFolder}/Tools/SFCKMO2Mode/updateMO2FromRepository.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -75,8 +111,8 @@
     },
     {
       "type": "shell",
-      "label": "Spriggit Assemble Datafiles",
-      "command": "${workspaceFolder}/Tools/spriggitAssembleFile.ps1",
+      "label": "Update Repository from MO2",
+      "command": "${workspaceFolder}/Tools/SFCKMO2Mode/updateRepositoryFromMO2.ps1",
       "options": {
         "cwd": "${workspaceFolder}"
       },

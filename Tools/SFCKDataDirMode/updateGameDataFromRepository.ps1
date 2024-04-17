@@ -5,19 +5,23 @@ $ErrorActionPreference = "Stop"
 # If not loaded already pull in the shared config
 if (!$Global:SharedConfigurationLoaded) {
   Write-Host -ForegroundColor Green "Importing Shared Configuration"
-  . "$PSScriptRoot\sharedConfig.ps1"
+  . "$PSScriptRoot\..\sharedConfig.ps1"
 }
 
-# Purge CK output points incase files were deleted
+# Purge CK output points in case files were deleted
 foreach ($database in $Global:Databases) {
-  if ([System.IO.File]::Exists("$ENV:STEAM_DATA_FOLDER\$database")) {
-    Remove-Item -Force -Path "$ENV:STEAM_DATA_FOLDER\$database"
+  if ([System.IO.File]::Exists("$ENV:MODULE_DATABASE_PATH\$database")) {
+    Remove-Item -Force -Path "$ENV:MODULE_DATABASE_PATH\$database"
   }
 }
-Remove-Item -Force -Recurse "$ENV:PAPYRUS_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceModule"
-Remove-Item -Force -Recurse "$ENV:PAPYRUS_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceSharedLibrary"
+If ([System.IO.Directory]::Exists("$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceModule")) {
+  Remove-Item -Force -Recurse "$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceModule"
+}
+If ([System.IO.Directory]::Exists("$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceSharedLibrary")) {
+  Remove-Item -Force -Recurse "$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceSharedLibrary"
+}
 
-& "$PSScriptRoot\compileScripts.ps1"
+& "$PSScriptRoot\..\compileScripts.ps1"
 
 # Need to copy the ESM/ESP/ESL files to the Game Data folder so SFCK can use them
 Write-Host -ForegroundColor Green "Copying the ESM/ESP/ESL files to the Game Data folder so SFCK can use them"
@@ -27,7 +31,7 @@ foreach ($database in $Global:Databases) {
     continue
   }
   Write-Host -ForegroundColor Green "Copying Source\Database\$database to the Game Data folder."
-  Copy-Item -Force -Path ".\Source\Database\*.*" -Destination "$ENV:STEAM_DATA_FOLDER"
+  Copy-Item -Force -Path ".\Source\Database\$database" -Destination "$ENV:MODULE_DATABASE_PATH"
 }
 
 Write-Host -ForegroundColor Cyan "`n`n"

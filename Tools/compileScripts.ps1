@@ -8,33 +8,25 @@ if (!$Global:SharedConfigurationLoaded) {
   . "$PSScriptRoot\sharedConfig.ps1"
 }
 
+# Scaffold if needed
+If (![System.IO.Directory]::Exists("$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany")) {
+  New-Item -ItemType "Directory" -Path "$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany" | Out-Null
+}
+If (![System.IO.Directory]::Exists("$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceModule")) {
+  New-Item -ItemType "Directory" -Path "$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceModule" | Out-Null
+}
+If (![System.IO.Directory]::Exists("$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceSharedLibrary")) {
+  New-Item -ItemType "Directory" -Path "$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceSharedLibrary" | Out-Null
+}
+
 # Need to copy the source scripts to the Scripts Source folder so SFCK can use them
 Write-Host -ForegroundColor Green "Copying the source scripts to the Scripts Source folder so SFCK can use them"
-Copy-Item -Recurse -Force -Path ".\Source\Papyrus\**" -Destination "$ENV:PAPYRUS_SOURCE_PATH"
+Copy-Item -Recurse -Force -Path ".\Source\Papyrus\**" -Destination "$ENV:MODULE_SCRIPTS_SOURCE_PATH\$Global:ScriptingNamespaceCompany"
 
 # Compile and deploy Scripts to CK Scripts folder
 Write-Host -ForegroundColor Green "Compiling all scripts in Source/Papyrus to SFCK Scripts folder"
 
-$pinfo = New-Object System.Diagnostics.ProcessStartInfo
-$pinfo.FileName = "$ENV:PAPYRUS_COMPILER_PATH\PapyrusCompiler.exe"
-$pinfo.Arguments = "`".\Source\Papyrus`" -all -f -optimize -flags=`"$ENV:PAPYRUS_SOURCE_PATH\Starfield_Papyrus_Flags.flg`" -output=`"$ENV:PAPYRUS_SCRIPTS_PATH`" -import=`"$ENV:PAPYRUS_SOURCE_PATH`" -ignorecwd"
-$pinfo.CreateNoWindow = $false
-$pinfo.RedirectStandardError = $true
-$pinfo.RedirectStandardOutput = $true
-$pinfo.UseShellExecute = $false
-
-$compileProcess = New-Object System.Diagnostics.Process
-$compileProcess.StartInfo = $pinfo
-$compileProcess.Start() | Out-Null
-$compileProcess.WaitForExit()
-if ($compileProcess.ExitCode -ne 0) {
-  $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor DarkYellow
-  $compileProcess.StandardError.ReadToEnd() | Write-Host -ForegroundColor Red
-  Write-Error -Category SyntaxError -ErrorId $compileProcess.ExitCode -Message "Papyrus compiler had non 0 exit code please check for compile errors in the output." -ErrorAction Stop
-  Exit
-} Else {
-  $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor Green
-}
+& "$ENV:TOOL_PATH_PAPYRUS_COMPILER" ".\Source\Papyrus" -all -f -optimize -flags="$ENV:PAPYRUS_COMPILER_FLAGS" -output="$ENV:MODULE_SCRIPTS_PATH" -import="$ENV:PAPYRUS_SCRIPTS_SOURCE_PATH;$ENV:MODULE_SCRIPTS_SOURCE_PATH" -ignorecwd
 
 Write-Host -ForegroundColor Cyan "`n`n"
 Write-Host -ForegroundColor Cyan "**************************************************"

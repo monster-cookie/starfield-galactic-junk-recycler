@@ -5,7 +5,7 @@ $ErrorActionPreference = "Stop"
 # If not loaded already pull in the shared config
 if (!$Global:SharedConfigurationLoaded) {
   Write-Host -ForegroundColor Green "Importing Shared Configuration"
-  . "$PSScriptRoot\sharedConfig.ps1"
+  . "$PSScriptRoot\..\sharedConfig.ps1"
 }
 
 # Export Data File to YAML
@@ -18,7 +18,7 @@ foreach ($database in $Global:Databases) {
   Write-Host -ForegroundColor Green "Assembling YAML in .\Source\Spriggit\$database back in data file $database"
 
   $pinfo = New-Object System.Diagnostics.ProcessStartInfo
-  $pinfo.FileName = "$ENV:SPRIGGIT_PATH\Spriggit.CLI.exe"
+  $pinfo.FileName = "$ENV:TOOL_PATH_SPRIGGIT"
   $pinfo.Arguments = "deserialize --InputPath `".\Source\Spriggit\$database`" --OutputPath `".\Source\Database\$database`""
   $pinfo.CreateNoWindow = $false
   $pinfo.RedirectStandardError = $true

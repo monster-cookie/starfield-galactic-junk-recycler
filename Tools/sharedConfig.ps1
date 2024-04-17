@@ -8,13 +8,21 @@ Get-Content .env | ForEach-Object {
   }
 }
 
+Write-Host -ForegroundColor Yellow "`nTool Settings:"
+Write-Host -ForegroundColor Yellow "BGS Papyrus Compiler path is $ENV:TOOL_PATH_PAPYRUS_COMPILER\PapyrusCompiler.exe"
+Write-Host -ForegroundColor Yellow "BGS Archive2 path is $ENV:TOOL_PATH_ARCHIVER\Archive2.exe"
+Write-Host -ForegroundColor Yellow "Spriggit CLI path is $ENV:TOOL_PATH_SPRIGGIT\Spriggit.CLI.exe"
+Write-Host -ForegroundColor Yellow "`nSteam Settings:"
 Write-Host -ForegroundColor Yellow "Starfield game folder is set to $ENV:STEAM_GAME_FOLDER."
 Write-Host -ForegroundColor Yellow "Starfield data folder is set to $ENV:STEAM_DATA_FOLDER."
-Write-Host -ForegroundColor Yellow "BGS Archive2 path is $ENV:ARCHIVER_PATH\Archive2.exe"
-Write-Host -ForegroundColor Yellow "BGS Papyrus Compiler path is $ENV:PAPYRUS_COMPILER_PATH\PapyrusCompiler.exe"
+Write-Host -ForegroundColor Yellow "`nPapyrus Settings:"
+Write-Host -ForegroundColor Yellow "BGS Papyrus Compiler Flags files is $ENV:PAPYRUS_COMPILER_FLAGS"
 Write-Host -ForegroundColor Yellow "BGS Papyrus Script path is $ENV:PAPYRUS_SCRIPTS_PATH"
-Write-Host -ForegroundColor Yellow "BGS Papyrus Source path is $ENV:PAPYRUS_SOURCE_PATH"
-Write-Host -ForegroundColor Yellow "Spriggit CLI path is $ENV:SPRIGGIT_PATH"
+Write-Host -ForegroundColor Yellow "BGS Papyrus Source path is $ENV:PAPYRUS_SCRIPTS_SOURCE_PATH"
+Write-Host -ForegroundColor Yellow "`nModule Settings:"
+Write-Host -ForegroundColor Yellow "Module Database Folder is $ENV:MODULE_DATABASE_PATH"
+Write-Host -ForegroundColor Yellow "Module Scripting Folder is $ENV:MODULE_SCRIPTS_PATH"
+Write-Host -ForegroundColor Yellow "Module Scripting Source Folder is $ENV:MODULE_SCRIPTS_SOURCE_PATH"
 
 $Global:Databases = @(
   ("Venworks-JunkRecycler.esp")
