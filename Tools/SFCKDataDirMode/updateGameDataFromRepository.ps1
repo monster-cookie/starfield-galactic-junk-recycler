@@ -32,6 +32,12 @@ foreach ($database in $Global:Databases) {
   }
   Write-Host -ForegroundColor Green "Copying Source\Database\$database to the Game Data folder."
   Copy-Item -Force -Path ".\Source\Database\$database" -Destination "$ENV:MODULE_DATABASE_PATH"
+
+  $targetFile = Get-Item -Path "$ENV:MODULE_DATABASE_PATH\$database"
+  if ((Get-ItemProperty "$ENV:MODULE_DATABASE_PATH\$database").IsReadOnly) {
+    Write-Host -ForegroundColor Green "Clearing readonly from $ENV:MODULE_DATABASE_PATH\$database."
+    $targetFile.Attributes -= "ReadOnly"
+  }
 }
 
 Write-Host -ForegroundColor Cyan "`n`n"
