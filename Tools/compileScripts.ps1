@@ -8,6 +8,11 @@ if (!$Global:SharedConfigurationLoaded) {
   . "$PSScriptRoot\sharedConfig.ps1"
 }
 
+If (![System.IO.Directory]::Exists("$PWD\Source\Papyrus") -and ![System.IO.Directory]::Exists("$PWD\Source\Papyrus\$Global:ScriptingNamespaceCompany\$Global:ScriptingNamespaceModule")) {
+  Write-Host -ForegroundColor Red "WARNING: No scripting support detected so no scripts to compile. Aborting compile scripts."
+  Exit
+}
+
 # Scaffold if needed
 If (![System.IO.Directory]::Exists("$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany")) {
   New-Item -ItemType "Directory" -Path "$ENV:MODULE_SCRIPTS_PATH\$Global:ScriptingNamespaceCompany" | Out-Null
