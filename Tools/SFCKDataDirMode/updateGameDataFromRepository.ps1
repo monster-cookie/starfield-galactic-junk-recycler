@@ -40,6 +40,57 @@ foreach ($database in $Global:Databases) {
   }
 }
 
+# Need to copy in terrain files
+if ([System.IO.Directory]::Exists(".\Source\Terrain")) {
+  if (![System.IO.Directory]::Exists("$ENV:MODULE_TERRAIN_PATH")) {
+    New-Item -ItemType "Directory" -Path "$ENV:MODULE_TERRAIN_PATH" | Out-Null
+  }
+  Write-Host -ForegroundColor Green "Copying Terrain files to the Game Data folder."
+  foreach ($worldspace in $Global:WorldSpaces) {
+    Write-Host -ForegroundColor Green "Copying Source\Terrain\$worldspace.btd to the Game Data Terrain folder."
+    Copy-Item -Force -Path ".\Source\Terrain\$worldspace.btd" -Destination "$ENV:MODULE_TERRAIN_PATH"
+  }
+}
+
+# Need to copy in terrain meshes
+if ([System.IO.Directory]::Exists(".\Source\TerrainMeshes")) {
+  Write-Host -ForegroundColor Green "Copying Terrain meshes to the Game Data folder."
+  if (![System.IO.Directory]::Exists("$ENV:MODULE_TERRAIN_MESHES_PATH")) {
+    New-Item -ItemType "Directory" -Path "$ENV:MODULE_TERRAIN_MESHES_PATH" | Out-Null
+  }
+  foreach ($worldspace in $Global:WorldSpaces) {
+    Write-Host -ForegroundColor Green "Copying Source\Terrain\$worldspace*.nif to the Game Data Meshes/Terrain folder."
+    if (![System.IO.Directory]::Exists("$ENV:MODULE_TERRAIN_MESHES_PATH/$worldspace")) {
+      New-Item -ItemType "Directory" -Path "$ENV:MODULE_TERRAIN_MESHES_PATH/$worldspace" | Out-Null
+    }
+    if (![System.IO.Directory]::Exists("$ENV:MODULE_TERRAIN_MESHES_PATH/$worldspace/Objects")) {
+      New-Item -ItemType "Directory" -Path "$ENV:MODULE_TERRAIN_MESHES_PATH/$worldspace/Objects" | Out-Null
+    }
+    Copy-Item -Force -Path ".\Source\Terrain\$worldspace*.nif" -Destination "$ENV:MODULE_TERRAIN_MESHES_PATH/$worldspace/Objects"
+  }
+}
+
+# Need to copy in LOD files
+if ([System.IO.Directory]::Exists(".\Source\LODSettings")) {
+  if (![System.IO.Directory]::Exists("$ENV:MODULE_LOD_PATH")) {
+    New-Item -ItemType "Directory" -Path "$ENV:MODULE_LOD_PATH" | Out-Null
+  }
+  Write-Host -ForegroundColor Green "Copying LOD files to the Game Data folder."
+  foreach ($worldspace in $Global:WorldSpaces) {
+    Write-Host -ForegroundColor Green "Copying Source\LODSettings\$worldspace.lod to the Game Data LODSettings folder."
+    Copy-Item -Force -Path ".\Source\LODSettings\$worldspace.lod" -Destination "$ENV:MODULE_LOD_PATH"
+  }
+}
+
+# Need to copy in Meshes
+if ([System.IO.Directory]::Exists(".\Source\Meshes")) {
+  if (![System.IO.Directory]::Exists("$ENV:MODULE_MESHES_PATH")) {
+    New-Item -ItemType "Directory" -Path "$ENV:MODULE_MESHES_PATH\$Global:ScriptingNamespaceCompany" | Out-Null
+  }
+  Write-Host -ForegroundColor Green "Copying Meshes to the Game Data folder."
+  Copy-Item -Force -Path ".\Source\Meshes\$Global:ScriptingNamespaceCompany\*.nif" -Destination "$ENV:MODULE_MESHES_PATH\$Global:ScriptingNamespaceCompany"
+}
+
 Write-Host -ForegroundColor Cyan "`n`n"
 Write-Host -ForegroundColor Cyan "**************************************************"
 Write-Host -ForegroundColor Cyan "**    Update SFCK Files Workflow complete       **"

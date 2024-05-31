@@ -28,6 +28,10 @@ $Global:Databases = @(
   ("Venworks-JunkRecycler.esp")
 )
 
+$Global:WorldSpaces = @(
+  ("ExampleWorldSpace")
+)
+
 $Global:ScriptingNamespaceCompany = "Venworks"
 $Global:ScriptingNamespaceModule = "JunkRecycler"
 $Global:ScriptingNamespaceSharedLibrary = "Shared"

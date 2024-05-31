@@ -23,6 +23,7 @@ Customizable system for breaking down useless loot for usable crafting materials
 - OPTIONAL: [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer/releases)
   - Obfuscation layer that prevents messing with the Game Directory
 
+
 ## Documentation
 
  - [Workflow and Setup Documentation](./Documentation/Workflow/Workflow.md)

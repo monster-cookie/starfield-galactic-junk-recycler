@@ -17,26 +17,7 @@ foreach ($database in $Global:Databases) {
 
   Write-Host -ForegroundColor Green "Disassembling in data file $database to YAML in .\Source\Spriggit\$database"
 
-  $pinfo = New-Object System.Diagnostics.ProcessStartInfo
-  $pinfo.FileName = "$ENV:TOOL_PATH_SPRIGGIT"
-  $pinfo.Arguments = "serialize --InputPath `".\Source\Database\$database`" --OutputPath `".\Source\Spriggit\$database`" --GameRelease Starfield --PackageName Spriggit.Yaml"
-  $pinfo.CreateNoWindow = $false
-  $pinfo.RedirectStandardError = $true
-  $pinfo.RedirectStandardOutput = $true
-  $pinfo.UseShellExecute = $false
-  
-  $compileProcess = New-Object System.Diagnostics.Process
-  $compileProcess.StartInfo = $pinfo
-  $compileProcess.Start() | Out-Null
-  $compileProcess.WaitForExit()
-  if ($compileProcess.ExitCode -ne 0) {
-    $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor DarkYellow
-    $compileProcess.StandardError.ReadToEnd() | Write-Host -ForegroundColor Red
-    Write-Error -Category SyntaxError -ErrorId $compileProcess.ExitCode -Message "Spriggit had non 0 exit code please check for serialization errors in the output." -ErrorAction Stop
-    Exit
-  } Else {
-    $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor Green
-  }  
+  & "$ENV:TOOL_PATH_SPRIGGIT" serialize --InputPath ".\Source\Database\$database" --OutputPath ".\Source\Spriggit\$database" --GameRelease Starfield --PackageName Spriggit.Yaml # -v 0.20.0.2
 }
 
 Write-Host -ForegroundColor Cyan "`n`n"

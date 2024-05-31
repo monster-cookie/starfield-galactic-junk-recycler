@@ -23,6 +23,10 @@
   - MODULE_DATABASE_PATH is the path to the folder for the database files, if using MO2 workflow this will be in the MO2 staging folder otherwise it will be the same value as STEAM_DATA_FOLDER 
   - MODULE_SCRIPTS_PATH is the path to the folder for the module scripts, if using MO2 workflow this will be the Scripts subfolder in the MO2 staging folder otherwise it will be the same value as PAPYRUS_SCRIPTS_PATH
   - MODULE_SCRIPTS_SOURCE_PATH is the path to the folder for the module source scripts, if using MO2 workflow this will be the Scripts/Source subfolder in the MO2 staging folder otherwise it will be the same value as PAPYRUS_SCRIPTS_SOURCE_PATH
+  - MODULE_TERRAIN_PATH is the path to the folder for the terrain files 
+  - MODULE_TERRAIN_MESHES_PATH is the path for the terrain LOD meshes 
+  - MODULE_LOD_PATH is the path for the terrain LOD settings file
+  - MODULE_MESHES_PATH is the path for custom meshes
 
 #### Example
 
@@ -39,9 +43,13 @@ PAPYRUS_COMPILER_FLAGS=D:\SteamLibrary\steamapps\common\Starfield\Data\Scripts\S
 PAPYRUS_SCRIPTS_PATH=D:\SteamLibrary\steamapps\common\Starfield\Data\Scripts
 PAPYRUS_SCRIPTS_SOURCE_PATH=D:\SteamLibrary\steamapps\common\Starfield\Data\Scripts\Source
 # Module Stuff
-MODULE_DATABASE_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS
-MODULE_SCRIPTS_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS\Scripts
-MODULE_SCRIPTS_SOURCE_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS\Scripts\Source
+MODULE_DATABASE_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development
+MODULE_SCRIPTS_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Scripts
+MODULE_SCRIPTS_SOURCE_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Scripts\Source
+MODULE_TERRAIN_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Terrain
+MODULE_TERRAIN_MESHES_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Meshes\Terrain
+MODULE_LOD_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\LODSettings
+MODULE_MESHES_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Meshes
 ```
 
 ## Workflows

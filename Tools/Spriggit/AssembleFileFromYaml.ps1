@@ -17,26 +17,7 @@ foreach ($database in $Global:Databases) {
 
   Write-Host -ForegroundColor Green "Assembling YAML in .\Source\Spriggit\$database back in data file $database"
 
-  $pinfo = New-Object System.Diagnostics.ProcessStartInfo
-  $pinfo.FileName = "$ENV:TOOL_PATH_SPRIGGIT"
-  $pinfo.Arguments = "deserialize --InputPath `".\Source\Spriggit\$database`" --OutputPath `".\Source\Database\$database`""
-  $pinfo.CreateNoWindow = $false
-  $pinfo.RedirectStandardError = $true
-  $pinfo.RedirectStandardOutput = $true
-  $pinfo.UseShellExecute = $false
-  
-  $compileProcess = New-Object System.Diagnostics.Process
-  $compileProcess.StartInfo = $pinfo
-  $compileProcess.Start() | Out-Null
-  $compileProcess.WaitForExit()
-  if ($compileProcess.ExitCode -ne 0) {
-    $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor DarkYellow
-    $compileProcess.StandardError.ReadToEnd() | Write-Host -ForegroundColor Red
-    Write-Error -Category SyntaxError -ErrorId $compileProcess.ExitCode -Message "Spriggit had non 0 exit code please check for serialization errors in the output." -ErrorAction Stop
-    Exit
-  } Else {
-    $compileProcess.StandardOutput.ReadToEnd() | Write-Host -ForegroundColor Green
-  }  
+  & "$ENV:TOOL_PATH_SPRIGGIT" deserialize --InputPath ".\Source\Spriggit\$database" --OutputPath ".\Source\Database\$database" # -v 0.20.0.2
 }
 
 Write-Host -ForegroundColor Cyan "`n`n"

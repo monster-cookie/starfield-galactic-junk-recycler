@@ -28,6 +28,39 @@ foreach ($database in $Global:Databases) {
   Copy-Item -Force -Path "$ENV:MODULE_DATABASE_PATH\$database" -Destination ".\Source\Database"
 }
 
+# Need to copy out terrain files
+if ([System.IO.Directory]::Exists(".\Source\Terrain") -and [System.IO.Directory]::Exists("$ENV:MODULE_TERRAIN_PATH")) {
+  Write-Host -ForegroundColor Green "Copying Terrain files from the Game Data folder."
+  foreach ($worldspace in $Global:WorldSpaces) {
+    Write-Host -ForegroundColor Green "Copying $ENV:MODULE_TERRAIN_PATH\$worldspace.btd to Source\Terrain."
+    Copy-Item -Force -Path "$ENV:MODULE_TERRAIN_PATH\$worldspace.btd" -Destination ".\Source\Terrain"
+  }
+}
+
+# Need to copy out terrain meshes
+if ([System.IO.Directory]::Exists(".\Source\TerrainMeshes") -and [System.IO.Directory]::Exists("$ENV:MODULE_TERRAIN_MESHES_PATH")) {
+  Write-Host -ForegroundColor Green "Copying Terrain meshes from the Game Data folder."
+  foreach ($worldspace in $Global:WorldSpaces) {
+    Write-Host -ForegroundColor Green "Copying $ENV:MODULE_TERRAIN_MESHES_PATH\$worldspace\Objects\$worldspace*.nif to Source\TerrainMeshes."
+    Copy-Item -Force -Path "$ENV:MODULE_TERRAIN_MESHES_PATH\$worldspace\Objects\$worldspace*.nif" -Destination ".\Source\TerrainMeshes"
+  }
+}
+
+# Need to copy out LOD files
+if ([System.IO.Directory]::Exists(".\Source\LODSettings") -and [System.IO.Directory]::Exists("$ENV:MODULE_LOD_PATH")) {
+  Write-Host -ForegroundColor Green "Copying LOD files from the Game Data folder."
+  foreach ($worldspace in $Global:WorldSpaces) {
+    Write-Host -ForegroundColor Green "Copying $ENV:MODULE_LOD_PATH\$worldspace.lod to Source\LODSettings."
+    Copy-Item -Force -Path "$ENV:MODULE_LOD_PATH\$worldspace.lod" -Destination ".\Source\LODSettings"
+  }
+}
+
+# Need to copy out Meshes
+if ([System.IO.Directory]::Exists(".\Source\Meshes") -and [System.IO.Directory]::Exists("$ENV:MODULE_MESHES_PATH")) {
+  Write-Host -ForegroundColor Green "Copying Meshes from the Game Data folder."
+  Copy-Item -Force -Path "$ENV:MODULE_MESHES_PATH\$Global:ScriptingNamespaceCompany\*.nif" -Destination ".\Source\Meshes\$Global:ScriptingNamespaceCompany"
+}
+
 Write-Host -ForegroundColor Cyan "`n`n"
 Write-Host -ForegroundColor Cyan "**************************************************"
 Write-Host -ForegroundColor Cyan "**  Update Repository Files Workflow complete   **"
