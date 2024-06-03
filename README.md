@@ -1,4 +1,4 @@
-# Galactic Junk Recycler
+# Venworks Galactic Junk Recycler
 
 ## Overview
 
