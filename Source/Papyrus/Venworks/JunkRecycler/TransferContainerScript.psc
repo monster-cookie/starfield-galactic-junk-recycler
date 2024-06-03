@@ -24,7 +24,7 @@ EndStruct
 ;;; Global Variables
 ;;;
 GlobalVariable Property DebugEnabled Auto Const
-String Property ModName="VenworksDebug" Auto Const
+String Property ModName="VenworksJunkRecycler" Auto Const
 
 GlobalVariable Property VJR_BreakdownQuantity_TierA Auto Const
 GlobalVariable Property VJR_BreakdownQuantity_TierB Auto Const
