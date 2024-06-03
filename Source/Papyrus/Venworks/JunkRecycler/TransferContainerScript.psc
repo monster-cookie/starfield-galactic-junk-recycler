@@ -1,6 +1,6 @@
 ScriptName Venworks:JunkRecycler:TransferContainerScript Extends ObjectReference
 
-Import Venworks:Shared:Logging:Log
+Import Venworks:Shared:Logging
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
