@@ -61,6 +61,12 @@ if ([System.IO.Directory]::Exists(".\Source\Meshes") -and [System.IO.Directory]:
   Copy-Item -Force -Path "$ENV:MODULE_MESHES_PATH\$Global:ScriptingNamespaceCompany\*.nif" -Destination ".\Source\Meshes\$Global:ScriptingNamespaceCompany"
 }
 
+# Need to copy in Batch Files (This cannot have subdirectories)
+if ([System.IO.Directory]::Exists(".\Source\BatchFiles") -and [System.IO.Directory]::Exists("$ENV:MODULE_BATCH_FILES_PATH")) {
+  Write-Host -ForegroundColor Green "Copying Batch Files from the Game Data folder."
+  Copy-Item -Force -Path "$ENV:MODULE_BATCH_FILES_PATH\$Global:ScriptingNamespaceCompany`_*.txt" -Destination ".\Source\BatchFiles"
+}
+
 Write-Host -ForegroundColor Cyan "`n`n"
 Write-Host -ForegroundColor Cyan "**************************************************"
 Write-Host -ForegroundColor Cyan "**  Update Repository Files Workflow complete   **"

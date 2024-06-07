@@ -27,6 +27,7 @@
   - MODULE_TERRAIN_MESHES_PATH is the path for the terrain LOD meshes 
   - MODULE_LOD_PATH is the path for the terrain LOD settings file
   - MODULE_MESHES_PATH is the path for custom meshes
+  - MODULE_BATCH_FILES_PATH is the path for custom console batch files
 
 #### Example
 
@@ -50,6 +51,7 @@ MODULE_TERRAIN_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Terra
 MODULE_TERRAIN_MESHES_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Meshes\Terrain
 MODULE_LOD_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\LODSettings
 MODULE_MESHES_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\Meshes
+MODULE_BATCH_FILES_PATH=D:\MO2Staging\Starfield_Steam\mods\QOG-MCS-Development\BatchFiles
 ```
 
 ## Workflows
