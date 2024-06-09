@@ -1,0 +1,33 @@
+FormKey: 000A45:Venworks-JunkRecycler.esp
+EditorID: VJR_InitQuest
+FormVersion: 557
+VirtualMachineAdapter:
+  Script:
+    Name: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000A45:Venworks-JunkRecycler.esp
+      Alias: 0
+    Scripts:
+    - Name: defaultaliasaddperkonload
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PerkToAdd
+        Object: 000A3B:Venworks-JunkRecycler.esp
+Name:
+  TargetLanguage: English
+  Value: Venworks Junk Recycler Init Quest
+Data:
+  Flags:
+  - StartGameEnabled
+  - StartsEnabled
+  Unused: 0x000000
+UnusedConditions: []
+Aliases:
+- MutagenObjectType: QuestReferenceAlias
+  Name: Player
+  Flags: []
+  ALFG: 0
+  UniqueActor: 000007:Starfield.esm
+  VoiceTypes: Null

@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 000809:Venworks-JunkRecycler.esp
+MajorRecordFlagsRaw: 1024
+EditorID: VJR_HiddenCell_TransferContainer
+FormVersion: 557
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 00080A:Venworks-JunkRecycler.esp

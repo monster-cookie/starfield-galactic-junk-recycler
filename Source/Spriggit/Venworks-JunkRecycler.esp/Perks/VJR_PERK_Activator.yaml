@@ -1,0 +1,82 @@
+FormKey: 000A3B:Venworks-JunkRecycler.esp
+EditorID: VJR_PERK_Activator
+FormVersion: 557
+VirtualMachineAdapter:
+  ScriptFragments:
+    ExtraBindDataVersion: 3
+    Script:
+      Name: Venworks:Fragments:Perks:PRKF_VJR_PERK_Activator_01000A3B
+      Properties:
+      - MutagenObjectType: ScriptStringProperty
+        Name: ModName
+        Data: VenworksJunkRecycler
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TransferContainerRef
+        Object: 000809:Venworks-JunkRecycler.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DebugEnabled
+        Object: 000A39:Venworks-JunkRecycler.esp
+    Fragments:
+    - Unknown2: 1
+      ScriptName: Venworks:Fragments:Perks:PRKF_VJR_PERK_Activator_01000A3B
+      FragmentName: Fragment_Entry_00
+Name:
+  TargetLanguage: English
+  Value: Junk Recycler Activator Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- PcPlayable
+Ranks:
+- Effects:
+  - MutagenObjectType: PerkEntryPointAddActivateChoice
+    Conditions:
+    - RunOnTabIndex: 1
+      Conditions:
+      - MutagenObjectType: ConditionFloat
+        Flags:
+        - OR
+        Unknown1: 0x010000
+        Unknown2: 17629
+        Data:
+          MutagenObjectType: HasKeywordConditionData
+          FirstParameter: 0657FF:Starfield.esm
+        ComparisonValue: 1
+      - MutagenObjectType: ConditionFloat
+        Flags:
+        - OR
+        Unknown1: 0x010000
+        Unknown2: 17629
+        Data:
+          MutagenObjectType: HasKeywordConditionData
+          FirstParameter: 0AA209:Starfield.esm
+        ComparisonValue: 1
+      - MutagenObjectType: ConditionFloat
+        Flags:
+        - OR
+        Unknown1: 0x010000
+        Unknown2: 17629
+        Data:
+          MutagenObjectType: HasKeywordConditionData
+          FirstParameter: 2CE1C0:Starfield.esm
+        ComparisonValue: 1
+      - MutagenObjectType: ConditionFloat
+        Flags:
+        - OR
+        Unknown1: 0x010000
+        Unknown2: 17629
+        Data:
+          MutagenObjectType: HasKeywordConditionData
+          FirstParameter: 29B044:Starfield.esm
+        ComparisonValue: 1
+    EntryPoint: Activate
+    PerkConditionTabCount: 2
+    PerkEntryID: 0
+    ButtonLabel:
+      TargetLanguage: English
+      Value: Recycle Items
+    Flags: []
+  Description:
+    TargetLanguage: English
+    Value: ''

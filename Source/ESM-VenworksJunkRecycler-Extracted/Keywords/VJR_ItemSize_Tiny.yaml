@@ -1,6 +1,0 @@
-FormKey: 00080F:VenworksJunkRecycler.esm
-EditorID: VJR_ItemSize_Tiny
-Type: None
-Name:
-  TargetLanguage: English
-  Value: Tiny item so each tier breaks down 0.25 times as much (min quantity of 1)
