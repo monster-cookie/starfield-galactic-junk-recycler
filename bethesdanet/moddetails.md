@@ -3,6 +3,9 @@ Venworks Junk Recycler will break down your old armor, weapons, clothing, books,
 
 We want this to be an option for players that do not like the outpost mining mess and need a way to get the resources you can't from pure exploration.
 
+## Known issues
+- On an existing xbox save the game will not process new autostart quests 100% of the time. As a workaround, the pharma bench has a new item "Fix Junk Recycler" for 1 credit. Building and using this item will add the activator perk to the player.
+
 # Usage
 
 ## Recycling Items
@@ -17,6 +20,9 @@ Aim at the workbench you should see a new option recycle
 
 ### Keybinds (Console/PC Gamepad)
 - Default is X but sometimes Y to space
+
+## Fix Junk Recycler Item
+Occasionally on new NGP universe and on xbox the activator perk doesn't relink, when this happens use the "Fix Junk Recycler" that you can craft at the pharma bench for 1 credit.
 
 ## Modifying the rules
 New instructions are coming due to not being able to use RTFP with consoles. Currently the keywords are mapped in an init quest with a fallback of random return. 
