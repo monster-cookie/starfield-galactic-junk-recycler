@@ -27,11 +27,9 @@ Below are Creations we have known compatibility problems with and workarounds if
 - Workbench Filter Framework (WFF), please load Junk Recycler after WFF in the load order
 
 # Donations
-
 For those of you wishing to donate to me for my mods you can do so via my partners Quarter Onion Games. Donate via PayPal at https://www.paypal.com/donate/?hosted_button_id=ZK9D45YYDBPE2. Thank you. 
 
 # Social Presence
-
 - I can be found as Venpi hanging out in the xEdit and Starfield Nexus Mod's discord servers.
 - I have created the Venworks Discord Community (invite like is https://discord.gg/zssJMGHmWD) for discussing, tracking, bug reporting, and helping out with my mods and Starfield modding research.
 - You can follow me on twitter or threads as @monstercookiebd
